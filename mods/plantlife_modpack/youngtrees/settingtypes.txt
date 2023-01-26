@@ -1,0 +1,8 @@
+#Youngtree rarity %
+youngtrees_youngtrees_rarity (Youngtree rarity %) float 100 0 100
+
+#How much the rarity is reduced by fertility %
+youngtrees_youngtrees_rarity_fertility (Youngtree rarity fertility reduction %) float 0.5 0 100
+
+#Youngtree minimum fertility (-1 to +1)
+youngtrees_youngtrees_fertility (Youngtree minimum fertility) float -0.3 -1 1

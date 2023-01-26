@@ -1,0 +1,10 @@
+# textdomain: bushes
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+
+Young Tree 2 (bottom)=
+Bush Branches @1=
+Bush Leaves @1=

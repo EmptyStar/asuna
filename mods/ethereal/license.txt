@@ -1,0 +1,124 @@
+The MIT License (MIT)
+
+Copyright (c) 2016 TenPlus1
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Textures by TenPlus1 (CC0) unless listed below...
+
+Based on candle textures and coloured by wRothbard (CC0):
+  ethereal_candle_black*.png
+  ethereal_candle_blue*.png
+  ethereal_candle_cyan*.png
+  ethereal_candle_dark_green*.png
+  ethereal_candle_dark_grey*.png
+  ethereal_candle_green*.png
+  ethereal_candle_grey*.png
+  ethereal_candle_magenta*.png
+  ethereal_candle_orange*.png
+  ethereal_candle_pink*.png
+  ethereal_candle_red*.png
+  ethereal_candle_violet*.png
+  ethereal_candle_yellow*.png
+
+Based on default tools in Minetest (CC BY-SA 3.0):
+  ethereal_crystal_pick.png
+  ethereal_crystal_shovel.png
+  ethereal_crystal_axe.png
+  ethereal_crystal_sword.png
+
+Based on texture by ElementW (CC BY-SA 3.0):
+  bucket_cactus.png
+
+Based on tree textures by ElementW (CC BY-SA 3.0):
+  ethereal_yellow_tree.png
+  ethereal_yellow_tree_top.png
+  ethereal_frost_tree.png
+  ethereal_frost_tree_top.png
+  ethereal_scorched_tree.png
+  ethereal_scorched_tree_top.png
+
+Based on wood texture by BlockMen (CC BY-SA 3.0):
+  ethereal_yellow_wood.png
+  ethereal_frost_wood.png
+
+Based on bottle texture by Thomas-S (CC BY-SA 3.0):
+  ethereal_flight_potion.png
+  ethereal_firethorn_jelly.png
+
+Textures based on default_grass.png and default_grass_side.png by TumeniNodes (CC BY-SA 3.0)
+  ethereal_grass_*.png [Edited by TenPlus1]
+  ethereal_crystal_moss.png
+  ethereal_mushroom_moss.png
+  ethereal_fiery_moss.png
+  ethereal_gray_moss.png
+  ethereal_green_moss.png
+
+Texture by ZonerDarkRevention (CC0)
+  ethereal_crystal_spike.png [edited by TenPlus1]
+  ethereal_bowl.png [edited by TenPlus1]
+  ethereal_hearty_stew.png
+
+Textures by VanessaE (CC-BY-SA 4.0)
+  moretrees_*.png
+  ethereal_banana_wood.png (edited)
+  ethereal_olive_wood.png (edited)
+
+asl97 (CC BY-SA 3.0):
+  ethereal_brick_ice.png [edited by TenPlus1]
+
+Gambit (CC BY-SA 3.0):
+  ethereal_brick_snow.png [edited by TenPlus1]
+
+Textures by Felfa (CC0)
+  olive*.png
+  lemon*.png
+
+Textures by Isaiah658 (CC0)
+   ethereal_lemonade.png
+   ethereal_bamboo.png
+
+Textures by SaKeL (CC-BY-SA-4.0)
+  ethereal_fish_bluefin.png
+  ethereal_fish_blueram.png
+  ethereal_fish_catfish.png
+  ethereal_fish_clownfish.png
+  ethereal_fish_flathead.png
+  ethereal_fish_pike.png
+  ethereal_fish_plaice.png
+  ethereal_fish_pufferfish.png
+  ethereal_fish_redsnapper.png
+  ethereal_fish_salmon.png
+  ethereal_fish_trout.png
+  ethereal_fish_piranha.png
+  ethereal_fish_angler.png
+  ethereal_fish_jellyfish.png
+  ethereal_fish_chichlid.png
+  ethereal_fish_cooked.png
+
+  ethereal_fish_seahorse.png (by TenPlus1 CC0)
+
+Textures by Epoxum (CC0)
+  ethereal_sushi_*.png
+
+Created by XSSheep (CC BY-SA 4.0 - https://minecraft.curseforge.com/projects/pixel-perfection-freshly-updated)
+  default_apple_gold.png
+
+Sound by I_q (Attribution 3.0) https://freesound.org/people/l_q/sounds/440956/
+  ethereal_casting_rod.ogg

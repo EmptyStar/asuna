@@ -1,0 +1,18 @@
+        License
+------------------------------------------------------------------------------------------------------------------------
+Copyright (C) 2021-2022: Atlante - AFL-1.1 
+License for code: AFL-1.1
+
+Attribution — You must give appropriate credit, provide a link to the license, and
+indicate if changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use.
+
+ShareAlike — If you remix, transform, or build upon the material, you must distribute
+your contributions under the same license as the original.
+
+Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Anyone can fix the mod. My Discord "Atlante#1952" And my Mail Address "AtlanteEtDocteur@gmail.com"
+
+

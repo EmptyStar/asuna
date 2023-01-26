@@ -1,0 +1,83 @@
+#/usr/bin/env bash
+_i18n_completions()
+{
+	local cur OPTS_ALL
+	local hasInstalledModOpt hasRecursiveOpt hasVerboseOpt hasNoOldFileOpt hasSortOpt hasBreakLongLinesOpt hasPrintSourceOpt
+	COMPREPLY=()
+	cur="${COMP_WORDS[COMP_CWORD]}"
+	for opt in "${COMP_WORDS[@]}"
+	do
+		case $opt in
+			'-h'|'--help')
+				return 0
+				;;
+			'-m'|'--installed-mods')
+				hasInstalledModOpt=1
+				;;
+			'-r'|'--recursive')
+				hasRecursiveOpt=1
+				;;
+			'-v'|'--verbose')
+				hasVerboseOpt=1
+				;;
+			'-O'|'--no-old-file')
+				hasNoOldFileOpt=1
+				;;
+			'-s'|'--sort')
+				hasSortOpt=1
+				;;
+			'-b'|'--break-long-lines')
+				hasBreakLongLinesOpt=1
+				;;
+			'-p'|'--print-source')
+				hasPrintSourceOpt=1
+				;;
+		esac
+	done
+	case $cur in
+		-*) # check for words starting with "minus" only
+			OPTS_ALL="--help
+				--installed-mods
+				--recursive
+				--verbose
+				--no-old-file
+				--sort
+				--break-long-lines
+				--print-source"
+
+			# recursive and installed-mods
+			# are mutually exclusives
+			if [ $hasRecursiveOpt ] || [ $hasInstalledModOpt ]
+			then
+				OPTS_ALL=${OPTS_ALL//"--recursive"/}
+				OPTS_ALL=${OPTS_ALL//"--installed-mods"/}
+			fi
+			if [ $hasVerboseOpt ]
+			then
+				OPTS_ALL=${OPTS_ALL//"--verbose"/}
+			fi
+			if [ $hasNoOldFileOpt ]
+			then
+				OPTS_ALL=${OPTS_ALL//"--no-old-file"/}
+			fi
+			if [ $hasSortOpt ]
+			then
+				OPTS_ALL=${OPTS_ALL//"--sort"/}
+			fi
+			if [ $hasBreakLongLinesOpt ]
+			then
+				OPTS_ALL=${OPTS_ALL//"--break-long-lines"/}
+			fi
+			if [ $hasPrintSourceOpt]
+			then
+				OPTS_ALL=${OPTS_ALL//"--print-source"/}
+			fi
+
+			COMPREPLY=( $(compgen -W "${OPTS_ALL[*]}" -- $cur) )
+			return 0
+			;;
+	esac
+	COMPREPLY=( $(compgen -f -- $cur) )
+	return 0
+}
+complete -F _i18n_completions i18n.py

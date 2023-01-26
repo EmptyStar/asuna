@@ -1,0 +1,5 @@
+#Seaweed maximum count
+pl_seaweed_max_count (Seaweed maximum count) int 320 1 1000
+
+#Seaweed rarity
+pl_seaweed_rarity (Seaweed rarity) int 33 0 100

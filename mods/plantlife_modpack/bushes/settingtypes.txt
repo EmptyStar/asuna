@@ -1,0 +1,17 @@
+#Bush rarity %
+bushes_bush_rarity (Bush rarity %) float 99.9 0 100
+
+#How much the rarity is reduced by fertility %
+bushes_bush_rarity_fertility (Bush rarity fertility reduction %) float 1.5 0 100
+
+#Bush minimum fertility (-1 to +1)
+bushes_bush_fertility (Bush minimum fertility) float -0.7 -1 1
+
+#Youngtree (from bushes mod) rarity %
+bushes_youngtrees_rarity (Youngtree bush rarity %) float 100 0 100
+
+#How much the rarity is reduced by fertility %
+bushes_youngtrees_rarity_fertility (Youngtree bush rarity fertility reduction %) float 0.6 0 100
+
+#Youngtree (from bushes mod) minimum fertility (-1 to +1)
+bushes_youngtrees_fertility (Youngtree bush minimum fertility) float -0.5 -1 1

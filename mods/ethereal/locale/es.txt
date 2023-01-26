@@ -1,0 +1,296 @@
+# Spanish translations of ethereal mod
+# Traducción al español del mod ethereal
+# Author: ost1
+# last update: 2022/June/04
+
+#biomes.lua
+Blue Marble=Mármol azul
+Blue Marble Tile=Baldosa de mármol azul
+
+#bonemeal.lua
+Bone=Hueso
+Bone Meal=Fertilizante de hueso
+
+#crystal.lua
+Crystal Spike=Púa de Cristal
+Crystal Ingot=Lingote de Cristal
+Crystal Block=Bloque de Cristal
+Crystal Sword=Espada de Cristal
+Crystal Axe=Hacha de Cristal
+Crystal Pickaxe=Pico de Cristal
+Crystal Shovel=Pala de Cristal
+Crystal Gilly Staff=Bastón de Cristal de Gilly
+
+#dirt.lua
+Green Dirt=Tierra verde
+Dried Dirt=Tierra seca
+Bamboo Dirt=Tierra de bamboo
+Jungle Dirt=Tierra de la jungla
+Grove Dirt=Tierra de la arboleda
+Prairie Dirt=Tierra de la pradera
+Cold Dirt=Tierra helada
+Crystal Dirt=Tierra de cristal
+Mushroom Dirt=Tierra de champiñones
+Fiery Dirt=Tierra de fuego
+Gray Dirt=Tierra gris
+Red Baked Clay=Arcilla roja cocida
+Orange Baked Clay=Arcilla naranja cocida
+Grey Baked Clay=Arcilla gris cocida
+Quicksand=Arena movediza
+
+#extra.lua
+Bamboo Floor=Piso de bamboo
+Palm Wax=Cera de palma
+Candle=Vela
+Black Candle=Vela negra
+Blue Candle=Vela azul
+Brown Candle=Vela café
+Cyan Candle=Vela turquesa
+Dark Green Candle=Vela verde oscuro
+Dark Grey Candle=Vela gris oscuro
+Green Candle=Vela verde
+Grey Candle=Vela gris
+Magenta Candle=Vela magenta
+Orange Candle=Vela naranja
+Pink Candle=Vela rosada
+Red Candle=Vela roja
+Violet Candle=Vela violeta
+Yellow Candle=Vela amarilla
+Bowl=Tazón
+Stone Ladder=Escalera de piedra
+Paper Wall=Papel mural
+Glo Stone=Piedra brillante
+Lump of Charcoal=Carbón de madera
+Staff of Light=Bastón de Luz
+Etherium Dust=Polvo de Etherium
+Etherium Ore=Mineral de Etherium
+Bamboo Block=Bloque de bamboo
+
+#fences.lua
+Scorched Fence=Cerca de madera quemada
+Frost Fence=Cerca congelada
+Redwood Fence=Cerca de secoya
+Willow Fence=Cerca de sauce
+Healing Wood Fence=Cerca de madera de árbol sanador
+Palm Fence=Cerca de palma
+Banana Wood Fence=Cerca de madera de árbol de banana
+Mushroom Fence=Cerca de champiñones
+Birch Fence=Cerca de abedul
+Sakura Wood Door=Puerta de madera de sakura
+
+#fishing.lua
+Blue Fin=Atún
+Blue Ram=Ramirezi
+Catfish=Pezgato
+Clownfish=Pez payaso
+Pike=Lucio
+Flathead=Flathead
+Plaice=Solla
+Pufferfish=Pez globo
+Coy=Coy
+Salmon=Salmón
+Cichlid=Cíclido
+Angler=Lophiiforme
+Jellyfish=Medusa
+Seahorse=Hipocampo
+Piranha=Piraña
+Trout=Trucha
+Raw Fish=Pescado crudo
+Cooked Fish=Pescado cocido
+Sashimi=Sashimi
+Worm=Gusano
+Fishing Rod (USE to cast and again when the time is right)=Caña de pescar (Botón principal para lanzar, cuando sea el momento adecuado vuelve a presionarlo)
+Baited Fishing Rod=Caña de pescar con cebo
+Inventory full, Fish Got Away!=Inventario lleno, ¡el pez se ha escapado!
+
+#flight.lua
+Flight Potion=Poción de vuelo
+Flight timer about to expire!=¡El tiempo de vuelo está apunto de acabarse!
+Flight already granted, @1 seconds left!=El vuelo ya ha sido otorgado, ¡te quedan @1 segundos!
+Flight granted, you have @1 seconds!=Ya puedes volar, ¡tienes @1 segundos!
+
+#food.lua
+Banana Bunch=Racimo de bananas
+Firethorn Jelly=Jalea de Firethorn
+Lemon=Limón
+Candied Lemon=Limón confitado
+Lemonade=Limonada
+Olive=Aceituna
+Olive Oil=Aceite de oliva
+Kappa Maki Sushi=Sushi Kappa Maki
+Nigiri Sushi=Sushi Nigiri
+Tamago Sushi=Sushi Tamago
+Fugusashi=Fugusashi
+Teriyaki Chicken=Pollo Teriyaki
+Teriyaki Beef=Asado Teriyaki
+Banana=Banana
+Banana Dough=Masa de banana
+Orange=Naranja
+Pine Nuts=Piñones
+Banana Loaf=Pan de banana
+Coconut=Coco
+Coconut Slice=Trozo de coco
+Golden Apple=Manzana de oro
+Hearty Stew=Guiso abundante
+Bucket of Cactus Pulp=Cubo de pulpa de cactus
+
+#gates.lua
+Scorched Wood Fence Gate=Puerta de cerca de madera quemada
+Frost Wood Fence Gate=Puerta de cerca de madera congelada
+Redwood Fence Gate=Puerta de cerca de secoya
+Willow Wood Fence Gate=Puerta de cerca de sauce
+Healing Wood Fence Gate=Puera de cerca de madera de arbol sanador
+Palm Wood Fence Gate=Puerta de cerca de madera de palma
+Banana Wood Fence Gate=Puerta de cerca de madera de banana
+Mushroom Trunk Fence Gate=Puerta de cerca de tronco de champiñones
+Birch Wood Fence Gate=Puerta de cerca de madera de abedul
+
+#init.lua
+[MOD] Ethereal loaded=[MOD] Ethereal cargado
+
+#leaves.lua
+Sakura Leaves=Hojas de sakura
+Lemon Tree Leaves=Hojas de limonero
+Olive Tree Leaves=Hojas de olivo
+Willow Twig=Ramas de sauce
+Redwood Leaves=Hojas de secoya
+Orange Leaves=Hojas de naranja
+Banana Leaves=Hojas de banana
+Healing Tree Leaves=Hojas de árbol sanador
+Palm Leaves=Hojas de palma
+Birch Leaves=Hojas de abedul
+Frost Leaves=Hojas congeladas
+Bamboo Leaves=Hojas de bamboo
+Mushroom Cap=Sombrero de champiñón
+Mushroom Pore=Esporas de champiñón
+Bush=Arbusto
+Bush #2=Arbusto #2
+Bush #3=Arbusto #3
+
+#mushroom.lua
+Mushroom Soup=Sopa de champiñón
+
+#onion.lua
+Wild Onion=Cebolla silvestre
+
+#plantlife.lua
+Firethorn Shrub=Arbusto de Firethorn
+Fire Flower=Flor de fuego
+Fire Dust=Polvo de fuego
+Vine=Enredadera
+Light String Vine=Enredadera luminosa
+Fern=Helecho
+Fern Tubers=Tubérculos de helecho
+Fiery Dry Shrub=Arbusto seco de fuego
+Snowy Grass=Pasto nevado
+Crystal Grass=Pasto de cristal
+Crystal Moss=Musgo de cristal
+Mushroom Moss=Musgo de champiñón
+Fiery Moss=Musgo ardiente
+Gray Moss=Musgo gris
+Green Moss=Musgo verde
+Red Illumishroom=Champiluz roja
+Green Illumishroom=Champiluz verde
+Cyan Illumishroom=Champiluz turquesa
+
+#sapling.lua
+Giant Redwood Tree Sapling=Retoño de secoya gigante
+Sakura Tree Sapling=Retoño de sakura
+Lemon Tree Sapling=Retoño de limonero
+Olive Tree Sapling=Retoño de olivo
+Bamboo Sprout=Brote de bamboo
+Willow Tree Sapling=Retoño de sauce
+Healing Tree Sapling=Retoño de árbol sanador
+Apple Tree Sapling=Retoño de manzano
+Jungle Tree Sapling=Retoño de árbol tropical
+Pine Tree Sapling=Retoño de pino
+Big Tree Sapling=Retoño de árbol gigante
+Banana Tree Sapling=Retoño de banana
+Frost Tree Sapling=Retoño de árbol congelado
+Mushroom Tree Sapling=Retoño de champiñón
+Palm Tree Sapling=Retoño de Palma
+Redwood Tree Sapling=Retoño de secoya
+Orange Tree Sapling=Retoño de naranja
+Birch Tree Sapling=Retoño de abedul
+Schematic not found=Schematica no encontrada
+
+#sealife.lua
+Agar Powder=Polvo de Agar
+Sponge=Esponja de mar
+Wet sponge=Esponja de mar con agua
+Seaweed=Alga marina
+Blue Glow Coral=Coral azul brillante
+Orange Glow Coral=Coral naranjo brillante
+Pink Glow Coral=Coral rosado brillante
+Green Glow Coral=Coral verde brillante
+
+#stairs.lua
+Blue Marble Stair=Escalera de marmol azul
+Blue Marble Tile=Baldosa de marmol azul
+Sakura Wood Stair=Escalera de madera de sakura 
+Sakura Wood Tile=Baldosa de madera de sakura
+Olive Wood Stair=Escalera de madera de olivo
+Olive Wood Tile=Baldosa de madera de olivo
+Crystal Block Stair=Escalera de bloque de cristal
+Crystal Block Slab=Losa de bloque de cristal
+Ice Brick Stair=Escalera de ladrillo de hielo
+Ice Brick Slab=Losa de ladrillo de hielo
+Snow Brick Stair=Escalera de ladrillo de nieve
+Snow Brick Slab=Losa de ladrillo de nieve
+Dried Dirt Stair=Escalera de tierra seca
+Dried Dirt Slab=Losa de tiera seca
+Mushroom Trunk Stair=Escalera de tronco de champiñón
+Mushroom Trunk Slab=Losa de tronco de champiñón
+Mushroom Top Stair=Escalera de sombrero de champiñón
+Mushroom Top Slab=Losa de sombrero de champiñón
+Frost Wood Stair=Escalera de madera congelada
+Frost Wood Slab=Losa de madera congelada
+Healing Wood Stair=Escalera de madera de árbol sanador
+Healing Wood Slab=Losa de madera de árbol sanador
+Palm Wood Stair=Escalera de madera de palma
+Palm Wood Slab=Losa de madera de palma
+Birch Wood Stair=Escalera de madera de abedul
+Birch Wood Slab=Losa de madera de abedul
+Banana Wood Stair=Escalera de madera de banana
+Banana Wood Slab=Losa de madera de banana
+Willow Wood Stair=Escalera de madera de sauce
+Willow Wood Slab=Losa de madera de sauce
+Redwood Stair=Escalera de secoya
+Redwood Slab=Losa de secoya
+Bamboo Stair=Escalera de bamboo
+Bamboo Slab=Losa de bamboo
+Dry Dirt=Tierra seca
+Mushroom Trunk=Tronco de champiñón
+Mushroom Top=Sombrero de champión
+Healing Wood=Madera de árbol sanador
+Redwood=Secoya
+
+#strawberry.lua
+Strawberry=Fresa
+
+#water.lua
+Ice Brick=Ladrillo de hielo
+Snow Brick=Ladrillo de nieve
+
+#wood.lua
+Sakura Trunk=Tronco de sakura
+Sakura Wood=Madera de sakura
+Olive Trunk=Tronco de olivo
+Olive Wood=Madera de olivo
+Willow Trunk=Tronco de sauce
+Willow Wood=Madera de sauce
+Redwood Trunk=Tronco de secoya
+Redwood Wood=Madera de secoya
+Frost Tree=Árbol sanador
+Frost Wood=Madera congelada
+Healing Tree Trunk=Tronco de árbol sanador
+Healing Tree Wood=Madera de árbol sanador
+Palm Trunk=Tronco de palma
+Palm Wood=Madera de palma
+Banana Trunk=Tronco de banana
+Banana Wood=Madera de banana
+Scorched Tree=Árbol quemado
+Mushroom=Champiñón
+Birch Trunk=Tronco de abedul
+Birch Wood=Madera de abedul
+Bamboo=Bamboo

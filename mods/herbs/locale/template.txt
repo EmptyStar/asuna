@@ -1,0 +1,26 @@
+# textdomain: herbs
+
+
+### init.lua ###
+
+Achillea White=
+Amanita Green=
+Anagallis Yellow=
+Antirrhinum=
+Boletus=
+Campanula Blue=
+Cantharellus=
+Centaurea=
+Digitalis Blue=
+Digitalis Yellow=
+Dosera round=
+Galerina=
+Gyromitra=
+Iris=
+Leontopodium White=
+Leucanthemum White=
+Macrolepiota=
+Papaver Red=
+Plantago=
+Trifolium Red=
+Trifolium White=

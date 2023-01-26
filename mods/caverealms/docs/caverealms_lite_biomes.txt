@@ -1,0 +1,19 @@
+Biome #, Biome name, "floor node"
+
+
+0, None
+1, Moss,             "caverealms:stone_with_moss"
+2, Fungal,           "caverealms:stone_with_lichen"
+3, Algae,            "caverealms:stone_with_algae"
+4, Glaciated,        "caverealms:thin_ice"
+
+The following are "deep realms"
+
+5, Deep Glaciated,   "default:ice"
+6, DM,               "caverealms:hot_cobble"
+7, Salt Crystal,     "caverealms:stone_with_salt"
+8, Glow Obsidian,    "caverealms:glow_obsidian"
+                         OR "caverealms:glow_obsidian2"
+9, Coal,             "default:coalblock"
+                         OR "caverealms:coal_dust"
+                         OR "default:desert_sand"

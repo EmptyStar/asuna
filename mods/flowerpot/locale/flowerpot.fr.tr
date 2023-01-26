@@ -1,0 +1,9 @@
+# textdomain: flowerpot
+
+# Translation fr by Louis Royer
+
+@1 is not a known node, unable to register flowerpot=@1 est un block inconnu, impossible d’enregister le pot de fleurs
+
+Flowerpot with @1=Pot de fleurs avec @1
+
+Flowerpot=Pot de fleurs

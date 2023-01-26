@@ -1,0 +1,1 @@
+based on code from Minetest game and all walls mod. Textures created by JoeEnderman with Stable Diffusion, Gimp, Planet Minecraft, and Blockbench.

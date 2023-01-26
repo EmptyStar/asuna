@@ -1,0 +1,23 @@
+All of the music in this mod is listed/credited below by author, license, and source. Each track followed by an asterisk (`*`) has been edited from its original form, often to trim and fade the end of the track.
+
+- **Scott Buckley** -- [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), <https://www.scottbuckley.com.au/>
+  - Blood (blood.ogg)*
+  - Castles In The Sky (castlesinthesky.ogg)*
+  - Firefly (firefly.ogg)
+  - Jul (jul.ogg)*
+  - Machina (machina.ogg)*
+  - Reparateur (reparateur.ogg)*
+  - Skyward (skyward.ogg)*
+  - Tears In Rain (tearsinrain.ogg)*
+  - The Long Way Home (thelongwayhome.ogg)*
+  - Cobalt (cobalt.ogg)*
+  - Moonlight (moonlight.ogg)*
+  - Never Dying (neverdying.ogg)*
+- **Kevin MacLeod** -- [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/), <https://incompetech.com/>
+  - Bathed in the Light (bathedinthelight.ogg)
+- **Kevin MacLeod** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
+  - Screen Saver (screensaver.ogg)*
+  - Roquefort Prolog (roquefortprolog.ogg)*
+  - Infinite Peace (infinitepeace.ogg)*
+- **Rafael Krux** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
+  - Walking Stars (walkingstars.ogg)*

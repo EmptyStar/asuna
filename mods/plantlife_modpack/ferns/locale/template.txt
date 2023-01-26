@@ -1,0 +1,23 @@
+# textdomain: ferns
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+
+Fiddlehead=
+Roasted Fiddlehead=
+Fern Tuber=
+Roasted Fern Tuber=
+Lady-fern (Athyrium)=
+Tree Fern Crown (Dicksonia)=
+Giant Tree Fern Leaves=
+Giant Tree Fern Leave End=
+Giant Fern Trunk=
+Giant Tree Fern Sapling=
+Young Horsetail (Equisetum)=
+Horsetail (Equisetum)=
+Fern Trunk (Dicksonia)=
+Tree Fern Sapling (Dicksonia)=

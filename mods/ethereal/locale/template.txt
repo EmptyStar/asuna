@@ -1,0 +1,294 @@
+# Template for translations of ethereal mod
+# last update: 2022/June/04
+
+#biomes.lua
+Blue Marble=
+Blue Marble Tile=
+
+#bonemeal.lua
+Bone=Hueso
+Bone Meal=
+
+#crystal.lua
+Crystal Spike=
+Crystal Ingot=
+Crystal Block=
+Crystal Sword=
+Crystal Axe=
+Crystal Pickaxe=
+Crystal Shovel=
+Crystal Gilly Staff=
+
+#dirt.lua
+Green Dirt=
+Dried Dirt=
+Bamboo Dirt=
+Jungle Dirt=
+Grove Dirt=
+Prairie Dirt=
+Cold Dirt=
+Crystal Dirt=
+Mushroom Dirt=
+Fiery Dirt=
+Gray Dirt=
+Red Baked Clay=
+Orange Baked Clay=
+Grey Baked Clay=
+Quicksand=
+
+#extra.lua
+Bamboo Floor=
+Palm Wax=
+Candle=
+Black Candle=
+Blue Candle=
+Brown Candle=
+Cyan Candle=
+Dark Green Candle=
+Dark Grey Candle=
+Green Candle=
+Grey Candle=
+Magenta Candle=
+Orange Candle=
+Pink Candle=
+Red Candle=
+Violet Candle=
+Yellow Candle=
+Bowl=
+Stone Ladder=
+Paper Wall=
+Glo Stone=
+Lump of Charcoal=
+Staff of Light=
+Etherium Dust=
+Etherium Ore=
+Bamboo Block=
+
+#fences.lua
+Scorched Fence=
+Frost Fence=
+Redwood Fence=
+Willow Fence=
+Healing Wood Fence=
+Palm Fence=
+Banana Wood Fence=
+Mushroom Fence=
+Birch Fence=
+Sakura Wood Door=
+
+#fishing.lua
+Blue Fin=
+Blue Ram=
+Catfish=
+Clownfish=
+Pike=
+Flathead=
+Plaice=
+Pufferfish=
+Coy=
+Salmon=
+Cichlid=
+Angler=
+Jellyfish=
+Seahorse=
+Piranha=
+Trout=
+Raw Fish=
+Cooked Fish=
+Sashimi=
+Worm=
+Fishing Rod (USE to cast and again when the time is right)=
+Baited Fishing Rod=
+Inventory full, Fish Got Away!=
+
+#flight.lua
+Flight Potion=
+Flight timer about to expire!=
+Flight already granted, @1 seconds left!=
+Flight granted, you have @1 seconds!=
+
+#food.lua
+Banana Bunch=
+Firethorn Jelly=
+Lemon=
+Candied Lemon=
+Lemonade=
+Olive=
+Olive Oil=
+Kappa Maki Sushi=
+Nigiri Sushi=
+Tamago Sushi=
+Fugusashi=
+Teriyaki Chicken=
+Teriyaki Beef=
+Banana=
+Banana Dough=
+Orange=
+Pine Nuts=
+Banana Loaf=
+Coconut=
+Coconut Slice=
+Golden Apple=
+Hearty Stew=
+Bucket of Cactus Pulp=
+
+#gates.lua
+Scorched Wood Fence Gate=
+Frost Wood Fence Gate=
+Redwood Fence Gate=
+Willow Wood Fence Gate=
+Healing Wood Fence Gate=
+Palm Wood Fence Gate=
+Banana Wood Fence Gate=
+Mushroom Trunk Fence Gate=
+Birch Wood Fence Gate=
+
+#init.lua
+[MOD] Ethereal loaded=
+
+#leaves.lua
+Sakura Leaves=
+Lemon Tree Leaves=
+Olive Tree Leaves=
+Willow Twig=
+Redwood Leaves=
+Orange Leaves=
+Banana Leaves=
+Healing Tree Leaves=
+Palm Leaves=
+Birch Leaves=
+Frost Leaves=
+Bamboo Leaves=
+Mushroom Cap=
+Mushroom Pore=
+Bush=
+Bush #2=
+Bush #3=
+
+#mushroom.lua
+Mushroom Soup=
+
+#onion.lua
+Wild Onion=
+
+#plantlife.lua
+Firethorn Shrub=
+Fire Flower=
+Fire Dust=
+Vine=
+Light String Vine=
+Fern=
+Fern Tubers=
+Fiery Dry Shrub=
+Snowy Grass=
+Crystal Grass=
+Crystal Moss=
+Mushroom Moss=
+Fiery Moss=
+Gray Moss=
+Green Moss=
+Red Illumishroom=
+Green Illumishroom=
+Cyan Illumishroom=
+
+#sapling.lua
+Giant Redwood Tree Sapling=
+Sakura Tree Sapling=
+Lemon Tree Sapling=
+Olive Tree Sapling=
+Bamboo Sprout=
+Willow Tree Sapling=
+Healing Tree Sapling=
+Apple Tree Sapling=
+Jungle Tree Sapling=
+Pine Tree Sapling=
+Big Tree Sapling=
+Banana Tree Sapling=
+Frost Tree Sapling=
+Mushroom Tree Sapling=
+Palm Tree Sapling=
+Redwood Tree Sapling=
+Orange Tree Sapling=
+Birch Tree Sapling=
+Schematic not found=
+
+#sealife.lua
+Agar Powder=
+Sponge=
+Wet sponge=
+Seaweed=
+Blue Glow Coral=
+Orange Glow Coral=
+Pink Glow Coral=
+Green Glow Coral=
+
+#stairs.lua
+Blue Marble Stair=
+Blue Marble Tile=
+Sakura Wood Stair= 
+Sakura Wood Tile=
+Olive Wood Stair=
+Olive Wood Tile=
+Crystal Block Stair=
+Crystal Block Slab=
+Ice Brick Stair=
+Ice Brick Slab=
+Snow Brick Stair=
+Snow Brick Slab=
+Dried Dirt Stair=
+Dried Dirt Slab=
+Mushroom Trunk Stair=
+Mushroom Trunk Slab=
+Mushroom Top Stair=
+Mushroom Top Slab=
+Frost Wood Stair=
+Frost Wood Slab=
+Healing Wood Stair=
+Healing Wood Slab=
+Palm Wood Stair=
+Palm Wood Slab=
+Birch Wood Stair=
+Birch Wood Slab=
+Banana Wood Stair=
+Banana Wood Slab=
+Willow Wood Stair=
+Willow Wood Slab=
+Redwood Stair=
+Redwood Slab=
+Bamboo Stair=
+Bamboo Slab=
+Dry Dirt=
+Mushroom Trunk=
+Mushroom Top=
+Healing Wood=
+Redwood=
+
+#strawberry.lua
+Strawberry=
+
+#water.lua
+Ice Brick=
+Snow Brick=
+
+#wood.lua
+Sakura Trunk=
+Sakura Wood=
+Olive Trunk=
+Olive Wood=
+Willow Trunk=
+Willow Wood=
+Redwood Trunk=
+Redwood Wood=
+Frost Tree=
+Frost Wood=
+Healing Tree Trunk=
+Healing Tree Wood=
+Palm Trunk=
+Palm Wood=
+Banana Trunk=
+Banana Wood=
+Scorched Tree=
+Mushroom=
+Birch Trunk=
+Birch Wood=
+Bamboo=

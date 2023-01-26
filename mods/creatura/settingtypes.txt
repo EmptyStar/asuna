@@ -1,0 +1,35 @@
+# How mobs step up nodes. 
+#
+# - Simple means mobs use Minetests builtin stepping.
+# - Fancy means mobs will step up nodes with a quick hop but can cause lag.
+creatura_step_type (Step Type) enum simple simple,fancy
+
+# How often (in seconds) the spawn ABM is called
+creatura_spawn_interval (Spawn ABM Interval) int 10
+
+# Time (in seconds) between spawn steps
+creatura_spawn_step (Spawn Step Interval) int 15
+
+# Allows Mobs to spawn during chunk generation (If dependent mods use spawn_on_gen)
+creatura_mapgen_spawning (Mapgen Spawning) bool true
+
+# How many chunks are generated before a Mob can spawn
+creatura_mapgen_spawn_interval (Mapgen Spawning Interval) int 5
+
+# How many Mobs can be a in a Mapblock before ABM spawning is blocked
+creatura_mapblock_limit (Max Mobs per Mapblock) int 12
+
+# How many Mobs can be within Active Block Send Range of an attempted spawn before stopping attempt
+creatura_abr_limit (Max Mobs within ABR) int 24
+
+# Minimum distance to a player for ABM Spawning
+creatura_min_abm_dist (Minimum ABM Spawning Distance) int 32
+
+# Allows Mobs to spawn in protected areas
+creatura_protected_spawn (Protected Area Spawning) bool true
+
+# Allotted time (in μs) per step for A* pathfinding (lower means less lag but slower pathfinding)
+creatura_a_star_alloted_time (A* Pathfinding Alloted time per step) int 500
+
+# Allotted time (in μs) per step for Theta* pathfinding (lower means less lag but slower pathfinding)
+creatura_theta_star_alloted_time (Theta* Pathfinding Alloted time per step) int 700

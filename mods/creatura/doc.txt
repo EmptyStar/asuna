@@ -1,0 +1,216 @@
+
+Registration
+------------
+
+creatura.register_mob(name, mob definition)
+
+Mob Definition uses almost all entity definition params
+
+{
+	max_health = 10 -- Maximum Health
+	damage = 0 -- Damage dealt by mob
+	speed = 4 -- Maximum Speed
+	tracking_range = 16 -- Maximum range for finding entities/blocks
+	despawn_after = 1500 -- Despawn after being active for this amount of time
+
+	max_fall = 8 -- How far a mob can fall before taking damage (set to 0 to disable fall damage)
+	turn_rate = 7 -- Turn Rate in rad/s
+	bouyancy_multiplier = 1 -- Multiplier for bouyancy effects (set to 0 to disable bouyancy)
+	hydrodynamics_multiplier = 1 -- Multiplier for hydroynamic effects (set to 0 to disable hydrodynamics)
+
+	hitbox = { -- Hitbox params (Uses custom registration to force get_pos() to always return bottom of box)
+		width = 0.5, (total width = width * 2. A width of 0.5 results in a box with a total width of 1)
+		height = 1 (total height of box)
+	}
+
+	animations = {
+		anim = {range = {x = 1, y = 10}, speed = 30, frame_blend = 0.3, loop = true}
+	}
+
+	drops = {
+		{name = (itemstring), min = 1, max = 3, chance = 1},
+	}
+	follow = {
+		"farming:seed_wheat",
+		"farming:seed_cotton"
+	}
+
+	utility_stack = {
+		-- Every second, all utilities in the stack are evaluated
+		-- Whichever utilitiy's get_score function returns the highest number will be executed
+		-- If multiple utilities have the same score, the one with the highest index is executed
+		[1] = {
+			`utility` -- name of utility to evaluate
+			`get_score` -- function (only accepts `self` as an arg) that returns a number
+		}
+	}
+
+	activate_func = function(self, staticdata, dtime_s) -- called upon activation
+	step_func = function(self, dtime, moveresult) -- called every server step
+	death_func = function(self) -- called when mobs health drops to/below 0
+}
+
+Lua Entity Methods
+------------------
+
+`move(pos, method, speed, animation)`
+- `pos`: position to move to
+- `method`: method used to move to `pos`
+- `speed`: multiplier for `speed`
+- `animation`: animation to play while moving
+
+`halt()`
+- stops movement
+
+`turn_to(yaw[, turn_rate])`
+- `yaw`: yaw (in radians) to turn to
+- `turn_rate`: turn rate in rad/s (default: 10) -- likely to be deprecated
+
+`set_gravity(gravity)`
+- `gravity`: vertical acceleration rate
+
+`set_forward_velocity(speed)`
+- `speed`: rate in m/s to travel forward at
+
+`set_vertical_velocity(speed)`
+- `speed`: rate in m/s to travel vertically at
+
+`apply_knockback(dir, power)`
+- `dir`: direction vector
+- `power`: multiplier for dir
+
+`punch_target(target)`
+- applies 'damage' to 'target'
+
+`hurt(damage)`
+- `damage`: number to subtract from health (ignores armor)
+
+`heal(health)`
+- `health`: number to add to health
+
+`get_center_pos()`
+- returns position at center of hitbox
+
+`pos_in_box(pos[, size])`
+- returns true if 'pos' is within hitbox
+- `size`: width of box to check in (optional)
+
+`animate(anim)`
+- sets animation to `anim`
+
+`set_texture(id, tbl)`
+- `id`: table index
+- `tbl`: table of textures
+
+`set_scale(x)`
+- `x`: multiplier for base scale (0.5 sets scale to half, 2 sets scale to double)
+
+`fix_attached_scale(parent)`
+- sets scale to appropriate value when attached to 'parent'
+- `parent`: object
+
+`memorize(id, val)`
+-- stores `val` to staticdata
+- `id`: key for table
+- `val`: value to store
+
+`forget(id)`
+-- removes `id` from staticdata
+
+`recall(id)`
+-- returns value of `id` from staticdata
+
+`timer(n)`
+-- returns true avery `n` seconds
+
+`get_hitbox()`
+-- returns current hitbox
+
+`get_height()`
+-- returns current height
+
+`get_visual_size()`
+-- returns current visual size
+
+`follow_wielded_item(player)`
+-- returns itemstack, item name of `player`s wielded item if item is in 'follow'
+
+`get_target(target)`
+-- returns if `target` is alive, if mob has a line of sight with `target`, position of `target`
+
+Utilities
+---------
+
+* `creatura.is_valid(mob)`
+	* Returns false if object doesn't exist, otherwise returns ObjectRef/PlayerRef
+	* `mob`: Luaentity, ObjectRef, or PlayerRef
+
+* `creatura.is_alive(mob)`
+	* Returns false if object doesn't exist or is dead, otherwise returns ObjectRef/PlayerRef
+	* `mob`: Luaentity, ObjectRef, or PlayerRef
+
+Environment access
+------------------
+
+* `creatura.get_node_height_from_def(name)`
+	-- Returns total height of nodebox
+	-- `name`: Itemstring/Name of node
+
+
+* `creatura.get_node_def(node)`
+	-- Returns definition of node
+	-- `node`: Itemstring/Name of node or position
+
+* `creatura.get_ground_level(pos, max_diff)`
+	* Returns first position above walkable node within `max_diff`
+
+* `creatura.is_pos_moveable(pos, width, height)`
+	* Returns true if a box with specified `width` and `height` can fit at `pos`
+	* `width` should be the largest side of the collision box
+	* Check from bottom of box
+
+* `creatura.fast_ray_sight(pos1, pos2, water)`
+	* Checks for line of sight between `pos1 and `pos2`
+	* Returns bool
+	* Returns distance to obstruction
+
+* `creatura.sensor_floor(self, range, water)`
+	* Finds distance to ground from bottom of entities hitbox
+	* Returns distance to ground or `range` if no ground is found
+	* `range`: Maximum range
+	* `water`: If false, water will not be counted as ground 
+
+* `creatura.sensor_ceil(self, range, water)`
+	* Finds distance to ceiling from top of entities hitbox
+	* Returns distance to ceiling or `range` if no ceiling is found
+	* `range`: Maximum range
+	* `water`: If false, water will not be counted as ceiling
+
+* `creatura.get_nearby_player(self)`
+	* Finds player within `self.tracking_range`
+	* Returns PlayerRef or nil
+
+* `creatura.get_nearby_players(self)`
+	* Finds players within `self.tracking_range`
+	* Returns table of PlayerRefs or empty table
+
+* `creatura.get_nearby_object(self, name)`
+	* Finds object within `self.tracking_range`
+	* Returns ObjectRef or nil
+	* `name`: Name of object to search for
+
+* `creatura.get_nearby_objects(self, name)`
+	* Finds objects within `self.tracking_range`
+	* Returns table of ObjectRefs or empty table
+	* `name`: Name of object to search for
+
+Global Mob API
+--------------
+
+* `creatura.drop_items(self)`
+	* Drops items from `self.drops`
+
+* `creatura.basic_punch_func(self, puncher, time_from_last_punch, tool_capabilities, direction, damage)`
+	* Deals damage
+	* Applies knockback
+	* Visualy and audibly indicates damage
