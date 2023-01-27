@@ -1,0 +1,2 @@
+#    Registers compatibility aliases with the older colored_clay mod
+colored_clay_compatibility (Colored Clay Compatibility) bool false
