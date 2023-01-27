@@ -12,7 +12,6 @@ All of the music in this mod is listed/credited below by author, license, and so
   - The Long Way Home (thelongwayhome.ogg)*
   - Cobalt (cobalt.ogg)*
   - Moonlight (moonlight.ogg)*
-  - Never Dying (neverdying.ogg)*
 - **Kevin MacLeod** -- [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/), <https://incompetech.com/>
   - Bathed in the Light (bathedinthelight.ogg)
 - **Kevin MacLeod** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
