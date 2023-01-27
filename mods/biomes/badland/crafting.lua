@@ -7,25 +7,10 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "badland:bowl 2",
-	recipe = {
-		{"group:wood"},
-	}
-})
-
-minetest.register_craft({
 	output = "badland:badland_sapling",
 	recipe = {
 		{"default:stick", "badland:badland_leaves"},
 		{"badland:badland_leaves", "badland:badland_leaves"},
-	}
-})
-
-minetest.register_craft({
-	output = "badland:mushroom_bowl 1",
-	recipe = {
-		{"flowers:mushroom_brown", "flowers:mushroom_red"},
-		{"badland:toadstool", "badland:bowl"},
 	}
 })
 
