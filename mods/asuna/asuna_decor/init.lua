@@ -55,6 +55,7 @@ local flower_colors = {
 		"herbs:campanula_blue",
 		"herbs:centaurea",
 		"herbs:digitalis_blue",
+		"bakedclay:delphinium",
 	},
 	orange = {
 		"beautiflowers:dafne",
@@ -98,7 +99,6 @@ local flower_colors = {
 		"flowers:viola",
 		"beautiflowers:xena",
 		"herbs:iris",
-
 	},
 	red = {
 		"beautiflowers:jennifer",
@@ -115,7 +115,7 @@ local flower_colors = {
 		"beautiflowers:noelia",
 		"flowers:rose",
 		"herbs:dosera",
-		"herbs:papver_red",
+		"herbs:papaver_red",
 	},
 	pink = {
 		"beautiflowers:cristina",
@@ -133,6 +133,8 @@ local flower_colors = {
 		"beautiflowers:talia",
 		"herbs:antirrhinum",
 		"herbs:trifolium_red",
+		"bakedclay:thistle",
+		"bakedclay:lazarus",
 	},
 	green = {
 		"flowers:chrysanthemum_green",
@@ -143,6 +145,7 @@ local flower_colors = {
 		"beautiflowers:pasto_8",
 		"beautiflowers:pasto_9",
 		"beautiflowers:pasto_10",
+		"bakedclay:mannagrass",
 	},
 	red_mushroom = {
 		"flowers:mushroom_red",
