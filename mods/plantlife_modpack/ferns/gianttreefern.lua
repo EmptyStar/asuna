@@ -371,6 +371,7 @@ minetest.register_decoration({
 	},
 	y_min = 3,
 	y_max = 31000,
+	place_offset_y = 1,
 	schematic = minetest.get_modpath("ferns") .. "/schematics/tree_fern.mts",
 	flags = "place_center_x, place_center_z,force_placement",
 })
