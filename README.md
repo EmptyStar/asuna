@@ -5,7 +5,7 @@ Welcome to the vast and vibrant world of Asuna! Journey through a potpourri of n
 
 This passion project brings together some of the very best biome and world decoration mods that the Minetest community has published. Much of Asuna's beauty is owed to the mod authors who have openly shared the fruits of their hard work and imagination. Asuna stands to honor these authors and their work.
 
-**NOTE: This game is currently a work in progress!**
+**NOTE: This game is currently a work in progress!** [Bug reports and feature requests are welcome](https://github.com/EmptyStar/asuna/issues).
 
 Features
 --------
@@ -17,6 +17,7 @@ Asuna provides a wealth of biomes, flora, fauna, and a few other extras. Primary
 - 30+ farming crops to grow and harvest ([Better Farming](https://content.minetest.net/packages/Atlante/better_farming/))
 - 16 different animals to be found in their natural habitats ([Animalia](https://content.minetest.net/packages/ElCeejo/animalia/))
 - Many new decorative stones to unearth ([Too Many Stones](https://content.minetest.net/packages/JoeEnderman/too_many_stones/))
+- 16 atmospheric background music tracks (curated specifically for Asuna in [asuna_music](https://github.com/EmptyStar/asuna/tree/main/mods/asuna/asuna_music) and played via [Music Modpack](https://content.minetest.net/packages/mt-mods/music_modpack/))
 
 Gameplay
 --------
