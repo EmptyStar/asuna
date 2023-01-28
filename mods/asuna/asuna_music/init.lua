@@ -65,7 +65,6 @@ for track,length in pairs({
   tearsinrain = 172,
   screensaver = 113,
   cobalt = 176,
-  neverdying = 169,
   infinitepeace = 73,
 }) do
   music.register_track({
