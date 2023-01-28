@@ -162,7 +162,7 @@ asuna.biomes = {
     shore = "ethereal:quicksand2",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.mushroom,
+    caverealm = caverealms_biomes.fungal,
     dungeon = "greenstone",
   },
 
