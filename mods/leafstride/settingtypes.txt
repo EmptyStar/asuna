@@ -1,0 +1,2 @@
+# The amount of node move_resistance to apply to leaves. Value can range from 0 (leaves do not slow down players) to 7 (leaves greatly slow down players).
+leafstride_move_resistance (Leaves movement resistance) int 2 0 7
