@@ -79,8 +79,8 @@ asuna.biomes = {
   },
 
   plains = {
-    heat = 55,
-    humidity = 34,
+    heat = 56,
+    humidity = 32,
     y_min = 2,
     y_max = 92,
     y_blend = 4,
@@ -100,8 +100,8 @@ asuna.biomes = {
   },
 
   prairie = {
-    heat = 44,
-    humidity = 45,
+    heat = 42,
+    humidity = 47,
     y_min = 2,
     y_max = 32,
     y_blend = 4,
@@ -121,8 +121,8 @@ asuna.biomes = {
   },
 
   dorwinion = {
-    heat = 50,
-    humidity = 41,
+    heat = 49,
+    humidity = 42,
     y_min = 2,
     y_max = 31000,
     nodes = {
@@ -146,8 +146,8 @@ asuna.biomes = {
   },
 
   quicksand = {
-    heat = 68,
-    humidity = 86,
+    heat = 67,
+    humidity = 85,
     y_min = 1,
     y_max = 2,
     nodes = {
@@ -306,8 +306,8 @@ asuna.biomes = {
   },
 
   savanna = {
-    heat = 58,
-    humidity = 27,
+    heat = 57,
+    humidity = 29,
     y_min = 2,
     y_max = 31000,
     nodes = {
@@ -503,7 +503,7 @@ asuna.biomes = {
 
   grassytwo = {
     heat = 38,
-    humidity = 40,
+    humidity = 41,
     y_min = 2,
     y_max = 92,
     y_blend = 4,
@@ -575,7 +575,7 @@ asuna.biomes = {
 
   deciduous_forest = {
     heat = 36,
-    humidity = 50,
+    humidity = 52,
     y_min = 2,
     y_max = 192,
     nodes = {
@@ -1140,71 +1140,3 @@ minetest.register_decoration({
     flags = "eased"
   },
 })
-
---[[
-  Biome API noise settings
-]]
-
--- Set heat noise params
-minetest.set_mapgen_setting_noiseparams("mg_biome_np_heat",{
-  flags = "default",
-  lacunarity = 1.6,
-  persistence = 0.6,
-  seed = 5349,
-  spread = {
-    x = 1200,
-    y = 1200,
-    z = 1200,
-  },
-  scale = 50,
-  octaves = 3,
-  offset = 50,
-},true)
-
--- Set humidity noise params
-minetest.set_mapgen_setting_noiseparams("mg_biome_np_humidity",{
-  flags = "default",
-  lacunarity = 1.6,
-  persistence = 0.6,
-  seed = 842,
-  spread = {
-    x = 1200,
-    y = 1200,
-    z = 1200,
-  },
-  scale = 50,
-  octaves = 3,
-  offset = 50,
-},true)
-
--- Set heat blend noise params
-minetest.set_mapgen_setting_noiseparams("mg_biome_np_heat_blend",{
-  flags = "eased",
-  lacunarity = 1.75,
-  persistence = 0.65,
-  seed = 13,
-  spread = {
-    x = 16,
-    y = 16,
-    z = 16,
-  },
-  scale = 1,
-  octaves = 2,
-  offset = 0,
-},true)
-
--- Set humidity blend noise params
-minetest.set_mapgen_setting_noiseparams("mg_biome_np_humidity_blend",{
-  flags = "eased",
-  lacunarity = 1.75,
-  persistence = 0.65,
-  seed = 90003,
-  spread = {
-    x = 16,
-    y = 16,
-    z = 16,
-  },
-  scale = 1,
-  octaves = 2,
-  offset = 0,
-},true)
