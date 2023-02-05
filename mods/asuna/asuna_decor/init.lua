@@ -9,14 +9,10 @@ asuna.decor = {}
 -- Group flowers by color
 local flower_colors = {
 	black = {
-		"beautiflowers:pasto_1",
-		"beautiflowers:pasto_2",
-		"beautiflowers:pasto_3",
 		"flowers:tulip_black",
 	},
 	white = {
 		"beautiflowers:cloe",
-		"beautiflowers:diana",
 		"beautiflowers:genesis",
 		"beautiflowers:gloria",
 		"beautiflowers:hadassa",
@@ -35,15 +31,19 @@ local flower_colors = {
 	blue = {
 		"beautiflowers:astrid",
 		"beautiflowers:beatriz",
-		"beautiflowers:belen",
+		"beautiflowers:berta",
 		"beautiflowers:blanca",
 		"beautiflowers:casandra",
 		"beautiflowers:clara",
 		"beautiflowers:claudia",
 		"flowers:geranium",
+		"herbs:centaurea",
+		"herbs:campanula_blue",
+		"herbs:digitalis_blue",
+		"herbs:iris",
+		"bakedclay:delphinium",
 	},
 	cyan = {
-		"beautiflowers:berta",
 		"beautiflowers:thais",
 		"beautiflowers:valentina",
 		"beautiflowers:valeria",
@@ -52,10 +52,6 @@ local flower_colors = {
 		"beautiflowers:virginia",
 		"beautiflowers:xenia",
 		"beautiflowers:zadia",
-		"herbs:campanula_blue",
-		"herbs:centaurea",
-		"herbs:digitalis_blue",
-		"bakedclay:delphinium",
 	},
 	orange = {
 		"beautiflowers:dafne",
@@ -65,7 +61,7 @@ local flower_colors = {
 		"beautiflowers:erica",
 		"beautiflowers:estela",
 		"beautiflowers:eva",
-		"beautiflowers:fabiona",
+		"beautiflowers:fabiola",
 		"beautiflowers:fiona",
 		"beautiflowers:gala",
 		"flowers:tulip",
@@ -86,6 +82,7 @@ local flower_colors = {
 	},
 	purple = {
 		"beautiflowers:arleth",
+		"beautiflowers:belen",
 		"beautiflowers:minerva",
 		"beautiflowers:miriam",
 		"beautiflowers:nazareth",
@@ -98,7 +95,6 @@ local flower_colors = {
 		"beautiflowers:vanesa",
 		"flowers:viola",
 		"beautiflowers:xena",
-		"herbs:iris",
 	},
 	red = {
 		"beautiflowers:jennifer",
@@ -118,7 +114,9 @@ local flower_colors = {
 		"herbs:papaver_red",
 	},
 	pink = {
+		"beautiflowers:caroline",
 		"beautiflowers:cristina",
+		"beautiflowers:diana",
 		"beautiflowers:gisela",
 		"beautiflowers:olimpia",
 		"beautiflowers:oriana",
@@ -138,6 +136,9 @@ local flower_colors = {
 	},
 	green = {
 		"flowers:chrysanthemum_green",
+		"beautiflowers:pasto_1",
+		"beautiflowers:pasto_2",
+		"beautiflowers:pasto_3",
 		"beautiflowers:pasto_4",
 		"beautiflowers:pasto_5",
 		"beautiflowers:pasto_6",
