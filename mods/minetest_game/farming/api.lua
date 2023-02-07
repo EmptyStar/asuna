@@ -122,11 +122,11 @@ end
 
 -- how often node timers for plants will tick, +/- some random value
 local function tick(pos)
-	minetest.get_node_timer(pos):start(math.random(5, 10))
+	minetest.get_node_timer(pos):start(math.random(166, 286))
 end
 -- how often a growth failure tick is retried (e.g. too dark)
 local function tick_again(pos)
-	minetest.get_node_timer(pos):start(math.random(5, 10))
+	minetest.get_node_timer(pos):start(math.random(40, 80))
 end
 
 -- Seed placement
