@@ -84,13 +84,13 @@ hb.flowerdatas = {
 		"campanula_blue",
 		S("Campanula Blue"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
-		{color_cyan = 1, flammable = 1}
+		{color_blue = 1, flammable = 1}
 	},
 	{
 		"trifolium_red",
 		S("Trifolium Red"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
-		{color_violet = 1, flammable = 1}
+		{color_pink = 1, flammable = 1}
 	},
 	{
 		"trifolium_white",
@@ -102,7 +102,7 @@ hb.flowerdatas = {
 		"centaurea",
 		S("Centaurea"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
-		{color_cyan = 1, flammable = 1}
+		{color_blue = 1, flammable = 1}
 	},
     {
 		"anagallis_yellow",
@@ -114,7 +114,7 @@ hb.flowerdatas = {
 		"iris",
 		S("Iris"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
-		{color_cyan = 1, flammable = 1}
+		{color_blue = 1, flammable = 1}
 	},
 	{
 		"leucanthemum_white",
@@ -155,7 +155,7 @@ hb.flowerdatas = {
 	{	"digitalis_blue",
 		S("Digitalis Blue"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
-		{color_cyan = 1, flammable = 1}
+		{color_blue = 1, flammable = 1}
 	},
 	{
 		"digitalis_yellow",

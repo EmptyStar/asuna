@@ -9,14 +9,11 @@ asuna.decor = {}
 -- Group flowers by color
 local flower_colors = {
 	black = {
-		"beautiflowers:pasto_1",
-		"beautiflowers:pasto_2",
-		"beautiflowers:pasto_3",
 		"flowers:tulip_black",
 	},
 	white = {
+		"beautiflowers:carla",
 		"beautiflowers:cloe",
-		"beautiflowers:diana",
 		"beautiflowers:genesis",
 		"beautiflowers:gloria",
 		"beautiflowers:hadassa",
@@ -33,17 +30,16 @@ local flower_colors = {
 		"herbs:trifolium_white",
 	},
 	blue = {
-		"beautiflowers:astrid",
 		"beautiflowers:beatriz",
-		"beautiflowers:belen",
-		"beautiflowers:blanca",
-		"beautiflowers:casandra",
-		"beautiflowers:clara",
-		"beautiflowers:claudia",
+		"beautiflowers:berta",
 		"flowers:geranium",
+		"herbs:centaurea",
+		"herbs:campanula_blue",
+		"herbs:digitalis_blue",
+		"herbs:iris",
+		"bakedclay:delphinium",
 	},
 	cyan = {
-		"beautiflowers:berta",
 		"beautiflowers:thais",
 		"beautiflowers:valentina",
 		"beautiflowers:valeria",
@@ -52,10 +48,6 @@ local flower_colors = {
 		"beautiflowers:virginia",
 		"beautiflowers:xenia",
 		"beautiflowers:zadia",
-		"herbs:campanula_blue",
-		"herbs:centaurea",
-		"herbs:digitalis_blue",
-		"bakedclay:delphinium",
 	},
 	orange = {
 		"beautiflowers:dafne",
@@ -65,7 +57,7 @@ local flower_colors = {
 		"beautiflowers:erica",
 		"beautiflowers:estela",
 		"beautiflowers:eva",
-		"beautiflowers:fabiona",
+		"beautiflowers:fabiola",
 		"beautiflowers:fiona",
 		"beautiflowers:gala",
 		"flowers:tulip",
@@ -80,12 +72,17 @@ local flower_colors = {
 		"beautiflowers:any",
 		"flowers:dandelion_yellow",
 		"flowers:sunflower",
-		"herbs:anagallis",
 		"herbs:digitalis_yellow",
 		"herbs:plantago",
 	},
 	purple = {
 		"beautiflowers:arleth",
+		"beautiflowers:astrid",
+		"beautiflowers:belen",
+		"beautiflowers:blanca",
+		"beautiflowers:casandra",
+		"beautiflowers:clara",
+		"beautiflowers:claudia",
 		"beautiflowers:minerva",
 		"beautiflowers:miriam",
 		"beautiflowers:nazareth",
@@ -98,9 +95,9 @@ local flower_colors = {
 		"beautiflowers:vanesa",
 		"flowers:viola",
 		"beautiflowers:xena",
-		"herbs:iris",
 	},
 	red = {
+		"beautiflowers:arcoiris",
 		"beautiflowers:jennifer",
 		"beautiflowers:lara",
 		"beautiflowers:laura",
@@ -118,7 +115,9 @@ local flower_colors = {
 		"herbs:papaver_red",
 	},
 	pink = {
+		"beautiflowers:caroline",
 		"beautiflowers:cristina",
+		"beautiflowers:diana",
 		"beautiflowers:gisela",
 		"beautiflowers:olimpia",
 		"beautiflowers:oriana",
@@ -138,6 +137,9 @@ local flower_colors = {
 	},
 	green = {
 		"flowers:chrysanthemum_green",
+		"beautiflowers:pasto_1",
+		"beautiflowers:pasto_2",
+		"beautiflowers:pasto_3",
 		"beautiflowers:pasto_4",
 		"beautiflowers:pasto_5",
 		"beautiflowers:pasto_6",
@@ -290,7 +292,7 @@ minetest.register_decoration({
 	biomes = "prairie",
 	y_max = 31000,
 	y_min = 1,
-	decoration = cf({"cyan","white","orange","yellow"}).flowers,
+	decoration = cf({"blue","cyan","white","orange","yellow"}).flowers,
 })
 
 -- Special mushroom decor for the Mushroom biome
