@@ -3,7 +3,7 @@ S = minetest.get_translator("bakedclay")
 
 local flowers = {
 	{"delphinium", "Blue Delphinium",
-	{-0.15, -0.5, -0.15, 0.15, 0.3, 0.15}, {color_cyan = 1}},
+	{-0.15, -0.5, -0.15, 0.15, 0.3, 0.15}, {color_blue = 1}},
 
 	{"thistle", "Thistle",
 	{-0.15, -0.5, -0.15, 0.15, 0.2, 0.15}, {color_magenta = 1}},
