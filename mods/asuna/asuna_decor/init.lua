@@ -29,13 +29,8 @@ local flower_colors = {
 		"herbs:trifolium_white",
 	},
 	blue = {
-		"beautiflowers:astrid",
 		"beautiflowers:beatriz",
 		"beautiflowers:berta",
-		"beautiflowers:blanca",
-		"beautiflowers:casandra",
-		"beautiflowers:clara",
-		"beautiflowers:claudia",
 		"flowers:geranium",
 		"herbs:centaurea",
 		"herbs:campanula_blue",
@@ -82,7 +77,12 @@ local flower_colors = {
 	},
 	purple = {
 		"beautiflowers:arleth",
+		"beautiflowers:astrid",
 		"beautiflowers:belen",
+		"beautiflowers:blanca",
+		"beautiflowers:casandra",
+		"beautiflowers:clara",
+		"beautiflowers:claudia",
 		"beautiflowers:minerva",
 		"beautiflowers:miriam",
 		"beautiflowers:nazareth",
@@ -291,7 +291,7 @@ minetest.register_decoration({
 	biomes = "prairie",
 	y_max = 31000,
 	y_min = 1,
-	decoration = cf({"cyan","white","orange","yellow"}).flowers,
+	decoration = cf({"blue","cyan","white","orange","yellow"}).flowers,
 })
 
 -- Special mushroom decor for the Mushroom biome
