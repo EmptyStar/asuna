@@ -72,7 +72,7 @@ local flower_colors = {
 		"beautiflowers:any",
 		"flowers:dandelion_yellow",
 		"flowers:sunflower",
-		"herbs:anagallis",
+		"herbs:anagallis_yellow",
 		"herbs:digitalis_yellow",
 		"herbs:plantago",
 	},
