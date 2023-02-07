@@ -849,5 +849,4 @@ minetest.register_node("naturalbiomes:alpine_edelweiss", {
 		y_max = 31000,
 		y_min = 1,
 		decoration = "default:snow",
-		flags = "force_placement",
 	})

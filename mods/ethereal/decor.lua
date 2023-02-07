@@ -151,8 +151,8 @@ add_node({"default:snowblock"}, 0.001, {"glacier"}, 1, 30,
 	{"ethereal:scorched_tree"}, 6, nil, nil, ethereal.plains)]]
 
 -- dry shrub
---[[add_node({"ethereal:dry_dirt"}, 0.015, {"plains"}, 1, 100,
-	{"default:dry_shrub"}, nil, nil, nil, ethereal.plains)]]
+add_node({"default:dry_dirt"}, 0.005, {"plains"}, 1, 100,
+	{"default:dry_shrub"}, nil, nil, nil, ethereal.plains)
 
 --[[add_node({"default:sand"}, 0.015, {"deciduous_forest_ocean"}, 1, 100,
 	{"default:dry_shrub"}, nil, nil, nil, ethereal.grassy)]]
@@ -163,8 +163,29 @@ add_node({"default:desert_sand"}, 0.015, {"desert"}, 1, 100,
 add_node({"default:sandstone"}, 0.015, {"sandstone"}, 1, 100,
 	{"default:dry_shrub"}, nil, nil, nil, ethereal.sandstone)
 
---[[add_node({"bakedclay:red", "bakedclay:orange"}, 0.015, {"mesa"}, 1, 100,
-	{"default:dry_shrub"}, nil, nil, nil, ethereal.mesa)]]
+-- Special orange baked clay surface decor for mesa
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = {"default:dirt_with_dry_grass"},
+	sidelen = 2,
+	noise_params = {
+		offset = -1,
+		scale = -1.25,
+		spread = {x = 100, y = 100, z = 100},
+		seed = 4,
+		octaves = 4,
+		persist = 1.0
+	},
+	biomes = {"mesa"},
+	y_max = 31000,
+	y_min = 1,
+	decoration = "bakedclay:orange",
+	place_offset_y = -1,
+	flags = "force_placement"
+})
+
+add_node({"bakedclay:red", "bakedclay:orange"}, 0.015, {"mesa"}, 1, 100,
+	{"default:dry_shrub"}, nil, nil, nil, ethereal.mesa)
 
 -- dry grass
 add_node({"default:dry_dirt_with_dry_grass",
