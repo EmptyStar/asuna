@@ -97,6 +97,7 @@ local flower_colors = {
 		"beautiflowers:xena",
 	},
 	red = {
+		"beautiflowers:arcoiris",
 		"beautiflowers:jennifer",
 		"beautiflowers:lara",
 		"beautiflowers:laura",
