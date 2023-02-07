@@ -12,6 +12,7 @@ local flower_colors = {
 		"flowers:tulip_black",
 	},
 	white = {
+		"beautiflowers:carla",
 		"beautiflowers:cloe",
 		"beautiflowers:genesis",
 		"beautiflowers:gloria",
