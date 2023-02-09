@@ -39,5 +39,16 @@ for _,name in ipairs({
     "ethereal:grove_dirt",
     "naturalbiomes:alpine_litter"
   })
-  seed = seed + 13
+  seed = seed + 17
+end
+
+for _,name in ipairs({
+  "desert_boulder_small",
+  "desert_boulder_medium",
+}) do
+  boulder(name,seed,{
+    "default:desert_sand",
+    "default:sandstone",
+  })
+  seed = seed + 19
 end
