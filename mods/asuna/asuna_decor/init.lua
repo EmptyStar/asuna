@@ -321,16 +321,19 @@ if minetest.get_modpath("butterflies") then
 			"default:dirt_with_grass",
 			"prairie:prairie_dirt_with_grass",
 			"dorwinion:dorwinion_grass",
+			"ethereal:bamboo_dirt",
 		},
 		place_offset_y = 2,
 		sidelen = 80,
 		fill_ratio = 0.005,
 		biomes = {
+			"grassland",
 			"deciduous_forest",
 			"grassytwo",
 			"prairie",
 			"dorwinion",
 			"jumble",
+			"sakura",
 		},
 		y_max = 31000,
 		y_min = 1,
@@ -341,21 +344,6 @@ if minetest.get_modpath("butterflies") then
 		},
 		spawn_by = "group:flower",
 		num_spawn_by = 1,
-	})
-
-	-- restart butterfly timers
-	minetest.register_lbm({
-		name = ":butterflies:butterfly_timer",
-		nodenames = {
-			"butterflies:butterfly_white",
-      "butterflies:butterfly_red",
-			"butterflies:butterfly_violet",
-		},
-		run_at_every_load = true,
-
-		action = function(pos)
-			minetest.get_node_timer(pos):start(math.random(1,5))
-		end,
 	})
 end
 
@@ -403,18 +391,8 @@ if minetest.get_modpath("fireflies") then
     },
 		y_max = 31000,
 		y_min = -1,
+		place_offset_y = 2,
 		decoration = "fireflies:hidden_firefly",
-	})
-
-	-- restart firefly timers
-	minetest.register_lbm({
-		name = ":fireflies:firefly_timer",
-		nodenames = {"fireflies:firefly", "fireflies:hidden_firefly"},
-		run_at_every_load = true,
-
-		action = function(pos)
-			minetest.get_node_timer(pos):start(math.random(1,5))
-		end,
 	})
 end
 

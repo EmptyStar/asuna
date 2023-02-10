@@ -94,44 +94,17 @@ for i in ipairs (butter_list) do
 	})
 end
 
--- register decoration
-minetest.register_decoration({
-	name = "butterflies:butterfly",
-	deco_type = "simple",
-	place_on = {"default:dirt_with_grass"},
-	place_offset_y = 2,
-	sidelen = 80,
-	fill_ratio = 0.005,
-	biomes = {"grassland", "deciduous_forest"},
-	y_max = 31000,
-	y_min = 1,
-	decoration = {
+-- restart butterfly timers
+minetest.register_lbm({
+	name = "butterflies:butterfly_timer",
+	nodenames = {
 		"butterflies:butterfly_white",
 		"butterflies:butterfly_red",
-		"butterflies:butterfly_violet"
+		"butterflies:butterfly_violet",
 	},
-	spawn_by = "group:flower",
-	num_spawn_by = 1
+	run_at_every_load = true,
+
+	action = function(pos)
+		minetest.get_node_timer(pos):start(math.random(1,5))
+	end,
 })
-
--- get decoration ID
-local butterflies = minetest.get_decoration_id("butterflies:butterfly")
-minetest.set_gen_notify({decoration = true}, {butterflies})
-
--- start nodetimers
-minetest.register_on_generated(function(minp, maxp, blockseed)
-	local gennotify = minetest.get_mapgen_object("gennotify")
-	local poslist = {}
-
-	for _, pos in ipairs(gennotify["decoration#"..butterflies] or {}) do
-		local deco_pos = {x = pos.x, y = pos.y + 3, z = pos.z}
-		table.insert(poslist, deco_pos)
-	end
-
-	if #poslist ~= 0 then
-		for i = 1, #poslist do
-			local pos = poslist[i]
-			minetest.get_node_timer(pos):start(1)
-		end
-	end
-end)
