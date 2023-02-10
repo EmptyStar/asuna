@@ -182,110 +182,13 @@ minetest.register_craft( {
 	}
 })
 
+-- restart firefly timers
+minetest.register_lbm({
+	name = "fireflies:firefly_timer",
+	nodenames = {"fireflies:firefly", "fireflies:hidden_firefly"},
+	run_at_every_load = true,
 
--- register fireflies as decorations
-
-if minetest.get_mapgen_setting("mg_name") == "v6" then
-
-	minetest.register_decoration({
-		name = "fireflies:firefly_low",
-		deco_type = "simple",
-		place_on = "default:dirt_with_grass",
-		place_offset_y = 2,
-		sidelen = 80,
-		fill_ratio = 0.0002,
-		y_max = 31000,
-		y_min = 1,
-		decoration = "fireflies:hidden_firefly",
-	})
-
-	minetest.register_decoration({
-		name = "fireflies:firefly_high",
-		deco_type = "simple",
-		place_on = "default:dirt_with_grass",
-		place_offset_y = 3,
-		sidelen = 80,
-		fill_ratio = 0.0002,
-		y_max = 31000,
-		y_min = 1,
-		decoration = "fireflies:hidden_firefly",
-	})
-
-else
-
-	minetest.register_decoration({
-		name = "fireflies:firefly_low",
-		deco_type = "simple",
-		place_on = {
-			"default:dirt_with_grass",
-			"default:dirt_with_coniferous_litter",
-			"default:dirt_with_rainforest_litter",
-			"default:dirt"
-		},
-		place_offset_y = 2,
-		sidelen = 80,
-		fill_ratio = 0.0005,
-		biomes = {
-			"deciduous_forest",
-			"coniferous_forest",
-			"rainforest",
-			"rainforest_swamp"
-		},
-		y_max = 31000,
-		y_min = -1,
-		decoration = "fireflies:hidden_firefly",
-	})
-
-	minetest.register_decoration({
-		name = "fireflies:firefly_high",
-		deco_type = "simple",
-		place_on = {
-			"default:dirt_with_grass",
-			"default:dirt_with_coniferous_litter",
-			"default:dirt_with_rainforest_litter",
-			"default:dirt"
-		},
-		place_offset_y = 3,
-		sidelen = 80,
-		fill_ratio = 0.0005,
-		biomes = {
-			"deciduous_forest",
-			"coniferous_forest",
-			"rainforest",
-			"rainforest_swamp"
-		},
-		y_max = 31000,
-		y_min = -1,
-		decoration = "fireflies:hidden_firefly",
-	})
-
-end
-
-
--- get decoration IDs
-local firefly_low = minetest.get_decoration_id("fireflies:firefly_low")
-local firefly_high = minetest.get_decoration_id("fireflies:firefly_high")
-
-minetest.set_gen_notify({decoration = true}, {firefly_low, firefly_high})
-
--- start nodetimers
-minetest.register_on_generated(function(minp, maxp, blockseed)
-	local gennotify = minetest.get_mapgen_object("gennotify")
-	local poslist = {}
-
-	for _, pos in ipairs(gennotify["decoration#"..firefly_low] or {}) do
-		local firefly_low_pos = {x = pos.x, y = pos.y + 3, z = pos.z}
-		table.insert(poslist, firefly_low_pos)
-	end
-	for _, pos in ipairs(gennotify["decoration#"..firefly_high] or {}) do
-		local firefly_high_pos = {x = pos.x, y = pos.y + 4, z = pos.z}
-		table.insert(poslist, firefly_high_pos)
-	end
-
-	if #poslist ~= 0 then
-		for i = 1, #poslist do
-			local pos = poslist[i]
-			minetest.get_node_timer(pos):start(1)
-		end
-	end
-end)
+	action = function(pos)
+		minetest.get_node_timer(pos):start(math.random(1,5))
+	end,
+})
