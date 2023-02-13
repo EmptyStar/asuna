@@ -94,7 +94,7 @@ add_schem("ethereal:fiery_dirt", 0.003, {"fiery"}, 1, 100,
 
 -- default jungle tree
 add_schem({"ethereal:jungle_dirt", "default:dirt_with_rainforest_litter"},
-	0.08, {"junglee"}, 1, 100, dpath .. "jungle_tree.mts", ethereal.junglee)
+	0.08, {"junglee"}, 1, 31000, dpath .. "jungle_tree.mts", ethereal.junglee)
 
 -- willow tree
 add_schem({"ethereal:gray_dirt"}, 0.02, {"grayness"}, 1, 100,
