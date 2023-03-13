@@ -1,5 +1,3 @@
-local mpath = minetest.get_modpath("asuna_terrain")
-
 local function boulder(name,seed,nodes)
   minetest.register_decoration({
     deco_type = "schematic",
@@ -8,7 +6,7 @@ local function boulder(name,seed,nodes)
     y_min = 2,
     y_max = 31000,
     flags = "force_placement,place_center_x,place_center_z",
-    schematic = mpath .. "/schematics/" .. name .. ".mts",
+    schematic = asuna.modpath .. "/schematics/boulders/" .. name .. ".mts",
     rotation = "random",
     place_offset_y = 0
   })

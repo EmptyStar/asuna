@@ -1,6 +1,6 @@
 default
 stairs
 doors
-asuna_biomes
+asuna_core
 hunger_ng?
 ethereal?

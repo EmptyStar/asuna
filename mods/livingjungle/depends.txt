@@ -1,5 +1,5 @@
 default
 stairs
 doors
-asuna_biomes
+asuna_core
 ethereal

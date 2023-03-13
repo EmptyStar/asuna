@@ -1,6 +1,6 @@
 default
 flowers
-asuna_biomes
+asuna_core
 ethereal
 livingjungle
 moreblocks?

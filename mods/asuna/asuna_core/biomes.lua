@@ -357,7 +357,7 @@ asuna.biomes = {
       "default:dirt", 3,
     },
     flowers = {},
-    mushrooms = {}, -- special mushrooms set in asuna_decor
+    mushrooms = {}, -- special mushrooms set in decor.lua
     animals = {},
     crops = {},
     stones = {"sugilite","granite_green","ilvaite"},
