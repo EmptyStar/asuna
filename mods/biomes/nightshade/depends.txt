@@ -1,6 +1,6 @@
 default
+asuna_core
 doors
 japaneseforest
-asuna_core
 moreblocks?
 bonemeal?

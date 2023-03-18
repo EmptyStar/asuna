@@ -3,9 +3,8 @@ local function register_below_biome(name,seed)
   -- Get above biome name
   local above = name:sub(1,-7) -- to trim "_below" from the end of the biome name
 
-  -- Register biome
+  -- Get biome
   local biome = asuna.biomes[name]
-  minetest.register_biome(biome.generate_definition())
 
   -- Register ocean floor stone
   minetest.register_decoration({
@@ -14,11 +13,11 @@ local function register_below_biome(name,seed)
       "group:cracky",
       "group:crumbly",
     },
-    sidelen = 16,
+    sidelen = 80,
     fill_ratio = 10, -- fill all
     biomes = {name,above},
     y_max = 0,
-    y_min = -32,
+    y_min = -36,
     decoration = "default:stone",
     spawn_by = "default:water_source",
     num_spawn_by = 1,
@@ -34,11 +33,11 @@ local function register_below_biome(name,seed)
       "group:cracky",
       "group:crumbly",
     },
-    sidelen = 16,
+    sidelen = 80,
     fill_ratio = 10, -- fill all
     biomes = {name,above},
     y_max = 0,
-    y_min = -32,
+    y_min = -36,
     decoration = biome.seabed or "default:sand",
     spawn_by = "default:water_source",
     num_spawn_by = 1,
@@ -69,10 +68,6 @@ local function register_below_biome(name,seed)
       },
     })
   end
-
-  -- Map above ground and below ground biome to a Caverealms biome
-  caverealms.biome_map[minetest.get_biome_id(above)] = biome.caverealm
-  caverealms.biome_map[minetest.get_biome_id(name)] = biome.caverealm
 end
 
 -- Register biomes

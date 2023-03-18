@@ -1,5 +1,5 @@
 default
+asuna_core
 stairs
 doors
-asuna_core
 ethereal

@@ -346,7 +346,7 @@ if ethereal.reefs == 1 then
 	minetest.override_item("default:coral_orange", {groups = {crumbly = 3}})
 	minetest.override_item("default:coral_brown", {groups = {crumbly = 3}})
 
-	minetest.register_decoration({
+	--[[minetest.register_decoration({
 		deco_type = "schematic",
 		place_on = {"default:sand"},
 		noise_params = {
@@ -357,11 +357,11 @@ if ethereal.reefs == 1 then
 			octaves = 3,
 			persist = 1,
 		},
-		biomes = {"desert_ocean", "grove_ocean"},
+		biomes = asuna.features.ocean.tropical,
 		y_min = -8,
 		y_max = -2,
 		schematic = path .. "corals.mts",
 		flags = "place_center_x, place_center_z",
 		rotation = "random"
-	})
+	})]]
 end

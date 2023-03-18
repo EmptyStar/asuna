@@ -1,6 +1,125 @@
 asuna.decor = {}
 
 --[[
+	Boulders
+	- Registered before surface/terrain overrides
+]]
+
+local function boulder(name,seed,nodes)
+  minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = nodes,
+    fill_ratio = 0.00000000000000001,
+    y_min = 2,
+    y_max = 31000,
+    flags = "force_placement,place_center_x,place_center_z",
+    schematic = asuna.modpath .. "/schematics/boulders/" .. name .. ".mts",
+    rotation = "random",
+    place_offset_y = 0
+  })
+end
+
+local seed = 90210
+
+for _,name in ipairs({
+  "cobblestone_boulder_small",
+  "cobblestone_boulder_medium",
+}) do
+  boulder(name,seed,{
+    "default:dirt_with_dry_grass",
+    "default:dry_dirt_with_dry_grass",
+    "default:dirt_with_snow",
+    "naturalbiomes:savannalitter",
+  })
+  seed = seed + 13
+end
+
+for _,name in ipairs({
+  "mossy_cobblestone_boulder_small",
+  "mossy_cobblestone_boulder_medium",
+}) do
+  boulder(name,seed,{
+    "default:dirt_with_grass",
+    "default:dirt_with_coniferous_litter",
+    "ethereal:grove_dirt",
+    "naturalbiomes:alpine_litter"
+  })
+  seed = seed + 17
+end
+
+for _,name in ipairs({
+  "desert_boulder_small",
+  "desert_boulder_medium",
+}) do
+  boulder(name,seed,{
+    "default:desert_sand",
+    "default:sandstone",
+  })
+  seed = seed + 19
+end
+
+--[[
+  Terrain changes
+  - Sweeping terrain changes that must be made before decorations are placed
+]]
+
+-- Set all_floors for all surface decorations
+local ogrd = minetest.register_decoration
+minetest.register_decoration = function(def)
+  local flags = def.flags or ""
+  if not (flags:find("all_") or flags:find("liquid_")) then
+    def.flags = #flags > 0 and (flags .. ",all_floors") or "all_floors"
+  end
+  return ogrd(def)
+end
+
+-- Replace some surface stone with grass; also causes some biome ingress into caves
+for _,node in ipairs({
+  "default:dirt_with_grass",
+  "default:dry_dirt_with_dry_grass",
+  "default:dirt_with_dry_grass",
+  "default:dirt_with_rainforest_litter",
+  "default:dirt_with_coniferous_litter",
+  "naturalbiomes:savannalitter",
+  "naturalbiomes:alpine_litter",
+  "naturalbiomes:mediterran_litter",
+  "naturalbiomes:alderswamp_litter",
+  "naturalbiomes:outback_litter",
+  "ethereal:grove_dirt",
+  "ethereal:bamboo_dirt",
+  "livingjungle:jungleground",
+  "livingjungle:leafyjungleground",
+  "ethereal:mushroom_dirt",
+  "nightshade:nightshade_dirt_with_grass",
+  "japaneseforest:japanese_dirt_with_grass",
+  "bambooforest:dirt_with_bamboo",
+  "dorwinion:dorwinion_grass",
+  "badland:badland_grass",
+  "frost_land:frost_land_grass",
+  "prairie:prairie_dirt_with_grass",
+}) do
+  minetest.register_decoration({
+    deco_type = "simple",
+    place_on = {
+      "group:stone",
+      "default:stone_with_coal",
+      "default:dirt",
+      "default:silver_sand",
+      "default:gravel",
+    },
+    spawn_by = node,
+    num_spawn_by = 1,
+    sidelen = 4,
+    y_min = 0,
+    y_max = 31000,
+    place_offset_y = -1,
+    fill_ratio = 10,
+    decoration = node,
+    flags = "force_placement",
+  })
+end
+
+--[[
 	Flowers
 ]]
 
@@ -213,6 +332,18 @@ local biome_decor = {
 
 -- Do actual decoration registration after other mods are finished
 minetest.register_on_mods_loaded(function()
+	-- Register shore grass
+	minetest.register_decoration(asuna.biome_groups.shore.inject_decoration({
+		deco_type = "simple",
+		place_on = "default:sand",
+		decoration = {"default:marram_grass_1","default:marram_grass_2","default:marram_grass_3"},
+		y_min = 1,
+		y_max = 2,
+		sidelen = 16,
+		fill_ratio = 0.024,
+	}))
+
+	-- Register flowers and mushrooms
 	for biome,decor in pairs(biome_decor) do
 		-- Valid top nodes
 		local top_nodes = {

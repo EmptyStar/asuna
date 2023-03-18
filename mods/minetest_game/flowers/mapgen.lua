@@ -175,7 +175,7 @@ end
 
 local mg_name = minetest.get_mapgen_setting("mg_name")
 if mg_name == "v6" then
-	flowers.register_mgv6_decorations()
+	--flowers.register_mgv6_decorations()
 else
-	flowers.register_decorations()
+	--flowers.register_decorations()
 end

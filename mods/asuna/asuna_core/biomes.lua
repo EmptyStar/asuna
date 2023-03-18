@@ -912,6 +912,7 @@ asuna.biomes = {
 ]]
 
 asuna.biome_groups = {
+  all = {},
   base = {},
   shore = {},
   below = {},
@@ -920,6 +921,7 @@ asuna.biome_groups = {
 
 for biome,def in pairs(asuna.biomes) do
   table.insert(asuna.biome_groups.base,biome)
+  table.insert(asuna.biome_groups.all,biome)
 end
 
 -- Generate dungeon definitions, shore biomes, and below ground biomes from base biomes
@@ -952,6 +954,7 @@ for biome,def in pairs(asuna.biomes) do
       humidity = def.humidity,
       y_min = 0,
       y_max = def.y_min - 1,
+      y_blend = 1,
       nodes = {
         def.shore, 1,
         def.shore, 2,
@@ -1007,6 +1010,7 @@ end
 
 -- Add supplementary biomes
 for biome,def in pairs(supplementary_biomes) do
+  table.insert(asuna.biome_groups.all,biome)
   asuna.biomes[biome] = def
 end
 
@@ -1116,9 +1120,7 @@ end
   Custom biomes
 ]]
 
--- Register custom biomes
-minetest.register_biome(asuna.biomes.silver_sands:generate_definition())
-
+-- Custom biomes
 minetest.register_decoration({
   deco_type = "simple",
   decoration = "default:gravel",
@@ -1140,3 +1142,23 @@ minetest.register_decoration({
     flags = "eased"
   },
 })
+
+-- Override biome registration function to add biome ID's to Caverealms biome
+-- map and to prevent duplicate biome registrations
+local mtrb = minetest.register_biome
+minetest.register_biome = function(def)
+  if minetest.registered_biomes[def.name] then
+    return minetest.get_biome_id(def.name)
+  end
+
+  local i = mtrb(def)
+  if i then
+    asuna.caverealms.biome_map[minetest.get_biome_id(def.name)] = asuna.biomes[def.name].caverealm
+  end
+  return i
+end
+
+-- Register all biomes
+for name,def in pairs(asuna.biomes) do
+  minetest.register_biome(def.generate_definition())
+end
