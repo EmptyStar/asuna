@@ -639,7 +639,7 @@ asuna.biomes = {
   livingjungle = {
     heat = 88,
     humidity = 81,
-    y_min = 0,
+    y_min = 1,
     y_max = 31000,
     nodes = {
       "livingjungle:jungleground", 1,
@@ -945,7 +945,7 @@ for biome,def in pairs(asuna.biomes) do
     }
   end
 
-  -- If the biome should have a proper shore
+  -- Generate shore biome if the biome should have a proper shore
   if def.y_min == 2 or def.y_min == 1 then
     local shore_name = biome .. "_shore"
     table.insert(asuna.biome_groups.shore,shore_name)
@@ -973,8 +973,8 @@ for biome,def in pairs(asuna.biomes) do
     }
   end
 
-  -- If the biome should have a below biome
-  if def.y_min < 5 and def.y_min > -1 then
+  -- Generate below biome if the biome should have a below biome
+  if def.y_min < 100 and def.y_min > -1 then
     local below_name = biome .. "_below"
     local ocean_group_name = "ocean_" .. def.ocean
     table.insert(asuna.biome_groups.below,below_name)
@@ -1158,7 +1158,15 @@ minetest.register_biome = function(def)
   return i
 end
 
--- Register all biomes
-for name,def in pairs(asuna.biomes) do
-  minetest.register_biome(def.generate_definition())
+-- Register all biomes beginning with base biomes
+for _,biome in ipairs(asuna.biome_groups.base) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
+end
+
+for _,biome in ipairs(asuna.biome_groups.shore) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
+end
+
+for _,biome in ipairs(asuna.biome_groups.below) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
 end

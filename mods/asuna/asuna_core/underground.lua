@@ -1,7 +1,8 @@
 -- Undergrond biome registration function
 local function register_below_biome(name,seed)
-  -- Get above biome name
+  -- Get above and shore biome names
   local above = name:sub(1,-7) -- to trim "_below" from the end of the biome name
+  local shore = name .. "_shore"
 
   -- Get biome
   local biome = asuna.biomes[name]
@@ -15,7 +16,7 @@ local function register_below_biome(name,seed)
     },
     sidelen = 80,
     fill_ratio = 10, -- fill all
-    biomes = {name,above},
+    biomes = {name,shore,above},
     y_max = 0,
     y_min = -36,
     decoration = "default:stone",
@@ -30,12 +31,15 @@ local function register_below_biome(name,seed)
   minetest.register_decoration({
     deco_type = "simple",
     place_on = {
+      "group:stone",
       "group:cracky",
-      "group:crumbly",
+      "default:dirt",
+      "default:gravel",
+      "default:silver_sand",
     },
     sidelen = 80,
     fill_ratio = 10, -- fill all
-    biomes = {name,above},
+    biomes = {name,shore,above},
     y_max = 0,
     y_min = -36,
     decoration = biome.seabed or "default:sand",
