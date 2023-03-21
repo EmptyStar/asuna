@@ -7,6 +7,7 @@ end
 
 runfile("caverealms")
 runfile("biomes")
+runfile("terrain")
 runfile("climate")
 runfile("decor")
 runfile("music")

@@ -2,53 +2,10 @@
 local function register_below_biome(name,seed)
   -- Get above and shore biome names
   local above = name:sub(1,-7) -- to trim "_below" from the end of the biome name
-  local shore = name .. "_shore"
+  local shore = above .. "_shore"
 
   -- Get biome
   local biome = asuna.biomes[name]
-
-  -- Register ocean floor stone
-  minetest.register_decoration({
-    deco_type = "simple",
-    place_on = {
-      "group:cracky",
-      "group:crumbly",
-    },
-    sidelen = 80,
-    fill_ratio = 10, -- fill all
-    biomes = {name,shore,above},
-    y_max = 0,
-    y_min = -36,
-    decoration = "default:stone",
-    spawn_by = "default:water_source",
-    num_spawn_by = 1,
-    height = 1,
-    place_offset_y = -4,
-    flags = "all_floors,force_placement",
-  })
-
-  -- Register ocean floor node
-  minetest.register_decoration({
-    deco_type = "simple",
-    place_on = {
-      "group:stone",
-      "group:cracky",
-      "default:dirt",
-      "default:gravel",
-      "default:silver_sand",
-    },
-    sidelen = 80,
-    fill_ratio = 10, -- fill all
-    biomes = {name,shore,above},
-    y_max = 0,
-    y_min = -36,
-    decoration = biome.seabed or "default:sand",
-    spawn_by = "default:water_source",
-    num_spawn_by = 1,
-    height = 3,
-    place_offset_y = -3,
-    flags = "all_floors,force_placement",
-  })
 
   -- Register TMS ores for the biome
   for i = 1, #biome.stones do

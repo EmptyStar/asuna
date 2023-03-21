@@ -964,7 +964,7 @@ for biome,def in pairs(asuna.biomes) do
       mushrooms = {},
       animals = def.ocean == "tropical" and {"tropical_fish"} or {},
       crops = {},
-      stones = {},
+      stones = def.stones,
       shore = def.shore,
       seabed = def.seabed,
       ocean = def.ocean,
