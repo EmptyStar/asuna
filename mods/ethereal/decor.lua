@@ -662,7 +662,7 @@ if minetest.registered_nodes["default:coral_green"] then
 			octaves = 3,
 			persist = 0.7,
 		},
-		biomes = {"desert_ocean", "savanna_ocean", "junglee_ocean"},
+		biomes = asuna.features.ocean.tropical,
 		y_max = -2,
 		y_min = -8,
 		flags = "force_placement",
@@ -689,8 +689,7 @@ if minetest.registered_nodes["default:coral_green"] then
 			octaves = 3,
 			persist = 0.7
 		},
-		biomes = {
-			"frost_ocean", "deciduous_forest_ocean", "sandstone_ocean", "swamp_ocean", "marsh_ocean"},
+		biomes = asuna.biome_groups.below,
 		y_max = -5,
 		y_min = -10,
 		flags = "force_placement",

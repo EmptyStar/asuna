@@ -357,7 +357,7 @@ asuna.biomes = {
       "default:dirt", 3,
     },
     flowers = {},
-    mushrooms = {}, -- special mushrooms set in asuna_decor
+    mushrooms = {}, -- special mushrooms set in decor.lua
     animals = {},
     crops = {},
     stones = {"sugilite","granite_green","ilvaite"},
@@ -639,7 +639,7 @@ asuna.biomes = {
   livingjungle = {
     heat = 88,
     humidity = 81,
-    y_min = 0,
+    y_min = 1,
     y_max = 31000,
     nodes = {
       "livingjungle:jungleground", 1,
@@ -912,6 +912,7 @@ asuna.biomes = {
 ]]
 
 asuna.biome_groups = {
+  all = {},
   base = {},
   shore = {},
   below = {},
@@ -920,6 +921,7 @@ asuna.biome_groups = {
 
 for biome,def in pairs(asuna.biomes) do
   table.insert(asuna.biome_groups.base,biome)
+  table.insert(asuna.biome_groups.all,biome)
 end
 
 -- Generate dungeon definitions, shore biomes, and below ground biomes from base biomes
@@ -943,7 +945,7 @@ for biome,def in pairs(asuna.biomes) do
     }
   end
 
-  -- If the biome should have a proper shore
+  -- Generate shore biome if the biome should have a proper shore
   if def.y_min == 2 or def.y_min == 1 then
     local shore_name = biome .. "_shore"
     table.insert(asuna.biome_groups.shore,shore_name)
@@ -952,6 +954,7 @@ for biome,def in pairs(asuna.biomes) do
       humidity = def.humidity,
       y_min = 0,
       y_max = def.y_min - 1,
+      y_blend = 1,
       nodes = {
         def.shore, 1,
         def.shore, 2,
@@ -961,7 +964,7 @@ for biome,def in pairs(asuna.biomes) do
       mushrooms = {},
       animals = def.ocean == "tropical" and {"tropical_fish"} or {},
       crops = {},
-      stones = {},
+      stones = def.stones,
       shore = def.shore,
       seabed = def.seabed,
       ocean = def.ocean,
@@ -970,8 +973,8 @@ for biome,def in pairs(asuna.biomes) do
     }
   end
 
-  -- If the biome should have a below biome
-  if def.y_min < 5 and def.y_min > -1 then
+  -- Generate below biome if the biome should have a below biome
+  if def.y_min < 100 and def.y_min > -1 then
     local below_name = biome .. "_below"
     local ocean_group_name = "ocean_" .. def.ocean
     table.insert(asuna.biome_groups.below,below_name)
@@ -1007,6 +1010,7 @@ end
 
 -- Add supplementary biomes
 for biome,def in pairs(supplementary_biomes) do
+  table.insert(asuna.biome_groups.all,biome)
   asuna.biomes[biome] = def
 end
 
@@ -1116,9 +1120,7 @@ end
   Custom biomes
 ]]
 
--- Register custom biomes
-minetest.register_biome(asuna.biomes.silver_sands:generate_definition())
-
+-- Custom biomes
 minetest.register_decoration({
   deco_type = "simple",
   decoration = "default:gravel",
@@ -1140,3 +1142,31 @@ minetest.register_decoration({
     flags = "eased"
   },
 })
+
+-- Override biome registration function to add biome ID's to Caverealms biome
+-- map and to prevent duplicate biome registrations
+local mtrb = minetest.register_biome
+minetest.register_biome = function(def)
+  if minetest.registered_biomes[def.name] then
+    return minetest.get_biome_id(def.name)
+  end
+
+  local i = mtrb(def)
+  if i then
+    asuna.caverealms.biome_map[minetest.get_biome_id(def.name)] = asuna.biomes[def.name].caverealm
+  end
+  return i
+end
+
+-- Register all biomes beginning with base biomes
+for _,biome in ipairs(asuna.biome_groups.base) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
+end
+
+for _,biome in ipairs(asuna.biome_groups.shore) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
+end
+
+for _,biome in ipairs(asuna.biome_groups.below) do
+  minetest.register_biome(asuna.biomes[biome].generate_definition())
+end

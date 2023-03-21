@@ -1,7 +1,7 @@
 default
+asuna_core
 doors
 bambooforest
-asuna_biomes
 ethereal
 moreblocks?
 bonemeal?

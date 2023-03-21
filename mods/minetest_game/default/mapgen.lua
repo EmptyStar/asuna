@@ -415,7 +415,7 @@ function default.register_ores()
 
 	-- Silver sandstone
 
-	minetest.register_ore({
+	--[[minetest.register_ore({
 		ore_type        = "stratum",
 		ore             = "default:silver_sandstone",
 		wherein         = {"default:stone"},
@@ -449,11 +449,11 @@ function default.register_ores()
 		},
 		stratum_thickness = 2,
 		biomes = {"cold_desert"},
-	})
+	})]]
 
 	-- Desert sandstone
 
-	minetest.register_ore({
+	--[[minetest.register_ore({
 		ore_type        = "stratum",
 		ore             = "default:desert_sandstone",
 		wherein         = {"default:desert_stone"},
@@ -487,11 +487,11 @@ function default.register_ores()
 		},
 		stratum_thickness = 2,
 		biomes = {"desert"},
-	})
+	})]]
 
 	-- Sandstone
 
-	minetest.register_ore({
+	--[[minetest.register_ore({
 		ore_type        = "stratum",
 		ore             = "default:sandstone",
 		wherein         = {"default:desert_stone"},
@@ -507,7 +507,7 @@ function default.register_ores()
 		},
 		stratum_thickness = 2,
 		biomes = {"desert"},
-	})
+	})]]
 
 	-- Blob ore.
 	-- These before scatter ores to avoid other ores in blobs.
@@ -2486,7 +2486,7 @@ if mg_name == "v6" then
 	default.register_mgv6_ores()
 	default.register_mgv6_decorations()
 else
-	default.register_biomes()
+	--default.register_biomes()
 	default.register_ores()
-	default.register_decorations()
+	--default.register_decorations()
 end

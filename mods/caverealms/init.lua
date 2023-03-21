@@ -4,11 +4,7 @@
 -- Depends default
 -- License: code WTFPL
 
---create a container for functions and constants
-caverealms = {
-	biome_map = {},
-	surface_min = -256,
-}
+caverealms = {} --create a container for functions and constants
 
 --grab a shorthand for the filepath of the mod
 local modpath = minetest.get_modpath(minetest.get_current_modname())
@@ -116,7 +112,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	--print ("[caverealms] chunk minp ("..x0.." "..y0.." "..z0..")") --tell people you are generating a chunk
 	
 	local vm, emin, emax = minetest.get_mapgen_object("voxelmanip")
-	local bmap = (y1 >= caverealms.surface_min) and minetest.get_mapgen_object("biomemap") or {}
+	local bmap = (y1 >= asuna.caverealms.surface_min) and minetest.get_mapgen_object("biomemap") or {}
 	local area = VoxelArea:new{MinEdge=emin, MaxEdge=emax}
 	vm:get_data(data)
 	
@@ -132,7 +128,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 	local nixyz2 = 1 --second 3D index for second loop
 
 	-- Secondary noise
-	local nvals_biome = (true or y0 < caverealms.surface_min) and minetest.get_perlin_map(np_biome, chulens2D):get2dMap_flat({x=x0+150, y=z0+50}) or nil
+	local nvals_biome = (true or y0 < asuna.caverealms.surface_min) and minetest.get_perlin_map(np_biome, chulens2D):get2dMap_flat({x=x0+150, y=z0+50}) or nil
 
 	for z = z0, z1 do -- for each xy plane progressing northwards
 		--increment indices
@@ -155,7 +151,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 				--minetest.log("nixz = " .. nixz)
 				
 				--determine biome
-				local biome = caverealms.biome_map[bmap[nixz]]
+				local biome = asuna.caverealms.biome_map[bmap[nixz]]
 				if not biome then
 					--minetest.log("no biome at (" .. x .. "," .. y .. "," .. z .. "); found biome ID " .. bmap[nixz])
 					local n_biome = nvals_biome[nixz] --make an easier reference to the noise

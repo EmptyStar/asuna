@@ -1,4 +1,4 @@
 default
-asuna_biomes
+asuna_core
 moreblocks?
 bonemeal?
