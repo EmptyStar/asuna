@@ -409,6 +409,37 @@ minetest.register_on_mods_loaded(function()
 	end
 
 	--[[
+		Large jungle trees
+	]]
+	local chunksize = tonumber(minetest.get_mapgen_setting("chunksize"))
+	if chunksize >= 5 then
+		minetest.register_decoration({
+			name = "default:emergent_jungle_tree",
+			deco_type = "schematic",
+			place_on = {
+				"default:dirt_with_rainforest_litter",
+				"bambooforest:dirt_with_bamboo",
+			},
+			sidelen = 80,
+			noise_params = {
+				offset = 0.0,
+				scale = 0.0025,
+				spread = {x = 200, y = 200, z = 200},
+				seed = 2685,
+				octaves = 3,
+				persist = 0.7
+			},
+			biomes = {"junglee","bambooforest"},
+			y_max = 30000,
+			y_min = 1,
+			schematic = minetest.get_modpath("default") .. "/schematics/emergent_jungle_tree.mts",
+			flags = "place_center_x, place_center_z",
+			rotation = "random",
+			place_offset_y = -4,
+		})
+	end
+
+	--[[
 		Hanging vines
 	]]
 
