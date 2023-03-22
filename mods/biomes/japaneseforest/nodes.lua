@@ -136,7 +136,7 @@ doors.register("japanese_door", {
 		}
 })
 
-xpanes.register_pane("japaneseforest:japanese_small_wall_flat", {
+xpanes.register_pane("japanese_small_wall", {
 	description = "Japanese Small Wall",
 	textures = {"small_wall.png", "", "side_small_wall.png"},
 	inventory_image = "small_wall.png",
