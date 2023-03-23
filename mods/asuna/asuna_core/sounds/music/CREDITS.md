@@ -12,11 +12,15 @@ All of the music in this mod is listed/credited below by author, license, and so
   - The Long Way Home (thelongwayhome.ogg)*
   - Cobalt (cobalt.ogg)*
   - Moonlight (moonlight.ogg)*
+  - Hymn (hymn.ogg)*
+  - Reverie (reverie.ogg)*
 - **Kevin MacLeod** -- [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/), <https://incompetech.com/>
   - Bathed in the Light (bathedinthelight.ogg)
 - **Kevin MacLeod** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
   - Screen Saver (screensaver.ogg)*
   - Roquefort Prolog (roquefortprolog.ogg)*
   - Infinite Peace (infinitepeace.ogg)*
+  - Meditating Beat (meditatingbeat.ogg)*
 - **Rafael Krux** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
   - Walking Stars (walkingstars.ogg)*
+  - Pond (pond.ogg)*
