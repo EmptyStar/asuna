@@ -1,0 +1,1835 @@
+# textdomain: too_many_stones
+
+
+### nodes.lua ###
+
+Blue Agate=Бирюзовый агат
+Gray Agate=Серый агат
+Green Agate=Зеленый агат
+Moss Agate=Моховой агат
+Orange Agate=Оранжевый агат
+Purple Agate=Фиолетовый агат
+Red Agate=Красный агат
+
+Amazonite=Амазонит
+Amazonite Block=Блок амазонита
+Cobbled Amazonite=Мощеный амазонит
+Amazonite Brick=Кирпич из амазонита
+Cracked Amazonite Brick=Треснувший кирпич из амазонита
+
+Amber=Янтарь
+Amber Block=Блок янтаря
+Amber Brick=Кирпич из янтаря
+Cracked Amber Brick=Треснувший кирпич из янтаря
+
+Amethyst=Аметист
+Amethyst Block=Блок аметиста
+Amethyst Brick=Кирпич из аметиста
+Cracked Amethyst Brick=Треснувший кирпич из аметиста
+
+Andesite=Андезит
+Andesite Block=Блок андезита
+Andesite Brick=Кирпич из андезита
+Cracked Andesite Brick=Треснувший кирпич из андезита
+Cobbled Andesite=Мощеный андезит
+
+Basalt=Базальт
+Basalt Block=Блок базальта
+Basalt Brick=Кирпич из базальта
+Cracked Basalt Brick=Треснувший кирпич из базальта
+Cobbled Basalt=Мощеный базальт
+
+Columnar Basalt=Колонный базальт
+
+Batch=Партия
+
+Black Opal=Черный опал
+
+Calcite=Кальцит
+Calcite Block=Блок кальцита
+Calcite Brick=Кирпич из кальцита
+Cracked Calcite Brick=Треснувший кирпич из кальцита
+
+Carnotite=Карнотит
+Carnotite Block=Блок карнотита
+Carnotite Brick=Кирпич из карнотита
+Cracked Carnotite Brick=Треснувший кирпич из карнотита
+Cobbled Carnotite=Мощеный карнотит
+
+Celestine=Целестин
+Celestine Block=Блок целестина
+Celestine Brick=Кирпич из целестина
+Cracked Celestine Brick=Треснувший кирпич из целестина
+
+Chrysoprase=Хризопраз
+Chrysoprase Block=Блок хризопраза
+Chrysoprase Brick=Кирпич из хризопраза
+Cracked Chrysoprase Brick=Треснувший кирпич из хризопраза
+
+Citrine=Цитрин
+Citrine Block=Блок цитрина
+Citrine Brick=Кирпич из цитрина
+Cracked Citrine Brick=Треснувший кирпич из цитрина
+
+Covellite=Ковеллит
+Covellite Block=Блок ковеллита
+Covellite Brick=Кирпич из ковеллита
+Cracked Covellite Brick=Треснувший кирпич из ковеллита
+Cobbled Covellite=Мощеный ковеллит
+
+Crocoite=Крокоит
+Crocoite Block=Блок крокоита
+Crocoite Brick=Кирпич из крокоита
+Cracked Crocoite Brick=Треснувший кирпич из крокоита
+
+Erythrite=Эритрит
+Erythrite Block=Блок эритрита
+Erythrite Brick=Кирпич из эритрита
+Cracked Erythrite Brick=Треснувший кирпич из эритрита
+
+Eudialite=Эвдиалит
+Eudialite Block=Блок эвдиалита
+Eudialite Brick=Кирпич из эвдиалита
+Cracked Eudialite Brick=Треснувший кирпич из эвдиалита
+
+Fire Opal=Огненный опал
+
+Gabbro=Габбро
+Gabbro Block=Блок габбро
+Cobbled Gabbro=Мощеный габбро
+Gabbro Brick=Кирпич из габбро
+Cracked Gabbro Brick=Треснувший кирпич из габбро
+
+Galena=Галенит
+Galena Block=Блок галенита
+Galena Brick=Кирпич из галенита
+Cracked Galena Brick=Треснувший кирпич из галенита
+
+Black Granite=Черный гранит
+Black Granite Block=Черный блок гранита
+Black Granite Brick=Черная кирпич гранита
+Cracked Black Granite Brick=Треснутый черный кирпич гранита
+Cobbled Black Granite=Мощеный черный гранит
+
+Blue Granite=Синий гранит
+Blue Granite Block=Синий блок гранита
+Blue Granite Brick=Синий кирпич гранита
+Cracked Blue Granite Brick=Треснутый синий кирпич гранита
+Cobbled Blue Granite=Мощеный синий гранит
+
+Gray Granite=Серый гранит
+Gray Granite Block=Серый блок гранита
+Gray Granite Brick=Серый кирпич гранита
+Cracked Gray Granite Brick=Треснутый серый кирпич гранита
+Cobbled Gray Granite=Мощеный серый гранит
+
+Green Granite=Зеленый гранит
+Green Granite Block=Зеленый блок гранит
+Green Granite Brick=Зеленый гранитный кирпич
+Cracked Green Granite Brick=Растрескавшийся зеленый гранитный кирпич
+Cobbled Green Granite=Выложенный зеленый гранит
+
+Pink Granite=Розовый гранит
+Pink Granite Block=Блок розового гранита
+Pink Granite Brick=Розовый гранитный кирпич
+Cracked Pink Granite Brick=Растрескавшийся розовый гранитный кирпич
+Cobbled Pink Granite=Выложенный розовый гранит
+
+Red Granite=Красный гранит
+Red Granite Block=Блок красного гранита
+Red Granite Brick=Красный гранитный кирпич
+Cracked Red Granite Brick=Растрескавшийся красный гранитный кирпич
+Cobbled Red Granite=Выложенный красный гранит
+
+White Granite=Белый гранит
+White Granite Block=Блок белого гранита
+White Granite Brick=Белый гранитный кирпич
+Cracked White Granite Brick=Растрескавшийся белый гранитный кирпич
+Cobbled White Granite=Выложенный белый гранит
+
+Heliodor=Гелиодор
+Heliodor Block=Блок гелиодора
+Heliodor Brick=Гелиодорный кирпич
+Cracked Heliodor Brick=Растрескавшийся гелиодорный кирпич
+
+Ilvaite=Ильваит
+Ilvaite Block=Блок ильваита
+Ilvaite Brick=Кирпич из ильваита
+Cracked Ilvaite Brick=Растрескавшийся кирпич из ильваита
+Cobbled Ilvaite=Мощеный ильваитом
+
+Jade=Нефрит
+Jade Block=Блок нефрита
+Jade Brick=Кирпич из нефрита
+Cracked Jade Brick=Растрескавшийся кирпич из нефрита
+Cobbled Jade=Мощеный нефритом
+
+Kyanite=Кианит
+Kyanite Block=Блок кианита
+Kyanite Brick=Кирпич из кианита
+Cracked Kyanite Brick=Растрескавшийся кирпич из кианита
+Cobbled Kyanite=Мощеный кианитом
+
+Lapis Lazuli=Лазурит
+Lapis Lazuli Block=Блок лазурита
+Lapis Lazuli Brick=Кирпич из лазурита
+Cracked Lapis Lazuli Brick=Растрескавшийся кирпич из лазурита
+
+Blue Limestone=Голубой известняк
+Blue Limestone Block=Блок голубого известняка
+Blue Limestone Brick=Кирпич из голубого известняка
+Cracked Blue Limestone Brick=Растрескавшийся кирпич из голубого известняка
+Cobbled Blue Limestone=Мощеный голубым известняком
+
+White Limestone=Белый Известняк
+White Limestone Block=Блок Белого Известняка
+White Limestone Brick=Кирпич Белого Известняка
+Cracked White Limestone Brick=Треснувший Кирпич Белого Известняка
+Cobbled White Limestone=Мощеный Белый Известняк
+
+Marble=Мрамор
+Marble Block=Блок Мрамора
+Marble Brick=Кирпич Мрамора
+Cracked Marble Brick=Треснувший Кирпич Мрамора
+Cobbled Marble=Мощеный Мрамор
+
+Mudstone=Илистый Камень
+Mudstone Block=Блок Илистого Камня
+Cobbled Mudstone=Мощеный Илистый Камень
+Mudstone Brick=Кирпич Илистого Камня
+Cracked Mudstone Brick=Треснувший Кирпич Илистого Камня
+
+Opal=Опал
+
+Prasiolite=Празеолит
+Prasiolite Block=Блок Празеолита
+Prasiolite Brick=Кирпич Празеолита
+Cracked Prasiolite Brick=Треснувший Кирпич Празеолита
+
+Pumice=Пемза
+Pumice Block=Блок Пемзы
+Pumice Brick=Кирпич Пемзы
+Cracked Pumice Brick=Треснувший Кирпич Пемзы
+
+Pyrite=Пирит
+Pyrite Block=Блок Пирита
+Cobbled Pyrite=Мощеный Пирит
+Pyrite Brick=Кирпич Пирита
+Cracked Pyrite Brick=Треснувший Кирпич Пирита
+
+Quartz=Кварц
+Quartz Block=Блок Кварца
+Quartz Brick=Кирпич Кварца
+Cracked Quartz Brick=Треснувший Кирпич Кварца
+
+Rose Quartz=Розовый кварц
+Rose Quartz Block=Блок розового кварца
+Rose Quartz Brick=Кирпич розового кварца
+Cracked Rose Quartz Brick=Разбитый кирпич розового кварца
+
+Scoria=Скория
+Scoria Block=Блок скории
+Scoria Brick=Кирпич скории
+Cracked Scoria Brick=Разбитый кирпич скории
+Cobbled Scoria=Мощеная скория
+
+Serpentine=Серпентинит
+Serpentine Block=Блок серпентинита
+Cobbled Serpentine=Мощеный серпентинит
+Serpentine Brick=Кирпич серпентинита
+Cracked Serpentine Brick=Разбитый кирпич серпентинита
+
+Slate=Сланец
+Slate Block=Блок сланца
+Slate Brick=Кирпич сланца
+Cracked Slate Brick=Разбитый кирпич сланца
+Cobbled Slate=Мощеный сланец
+Slate Tile=Плитка из сланца
+
+Smokey Quartz=Дымчатый кварц
+Smokey Quartz Block=Блок дымчатого кварца
+Smokey Quartz Brick=Кирпич дымчатого кварца
+Cracked Smokey Quartz Brick=Разбитый кирпич дымчатого кварца
+
+Soapstone=Степень
+Soapstone Block=Блок степеня
+Soapstone Brick=Кирпич степеня
+Cracked Soapstone Brick=Разбитый кирпич степеня
+
+Sodalite=Содалит
+Sodalite Block=Блок содалита
+Cobbled Sodalite=Мощеный содалит
+Sodalite Brick=Кирпич содалита
+Cracked Sodalite Brick=Разбитый кирпич содалита
+
+Sugilite=Сугилит
+Sugilite Block=Блок сугилита
+Sugilite Brick=Кирпич сугилита
+Cracked Sugilite Brick=Разбитый кирпич сугилита
+Cobbled Sugilite=Мощеный сугилит
+
+Travertine=Травертин
+Travertine Block=Блок травертина
+Cobbled Travertine=Мощеный травертин
+Travertine Brick=Кирпич травертина
+Cracked Travertine Brick=Разбитый кирпич травертина
+
+Beige Tuff=Бежевый туф
+Beige Tuff Block=Блок бежевого туфа
+Cobbled Beige Tuff=Мощеный бежевый туф
+Beige Tuff Brick=Кирпич бежевого туфа
+Cracked Beige Tuff=Разбитый кирпич бежевого туфа
+
+Grey Tuff=Серый туф
+Grey Tuff Block=Блок серого туфа
+Cobbled Grey Tuff=Мощеный серый туф
+Grey Tuff Brick=Кирпич серого туфа
+Cracked Grey Tuff=Разбитый кирпич серого туфа
+
+Red Tuff=Красный туф
+Red Tuff Block=Блок красного туфа
+Cobbled Red Tuff=Мощеный красный туф
+Red Tuff Brick=Кирпич красного туфа
+Cracked Red Tuff=Разбитый кирпич красного туфа
+
+Turquoise=Бирюза
+Turquoise Block=Блок бирюзы
+Turquoise Brick=Кирпич бирюзы
+Cracked Turquoise Brick=Разбитый кирпич бирюзы
+Cobbled Turquoise=Мощеная бирюза
+Turquoise Pebble=Бирюзовый камушек
+
+Vivianite=Вивианит
+Vivianite Block=Блок вивианита
+Vivianite Brick=Кирпич вивианита
+Cracked Vivianite Brick=Разбитый кирпич вивианита
+
+### wall.lua ###
+
+Blue Agate Wall=Синяя агатовая стена
+Gray Agate Wall=Серая агатовая стена
+Green Agate Wall=Зеленая агатовая стена
+Moss Agate Wall=Моховая агатовая стена
+Orange Agate Wall=Оранжевая агатовая стена
+Purple Agate Wall=Фиолетовая агатовая стена
+Red Agate Wall=Красная агатовая стена
+
+Amazonite Wall=Амазонитовая стена
+Cobbled Amazonite Wall=Мощеная амазонитовая стена
+Amazonite Brick Wall=Кирпич амазонитовой стены
+Amazonite Block Wall=Блок амазонитовой стены
+Cracked Amazonite Brick Wall=Разбитый кирпич амазонитовой стены
+
+Amber Wall=Янтарная стена
+Amber Brick Wall=Кирпич янтарной стены
+Amber Block Wall=Блок янтарной стены
+Cracked Amber Brick Wall=Разбитый кирпич янтарной стены
+
+Amethyst Wall=Аметистовая стена
+Amethyst Brick Wall=Кирпич аметистовой стены
+Amethyst Block Wall=Блок аметистовой стены
+Cracked Amethyst Brick Wall=Разбитый кирпич аметистовой стены
+
+Andesite Wall=Андезитовая стена
+Andesite Block Wall=Блок андезитовой стены
+Andesite Brick Wall=Кирпич андезитовой стены
+Cracked Andesite Brick Wall=Разбитый кирпич андезитовой стены
+Cobbled Andesite Wall=Мощеная андезитовая стена
+
+Basalt Wall=Базальтовая стена
+Basalt Block Wall=Блок базальтовой стены
+Basalt Brick Wall=Кирпич базальтовой стены
+Cracked Basalt Brick Wall=Разбитый кирпич базальтовой стены
+Cobbled Basalt Wall=Мощеная базальтовая стена
+
+Calcite Wall=Кальцитовая стена
+Calcite Brick Wall=Кирпич кальцитовой стены
+Calcite Block Wall=Блок кальцитовой стены
+Cracked Calcite Brick Wall=Разбитый кирпич кальцитовой стены
+
+Carnotite Wall=Карнотитовая стена
+Carnotite Brick Wall=Кирпич карнотитовой стены
+Carnotite Block Wall=Блок карнотитовой стены
+Cracked Carnotite Brick Wall=Разбитый кирпич карнотитовой стены
+Cobbled Carnotite Wall=Мощеная карнотитовая стена
+
+Celestine Wall=Целестиновая стена
+Celestine Brick Wall=Кирпич целестиновой стены
+Celestine Block Wall=Блок целестиновой стены
+Cracked Celestine Brick Wall=Разбитый кирпич целестиновой стены
+
+Chrysoprase Wall=Хризопразовая стена
+Chrysoprase Brick Wall=Кирпич хризопразовой стены
+Chrysoprase Block Wall=Блок хризопразовой стены
+Cracked Chrysoprase Brick Wall=Разбитый кирпич хризопразовой стены
+
+Citrine Wall=Цитриновая стена
+Citrine Brick Wall=Кирпич цитриновой стены
+Citrine Block Wall=Блок цитриновой стены
+Cracked Citrine Brick Wall=Разбитый кирпич цитриновой стены
+
+Covellite Wall=Ковеллитовая стена
+Covellite Brick Wall=Кирпич ковеллитовой стены
+Covellite Block Wall=Блок ковеллитовой стены
+Cracked Covellite Brick Wall=Разбитый кирпич ковеллитовой стены
+Cobbled Covellite Wall=Мощеная ковеллитовая стена
+
+Crocoite Wall=Крокоитовая стена
+Crocoite Brick Wall=Кирпич крокоитовой стены
+Crocoite Block Wall=Блок крокоитовой стены
+Cracked Crocoite Brick Wall=Разбитый кирпич крокоитовой стены
+
+Erythrite Wall=Эритритовая стена
+Erythrite Brick Wall=Кирпич эритритовой стены
+Erythrite Block Wall=Блок эритритовой стены
+Cracked Erythrite Brick Wall=Разбитый кирпич эритритовой стены
+
+Eudialite Wall=Эудиалитовая стена
+Eudialite Brick Wall=Кирпич эудиалитовой стены
+Eudialite Block Wall=Блок эудиалитовой стены
+Cracked Eudialite Brick Wall=Разбитый кирпич эудиалитовой стены
+
+Gabbro Wall=Габбро стена
+Cobbled Gabbro Wall=Мощеная габбро стена
+Gabbro Brick Wall=Кирпич габбро стены
+Gabbro Block Wall=Блок габбро стены
+Cracked Gabbro Brick Wall=Разбитый кирпич габбро стены
+
+Galena Wall=Галенитовая стена
+Galena Brick Wall=Кирпич галенитовой стены
+Galena Block Wall=Блок галенитовой стены
+Cracked Galena Brick Wall=Разбитый кирпич галенитовой стены
+
+Black Granite Wall=Черная гранитная стена
+Black Granite Brick Wall=Кирпич черной гранитной стены
+Black Granite Block Wall=Блок черной гранитной стены
+Cracked Black Granite Brick Wall=Разбитый кирпич черной гранитной стены
+Cobbled Black Granite Wall=Мощеная черная гранитная стена
+
+Blue Granite Wall=Голубая гранитная стена
+Blue Granite Brick Wall=Кирпич голубой гранитной стены
+Blue Granite Block Wall=Блок голубой гранитной стены
+Cracked Blue Granite Brick Wall=Разбитый кирпич голубой гранитной стены
+Cobbled Blue Granite Wall=Мощеная голубая гранитная стена
+
+Gray Granite Wall=Серая гранитная стена
+Gray Granite Brick Wall=Кирпич серой гранитной стены
+Gray Granite Block Wall=Блок серой гранитной стены
+Cracked Gray Granite Brick Wall=Разбитый кирпич серой гранитной стены
+Cobble Gray Granite Wall=Мощеная серая гранитная стена
+
+Green Granite Wall=Зеленая гранитная стена
+Green Granite Brick Wall=Кирпич зеленой гранитной стены
+Green Granite Block Wall=Блок зеленой гранитной стены
+Cracked Green Granite Brick Wall=Разбитый кирпич зеленой гранитной стены
+Cobbled Green Granite Wall=Мощеная зеленая гранитная стена
+
+Pink Granite Wall=Розовая гранитная стена
+Pink Granite Brick Wall=Кирпич розовой гранитной стены
+Pink Granite Block Wall=Блок розовой гранитной стены
+Cracked Pink Granite Brick Wall=Разбитый кирпич розовой гранитной стены
+Cobbled Pink Granite Wall=Мощеная розовая гранитная стена
+
+Red Granite Wall=Красная гранитная стена
+Red Granite Brick Wall=Красная гранитная кирпичная стена
+Red Granite Block Wall=Красная гранитная блочная стена
+Cracked Red Granite Brick Wall=Треснутая красная гранитная кирпичная стена
+Cobbled Red Granite Wall=Мощеная красная гранитная стена
+
+White Granite Wall=Белая гранитная стена
+White Granite Brick Wall=Белая гранитная кирпичная стена
+White Granite Block Wall=Белая гранитная стена из блоков
+Cracked White Granite Brick Wall=Треснутая кирпичная стена из белого гранита
+Cobbled White Granite Wall=Мощеная белая гранитная стена
+
+Heliodor Wall=Стена из гелиодора
+Heliodor Brick Wall=Кирпичная стена из гелиодора
+Heliodor Block Wall=Стена из блоков гелиодора
+Cracked Heliodor Brick Wall=Треснутая кирпичная стена из гелиодора
+
+Howlite Wall=Стена из хаулита
+Howlite Brick Wall=Кирпичная стена из хаулита
+Howlite Block Wall=Стена из блоков хаулита
+Cracked Howlite Brick Wall=Треснутая кирпичная стена из хаулита
+Cobbled Howlite Wall=Мощеная стена из хаулита
+
+Ilvaite Wall=Стена из ильваита
+Ilvaite Brick Wall=Кирпичная стена из ильваита
+Ilvaite Block Wall=Стена из блоков ильваита
+Cracked Ilvaite Brick Wall=Треснутая кирпичная стена из ильваита
+Cobbled Ilvaite Wall=Мощеная стена из ильваита
+
+Jade Wall=Стена из нефрита
+Jade Brick Wall=Кирпичная стена из нефрита
+Jade Block Wall=Стена из блоков нефрита
+Cracked Jade Brick Wall=Треснутая кирпичная стена из нефрита
+Cobbled Jade Wall=Мощеная стена из нефрита
+
+Kyanite Wall=Кианитовая стена
+Kyanite Brick Wall=Кирпичная кианитовая стена
+Kyanite Block Wall=Блочная кианитовая стена
+Cracked Kyanite Brick Wall=Треснутая кирпичная кианитовая стена
+Cobbled Kyanite Wall=Мощеная кианитовая стена
+
+Lapis Lazuli Wall=Лазуритовая стена
+Lapis Lazuli Brick Wall=Кирпичная лазуритовая стена
+Lapis Lazuli Block Wall=Блочная лазуритовая стена
+Cracked Lapis Lazuli Brick Wall=Треснутая кирпичная лазуритовая стена
+
+Blue Limestone Wall=Синяя известняковая стена
+Blue Limestone Brick Wall=Кирпичная синяя известняковая стена
+Blue Limestone Block Wall=Блочная синяя известняковая стена
+Cracked Blue Limestone Brick Wall=Треснутая кирпичная синяя известняковая стена
+Cobbled Blue Limestone Wall=Мощеная синяя известняковая стена
+
+White Limestone Wall=Белая известняковая стена
+White Limestone Brick Wall=Кирпичная белая известняковая стена
+White Limestone Block Wall=Блочная белая известняковая стена
+Cracked White Limestone Brick Wall=Треснутая кирпичная белая известняковая стена
+Cobbled White Limestone Wall=Мощеная белая известняковая стена
+
+Marble Wall=Мраморная стена
+Marble Brick Wall=Кирпичная мраморная стена
+Marble Block Wall=Блочная мраморная стена
+Cracked Marble Brick Wall=Треснутая кирпичная мраморная стена
+Cobbled Marble Wall=Мощеная мраморная стена
+
+Mudstone Wall=Стена из илацита
+Cobbled Mudstone Wall=Мощеная стена из илацита
+Mudstone Brick Wall=Кирпичная стена из илацита
+Mudstone Block Wall=Блочная стена из илацита
+Cracked Mudstone Brick Wall=Разбитая кирпичная стена из илацита
+
+Prasiolite Wall=Стена из празиолита
+Prasiolite Brick Wall=Кирпичная стена из празиолита
+Prasiolite Block Wall=Блочная стена из празиолита
+Cracked Prasiolite Brick Wall=Разбитая кирпичная стена из празиолита
+
+Pumice Wall=Стена из пемзы
+Pumice Brick Wall=Кирпичная стена из пемзы
+Pumice Block Wall=Блочная стена из пемзы
+Cracked Pumice Brick Wall=Разбитая кирпичная стена из пемзы
+
+Pyrite Wall=Стена из пирита
+Pyrite Brick Wall=Кирпичная стена из пирита
+Pyrite Block Wall=Блочная стена из пирита
+Cracked Pyrite Brick Wall=Разбитая кирпичная стена из пирита
+
+Quartz Wall=Стена из кварца
+Quartz Brick Wall=Кирпичная стена из кварца
+Quartz Block Wall=Блочная стена из кварца
+Cracked Quartz Brick Wall=Разбитая кирпичная стена из кварца
+
+Rose Quartz Wall=Стена из розового кварца
+Rose Quartz Brick Wall=Кирпичная стена из розового кварца
+Rose Quartz Block Wall=Блочная стена из розового кварца
+Cracked Rose Quartz Brick Wall=Разбитая кирпичная стена из розового кварца
+
+Scoria Wall=Стена скории
+Scoria Brick Wall=Кирпичная стена скории
+Scoria Block Wall=Блочная стена скории
+Cracked Scoria Brick Wall=Треснувший кирпич стены скории
+Cobbled Scoria Wall=Мощеная стена скории
+
+Serpentine Wall=Стена серпентинита
+Cobbled Serpentine Wall=Мощеная стена серпентинита
+Serpentine Brick Wall=Кирпичная стена серпентинита
+Serpentine Block Wall=Блочная стена серпентинита
+Cracked Serpentine Brick Wall=Треснувший кирпич стены серпентинита
+
+Slate Wall=Сланцевая стена
+Slate Brick Wall=Кирпичная стена сланца
+Slate Block Wall=Блочная стена сланца
+Cracked Slate Brick Wall=Треснувший кирпич стены сланца
+Cobbled Slate Wall=Мощеная стена сланца
+Slate Tile Wall=Стена из сланцевых плит
+
+Smokey Quartz Wall=Стена дымчатого кварца
+Smokey Quartz Brick Wall=Кирпичная стена дымчатого кварца
+Smokey Quartz Block Wall=Блочная стена дымчатого кварца
+Cracked Smokey Quartz Brick Wall=Треснувший кирпич стены дымчатого кварца
+
+Soapstone Wall=Стена мыльного камня
+Soapstone Brick Wall=Кирпичная стена мыльного камня
+Soapstone Block Wall=Блочная стена мыльного камня
+Cracked Soapstone Brick Wall=Треснувший кирпич стены мыльного камня
+
+Sodalite Wall=Стена содалита
+Cobbled Sodalite Wall=Мощеная стена содалита
+Sodalite Brick Wall=Кирпичная стена содалита
+Sodalite Block Wall=Блочная стена содалита
+Cracked Sodalite Brick Wall=Треснувший кирпич стены содалита
+
+Sugilite Wall=Стена сугилита
+Sugilite Brick Wall=Кирпичная стена сугилита
+Sugilite Block Wall=Блочная стена сугилита
+Cracked Sugilite Brick Wall=С трещинами кирпичная стена сугилита
+Cobbled Sugilite Wall=Мощеная стена сугилита
+
+Travertine Wall=Стена травертина
+Cobbled Travertine Wall=Мощеная стена травертина
+Travertine Brick Wall=Кирпичная стена травертина
+Travertine Block Wall=Блочная стена травертина
+Cracked Travertine Brick Wall=С трещинами кирпичная стена травертина
+
+Beige Tuff Wall=Стена бежевого туфа
+Cobbled Beige Tuff Wall=Мощеная стена бежевого туфа
+Beige Tuff Block Wall=Блочная стена бежевого туфа
+Beige Tuff Brick Wall=Кирпичная стена бежевого туфа
+Cracked Beige Tuff Brick Wall=С трещинами кирпичная стена бежевого туфа
+
+Grey Tuff Wall=Стена серого туфа
+Cobbled Grey Tuff Wall=Мощеная стена серого туфа
+Grey Tuff Block Wall=Блочная стена серого туфа
+Grey Tuff Brick Wall=Кирпичная стена серого туфа
+Cracked Grey Tuff Brick Wall=С трещинами кирпичная стена серого туфа
+
+Red Tuff Wall=Стена красного туфа
+Cobbled Red Tuff Wall=Мощеная стена красного туфа
+Red Tuff Block Wall=Блочная стена красного туфа
+Red Tuff Brick Wall=Кирпичная стена красного туфа
+Cracked Red Tuff Brick Wall=С трещинами кирпичная стена красного туфа
+
+Turquoise Wall=Стена бирюзового камня
+Turquoise Brick Wall=Кирпичная стена бирюзового камня
+Turquoise Block Wall=Блочная стена бирюзового камня
+Cracked Turquoise Brick Wall=С трещинами кирпичная стена бирюзового камня
+Cobbled Turquoise Wall=Мощеная стена бирюзового камня
+
+Vivianite Wall=Стена вивианита
+Vivianite Brick Wall=Кирпичная стена вивианита
+Vivianite Block Wall=Блочная стена вивианита
+Cracked Vivianite Brick Wall=Кирпичная стена вивианита с трещинами
+
+### stairs.lua ###
+
+Blue Agate Slab=Слэб из синего агата
+Gray Agate Slab=Слэб из серого агата
+Green Agate Slab=Слэб из зеленого агата
+Moss Agate Slab=Слэб из мохового агата
+Orange Agate Slab=Слэб из оранжевого агата
+Purple Agate Slab=Слэб из фиолетового агата
+Red Agate Slab=Слэб из красного агата
+
+Amazonite Slab=Слэб амазонита
+Cobbled Amazonite Slab=Мощеный слэб амазонита
+Amazonite Brick Slab=Слэб кирпича амазонита
+Amazonite Block Slab=Слэб блока амазонита
+Cracked Amazonite Brick Slab=Слэб треснувшего кирпича амазонита
+
+Amber Slab=Слэб янтаря
+Amber Brick Slab=Слэб кирпича янтаря
+Amber Block Slab=Слэб блока янтаря
+Cracked Amber Brick Slab=Слэб треснувшего кирпича янтаря
+
+Amethyst Slab=Слэб аметиста
+Amethyst Brick Slab=Слэб кирпича аметиста
+Amethyst Block Slab=Слэб блока аметиста
+Cracked Amethyst Brick Slab=Слэб треснувшего кирпича аметиста
+
+Andesite Slab=Слэб андезита
+Andesite Block Slab=Слэб блока андезита
+Cobbled Andesite Slab=Мощеный слэб андезита
+Andesite Brick Slab=Слэб кирпича андезита
+Cobbled Andesite Brick Slab=Мощеный слэб кирпича андезита
+
+Basalt Slab=Слэб базальта
+Basalt Block Slab=Слэб блока базальта
+Basalt Brick Slab=Слэб кирпича базальта
+Cracked Basalt Brick Slab=Слэб треснувшего кирпича базальта
+Cobbled Basalt Slab=Мощеный слэб базальта
+
+Calcite Slab=Слэб кальцита
+Calcite Brick Slab=Слэб кирпича кальцита
+Calcite Block Slab=Слэб блока кальцита
+Cracked Calcite Brick Slab=Слэб треснувшего кирпича кальцита
+
+Carnotite Slab=Плита карнотита
+Carnotite Brick Slab=Кирпичная плита карнотита
+Carnotite Block Slab=Блочная плита карнотита
+Cracked Carnotite Brick Slab=Потрескавшаяся кирпичная плита карнотита
+Cobbled Carnotite Slab=Мощеная плита карнотита
+
+Celestine Slab=Плита целестита
+Celestine Brick Slab=Кирпичная плита целестита
+Celestine Block Slab=Блочная плита целестита
+Cracked Celestine Brick Slab=Потрескавшаяся кирпичная плита целестита
+
+Chrysoprase Slab=Плита хризопраза
+Chrysoprase Brick Slab=Кирпичная плита хризопраза
+Chrysoprase Block Slab=Блочная плита хризопраза
+Cracked Chrysoprase Brick Slab=Потрескавшаяся кирпичная плита хризопраза
+
+Citrine Slab=Плита цитрина
+Citrine Brick Slab=Кирпичная плита цитрина
+Citrine Block Slab=Блочная плита цитрина
+Cracked Citrine Brick Slab=Потрескавшаяся кирпичная плита цитрина
+
+Covellite Slab=Плита ковеллита
+Covellite Brick Slab=Кирпичная плита ковеллита
+Covellite Block Slab=Блочная плита ковеллита
+Cracked Covellite Brick Slab=Потрескавшаяся кирпичная плита ковеллита
+Cobbled Covellite Slab=Мощеная плита ковеллита
+
+Crocoite Slab=Плита крокоита
+Crocoite Brick Slab=Плита кирпича крокоита
+Crocoite Block Slab=Плита блока крокоита
+Cracked Crocoite Brick Slab=Плита кирпича крокоита с трещинами
+
+Erythrite Slab=Плита эритрита
+Erythrite Brick Slab=Плита кирпича эритрита
+Erythrite Block Slab=Плита блока эритрита
+Cracked Erythrite Brick Slab=Плита кирпича эритрита с трещинами
+
+Eudialite Slab=Плита эвдиалита
+Eudialite Brick Slab=Плита кирпича эвдиалита
+Eudialite Block Slab=Плита блока эвдиалита
+Cracked Eudialite Brick Slab=Плита кирпича эвдиалита с трещинами
+
+Gabbro Slab=Плита габбро
+Cobbled Gabbro Slab=Мощеная плита габбро
+Gabbro Brick Slab=Плита кирпича габбро
+Gabbro Block Slab=Плита блока габбро
+Cracked Gabbro Brick Slab=Плита кирпича габбро с трещинами
+
+Galena Slab=Плита галены
+Galena Brick Slab=Плита кирпича галены
+Galena Block Slab=Плита блока галены
+Cracked Galena Brick Slab=Плита кирпича галены с трещинами
+
+Black Granite Slab=Плита черного гранита
+Black Granite Brick Slab=Плита кирпича черного гранита
+Black Granite Block Slab=Плита блока черного гранита
+Cracked Black Granite Brick Slab=Плита кирпича черного гранита с трещинами
+Cobbled Black Granite Slab=Мощеная черная гранитная плита
+
+Blue Granite Slab=Голубая гранитная плита
+Blue Granite Brick Slab=Голубой кирпич гранитной плиты
+Blue Granite Block Slab=Голубой блочный гранитный полустиль
+Cracked Blue Granite Brick Slab=С трещинами кирпич голубой гранитной плиты
+Cobbled Blue Granite Slab=Мощеная голубая гранитная плита
+
+Gray Granite Slab=Серая гранитная плита
+Gray Granite Brick Slab=Серый кирпич гранитной плиты
+Gray Granite Block Slab=Серый блочный гранитный полустиль
+Cracked Gray Granite Brick Slab=С трещинами серый кирпич гранитной плиты
+Cobbled Gray Granite Slab=Мощеная серая гранитная плита
+
+Green Granite Slab=Зеленая гранитная плита
+Green Granite Brick Slab=Зеленый кирпич гранитной плиты
+Green Granite Block Slab=Зеленый блочный гранитный полустиль
+Cracked Green Granite Brick Slab=С трещинами зеленый кирпич гранитной плиты
+Cobbled Green Granite Slab=Мощеная зеленая гранитная плита
+
+Pink Granite Slab=Розовая гранитная плита
+Pink Granite Brick Slab=Розовый кирпич гранитной плиты
+Pink Granite Block Slab=Розовый блочный гранитный полустиль
+Cracked Pink Granite Brick Slab=С трещинами розовый кирпич гранитной плиты
+Cobbled Pink Granite Slab=Мощеная розовая гранитная плита
+
+Red Granite Slab=Красная гранитная плита
+Red Granite Brick Slab=Красный кирпич гранитной плиты
+Red Granite Block Slab=Красный блочный гранитный полустиль
+Cracked Red Granite Brick Slab=С трещинами красный кирпич гранитной плиты
+Cobbled Red Granite Slab=Мощеная красная гранитная плита
+
+White Granite Slab=Белая гранитная плита
+White Granite Brick Slab=Кирпичная белая гранитная плита
+White Granite Block Slab=Блочная белая гранитная плита
+Cracked White Granite Brick Slab=Кирпичная белая гранитная плита со трещинами
+Cobbled White Granite Slab=Мощеная белая гранитная плита
+
+Heliodor Slab=Плита гелиодора
+Heliodor Brick Slab=Кирпичная плита гелиодора
+Heliodor Block Slab=Блочная плита гелиодора
+Cracked Heliodor Brick Slab=Кирпичная плита гелиодора со трещинами
+Howlite Slab=Плита хаулита
+Howlite Brick Slab=Кирпичная плита хаулита
+Howlite Block Slab=Блочная плита хаулита
+Cracked Howlite Brick Slab=Кирпичная плита хаулита со трещинами
+Cobbled Howlite Slab=Мощеная плита хаулита
+
+Ilvaite Slab=Плита ильвайта
+Ilvaite Brick Slab=Кирпичная плита ильвайта
+Ilvaite Block Slab=Блочная плита ильвайта
+Cracked Ilvaite Brick Slab=Кирпичная плита ильвайта со трещинами
+Cobbled Ilvaite Slab=Мощеная плита ильвайта
+
+Jade Slab=Яшмовая плита
+Jade Brick Slab=Яшмовый кирпич-плита
+Jade Block Slab=Яшмовый блок-плита
+Cracked Jade Brick Slab=Треснувший яшмовый кирпич-плита
+Cobbled Jade Slab=Мощеная яшмовая плита
+
+Kyanite Slab=Кианитовая плита
+Kyanite Brick Slab=Кианитовый кирпич-плита
+Kyanite Block Slab=Кианитовый блок-плита
+Cracked Kyanite Brick Slab=Треснувший кианитовый кирпич-плита
+Cobbled Kyanite Slab=Мощеная кианитовая плита
+
+Lapis Lazuli Slab=Лазуритовая плита
+Lapis Lazuli Brick Slab=Лазуритовый кирпич-плита
+Lapis Lazuli Block Slab=Лазуритовый блок-плита
+Cracked Lapis Lazuli Brick Slab=Треснувший лазуритовый кирпич-плита
+
+Blue Limestone Slab=Синяя известняковая плита
+Blue Limestone Brick Slab=Синий известняковый кирпич-плита
+Blue Limestone Block Slab=Синий известняковый блок-плита
+Cracked Blue Limestone Brick Slab=Треснувший синий известняковый кирпич-плита
+Cobbled Blue Limestone Slab=Мощеная синяя известняковая плита
+
+White Limestone Slab=Белая известняковая плита
+White Limestone Brick Slab=Белый известняковый кирпич-плита
+White Limestone Block Slab=Белый известняковый блок-плита
+Cracked White Limestone Brick Slab=Треснувший белый известняковый кирпич-плита
+Cobbled White Limestone Slab=Мощеная белая известняковая плита
+
+Marble Slab=Мраморная плита
+Marble Brick Slab=Мраморная кирпичная плита
+Marble Block Slab=Мраморный блочный слэб
+Cracked Marble Brick Slab=Треснувшая мраморная кирпичная плита
+Cobbled Marble Slab=Мощеная мраморная плита
+
+Mudstone Slab=Известняковая плита
+Cobbled Mudstone Slab=Мощеная известняковая плита
+Mudstone Brick Slab=Кирпичная известняковая плита
+Mudstone Block Slab=Блочный известняковый слэб
+Cracked Mudstone Brick Slab=Треснувшая кирпичная известняковая плита
+
+Prasiolite Slab=Празиолитовая плита
+Cobbled Prasiolite Slab=Мощеная празиолитовая плита
+Prasiolite Brick Slab=Кирпичная празиолитовая плита
+Prasiolite Block Slab=Блочный празиолитовый слэб
+Cracked Prasiolite Brick Slab=Треснувшая кирпичная празиолитовая плита
+
+Pumice Slab=Пемзовая плита
+Pumice Brick Slab=Кирпичная пемзовая плита
+Pumice Block Slab=Блочный пемзовый слэб
+Cracked Pumice Brick Slab=Треснувшая кирпичная пемзовая плита
+
+Pyrite Slab=Пиритовая плита
+Pyrite Brick Slab=Кирпичная пиритовая плита
+Pyrite Block Slab=Блочный пиритовый слэб
+Cracked Pyrite Brick Slab=Треснувшая кирпичная пиритовая плита
+
+Quartz Slab=Кварцевая плита
+Cobbled Quartz Slab=Мощеная кварцевая плита
+Quartz Brick Slab=Кирпичная кварцевая плита
+Quartz Block Slab=Блочный кварцевый слэб
+Cracked Quartz Brick Slab=Треснувшая кирпичная кварцевая плита
+
+Rose Quartz Slab=Слэб Розового Кварца
+Rose Quartz Brick Slab=Кирпичный слэб Розового Кварца
+Rose Quartz Block Slab=Блочный слэб Розового Кварца
+Cracked Rose Quartz Brick Slab=Растрескавшийся кирпичный слэб Розового Кварца
+
+Scoria Slab=Слэб Скории
+Scoria Brick Slab=Кирпичный слэб Скории
+Scoria Block Slab=Блочный слэб Скории
+Cracked Scoria Brick Slab=Растрескавшийся кирпичный слэб Скории
+Cobbled Scoria Slab=Мощеный слэб Скории
+
+Serpentine Slab=Слэб Серпентина
+Cobbled Serpentine Slab=Мощеный слэб Серпентина
+Serpentine Brick Slab=Кирпичный слэб Серпентина
+Serpentine Block Slab=Блочный слэб Серпентина
+Cracked Serpentine Brick Slab=Растрескавшийся кирпичный слэб Серпентина
+
+Slate Slab=Слэб Сланца
+Slate Brick Slab=Кирпичный слэб Сланца
+Slate Block Slab=Блочный слэб Сланца
+Cracked Slate Brick Slab=Растрескавшийся кирпичный слэб Сланца
+Cobbled Slate Slab=Мощеный слэб Сланца
+Slate Tile Slab=Слэб из сланцевых плит
+
+Smokey Quartz Slab=Слэб Дымчатого Кварца
+Smokey Quartz Brick Slab=Кирпичный слэб Дымчатого Кварца
+Smokey Quartz Block Slab=Блочный слэб Дымчатого Кварца
+Cracked Smokey Quartz Brick Slab=Растрескавшийся кирпичный слэб Дымчатого Кварца
+
+Soapstone Slab=Слэб Мыльного Камня
+Soapstone Brick Slab=Кирпичный слэб Мыльного Камня
+Soapstone Block Slab=Блочный слэб Мыльного Камня
+Cracked Soapstone Brick Slab=Треснувший кирпичный слэб Мыльного Камня
+
+Sodalite Slab=Плита из содалита
+Cobbled Sodalite Slab=Плита из булыжника содалита
+Sodalite Brick Slab=Плита из кирпича содалита
+Sodalite Block Slab=Плита из блока содалита
+Cracked Sodalite Brick Slab=Плита из треснувшего кирпича содалита
+
+Sugilite Slab=Плита из сугилита
+Sugilite Brick Slab=Плита из кирпича сугилита
+Sugilite Block Slab=Плита из блока сугилита
+Cracked Sugilite Brick Slab=Плита из треснувшего кирпича сугилита
+Cobbled Sugilite Slab=Плита из булыжника сугилита
+
+Travertine Slab=Плита из травертина
+Cobbled Travertine Slab=Плита из булыжника травертина
+Travertine Brick Slab=Плита из кирпича травертина
+Travertine Block Slab=Плита из блока травертина
+Cracked Travertine Brick Slab=Плита из треснувшего кирпича травертина
+
+Beige Tuff Slab=Плита из бежевого туфа
+Cobbled Beige Tuff Slab=Плита из булыжника бежевого туфа
+Beige Tuff Block Slab=Плита из блока бежевого туфа
+Beige Tuff Brick Slab=Плита из кирпича бежевого туфа
+Cracked Beige Tuff Brick Slab=Плита из треснувшего кирпича бежевого туфа
+
+Grey Tuff Slab=Плита из серого туфа
+Cobbled Grey Tuff Slab=Плита из булыжника серого туфа
+Grey Tuff Block Slab=Плита из блока серого туфа
+Grey Tuff Brick Slab=Плита из кирпича серого туфа
+Cracked Grey Tuff Brick Slab=Плита из треснувшего кирпича серого туфа
+
+Red Tuff Slab=Плита из красного туфа
+Cobbled Red Tuff Slab=Плита из булыжника красного туфа
+Red Tuff Block Slab=Блочная плита из красного туфа
+Red Tuff Brick Slab=Кирпичная плита из красного туфа
+Cracked Red Tuff Brick Slab=Плита из треснувшего кирпича красного туфа
+
+Turquoise Slab=Плита из бирюзы
+Turquoise Brick Slab=Кирпичная плита из бирюзы
+Turquoise Block Slab=Блочная плита из бирюзы
+Cracked Turquoise Brick Slab=Плита из треснувшего кирпича бирюзы
+Cobbled Turquoise Slab=Плита из булыжника бирюзы
+
+Vivianite Slab=Плита из вивианита
+Cobbled Vivianite Slab=Плита из булыжника вивианита
+Vivianite Brick Slab=Кирпичная плита из вивианита
+Vivianite Block Slab=Блочная плита из вивианита
+Cracked Vivianite Brick Slab=Плита из треснувшего кирпича вивианита
+
+
+
+Blue Agate Stair=Лестница из синего агата
+Gray Agate Stair=Лестница из серого агата
+Green Agate Stair=Лестница из зеленого агата
+Moss Agate Stair=Лестница из мохового агата
+Orange Agate Stair=Лестница из оранжевого агата
+Purple Agate Stair=Лестница из фиолетового агата
+Red Agate Stair=Лестница из красного агата
+
+Amazonite Stair=Лестница из амазонита
+Cobbled Amazonite Stair=Лестница из булыжника амазонита
+Amazonite Brick Stair=Лестница из кирпича амазонита
+Amazonite Block Stair=Лестница из блока амазонита
+Cracked Amazonite Brick Stair=Лестница из треснувшего кирпича амазонита
+
+Amber Stair=Лестница из янтаря
+Amber Brick Stair=Лестница из кирпича янтаря
+Amber Block Stair=Лестница из блока янтаря
+Cracked Amber Brick Stair=Лестница из треснувшего кирпича янтаря
+
+Amethyst Stair=Лестница из аметиста
+Amethyst Brick Stair=Лестница из кирпича аметиста
+Amethyst Block Stair=Лестница из блока аметиста
+Cracked Amethyst Brick Stair=Лестница из треснувшего кирпича аметиста
+
+Andesite Stair=Лестница из андезита
+Andesite Block Stair=Лестница из блока андезита
+Cobbled Andesite Stair=Лестница из булыжника андезита
+Andesite Brick Stair=Лестница из кирпича андезита
+Cobbled Andesite Brick Stair=Лестница из булыжника андезитного кирпича
+
+Basalt Stair=Лестница из базальта
+Basalt Block Stair=Лестница из блока базальта
+Basalt Brick Stair=Лестница из кирпича базальта
+Cracked Basalt Brick Stair=Лестница из треснувшего кирпича базальта
+Cobbled Basalt Stair=Лестница из булыжника базальта
+
+Calcite Stair=Лестница из кальцита
+Calcite Brick Stair=Лестница из кирпича кальцита
+Calcite Block Stair=Лестница из блока кальцита
+Cracked Calcite Brick Stair=Трещиноватая лестница из кальцитового кирпича
+
+Carnotite Stair=Лестница из карнотита
+Carnotite Brick Stair=Лестница из кирпича карнотита
+Carnotite Block Stair=Лестница из блока карнотита
+Cracked Carnotite Brick Stair=Лестница из треснувшего кирпича карнотита
+Cobbled Carnotite Stair=Мощеная лестница из карнотита
+
+Celestine Stair=Лестница из селестина
+Celestine Brick Stair=Лестница из кирпича селестина
+Celestine Block Stair=Лестница из блока селестина
+Cracked Celestine Brick Stair=Лестница из треснувшего кирпича селестина
+
+Chrysoprase Stair=Лестница из хризопраза
+Chrysoprase Brick Stair=Лестница из кирпича хризопраза
+Chrysoprase Block Stair=Лестница из блока хризопраза
+Cracked Chrysoprase Brick Stair=Лестница из треснувшего кирпича хризопраза
+
+Citrine Stair=Лестница из цитрина
+Citrine Brick Stair=Лестница из кирпича цитрина
+Citrine Block Stair=Лестница из блока цитрина
+Cracked Citrine Brick Stair=Лестница из треснувшего кирпича цитрина
+
+Covellite Stair=Лестница из ковеллита
+Covellite Brick Stair=Лестница из кирпича ковеллита
+Covellite Block Stair=Лестница из блока ковеллита
+Cracked Covellite Brick Stair=Лестница из треснувшего кирпича ковеллита
+Cobbled Covellite Stair=Мощеная лестница из ковеллита
+
+Crocoite Stair=Лестница из крокоита
+Crocoite Brick Stair=Лестница из кирпича крокоита
+Crocoite Block Stair=Лестница из блока крокоита
+Cracked Crocoite Brick Stair=Лестница из треснувшего кирпича крокоита
+
+Erythrite Stair=Лестница из эритритового камня
+Erythrite Brick Stair=Лестница из кирпича эритритового камня
+Erythrite Block Stair=Лестница из блока эритритового камня
+Cracked Erythrite Brick Stair=Лестница из треснувшего кирпича эритритового камня
+
+Eudialite Stair=Лестница из эудиалита
+Eudialite Brick Stair=Лестница из кирпича эудиалита
+Eudialite Block Stair=Лестница из блока эудиалита
+Cracked Eudialite Brick Stair=Лестница из треснувшего кирпича эудиалита
+
+Gabbro Stair=Лестница из габбро
+Cobbled Gabbro Stair=Лестница из булыжника габбро
+Gabbro Brick Stair=Лестница из кирпича габбро
+Gabbro Block Stair=Лестница из блока габбро
+Cracked Gabbro Brick Stair=Лестница из треснувшего кирпича габбро
+
+Galena Stair=Лестница из галены
+Galena Brick Stair=Лестница из кирпича галены
+Galena Block Stair=Лестница из блока галены
+Cracked Galena Brick Stair=Лестница из треснувшего кирпича галены
+
+Black Granite Stair=Лестница из черного гранита
+Black Granite Brick Stair=Лестница из кирпича черного гранита
+Black Granite Block Stair=Лестница из блока черного гранита
+Cracked Black Granite Brick Stair=Лестница из треснувшего кирпича черного гранита
+Cobbled Black Granite Stair=Лестница из булыжника черного гранита
+
+Blue Granite Stair=Лестница из синего гранита
+Blue Granite Brick Stair=Лестница из кирпича синего гранита
+Blue Granite Block Stair=Лестница из блока синего гранита
+Cracked Blue Granite Brick Stair=Треснувший кирпичный блок из синего гранита
+Cobbled Blue Granite Stair=Мощеная лестница из синего гранита
+
+Gray Granite Stair=Лестница из серого гранита
+Gray Granite Brick Stair=Лестница из кирпича серого гранита
+Gray Granite Block Stair=Лестница из блока серого гранита
+Cracked Gray Granite Brick Stair=Треснувший кирпичный блок из серого гранита
+Cobbled Gray Granite Stair=Мощеная лестница из серого гранита
+
+Green Granite Stair=Лестница из зеленого гранита
+Green Granite Brick Stair=Лестница из кирпича зеленого гранита
+Green Granite Block Stair=Лестница из блока зеленого гранита
+Cracked Green Granite Brick Stair=Треснувший кирпичный блок из зеленого гранита
+Cobbled Green Granite Stair=Мощеная лестница из зеленого гранита
+
+Pink Granite Stair=Лестница из розового гранита
+Pink Granite Brick Stair=Лестница из кирпича розового гранита
+Pink Granite Block Stair=Лестница из блока розового гранита
+Cracked Pink Granite Brick Stair=Треснувший кирпичный блок из розового гранита
+Cobbled Pink Granite Stair=Мощеная лестница из розового гранита
+
+Red Granite Stair=Лестница из красного гранита
+Red Granite Brick Stair=Лестница из кирпича красного гранита
+Red Granite Block Stair=Лестница из блока красного гранита
+Cracked Red Granite Brick Stair=Треснувший кирпичный блок из красного гранита
+Cobbled Red Granite Stair=Мощеная лестница из красного гранита
+
+White Granite Stair=Белая гранитная лестница
+White Granite Brick Stair=Белый гранитный кирпич для лестницы
+White Granite Block Stair=Белый гранитный блок для лестницы
+Cracked White Granite Brick Stair=Треснувший белый гранитный кирпич для лестницы
+Cobbled White Granite Stair=Мощеная белая гранитная лестница
+
+Heliodor Stair=Лестница из гелиодора
+Heliodor Brick Stair=Кирпич для лестницы из гелиодора
+Heliodor Block Stair=Блок для лестницы из гелиодора
+Cracked Heliodor Brick Stair=Треснувший кирпич для лестницы из гелиодора
+
+Howlite Stair=Лестница из хаулита
+Howlite Brick Stair=Кирпич для лестницы из хаулита
+Howlite Block Stair=Блок для лестницы из хаулита
+Cracked Howlite Brick Stair=Треснувший кирпич для лестницы из хаулита
+Cobbled Howlite Stair=Мощеная лестница из хаулита
+
+Ilvaite Stair=Лестница из ильваита
+Ilvaite Brick Stair=Кирпич для лестницы из ильваита
+Ilvaite Block Stair=Блок для лестницы из ильваита
+Cracked Ilvaite Brick Stair=Треснувший кирпич для лестницы из ильваита
+Cobbled Ilvaite Stair=Мощеная лестница из ильваита
+
+Jade Stair=Лестница из нефрита
+Jade Brick Stair=Кирпич для лестницы из нефрита
+Jade Block Stair=Блок для лестницы из нефрита
+Cracked Jade Brick Stair=Треснувший кирпич для лестницы из нефрита
+Cobbled Jade Stair=Мощеная лестница из нефрита
+
+Kyanite Stair=Лестница из кианита
+Kyanite Brick Stair=Кирпич для лестницы из кианита
+Kyanite Block Stair=Блок для лестницы из кианита
+Cracked Kyanite Brick Stair=Треснувший кирпич для лестницы из кианита
+Cobbled Kyanite Stair=Мощеная лестница из кианита
+
+Lapis Lazuli Stair=Лестница из ляпис-лазури
+Lapis Lazuli Brick Stair=Кирпичная лестница из ляпис-лазури
+Lapis Lazuli Block Stair=Блочная лестница из ляпис-лазури
+Cracked Lapis Lazuli Brick Stair=Растрескавшаяся кирпичная лестница из ляпис-лазури
+
+Blue Limestone Stair=Лестница из синего известняка
+Blue Limestone Brick Stair=Кирпичная лестница из синего известняка
+Blue Limestone Block Stair=Блочная лестница из синего известняка
+Cracked Blue Limestone Brick Stair=Растрескавшаяся кирпичная лестница из синего известняка
+Cobbled Blue Limestone Stair=Мощеная лестница из синего известняка
+
+White Limestone Stair=Лестница из белого известняка
+White Limestone Brick Stair=Кирпичная лестница из белого известняка
+White Limestone Block Stair=Блочная лестница из белого известняка
+Cracked White Limestone Brick Stair=Растрескавшаяся кирпичная лестница из белого известняка
+Cobbled White Limestone Stair=Мощеная лестница из белого известняка
+
+Marble Stair=Лестница из мрамора
+Marble Brick Stair=Кирпичная лестница из мрамора
+Marble Block Stair=Блочная лестница из мрамора
+Cracked Marble Brick Stair=Растрескавшаяся кирпичная лестница из мрамора
+Cobbled Marble Stair=Мощеная лестница из мрамора
+
+Mudstone Stair=Лестница из муляжного камня
+Cobbled Mudstone Stair=Мощеная лестница из муляжного камня
+Mudstone Brick Stair=Кирпичная лестница из муляжного камня
+Mudstone Block Stair=Блочная лестница из муляжного камня
+Cracked Mudstone Brick Stair=Растрескавшаяся кирпичная лестница из муляжного камня
+
+Prasiolite Stair=Лестница из празиолита
+Prasiolite Brick Stair=Кирпичная лестница из празиолита
+Prasiolite Block Stair=Блочная лестница из празиолита
+Cracked Prasiolite Brick Stair=Растрескавшаяся кирпичная лестница из празиолита
+
+Pumice Stair=Лестница из пемзы
+Pumice Brick Stair=Лестница из кирпичей пемзы
+Pumice Block Stair=Лестница из блоков пемзы
+Cracked Pumice Brick Stair=Лестница из треснувших кирпичей пемзы
+
+Pyrite Stair=Лестница из пирита
+Pyrite Brick Stair=Лестница из кирпичей пирита
+Pyrite Block Stair=Лестница из блоков пирита
+Cracked Pyrite Brick Stair=Лестница из треснувших кирпичей пирита
+
+Quartz Stair=Лестница из кварца
+Quartz Brick Stair=Лестница из кирпичей кварца
+Quartz Block Stair=Лестница из блоков кварца
+Cracked Quartz Brick Stair=Лестница из треснувших кирпичей кварца
+
+Rose Quartz Stair=Лестница из розового кварца
+Rose Quartz Brick Stair=Лестница из кирпичей розового кварца
+Rose Quartz Block Stair=Лестница из блоков розового кварца
+Cracked Rose Quartz Brick Stair=Лестница из треснувших кирпичей розового кварца
+
+Scoria Stair=Лестница из скории
+Scoria Brick Stair=Лестница из кирпичей скории
+Scoria Block Stair=Лестница из блоков скории
+Cracked Scoria Brick Stair=Лестница из треснувших кирпичей скории
+Cobbled Scoria Stair=Мощеная лестница из скории
+
+Serpentine Stair=Лестница из серпентина
+Cobbled Serpentine Stair=Мощеная лестница из серпентина
+Serpentine Brick Stair=Лестница из кирпичей серпентина
+Serpentine Block Stair=Лестница из блоков серпентина
+Cracked Serpentine Brick Stair=Лестница из треснувших кирпичей серпентина
+
+Slate Stair=Лестница из сланца
+Slate Brick Stair=Кирпичная лестница из сланца
+Slate Block Stair=Блочная лестница из сланца
+Cracked Slate Brick Stair=Растрескавшаяся кирпичная лестница из сланца
+Cobbled Slate Stair=Мощеная лестница из сланца
+Slate Tile Stair=Лестница из сланцевых плит
+
+
+Smokey Quartz Stair=Лестница из дымчатого кварца
+Smokey Quartz Brick Stair=Кирпичная лестница из дымчатого кварца
+Smokey Quartz Block Stair=Лестница из блока дымчатого кварца
+Cracked Smokey Quartz Brick Stair=Лестница из треснувшего кирпича дымчатого кварца
+
+Soapstone Stair=Лестница из мыльного камня
+Soapstone Brick Stair=Лестница из кирпича мыльного камня
+Soapstone Block Stair=Лестница из блока мыльного камня
+Cracked Soapstone Brick Stair=Лестница из треснувшего кирпича мыльного камня
+
+Sodalite Stair=Лестница из содалита
+Cobbled Sodalite Stair=Мощеная лестница из содалита
+Sodalite Brick Stair=Лестница из кирпича содалита
+Sodalite Block Stair=Лестница из блока содалита
+Cracked Sodalite Brick Stair=Лестница из треснувшего кирпича содалита
+
+Sugilite Stair=Лестница из сугилита
+Sugilite Brick Stair=Лестница из кирпича сугилита
+Sugilite Block Stair=Лестница из блока сугилита
+Cracked Sugilite Brick Stair=Лестница из треснувшего кирпича сугилита
+Cobbled Sugilite Stair=Мощеная лестница из сугилита
+
+Travertine Stair=Лестница из травертина
+Cobbled Travertine Stair=Мощеная лестница из травертина
+Travertine Brick Stair=Лестница из кирпича травертина
+Travertine Block Stair=Лестница из блока травертина
+Cracked Travertine Brick Stair=Лестница из треснувшего кирпича травертина
+
+Beige Tuff Stair=Лестница из бежевого туфа
+Beige Tuff Brick Stair=Лестница из кирпича из бежевого туфа
+Beige Tuff Block Stair=Лестница из блока бежевого туфа
+Cracked Beige Tuff Brick Stair=Лестница из треснувшего кирпича из бежевого туфа
+Cobbled Beige Tuff Stair=Мощеная лестница из бежевого туфа
+
+Grey Tuff Stair=Лестница из серого туфа
+Grey Tuff Brick Stair=Лестница из кирпича из серого туфа
+Grey Tuff Block Stair=Лестница из блока серого туфа
+Cracked Grey Tuff Brick Stair=Лестница из треснувшего кирпича из серого туфа
+Cobbled Grey Tuff Stair=Мощеная лестница из серого туфа
+
+Red Tuff Stair=Лестница из красного туфа
+Red Tuff Brick Stair=Лестница из кирпича из красного туфа
+Red Tuff Block Stair=Лестница из блока красного туфа
+Cracked Red Tuff Brick Stair=Лестница из треснувшего кирпича из красного туфа
+Cobbled Red Tuff Stair=Мощеная лестница из красного туфа
+
+Turquoise Stair=Лестница из бирюзы
+Turquoise Brick Stair=Лестница из кирпича из бирюзы
+Turquoise Block Stair=Лестница из блока бирюзы
+Cracked Turquoise Brick Stair=Лестница из треснувшего кирпича из бирюзы
+Cobbled Turquoise Stair=Мощеная лестница из бирюзы
+
+Vivianite Stair=Лестница из вивианита
+Vivianite Brick Stair=Лестница из кирпича из вивианита
+Vivianite Block Stair=Лестница из блока вивианита
+Cracked Vivianite Brick Stair=Лестница из треснувшего кирпича из вивианита
+
+
+
+Inner Blue Agate Stair=Внутренняя лестница из синего агата
+Inner Gray Agate Stair=Внутренняя лестница из серого агата
+Inner Green Agate Stair=Внутренняя лестница из зеленого агата
+Inner Moss Agate Stair=Внутренняя лестница из мохового агата
+Inner Orange Agate Stair=Внутренняя лестница из оранжевого агата
+Inner Purple Agate Stair=Внутренняя лестница из фиолетового агата
+Inner Red Agate Stair=Внутренняя лестница из красного агата
+
+Inner Amazonite Stair=Внутренняя лестница из амазонита
+Inner Cobbled Amazonite Stair=Внутренняя лестница из булыжника из амазонита
+Inner Amazonite Brick Stair=Внутренняя лестница из кирпича из амазонита
+Inner Amazonite Block Stair=Внутренняя лестница из блока из амазонита
+Inner Cracked Amazonite Brick Stair=Внутренняя лестница из треснувшего кирпича из амазонита
+
+Inner Amber Stair=Внутренняя лестница из янтаря
+Inner Amber Brick Stair=Внутренняя лестница из кирпича из янтаря
+Inner Amber Block Stair=Внутренняя лестница из блока из янтаря
+Inner Cracked Amber Brick Stair=Внутренняя лестница из треснувшего кирпича из янтаря
+
+Inner Amethyst Stair=Внутренняя лестница из аметиста
+Inner Amethyst Brick Stair=Внутренняя лестница из кирпича из аметиста
+Inner Amethyst Block Stair=Внутренняя лестница из блока из аметиста
+Inner Cracked Amethyst Brick Stair=Внутренняя лестница из треснувшего кирпича из аметиста
+
+Inner Andesite Stair=Внутренняя лестница из андезита
+Inner Andesite Block Stair=Внутренняя лестница из блока из андезита
+Inner Andesite Brick Stair=Внутренняя лестница из кирпича из андезита
+Inner Cracked Andesite Brick Stair=Внутренняя лестница из треснувшего кирпича из андезита
+Inner Cobbled Andesite Stair=Внутренняя лестница из булыжника из андезита
+
+Inner Basalt Stair=Внутренняя лестница из базальта
+Inner Basalt Block Stair=Внутренняя блочная лестница из базальта
+Inner Basalt Brick Stair=Внутренняя кирпичная лестница из базальта
+Inner Cracked Basalt Brick Stair=Внутренняя треснутая кирпичная лестница из базальта
+Inner Cobbled Basalt Stair=Внутренняя мощеная лестница из базальта
+
+Inner Calcite Stair=Внутренняя лестница из кальцита
+Inner Calcite Brick Stair=Внутренняя кирпичная лестница из кальцита
+Inner Calcite Block Stair=Внутренняя блочная лестница из кальцита
+Inner Cracked Calcite Brick Stair=Внутренняя треснутая кирпичная лестница из кальцита
+
+Inner Carnotite Stair=Внутренняя лестница из карнотита
+Inner Carnotite Brick Stair=Внутренняя кирпичная лестница из карнотита
+Inner Carnotite Block Stair=Внутренняя блочная лестница из карнотита
+Inner Cracked Carnotite Brick Stair=Внутренняя треснутая кирпичная лестница из карнотита
+Inner Cobbled Carnotite Stair=Внутренняя мощеная лестница из карнотита
+
+Inner Celestine Stair=Внутренняя лестница из целестина
+Inner Celestine Brick Stair=Внутренняя кирпичная лестница из целестина
+Inner Celestine Block Stair=Внутренняя блочная лестница из целестина
+Inner Cracked Celestine Brick Stair=Внутренняя треснутая кирпичная лестница из целестина
+
+Inner Chrysoprase Stair=Внутренняя лестница из хризопраза
+Inner Chrysoprase Brick Stair=Внутренняя кирпичная лестница из хризопраза
+Inner Chrysoprase Block Stair=Внутренняя блочная лестница из хризопраза
+Inner Cracked Chrysoprase Brick Stair=Внутренняя треснутая кирпичная лестница из хризопраза
+
+Inner Citrine Stair=Внутренняя лестница из цитрина
+Inner Citrine Brick Stair=Внутренняя кирпичная лестница из цитрина
+Inner Citrine Block Stair=Внутренняя блочная лестница из цитрина
+Inner Cracked Citrine Brick Stair=Внутренняя треснутая
+
+Inner Covellite Stair=Внутренняя лестница из ковеллита
+Inner Covellite Brick Stair=Внутренняя кирпичная лестница из ковеллита
+Inner Covellite Block Stair=Внутренняя лестница из блока ковеллита
+Inner Cracked Covellite Brick Stair=Внутренняя треснутая кирпичная лестница из ковеллита
+Inner Cobbled Covellite Stair=Внутренняя мощеная лестница из ковеллита
+
+Inner Crocoite Stair=Внутренняя лестница из крокоита
+Inner Crocoite Brick Stair=Внутренняя кирпичная лестница из крокоита
+Inner Crocoite Block Stair=Внутренняя лестница из блока крокоита
+Inner Cracked Crocoite Brick Stair=Внутренняя треснутая кирпичная лестница из крокоита
+
+Inner Erythrite Stair=Внутренняя лестница из эритрита
+Inner Erythrite Brick Stair=Внутренняя кирпичная лестница из эритрита
+Inner Erythrite Block Stair=Внутренняя лестница из блока эритрита
+Inner Cracked Erythrite Brick Stair=Внутренняя треснутая кирпичная лестница из эритрита
+
+Inner Eudialite Stair=Внутренняя лестница из эвдиалита
+Inner Eudialite Brick Stair=Внутренняя кирпичная лестница из эвдиалита
+Inner Eudialite Block Stair=Внутренняя лестница из блока эвдиалита
+Inner Cracked Eudialite Brick Stair=Внутренняя треснутая кирпичная лестница из эвдиалита
+
+Inner Gabbro Stair=Внутренняя лестница из габбро
+Inner Cobbled Gabbro Stair=Внутренняя мощеная лестница из габбро
+Inner Gabbro Brick Stair=Внутренняя кирпичная лестница из габбро
+Inner Gabbro Block Stair=Внутренняя лестница из блока габбро
+Inner Cracked Gabbro Brick Stair=Внутренняя треснутая кирпичная лестница из габбро
+
+Inner Galena Stair=Внутренняя лестница из галены
+Inner Galena Brick Stair=Внутренняя лестница из кирпича галены
+Inner Galena Block Stair=Внутренняя лестница из блока галены
+Inner Cracked Galena Brick Stair=Внутренняя лестница из треснувшего кирпича галены
+
+Inner Black Granite Stair=Внутренняя лестница из черного гранита
+Inner Black Granite Brick Stair=Внутренняя кирпичная лестница из черного гранита
+Inner Black Granite Block Stair=Внутренняя лестница из блока черного гранита
+Inner Cracked Black Granite Brick Stair=Внутренняя треснувшая кирпичная лестница из черного гранита
+Inner Cobbled Black Granite Stair=Внутренняя мощеная лестница из черного гранита
+
+Inner Blue Granite Stair=Внутренняя лестница из синего гранита
+Inner Blue Granite Brick Stair=Внутренняя кирпичная лестница из синего гранита
+Inner Blue Granite Block Stair=Внутренняя лестница из блока синего гранита
+Inner Cracked Blue Granite Brick Stair=Внутренняя треснувшая кирпичная лестница из синего гранита
+Inner Cobbled Blue Granite Stair=Внутренняя мощеная лестница из синего гранита
+
+Inner Gray Granite Stair=Внутренняя лестница из серого гранита
+Inner Gray Granite Brick Stair=Внутренняя кирпичная лестница из серого гранита
+Inner Gray Granite Block Stair=Внутренняя лестница из блока серого гранита
+Inner Cracked Gray Granite Brick Stair=Внутренняя треснувшая кирпичная лестница из серого гранита
+Inner Cobbled Gray Granite Stair=Внутренняя мощеная лестница из серого гранита
+
+Inner Green Granite Stair=Внутренняя лестница из зеленого гранита
+Inner Green Granite Brick Stair=Внутренняя кирпичная лестница из зеленого гранита
+Inner Green Granite Block Stair=Внутренняя лестница из блока зеленого гранита
+Inner Cracked Green Granite Brick Stair=Внутренняя треснувшая кирпичная лестница из зеленого гранита
+Inner Cobbled Green Granite Stair=Внутренняя мощеная лестница из зеленого гранита
+
+Inner Pink Granite Stair=Внутренняя лестница из розового гранита
+Inner Pink Granite Brick Stair=Внутренняя кирпичная лестница из розового гранита
+Inner Pink Granite Block Stair=Внутренняя лестница из блока розового гранита
+Inner Cracked Pink Granite Brick Stair=Внутренняя треснувшая кирпичная лестница из розового гранита
+
+Inner Red Granite Stair=Внутренняя лестница из красного гранита
+Inner Red Granite Brick Stair=Внутренняя кирпичная лестница из красного гранита
+Inner Red Granite Block Stair=Внутренняя лестница из блока красного гранита
+Inner Cracked Red Granite Brick Stair=Внутренняя треснутая кирпичная лестница из красного гранита
+Inner Cobbled Red Granite Stair=Внутренняя мощеная лестница из красного гранита
+
+Inner White Granite Stair=Внутренняя лестница из белого гранита
+Inner White Granite Brick Stair=Внутренняя кирпичная лестница из белого гранита
+Inner White Granite Block Stair=Внутренняя лестница из блока белого гранита
+Inner Cracked White Granite Brick Stair=Внутренняя треснутая кирпичная лестница из белого гранита
+Inner Cobbled White Granite Stair=Внутренняя мощеная лестница из белого гранита
+
+Inner Heliodor Stair=Внутренняя лестница из гелиодора
+Inner Heliodor Brick Stair=Внутренняя кирпичная лестница из гелиодора
+Inner Heliodor Block Stair=Внутренняя лестница из блока гелиодора
+Inner Cracked Heliodor Brick Stair=Внутренняя треснутая кирпичная лестница из гелиодора
+
+Inner Howlite Stair=Внутренняя лестница из хаулита
+Inner Howlite Brick Stair=Внутренняя кирпичная лестница из хаулита
+Inner Howlite Block Stair=Внутренняя лестница из блока хаулита
+Inner Cracked Howlite Brick Stair=Внутренняя треснутая кирпичная лестница из хаулита
+Inner Cobbled Howlite Stair=Внутренняя мощеная лестница из хаулита
+
+Inner Ilvaite Stair=Внутренняя лестница из ильвайта
+Inner Ilvaite Brick Stair=Внутренняя кирпичная лестница из ильвайта
+Inner Ilvaite Block Stair=Внутренняя лестница из блока ильвайта
+Inner Cracked Ilvaite Brick Stair=Внутренняя треснутая кирпичная лестница из ильвайта
+Inner Cobbled Ilvaite Stair=Внутренняя мощеная лестница из ильвайта
+
+Inner Jade Stair=Внутренняя лестница из нефрита
+Inner Jade Brick Stair=Внутренняя лестница из кирпича из нефрита
+Inner Jade Block Stair=Внутренняя лестница из блока нефрита
+Inner Cracked Jade Brick Stair=Внутренняя лестница из треснутого кирпича из нефрита
+Inner Cobbled Jade Stair=Внутренняя мощеная лестница из нефрита
+
+Inner Kyanite Stair=Внутренняя лестница из кианита
+Inner Kyanite Brick Stair=Внутренняя лестница из кирпича из кианита
+Inner Kyanite Block Stair=Внутренняя лестница из блока кианита
+Inner Cracked Kyanite Brick Stair=Внутренняя лестница из треснутого кирпича из кианита
+Inner Cobbled Kyanite Stair=Внутренняя мощеная лестница из кианита
+
+Inner Lapis Lazuli Stair=Внутренняя лестница из ляпис-лавы
+Inner Lapis Lazuli Brick Stair=Внутренняя лестница из кирпича из ляпис-лавы
+Inner Lapis Lazuli Block Stair=Внутренняя лестница из блока ляпис-лавы
+Inner Cracked Lapis Lazuli Brick Stair=Внутренняя лестница из треснутого кирпича из ляпис-лавы
+
+Inner Blue Limestone Stair=Внутренняя лестница из голубого известняка
+Inner Blue Limestone Brick Stair=Внутренняя лестница из кирпича из голубого известняка
+Inner Blue Limestone Block Stair=Внутренняя лестница из блока голубого известняка
+Inner Cracked Blue Limestone Brick Stair=Внутренняя лестница из треснутого кирпича из голубого известняка
+Inner Cobbled Blue Limestone Stair=Внутренняя мощеная лестница из голубого известняка
+
+Inner White Limestone Stair=Внутренняя лестница из белого известняка
+Inner White Limestone Brick Stair=Внутренняя лестница из кирпича из белого известняка
+Inner White Limestone Block Stair=Внутренняя лестница из блока белого известняка
+Inner Cracked White Limestone Brick Stair=Внутренняя лестница из треснутого кирпича из белого известняка
+Inner Cobbled White Limestone Stair=Внутренняя мощеная лестница
+
+Inner Marble Stair=Внутренняя мраморная лестница
+Inner Marble Brick Stair=Внутренняя мраморная кирпичная лестница
+Inner Marble Block Stair=Внутренняя мраморная блочная лестница
+Inner Cracked Marble Brick Stair=Внутренняя треснувшая мраморная кирпичная лестница
+Inner Cobbled Marble Stair=Внутренняя мощеная мраморная лестница
+
+Inner Mudstone Stair=Внутренняя лестница из иловатого камня
+Inner Cobbled Mudstone Stair=Внутренняя мощеная лестница из иловатого камня
+Inner Mudstone Brick Stair=Внутренняя кирпичная лестница из иловатого камня
+Inner Mudstone Block Stair=Внутренняя лестница из блока иловатого камня
+Inner Cracked Mudstone Brick Stair=Внутренняя треснутая кирпичная лестница из иловатого камня
+
+Inner Prasiolite Stair=Внутренняя лестница из празиолита
+Inner Prasiolite Brick Stair=Внутренняя лестница из кирпича из празиолита
+Inner Prasiolite Block Stair=Внутренняя лестница из блока из празиолита
+Inner Cracked Prasiolite Brick Stair=Внутренняя лестница из треснутого кирпича из празиолита
+
+Inner Pumice Stair=Внутренняя лестница из пемзы
+Inner Pumice Brick Stair=Внутренняя лестница из кирпича из пемзы
+Inner Pumice Block Stair=Внутренняя лестница из блока из пемзы
+Inner Cracked Pumice Brick Stair=Внутренняя лестница из треснутого кирпича из пемзы
+
+Inner Pyrite Stair=Внутренняя лестница из пирита
+Inner Pyrite Brick Stair=Внутренняя лестница из кирпича из пирита
+Inner Pyrite Block Stair=Внутренняя лестница из блока из пирита
+Inner Cracked Pyrite Brick Stair=Внутренняя лестница из треснутого кирпича из пирита
+
+Inner Quartz Stair=Внутренняя лестница из кварца
+Inner Quartz Brick Stair=Внутренняя лестница из кирпича из кварца
+Inner Quartz Block Stair=Внутренняя лестница из блока из кварца
+Inner Cracked Quartz Brick Stair=Внутренняя лестница из треснутого кирпича из кварца
+
+Inner Rose Quartz Stair=Внутренняя лестница из розового кварца
+Inner Rose Quartz Brick Stair=Внутренняя лестница из кирпича из розового кварца
+Inner Rose Quartz Block Stair=Внутренняя лестница из блока из розового кварца
+Inner Cracked Rose Quartz Brick Stair=Внутренняя лестница из треснутого кирпича из розового кварца
+
+Inner Scoria Stair=Внутренняя лестница из скории
+Inner Scoria Brick Stair=Внутренняя кирпичная лестница из скории
+Inner Scoria Block Stair=Внутренний блочный ступенька из скории
+Inner Cracked Scoria Brick Stair=Внутренняя треснутая кирпичная лестница из скории
+Inner Cobbled Scoria Stair=Внутренняя мощеная лестница из скории
+
+Inner Serpentine Stair=Внутренняя лестница из серпентина
+Inner Cobbled Serpentine Stair=Внутренняя мощеная лестница из серпентина
+Inner Serpentine Brick Stair=Внутренняя кирпичная лестница из серпентина
+Inner Serpentine Block Stair=Внутренний блочный ступенька из серпентина
+Inner Cracked Serpentine Brick Stair=Внутренняя треснутая кирпичная лестница из серпентина
+
+Inner Slate Stair=Внутренняя лестница из сланца
+Inner Slate Brick Stair=Внутренняя кирпичная лестница из сланца
+Inner Slate Block Stair=Внутренний блочный ступенька из сланца
+Inner Cracked Slate Brick Stair=Внутренняя треснутая кирпичная лестница из сланца
+Inner Cobbled Slate Stair=Внутренняя мощеная лестница из сланца
+Inner Slate Tile Stair=Внутренняя лестница из сланцевых плит
+
+Inner Smokey Quartz Stair=Внутренняя лестница из дымчатого кварца
+Inner Smokey Quartz Brick Stair=Внутренняя кирпичная лестница из дымчатого кварца
+Inner Smokey Quartz Block Stair=Внутренний блочный ступенька из дымчатого кварца
+Inner Cracked Smokey Quartz Brick Stair=Внутренняя треснутая кирпичная лестница из дымчатого кварца
+
+Inner Soapstone Stair=Внутренняя лестница из мыльного камня
+Inner Soapstone Brick Stair=Внутренняя кирпичная лестница из мыльного камня
+Inner Soapstone Block Stair=Внутренний блочный ступенька из мыльного камня
+Inner Cracked Soapstone Brick Stair=Внутренняя треснутая кирпичная лестница из мыльного камня
+
+Inner Sodalite Stair=Внутренняя лестница из содалита
+Inner Cobbled Sodalite Stair=Внутренняя мощеная лестница из содалита
+Inner Sodalite Brick Stair=Внутренняя лестница из содалитового кирпича
+Inner Sodalite Block Stair=Внутренняя лестница из содалитового блока
+Inner Cracked Sodalite Brick Stair=Внутренняя лестница из треснувшего содалитового кирпича
+
+Inner Sugilite Stair=Внутренняя лестница из сугилита
+Inner Sugilite Brick Stair=Внутренняя лестница из кирпича сугилита
+Inner Sugilite Block Stair=Внутренняя лестница из блока сугилита
+Inner Cracked Sugilite Brick Stair=Внутренняя лестница из треснувшего кирпича сугилита
+Inner Cobbled Sugilite Stair=Внутренняя мощеная лестница из сугилита
+
+Inner Travertine Stair=Внутренняя лестница из травертина
+Inner Cobbled Travertine Stair=Внутренняя мощеная лестница из травертина
+Inner Travertine Brick Stair=Внутренняя лестница из кирпича травертина
+Inner Travertine Block Stair=Внутренняя лестница из блока травертина
+Inner Cracked Travertine Brick Stair=Внутренняя лестница из треснувшего кирпича травертина
+
+Inner Beige Tuff Stair=Внутренняя лестница из бежевого туфа
+Inner Cobbled Beige Tuff Stair=Внутренняя мощеная лестница из бежевого туфа
+Inner Beige Tuff Brick Stair=Внутренняя лестница из кирпича бежевого туфа
+Inner Beige Tuff Block Stair=Внутренняя лестница из блока бежевого туфа
+Inner Cracked Beige Tuff Brick Stair=Внутренняя лестница из треснувшего кирпича бежевого туфа
+
+Inner Grey Tuff Stair=Внутренняя лестница из серого туфа
+Inner Cobbled Grey Tuff Stair=Внутренняя мощеная лестница из серого туфа
+Inner Grey Tuff Brick Stair=Внутренняя лестница из кирпича серого туфа
+Inner Grey Tuff Block Stair=Внутренняя лестница из блока серого туфа
+Inner Cracked Grey Tuff Brick Stair=Внутренняя лестница из треснувшего кирпича серого туфа
+
+Inner Red Tuff Stair=Внутренняя красная туфовая лестница
+Inner Cobbled Red Tuff Stair=Внутренняя мощеная красная туфовая лестница
+Inner Red Tuff Brick Stair=Внутренняя красная туфовая кирпичная лестница
+Inner Red Tuff Block Stair=Внутренняя красная туфовая блочная лестница
+Inner Cracked Red Tuff Brick Stair=Внутренняя треснувшая красная туфовая кирпичная лестница
+
+Inner Turquoise Stair=Внутренняя бирюзовая лестница
+Inner Turquoise Brick Stair=Внутренняя бирюзовая кирпичная лестница
+Inner Turquoise Block Stair=Внутренняя бирюзовая блочная лестница
+Inner Cracked Turquoise Brick Stair=Внутренняя треснувшая бирюзовая кирпичная лестница
+Inner Cobbled Turquoise Stair=Внутренняя мощеная бирюзовая лестница
+
+Inner Vivianite Stair=Внутренняя вивианитовая лестница
+Inner Vivianite Brick Stair=Внутренняя вивианитовая кирпичная лестница
+Inner Vivianite Block Stair=Внутренняя вивианитовая блочная лестница
+Inner Cracked Vivianite Brick Stair=Внутренняя треснувшая вивианитовая кирпичная лестница
+
+
+
+Outer Blue Agate Stair=Внешняя лестница из синего агата
+Outer Gray Agate Stair=Внешняя лестница из серого агата
+Outer Green Agate Stair=Внешняя лестница из зеленого агата
+Outer Moss Agate Stair=Внешняя лестница из мохового агата
+Outer Orange Agate Stair=Внешняя лестница из оранжевого агата
+Outer Purple Agate Stair=Внешняя лестница из фиолетового агата
+Outer Red Agate Stair=Внешняя лестница из красного агата
+
+Outer Amazonite Stair=Внешняя лестница из амазонита
+Outer Cobbled Amazonite Stair=Внешняя лестница из булыжника амазонита
+Outer Amazonite Brick Stair=Внешняя лестница из кирпича амазонита
+Outer Amazonite Block Stair=Внешняя лестница из блока амазонита
+Outer Cracked Amazonite Brick Stair=Внешняя лестница из треснувшего кирпича амазонита
+
+Outer Amber Stair=Внешняя лестница из янтаря
+Outer Amber Brick Stair=Внешняя лестница из кирпича янтаря
+Outer Amber Block Stair=Внешняя лестница из блока янтаря
+Outer Cracked Amber Brick Stair=Внешняя лестница из треснувшего кирпича янтаря
+
+Outer Amethyst Stair=Внешняя лестница из аметиста
+Outer Amethyst Brick Stair=Внешняя лестница из кирпича аметиста
+Outer Amethyst Block Stair=Внешняя лестница из блока аметиста
+Outer Cracked Amethyst Brick Stair=Внешняя лестница из треснувшего кирпича аметиста
+
+Outer Andesite Stair=Внешняя лестница из андезита
+Outer Andesite Block Stair=Внешняя лестница из блока андезита
+Outer Andesite Brick Stair=Внешняя лестница из кирпича андезита
+Outer Cracked Andesite Brick Stair=Внешняя лестница из треснувшего кирпича андезита
+Outer Cobbled Andesite Stair=Внешняя лестница из булыжника андезита
+
+Outer Basalt Stair=Внешняя лестница из базальта
+Outer Basalt Block Stair=Внешняя блочная лестница из базальта
+Outer Basalt Brick Stair=Внешняя кирпичная лестница из базальта
+Outer Cracked Basalt Brick Stair=Внешняя треснутая кирпичная лестница из базальта
+Outer Cobbled Basalt Stair=Внешняя мощеная лестница из базальта
+
+Outer Calcite Stair=Внешняя лестница из кальцита
+Outer Calcite Brick Stair=Внешняя кирпичная лестница из кальцита
+Outer Calcite Block Stair=Внешняя блочная лестница из кальцита
+Outer Cracked Calcite Brick Stair=Внешняя треснутая кирпичная лестница из кальцита
+
+Outer Carnotite Stair=Внешняя лестница из карнотита
+Outer Carnotite Brick Stair=Внешняя кирпичная лестница из карнотита
+Outer Carnotite Block Stair=Внешняя блочная лестница из карнотита
+Outer Cracked Carnotite Brick Stair=Внешняя треснутая кирпичная лестница из карнотита
+Outer Cobbled Carnotite Stair=Внешняя мощеная лестница из карнотита
+
+Outer Celestine Stair=Внешняя лестница из целестина
+Outer Celestine Brick Stair=Внешняя кирпичная лестница из целестина
+Outer Celestine Block Stair=Внешняя блочная лестница из целестина
+Outer Cracked Celestine Brick Stair=Внешняя треснутая кирпичная лестница из целестина
+
+Outer Chrysoprase Stair=Внешняя лестница из хризопраза
+Outer Chrysoprase Brick Stair=Внешняя кирпичная лестница из хризопраза
+Outer Chrysoprase Block Stair=Внешняя блочная лестница из хризопраза
+Outer Cracked Chrysoprase Brick Stair=Внешняя треснутая кирпичная лестница из хризопраза
+
+Outer Citrine Stair=Внешняя лестница из цитрина
+Outer Citrine Brick Stair=Внешняя кирпичная лестница из цитрина
+Outer Citrine Block Stair=Внешняя блочная лестница из цитрина
+Outer Cracked Citrine Brick Stair=Внешняя треснутая
+
+Outer Covellite Stair=Внешняя лестница из ковеллита
+Outer Covellite Brick Stair=Внешняя кирпичная лестница из ковеллита
+Outer Covellite Block Stair=Внешняя лестница из блока ковеллита
+Outer Cracked Covellite Brick Stair=Внешняя треснутая кирпичная лестница из ковеллита
+Outer Cobbled Covellite Stair=Внешняя мощеная лестница из ковеллита
+
+Outer Crocoite Stair=Внешняя лестница из крокоита
+Outer Crocoite Brick Stair=Внешняя кирпичная лестница из крокоита
+Outer Crocoite Block Stair=Внешняя лестница из блока крокоита
+Outer Cracked Crocoite Brick Stair=Внешняя треснутая кирпичная лестница из крокоита
+
+Outer Erythrite Stair=Внешняя лестница из эритрита
+Outer Erythrite Brick Stair=Внешняя кирпичная лестница из эритрита
+Outer Erythrite Block Stair=Внешняя лестница из блока эритрита
+Outer Cracked Erythrite Brick Stair=Внешняя треснутая кирпичная лестница из эритрита
+
+Outer Eudialite Stair=Внешняя лестница из эвдиалита
+Outer Eudialite Brick Stair=Внешняя кирпичная лестница из эвдиалита
+Outer Eudialite Block Stair=Внешняя лестница из блока эвдиалита
+Outer Cracked Eudialite Brick Stair=Внешняя треснутая кирпичная лестница из эвдиалита
+
+Outer Gabbro Stair=Внешняя лестница из габбро
+Outer Cobbled Gabbro Stair=Внешняя мощеная лестница из габбро
+Outer Gabbro Brick Stair=Внешняя кирпичная лестница из габбро
+Outer Gabbro Block Stair=Внешняя лестница из блока габбро
+Outer Cracked Gabbro Brick Stair=Внешняя треснутая кирпичная лестница из габбро
+
+Outer Galena Stair=Внешняя лестница из галены
+Outer Galena Brick Stair=Внешняя лестница из кирпича галены
+Outer Galena Block Stair=Внешняя лестница из блока галены
+Outer Cracked Galena Brick Stair=Внешняя лестница из треснувшего кирпича галены
+
+Outer Black Granite Stair=Внешняя лестница из черного гранита
+Outer Black Granite Brick Stair=Внешняя кирпичная лестница из черного гранита
+Outer Black Granite Block Stair=Внешняя лестница из блока черного гранита
+Outer Cracked Black Granite Brick Stair=Внешняя треснувшая кирпичная лестница из черного гранита
+Outer Cobbled Black Granite Stair=Внешняя мощеная лестница из черного гранита
+
+Outer Blue Granite Stair=Внешняя лестница из синего гранита
+Outer Blue Granite Brick Stair=Внешняя кирпичная лестница из синего гранита
+Outer Blue Granite Block Stair=Внешняя лестница из блока синего гранита
+Outer Cracked Blue Granite Brick Stair=Внешняя треснувшая кирпичная лестница из синего гранита
+Outer Cobbled Blue Granite Stair=Внешняя мощеная лестница из синего гранита
+
+Outer Gray Granite Stair=Внешняя лестница из серого гранита
+Outer Gray Granite Brick Stair=Внешняя кирпичная лестница из серого гранита
+Outer Gray Granite Block Stair=Внешняя лестница из блока серого гранита
+Outer Cracked Gray Granite Brick Stair=Внешняя треснувшая кирпичная лестница из серого гранита
+Outer Cobbled Gray Granite Stair=Внешняя мощеная лестница из серого гранита
+
+Outer Green Granite Stair=Внешняя лестница из зеленого гранита
+Outer Green Granite Brick Stair=Внешняя кирпичная лестница из зеленого гранита
+Outer Green Granite Block Stair=Внешняя лестница из блока зеленого гранита
+Outer Cracked Green Granite Brick Stair=Внешняя треснувшая кирпичная лестница из зеленого гранита
+Outer Cobbled Green Granite Stair=Внешняя мощеная лестница из зеленого гранита
+
+Outer Pink Granite Stair=Внешняя лестница из розового гранита
+Outer Pink Granite Brick Stair=Внешняя кирпичная лестница из розового гранита
+Outer Pink Granite Block Stair=Внешняя лестница из блока розового гранита
+Outer Cracked Pink Granite Brick Stair=Внешняя треснувшая кирпичная лестница из розового гранита
+
+Outer Red Granite Stair=Внешняя лестница из красного гранита
+Outer Red Granite Brick Stair=Внешняя кирпичная лестница из красного гранита
+Outer Red Granite Block Stair=Внешняя лестница из блока красного гранита
+Outer Cracked Red Granite Brick Stair=Внешняя треснутая кирпичная лестница из красного гранита
+Outer Cobbled Red Granite Stair=Внешняя мощеная лестница из красного гранита
+
+Outer White Granite Stair=Внешняя лестница из белого гранита
+Outer White Granite Brick Stair=Внешняя кирпичная лестница из белого гранита
+Outer White Granite Block Stair=Внешняя лестница из блока белого гранита
+Outer Cracked White Granite Brick Stair=Внешняя треснутая кирпичная лестница из белого гранита
+Outer Cobbled White Granite Stair=Внешняя мощеная лестница из белого гранита
+
+Outer Heliodor Stair=Внешняя лестница из гелиодора
+Outer Heliodor Brick Stair=Внешняя кирпичная лестница из гелиодора
+Outer Heliodor Block Stair=Внешняя лестница из блока гелиодора
+Outer Cracked Heliodor Brick Stair=Внешняя треснутая кирпичная лестница из гелиодора
+
+Outer Howlite Stair=Внешняя лестница из хаулита
+Outer Howlite Brick Stair=Внешняя кирпичная лестница из хаулита
+Outer Howlite Block Stair=Внешняя лестница из блока хаулита
+Outer Cracked Howlite Brick Stair=Внешняя треснутая кирпичная лестница из хаулита
+Outer Cobbled Howlite Stair=Внешняя мощеная лестница из хаулита
+
+Outer Ilvaite Stair=Внешняя лестница из ильвайта
+Outer Ilvaite Brick Stair=Внешняя кирпичная лестница из ильвайта
+Outer Ilvaite Block Stair=Внешняя лестница из блока ильвайта
+Outer Cracked Ilvaite Brick Stair=Внешняя треснутая кирпичная лестница из ильвайта
+Outer Cobbled Ilvaite Stair=Внешняя мощеная лестница из ильвайта
+
+Outer Jade Stair=Внешняя лестница из нефрита
+Outer Jade Brick Stair=Внешняя лестница из кирпича из нефрита
+Outer Jade Block Stair=Внешняя лестница из блока нефрита
+Outer Cracked Jade Brick Stair=Внешняя лестница из треснутого кирпича из нефрита
+Outer Cobbled Jade Stair=Внешняя мощеная лестница из нефрита
+
+Outer Kyanite Stair=Внешняя лестница из кианита
+Outer Kyanite Brick Stair=Внешняя лестница из кирпича из кианита
+Outer Kyanite Block Stair=Внешняя лестница из блока кианита
+Outer Cracked Kyanite Brick Stair=Внешняя лестница из треснутого кирпича из кианита
+Outer Cobbled Kyanite Stair=Внешняя мощеная лестница из кианита
+
+Outer Lapis Lazuli Stair=Внешняя лестница из ляпис-лавы
+Outer Lapis Lazuli Brick Stair=Внешняя лестница из кирпича из ляпис-лавы
+Outer Lapis Lazuli Block Stair=Внешняя лестница из блока ляпис-лавы
+Outer Cracked Lapis Lazuli Brick Stair=Внешняя лестница из треснутого кирпича из ляпис-лавы
+
+Outer Blue Limestone Stair=Внешняя лестница из голубого известняка
+Outer Blue Limestone Brick Stair=Внешняя лестница из кирпича из голубого известняка
+Outer Blue Limestone Block Stair=Внешняя лестница из блока голубого известняка
+Outer Cracked Blue Limestone Brick Stair=Внешняя лестница из треснутого кирпича из голубого известняка
+Outer Cobbled Blue Limestone Stair=Внешняя мощеная лестница из голубого известняка
+
+Outer White Limestone Stair=Внешняя лестница из белого известняка
+Outer White Limestone Brick Stair=Внешняя лестница из кирпича из белого известняка
+Outer White Limestone Block Stair=Внешняя лестница из блока белого известняка
+Outer Cracked White Limestone Brick Stair=Внешняя лестница из треснутого кирпича из белого известняка
+Outer Cobbled White Limestone Stair=Внешняя мощеная лестница
+
+Outer Marble Stair=Внешняя мраморная лестница
+Outer Marble Brick Stair=Внешняя мраморная кирпичная лестница
+Outer Marble Block Stair=Внешняя мраморная блочная лестница
+Outer Cracked Marble Brick Stair=Внешняя треснувшая мраморная кирпичная лестница
+Outer Cobbled Marble Stair=Внешняя мощеная мраморная лестница
+
+Outer Mudstone Stair=Внешняя лестница из иловатого камня
+Outer Cobbled Mudstone Stair=Внешняя мощеная лестница из иловатого камня
+Outer Mudstone Brick Stair=Внешняя кирпичная лестница из иловатого камня
+Outer Mudstone Block Stair=Внешняя лестница из блока иловатого камня
+Outer Cracked Mudstone Brick Stair=Внешняя треснутая кирпичная лестница из иловатого камня
+
+Outer Prasiolite Stair=Внешняя лестница из празиолита
+Outer Prasiolite Brick Stair=Внешняя лестница из кирпича из празиолита
+Outer Prasiolite Block Stair=Внешняя лестница из блока из празиолита
+Outer Cracked Prasiolite Brick Stair=Внешняя лестница из треснутого кирпича из празиолита
+
+Outer Pumice Stair=Внешняя лестница из пемзы
+Outer Pumice Brick Stair=Внешняя лестница из кирпича из пемзы
+Outer Pumice Block Stair=Внешняя лестница из блока из пемзы
+Outer Cracked Pumice Brick Stair=Внешняя лестница из треснутого кирпича из пемзы
+
+Outer Pyrite Stair=Внешняя лестница из пирита
+Outer Pyrite Brick Stair=Внешняя лестница из кирпича из пирита
+Outer Pyrite Block Stair=Внешняя лестница из блока из пирита
+Outer Cracked Pyrite Brick Stair=Внешняя лестница из треснутого кирпича из пирита
+
+Outer Quartz Stair=Внешняя лестница из кварца
+Outer Quartz Brick Stair=Внешняя лестница из кирпича из кварца
+Outer Quartz Block Stair=Внешняя лестница из блока из кварца
+Outer Cracked Quartz Brick Stair=Внешняя лестница из треснутого кирпича из кварца
+
+Outer Rose Quartz Stair=Внешняя лестница из розового кварца
+Outer Rose Quartz Brick Stair=Внешняя лестница из кирпича из розового кварца
+Outer Rose Quartz Block Stair=Внешняя лестница из блока из розового кварца
+Outer Cracked Rose Quartz Brick Stair=Внешняя лестница из треснутого кирпича из розового кварца
+
+Outer Scoria Stair=Внешняя лестница из скории
+Outer Scoria Brick Stair=Внешняя кирпичная лестница из скории
+Outer Scoria Block Stair=Внутренний блочный ступенька из скории
+Outer Cracked Scoria Brick Stair=Внешняя треснутая кирпичная лестница из скории
+Outer Cobbled Scoria Stair=Внешняя мощеная лестница из скории
+
+Outer Serpentine Stair=Внешняя лестница из серпентина
+Outer Cobbled Serpentine Stair=Внешняя мощеная лестница из серпентина
+Outer Serpentine Brick Stair=Внешняя кирпичная лестница из серпентина
+Outer Serpentine Block Stair=Внутренний блочный ступенька из серпентина
+Outer Cracked Serpentine Brick Stair=Внешняя треснутая кирпичная лестница из серпентина
+
+Outer Slate Stair=Внешняя лестница из сланца
+Outer Slate Brick Stair=Внешняя кирпичная лестница из сланца
+Outer Slate Block Stair=Внутренний блочный ступенька из сланца
+Outer Cracked Slate Brick Stair=Внешняя треснутая кирпичная лестница из сланца
+Outer Cobbled Slate Stair=Внешняя мощеная лестница из сланца
+Outer Slate Tile Stair=Внешняя лестница из сланцевых плит
+
+Outer Smokey Quartz Stair=Внешняя лестница из дымчатого кварца
+Outer Smokey Quartz Brick Stair=Внешняя кирпичная лестница из дымчатого кварца
+Outer Smokey Quartz Block Stair=Внутренний блочный ступенька из дымчатого кварца
+Outer Cracked Smokey Quartz Brick Stair=Внешняя треснутая кирпичная лестница из дымчатого кварца
+
+Outer Soapstone Stair=Внешняя лестница из мыльного камня
+Outer Soapstone Brick Stair=Внешняя кирпичная лестница из мыльного камня
+Outer Soapstone Block Stair=Внутренний блочный ступенька из мыльного камня
+Outer Cracked Soapstone Brick Stair=Внешняя треснутая кирпичная лестница из мыльного камня
+
+Outer Sodalite Stair=Внешняя лестница из содалита
+Outer Cobbled Sodalite Stair=Внешняя мощеная лестница из содалита
+Outer Sodalite Brick Stair=Внешняя лестница из содалитового кирпича
+Outer Sodalite Block Stair=Внешняя лестница из содалитового блока
+Outer Cracked Sodalite Brick Stair=Внешняя лестница из треснувшего содалитового кирпича
+
+Outer Sugilite Stair=Внешняя лестница из сугилита
+Outer Sugilite Brick Stair=Внешняя лестница из кирпича сугилита
+Outer Sugilite Block Stair=Внешняя лестница из блока сугилита
+Outer Cracked Sugilite Brick Stair=Внешняя лестница из треснувшего кирпича сугилита
+Outer Cobbled Sugilite Stair=Внешняя мощеная лестница из сугилита
+
+Outer Travertine Stair=Внешняя лестница из травертина
+Outer Cobbled Travertine Stair=Внешняя мощеная лестница из травертина
+Outer Travertine Brick Stair=Внешняя лестница из кирпича травертина
+Outer Travertine Block Stair=Внешняя лестница из блока травертина
+Outer Cracked Travertine Brick Stair=Внешняя лестница из треснувшего кирпича травертина
+
+Outer Beige Tuff Stair=Внешняя лестница из бежевого туфа
+Outer Cobbled Beige Tuff Stair=Внешняя мощеная лестница из бежевого туфа
+Outer Beige Tuff Brick Stair=Внешняя лестница из кирпича бежевого туфа
+Outer Beige Tuff Block Stair=Внешняя лестница из блока бежевого туфа
+Outer Cracked Beige Tuff Brick Stair=Внешняя лестница из треснувшего кирпича бежевого туфа
+
+Outer Grey Tuff Stair=Внешняя лестница из серого туфа
+Outer Cobbled Grey Tuff Stair=Внешняя мощеная лестница из серого туфа
+Outer Grey Tuff Brick Stair=Внешняя лестница из кирпича серого туфа
+Outer Grey Tuff Block Stair=Внешняя лестница из блока серого туфа
+Outer Cracked Grey Tuff Brick Stair=Внешняя лестница из треснувшего кирпича серого туфа
+
+Outer Red Tuff Stair=Внешняя красная туфовая лестница
+Outer Cobbled Red Tuff Stair=Внешняя мощеная красная туфовая лестница
+Outer Red Tuff Brick Stair=Внешняя красная туфовая кирпичная лестница
+Outer Red Tuff Block Stair=Внешняя красная туфовая блочная лестница
+Outer Cracked Red Tuff Brick Stair=Внешняя треснувшая красная туфовая кирпичная лестница
+
+Outer Turquoise Stair=Внешняя бирюзовая лестница
+Outer Turquoise Brick Stair=Внешняя бирюзовая кирпичная лестница
+Outer Turquoise Block Stair=Внешняя бирюзовая блочная лестница
+Outer Cracked Turquoise Brick Stair=Внешняя треснувшая бирюзовая кирпичная лестница
+Outer Cobbled Turquoise Stair=Внешняя мощеная бирюзовая лестница
+
+Outer Vivianite Stair=Внешняя вивианитовая лестница
+Outer Vivianite Brick Stair=Внешняя вивианитовая кирпичная лестница
+Outer Vivianite Block Stair=Внешняя вивианитовая блочная лестница
+Outer Cracked Vivianite Brick Stair=Внешняя треснувшая вивианитовая кирпичная лестница
+
+### nodes_glowing.lua ###
+
+Glowing Apatite=Светящийся апатит
+Glowing Apatite Block=Блок светящегося апатита
+Cobbled Glowing Apatite=Мощеный светящийся апатит
+Glowing Apatite Brick=Кирпич светящегося апатита
+Cracked Glowing Apatite Brick=Треснувший кирпич светящегося апатита
+
+Glowing Calcite=Светящийся кальцит
+Glowing Calcite Block=Блок светящегося кальцита
+Cobbled Glowing Calcite=Мощеный светящийся кальцит
+Glowing Calcite Brick=Кирпич светящегося кальцита
+Cracked Glowing Calcite Brick=Треснувший кирпич светящегося кальцита
+
+Glowing Esperite=Светящийся эсперит
+Glowing Esperite Block=Блок светящегося эсперита
+Cobbled Glowing Esperite=Мощеный светящийся эсперит
+Glowing Esperite Brick=Кирпич светящегося эсперита
+Cracked Glowing Esperite Brick=Треснувший кирпич светящегося эсперита
+
+Glowing Fluorite=Светящийся флюорит
+Glowing Fluorite Block=Блок светящегося флюорита
+Cobbled Glowing Fluorite=Мощеный светящийся флюорит
+Glowing Fluorite Brick=Кирпич светящегося флюорита
+Cracked Glowing Fluorite Brick=Треснувший кирпич светящегося флюорита
+
+Glowing Selenite=Светящийся селенит
+Glowing Selenite Block=Блок светящегося селенита
+Cobbled Glowing Selenite=Мощеный светящийся селенит
+Glowing Selenite Brick=Кирпич светящегося селенита
+Cracked Glowing Selenite Brick=Треснувший кирпич светящегося селенита
+
+Glowing Sodalite=Светящийся содалит
+Glowing Sodalite Block=Блок светящегося содалита
+Cobbled Glowing Sodalite=Мощеный светящийся содалит
+Glowing Sodalite Brick=Кирпич светящегося содалита
+Cracked Glowing Sodalite Brick=Треснувший кирпич светящегося содалита
+
+Glowing Willemite=Светящийся виллемит
+Glowing Willemite Block=Блок светящегося виллемита
+Cobbled Glowing Willemite=Мощеный светящийся виллемит
+Glowing Willemite Brick=Кирпич светящегося виллемита
+Cracked Glowing Willemite Brick=Треснувший кирпич светящегося виллемита

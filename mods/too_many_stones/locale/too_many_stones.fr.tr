@@ -1,0 +1,1838 @@
+# textdomain: too_many_stones
+
+
+### nodes.lua ###
+
+Blue Agate=Agate bleue
+Gray Agate=Agate grise
+Green Agate=Agate verte
+Moss Agate=Agate mousse
+Orange Agate=Agate orange
+Purple Agate=Agate violette
+Red Agate=Agate rouge
+
+Amazonite=Amazonite
+Amazonite Block=Bloc d'Amazonite
+Cobbled Amazonite=Pierre d'Amazonite
+Amazonite Brick=Brique d'Amazonite
+Cracked Amazonite Brick=Brique d'Amazonite Fissurée
+
+Amber=Ambre
+Amber Block=Bloc d'Ambre
+Amber Brick=Brique d'Ambre
+Cracked Amber Brick=Brique d'Ambre Fissurée
+
+Amethyst=Améthyste
+Amethyst Block=Bloc d'Améthyste
+Amethyst Brick=Brique d'Améthyste
+Cracked Amethyst Brick=Brique d'Améthyste Fissurée
+
+Andesite=Andésite
+Andesite Block=Bloc d'andésite
+Andesite Brick=Brique d'andésite
+Cracked Andesite Brick=Brique d'andésite fissurée
+Cobbled Andesite=Pierre d'Andésite
+
+Basalt=Basalte
+Basalt Block=Bloc de basalte
+Basalt Brick=Brique de basalte
+Cracked Basalt Brick=Brique de basalte fissurée
+Cobbled Basalt=Pavé en basalte
+
+Batch=Lot
+
+Columnar Basalt=Basalte en colonne
+
+Black Opal=Opale Noire
+
+Calcite=Calcite
+Calcite Block=Bloc de Calcite
+Calcite Brick=Brique de Calcite
+Cracked Calcite Brick=Brique de Calcite Fissurée
+
+Carnotite=Carnotite
+Carnotite Block=Bloc de Carnotite
+Carnotite Brick=Brique de Carnotite
+Cracked Carnotite Brick=Brique de Carnotite Fissurée
+Cobbled Carnotite=Pierre de Carnotite
+
+Celestine=Célestine
+Celestine Block=Bloc de Célestine
+Celestine Brick=Brique de Célestine
+Cracked Celestine Brick=Brique de Célestine Fissurée
+
+Chrysoprase=Chrysoprase
+Chrysoprase Block=Bloc de Chrysoprase
+Chrysoprase Brick=Brique de Chrysoprase
+Cracked Chrysoprase Brick=Brique de Chrysoprase Fissurée
+
+Citrine=Citrine
+Citrine Block=Bloc de citrine
+Citrine Brick=Brique de citrine
+Cracked Citrine Brick=Brique de citrine fissurée
+
+Covellite=Covellite
+Covellite Block=Bloc de covellite
+Covellite Brick=Brique de covellite
+Cracked Covellite Brick=Brique de covellite fissurée
+Cobbled Covellite=Covellite pavé
+
+Crocoite=Crocoïte
+Crocoite Block=Bloc de crocoïte
+Crocoite Brick=Brique de crocoïte
+Cracked Crocoite Brick=Brique de crocoïte fissurée
+
+Erythrite=Érythrite
+Erythrite Block=Bloc d'érythrite
+Erythrite Brick=Brique d'érythrite
+Cracked Erythrite Brick=Brique d'érythrite fissurée
+
+Eudialite=Eudialite
+Eudialite Block=Bloc d'eudialite
+Eudialite Brick=Brique d'eudialite
+Cracked Eudialite Brick=Brique d'eudialite fissurée
+
+Gabbro=Gabbro
+Gabbro Block=Bloc de gabbro
+Cobbled Gabbro=Gabbro pavé
+Gabbro Brick=Brique de gabbro
+Cracked Gabbro Brick=Brique de gabbro fissurée
+
+Galena=Galène
+Galena Block=Bloc de galène
+Galena Brick=Brique de galène
+Cracked Galena Brick=Brique de galène fissurée
+
+Black Granite=Granite noir
+Black Granite Block=Bloc de granite noir
+Black Granite Brick=Brique de granite noir
+Cracked Black Granite Brick=Brique de granite noir fissurée
+Cobbled Black Granite=Granite noir pavé
+
+Blue Granite=Granit bleu
+Blue Granite Block=Bloc de granit bleu
+Blue Granite Brick=Brique de granit bleu
+Cracked Blue Granite Brick=Brique de granit bleu fissurée
+Cobbled Blue Granite=Granite bleu pavé
+
+Gray Granite=Granit gris
+Gray Granite Block=Bloc de granit gris
+Gray Granite Brick=Brique de granit gris
+Cracked Gray Granite Brick=Brique de granit gris fissurée
+Cobbled Gray Granite=Granite gris pavé
+
+Green Granite=Granit vert
+Green Granite Block=Bloc de granit vert
+Green Granite Brick=Brique de granit vert
+Cracked Green Granite Brick=Brique de granit vert fissurée
+Cobbled Green Granite=Granite vert pavé
+
+Pink Granite=Granit rose
+Pink Granite Block=Bloc de granit rose
+Pink Granite Brick=Brique de granit rose
+Cracked Pink Granite Brick=Brique de granit rose fissurée
+Cobbled Pink Granite=Granite rose pavé
+
+Red Granite=Granit rouge
+Red Granite Block=Bloc de granit rouge
+Red Granite Brick=Brique de granit rouge
+Cracked Red Granite Brick=Brique de granit rouge fissurée
+Cobbled Red Granite=Granite rouge pavé
+
+White Granite=Granit blanc
+White Granite Block=Bloc de granit blanc
+White Granite Brick=Brique de granit blanc
+Cracked White Granite Brick=Brique de granit blanc fissurée
+Cobbled White Granite=Granite blanc pavé
+
+Heliodor=Héliodore
+Heliodor Block=Bloc d'héliodore
+Heliodor Brick=Brique d'héliodore
+Cracked Heliodor Brick=Brique d'héliodore fissurée
+
+Howlite=Howlite
+Howlite Block=Bloc de howlite
+Howlite Brick=Brique de howlite
+Cracked Howlite Brick=Brique de howlite fissurée
+Cobbled Howlite=Pavé de howlite
+
+Ilvaite=Ilvaïte
+Ilvaite Block=Bloc d'ilvaïte
+Ilvaite Brick=Brique d'ilvaïte
+Cracked Ilvaite Brick=Brique d'ilvaïte fissurée
+Cobbled Ilvaite=Pavé d'ilvaïte
+
+Jade=Jade
+Jade Block=Bloc de jade
+Jade Brick=Brique de jade
+Cracked Jade Brick=Brique de jade fissurée
+Cobbled Jade=Pavé de jade
+
+Kyanite=Kyanite
+Kyanite Block=Bloc de kyanite
+Kyanite Brick=Brique de kyanite
+Cracked Kyanite Brick=Brique de kyanite fissurée
+Cobbled Kyanite=Pavé de kyanite
+
+Lapis Lazuli=Lapis-lazuli
+Lapis Lazuli Block=Bloc de lapis-lazuli
+Lapis Lazuli Brick=Brique de lapis-lazuli
+Cracked Lapis Lazuli Brick=Brique de lapis-lazuli fissurée
+
+Blue Limestone=Limestone bleue
+Blue Limestone Block=Bloc de limestone bleue
+Blue Limestone Brick=Brique de limestone bleue
+Cracked Blue Limestone Brick=Brique de limestone bleue fissurée
+Cobbled Blue Limestone=Pavé de limestone bleue
+
+White Limestone=Limestone blanc
+White Limestone Block=Bloc de limestone blanc
+White Limestone Brick=Brique de limestone blanc
+Cracked White Limestone Brick=Brique de limestone blanc fissurée
+Cobbled White Limestone=Pavé de limestone blanc
+
+Marble=Marbre
+Marble Block=Bloc de marbre
+Marble Brick=Brique de marbre
+Cracked Marble Brick=Brique de marbre fissurée
+Cobbled Marble=Pavé de marbre
+
+Mudstone=Mudstone
+Mudstone Block=Bloc de mudstone
+Cobbled Mudstone=Pavé de mudstone
+Mudstone Brick=Brique de mudstone
+Cracked Mudstone Brick=Brique de mudstone fissurée
+
+Opal=Opale
+
+Prasiolite=Prasiolite
+Prasiolite Block=Bloc de prasiolite
+Prasiolite Brick=Brique de prasiolite
+Cracked Prasiolite Brick=Brique de prasiolite fissurée
+
+Pumice=Ponce
+Pumice Block=Bloc de ponce
+Pumice Brick=Brique de ponce
+Cracked Pumice Brick=Brique de ponce fissurée
+
+Pyrite=Pyrite
+Pyrite Block=Bloc de pyrite
+Cobbled Pyrite=Pyrite pavée
+Pyrite Brick=Brique de pyrite
+Cracked Pyrite Brick=Brique de pyrite fissurée
+
+Quartz=Quartz
+Quartz Block=Bloc de quartz
+Quartz Brick=Brique de quartz
+Cracked Quartz Brick=Brique de quartz fissurée
+
+Rose Quartz=Quartz rose
+Rose Quartz Block=Bloc de quartz rose
+Rose Quartz Brick=Brique de quartz rose
+Cracked Rose Quartz Brick=Brique de quartz rose fissurée
+
+Scoria=Scorie
+Scoria Block=Bloc de scorie
+Scoria Brick=Brique de scorie
+Cracked Scoria Brick=Brique de scorie fissurée
+Cobbled Scoria=Scorie pavée
+
+Serpentine=Serpentine
+Serpentine Block=Bloc de serpentine
+Cobbled Serpentine=Serpentine pavée
+Serpentine Brick=Brique de serpentine
+Cracked Serpentine Brick=Brique de serpentine fissurée
+
+Slate=Ardoise
+Slate Block=Bloc d'ardoise
+Slate Brick=Brique d'ardoise
+Cracked Slate Brick=Brique d'ardoise fissurée
+Cobbled Slate=Ardoise pavée
+Slate Tile=Tuile en ardoise
+
+Smokey Quartz=Quartz fumé
+Smokey Quartz Block=Bloc de quartz fumé
+Smokey Quartz Brick=Brique de quartz fumé
+Cracked Smokey Quartz Brick=Brique de quartz fumé fissurée
+
+Soapstone=Stéatite
+Soapstone Block=Bloc de stéatite
+Soapstone Brick=Brique de stéatite
+Cracked Soapstone Brick=Brique de stéatite fissurée
+
+Sodalite=Sodalite
+Sodalite Block=Bloc de sodalite
+Cobbled Sodalite=Sodalite pavée
+Sodalite Brick=Brique de sodalite
+Cracked Sodalite Brick=Brique de sodalite fissurée
+
+Sugilite=Sugilite
+Sugilite Block=Bloc de sugilite
+Sugilite Brick=Brique de sugilite
+Cracked Sugilite Brick=Brique de sugilite fissurée
+Cobbled Sugilite=Sugilite pavée
+
+Travertine=Travertin
+Travertine Block=Bloc de travertin
+Cobbled Travertine=Travertin pavé
+Travertine Brick=Brique de travertin
+Cracked Travertine Brick=Brique de travertin fissurée
+
+Beige Tuff=Tuf beige
+Beige Tuff Block=Bloc de tuf beige
+Cobbled Beige Tuff=Tuf beige pavé
+Beige Tuff Brick=Brique de tuf beige
+Cracked Beige Tuff=Tuf beige craquelé
+
+Grey Tuff=Tuf gris
+Grey Tuff Block=Bloc de tuf gris
+Cobbled Grey Tuff=Tuf gris pavé
+Grey Tuff Brick=Brique de tuf gris
+Cracked Grey Tuff=Tuf gris craquelé
+
+Red Tuff=Tuf rouge
+Red Tuff Block=Bloc de tuf rouge
+Cobbled Red Tuff=Tuf rouge pavé
+Red Tuff Brick=Brique de tuf rouge
+Cracked Red Tuff=Tuf rouge craquelé
+
+Turquoise=Turquoise
+Turquoise Block=Bloc de turquoise
+Turquoise Brick=Brique de turquoise
+Cracked Turquoise Brick=Brique de turquoise fissurée
+Cobbled Turquoise=Turquoise pavée
+Turquoise Pebble=Galet de turquoise
+
+Vivianite=Vivianite
+Vivianite Block=Bloc de vivianite
+Vivianite Brick=Brique de vivianite
+Cracked Vivianite Brick=Brique de vivianite fissurée
+
+### wall.lua ###
+
+Blue Agate Wall=Mur en Agate bleue
+Gray Agate Wall=Mur en Agate grise
+Green Agate Wall=Mur en Agate verte
+Moss Agate Wall=Mur en Agate mousse
+Orange Agate Wall=Mur en Agate orange
+Purple Agate Wall=Mur en Agate violette
+Red Agate Wall=Mur en Agate rouge
+
+Amazonite Wall=Mur en Amazonite
+Cobbled Amazonite Wall=Mur en pavé d'Amazonite
+Amazonite Brick Wall=Mur en brique d'Amazonite
+Amazonite Block Wall=Mur en bloc d'Amazonite
+Cracked Amazonite Brick Wall=Mur en brique d'Amazonite fissurée
+
+Amber Wall=Mur en ambre
+Amber Brick Wall=Mur en brique d'ambre
+Amber Block Wall=Mur en bloc d'ambre
+Cracked Amber Brick Wall=Mur en brique d'ambre fissurée
+
+Amethyst Wall=Mur en améthyste
+Amethyst Brick Wall=Mur en brique d'améthyste
+Amethyst Block Wall=Mur en bloc d'améthyste
+Cracked Amethyst Brick Wall=Mur en brique d'améthyste fissurée
+
+Andesite Wall=Mur en andésite
+Andesite Block Wall=Mur en bloc d'andésite
+Andesite Brick Wall=Mur en brique d'andésite
+Cracked Andesite Brick Wall=Mur en brique d'andésite fissurée
+Cobbled Andesite Wall=Mur en pavé d'andésite
+
+Basalt Wall=Mur en basalte
+Basalt Brick Wall=Mur en brique de basalte
+Basalt Block Wall=Mur en bloc de basalte
+Cracked Basalt Brick Wall=Mur en brique de basalte fissurée
+Cobbled Basalt Wall=Mur en pavé de basalte
+
+Calcite Wall=Mur en calcite
+Calcite Brick Wall=Mur en brique de calcite
+Calcite Block Wall=Mur en bloc de calcite
+Cracked Calcite Brick Wall=Mur en brique de calcite fissurée
+
+Carnotite Wall=Mur en carnotite
+Carnotite Brick Wall=Mur en brique de carnotite
+Carnotite Block Wall=Mur en bloc de carnotite
+Cracked Carnotite Brick Wall=Mur en brique de carnotite fissurée
+Cobbled Carnotite Wall=Mur en pavé de carnotite
+
+Celestine Wall=Mur en célestine
+Celestine Brick Wall=Mur en brique de célestine
+Celestine Block Wall=Mur en bloc de célestine
+Cracked Celestine Brick Wall=Mur en brique de célestine fissurée
+
+Chrysoprase Wall=Mur en chrysoprase
+Chrysoprase Brick Wall=Mur en brique de chrysoprase
+Chrysoprase Block Wall=Mur en bloc de chrysoprase
+Cracked Chrysoprase Brick Wall=Mur en brique de chrysoprase fissurée
+
+Citrine Wall=Mur en Citrine
+Citrine Brick Wall=Mur en brique de Citrine
+Citrine Block Wall=Mur en bloc de Citrine
+Cracked Citrine Brick Wall=Mur en brique de Citrine fissurée
+
+Covellite Wall=Mur en Covellite
+Covellite Brick Wall=Mur en brique de Covellite
+Covellite Block Wall=Mur en bloc de Covellite
+Cracked Covellite Brick Wall=Mur en brique de Covellite fissurée
+Cobbled Covellite Wall=Mur en Covellite pavé
+
+Crocoite Wall=Mur en Crocoite
+Crocoite Brick Wall=Mur en brique de Crocoite
+Crocoite Block Wall=Mur en bloc de Crocoite
+Cracked Crocoite Brick Wall=Mur en brique de Crocoite fissurée
+
+Erythrite Wall=Mur en Érythrite
+Erythrite Brick Wall=Mur en brique d'Érythrite
+Erythrite Block Wall=Mur en bloc d'Érythrite
+Cracked Erythrite Brick Wall=Mur en brique d'Érythrite fissurée
+
+Eudialite Wall=Mur en Eudialite
+Eudialite Brick Wall=Mur en brique d'Eudialite
+Eudialite Block Wall=Mur en bloc d'Eudialite
+Cracked Eudialite Brick Wall=Mur en brique d'Eudialite fissurée
+
+Gabbro Wall=Mur en Gabbro
+Cobbled Gabbro Wall=Mur en Gabbro pavée
+Gabbro Brick Wall=Mur en brique de Gabbro
+Gabbro Block Wall=Mur en bloc de Gabbro
+Cracked Gabbro Brick Wall=Mur en brique de Gabbro fissurée
+
+Galena Wall=Mur en Galène
+Galena Brick Wall=Mur en brique de Galène
+Galena Block Wall=Mur en bloc de Galène
+Cracked Galena Brick Wall=Mur en brique de Galène fissurée
+
+Black Granite Wall=Mur en granit noir
+Black Granite Brick Wall=Mur en briques de granit noir
+Black Granite Block Wall=Mur en blocs de granit noir
+Cracked Black Granite Brick Wall=Mur en briques de granit noir fissuré
+Cobbled Black Granite Wall=Mur en granite noir pavé
+
+Blue Granite Wall=Mur en granit bleu
+Blue Granite Brick Wall=Mur en briques de granit bleu
+Blue Granite Block Wall=Mur en blocs de granit bleu
+Cracked Blue Granite Brick Wall=Mur en briques de granit bleu fissuré
+Cobbled Blue Granite Wall=Mur en granite bleu pavé
+
+Gray Granite Wall=Mur en granit gris
+Gray Granite Brick Wall=Mur en briques de granit gris
+Gray Granite Block Wall=Mur en blocs de granit gris
+Cracked Gray Granite Brick Wall=Mur en briques de granit gris fissuré
+Cobbled Gray Granite Wall=Mur en granite gris pavé
+
+Green Granite Wall=Mur en granit vert
+Green Granite Brick Wall=Mur en briques de granit vert
+Green Granite Block Wall=Mur en blocs de granit vert
+Cracked Green Granite Brick Wall=Mur en briques de granit vert fissuré
+Cobbled Green Granite Wall=Mur en granite vert pavé
+
+Pink Granite Wall=Mur en granit rose
+Pink Granite Brick Wall=Mur en briques de granit rose
+Pink Granite Block Wall=Mur en blocs de granit rose
+Cracked Pink Granite Brick Wall=Mur en briques de granit rose fissuré
+Cobbled Pink Granite Wall=Mur en granite rose pavé
+
+Red Granite Wall=Mur en granit rouge
+Red Granite Brick Wall=Mur en briques de granit rouge
+Red Granite Block Wall=Mur en blocs de granit rouge
+Cracked Red Granite Brick Wall=Mur en briques de granit rouge fissuré
+Cobbled Red Granite Wall=Mur en granite rouge pavé
+
+White Granite Wall=Mur en granit blanc
+White Granite Brick Wall=Mur en briques de granit blanc
+White Granite Block Wall=Mur en blocs de granit blanc
+Cracked White Granite Brick Wall=Mur en briques de granit blanc fissuré
+Cobbled White Granite Wall=Mur en granite blanc pavé
+
+Heliodor Wall=Mur en Héliodore
+Heliodor Brick Wall=Mur en brique d'Héliodore
+Heliodor Block Wall=Mur en blocs d'Héliodore
+Cracked Heliodor Brick Wall=Mur en briques d'Héliodore fissurées
+
+Howlite Wall=Mur en Howlite
+Howlite Brick Wall=Mur en brique de Howlite
+Howlite Block Wall=Mur en blocs de Howlite
+Cracked Howlite Brick Wall=Mur en briques de Howlite fissurées
+Cobbled Howlite Wall=Mur en pavé de howlite
+
+Ilvaite Wall=Mur en Ilvaite
+Ilvaite Brick Wall=Mur en brique d'Ilvaite
+Ilvaite Block Wall=Mur en blocs d'Ilvaite
+Cracked Ilvaite Brick Wall=Mur en briques d'Ilvaite fissurées
+Cobbled Ilvaite Wall=Mur pavé d'Ilvaite
+
+Jade Wall=Mur en Jade
+Jade Brick Wall=Mur en brique de Jade
+Jade Block Wall=Mur en blocs de Jade
+Cracked Jade Brick Wall=Mur en briques de Jade fissurées
+Cobbled Jade Wall=Mur pavé en Jade
+
+Kyanite Wall=Mur en Kyanite
+Kyanite Brick Wall=Mur en brique de Kyanite
+Kyanite Block Wall=Mur en blocs de Kyanite
+Cracked Kyanite Brick Wall=Mur en briques de Kyanite fissurées
+Cobbled Kyanite Wall=Mur pavé en Kyanite
+
+Lapis Lazuli Wall=Mur en Lapis-lazuli
+Lapis Lazuli Brick Wall=Mur en brique de Lapis-lazuli
+Lapis Lazuli Block Wall=Mur en blocs de Lapis-lazuli
+Cracked Lapis Lazuli Brick Wall=Mur en briques de Lapis-lazuli fissurées
+
+Blue Limestone Wall=Mur en calcaire bleu
+Blue Limestone Brick Wall=Mur en brique de calcaire bleu
+Blue Limestone Block Wall=Mur en blocs de calcaire bleu
+Cracked Blue Limestone Brick Wall=Mur en briques de calcaire bleu fissurées
+Cobbled Blue Limestone Wall=Mur pavé en calcaire bleu
+
+White Limestone Wall=Mur en calcaire blanc
+White Limestone Brick Wall=Mur en brique de calcaire blanc
+White Limestone Block Wall=Mur en blocs de calcaire blanc
+Cracked White Limestone Brick Wall=Mur en briques de calcaire blanc fissurées
+Cobbled White Limestone Wall=Mur pavé en calcaire blanc
+
+Marble Wall=Mur en marbre
+Marble Brick Wall=Mur en brique de marbre
+Marble Block Wall=Mur en bloc de marbre
+Cracked Marble Brick Wall=Mur en brique de marbre fissuré
+Cobbled Marble Wall=Mur en marbre pavé
+
+Mudstone Wall=Mur en grès boueux
+Cobbled Mudstone Wall=Mur en grès boueux pavé
+Mudstone Brick Wall=Mur en brique de grès boueux
+Mudstone Block Wall=Mur en bloc de grès boueux
+Cracked Mudstone Brick Wall=Mur en brique de grès boueux fissuré
+
+Prasiolite Wall=Mur en prasiolite
+Prasiolite Brick Wall=Mur en brique de prasiolite
+Prasiolite Block Wall=Mur en bloc de prasiolite
+Cracked Prasiolite Brick Wall=Mur en brique de prasiolite fissuré
+
+Pumice Wall=Mur en ponce
+Pumice Brick Wall=Mur en brique de ponce
+Pumice Block Wall=Mur en bloc de ponce
+Cracked Pumice Brick Wall=Mur en brique de ponce fissuré
+
+Pyrite Wall=Mur en pyrite
+Pyrite Brick Wall=Mur en brique de pyrite
+Pyrite Block Wall=Mur en bloc de pyrite
+Cracked Pyrite Brick Wall=Mur en brique de pyrite fissuré
+
+Quartz Wall=Mur en quartz
+Quartz Brick Wall=Mur en brique de quartz
+Quartz Block Wall=Mur en bloc de quartz
+Cracked Quartz Brick Wall=Mur en brique de quartz fissuré
+
+Rose Quartz Wall=Mur en quartz rose
+Rose Quartz Brick Wall=Mur en brique de quartz rose
+Rose Quartz Block Wall=Mur en bloc de quartz rose
+Cracked Rose Quartz Brick Wall=Mur en brique de quartz rose fissuré
+
+Scoria Wall=Mur en scorie
+Scoria Brick Wall=Mur en brique de scorie
+Scoria Block Wall=Mur en bloc de scorie
+Cracked Scoria Brick Wall=Mur en brique de scorie fissuré
+Cobbled Scoria Wall=Mur en scorie pavé
+
+Serpentine Wall=Mur en serpentine
+Cobbled Serpentine Wall=Mur en serpentine pavé
+Serpentine Brick Wall=Mur en brique de serpentine
+Serpentine Block Wall=Mur en bloc de serpentine
+Cracked Serpentine Brick Wall=Mur en brique de serpentine fissuré
+
+Slate Wall=Mur en ardoise
+Slate Brick Wall=Mur en brique d'ardoise
+Slate Block Wall=Mur en bloc d'ardoise
+Cracked Slate Brick Wall=Mur en brique d'ardoise fissurée
+Cobbled Slate Wall=Mur pavé en ardoise
+Slate Tile Wall=Mur tuile en ardoise
+
+Smokey Quartz Wall=Mur en quartz fumé
+Smokey Quartz Brick Wall=Mur en brique de quartz fumé
+Smokey Quartz Block Wall=Mur en bloc de quartz fumé
+Cracked Smokey Quartz Brick Wall=Mur en brique de quartz fumé fissurée
+
+Soapstone Wall=Mur en pierre à savon
+Soapstone Brick Wall=Mur en brique de pierre à savon
+Soapstone Block Wall=Mur en bloc de pierre à savon
+Cracked Soapstone Brick Wall=Mur en brique de pierre à savon fissurée
+
+Sodalite Wall=Mur en sodalite
+Cobbled Sodalite Wall=Mur pavé en sodalite
+Sodalite Brick Wall=Mur en brique de sodalite
+Sodalite Block Wall=Mur en bloc de sodalite
+Cracked Sodalite Brick Wall=Mur en brique de sodalite fissurée
+
+Sugilite Wall=Mur en sugilite
+Sugilite Brick Wall=Mur en brique de sugilite
+Sugilite Block Wall=Mur en bloc de sugilite
+Cracked Sugilite Brick Wall=Mur en brique de sugilite fissurée
+Cobbled Sugilite Wall=Mur pavé en sugilite
+
+Travertine Wall=Mur en travertin
+Cobbled Travertine Wall=Mur pavé en travertin
+Travertine Brick Wall=Mur en brique de travertin
+Travertine Block Wall=Mur en bloc de travertin
+Cracked Travertine Brick Wall=Mur en brique de travertin fissurée
+
+Beige Tuff Wall=Mur en tuf beige
+Beige Tuff Block Wall=Mur en bloc de tuf beige
+Cobbled Beige Tuff Wall=Mur en tuf beige pavé
+Beige Tuff Brick Wall=Mur en brique de tuf beige
+Cracked Beige Tuff Wall=Mur en tuf beige craquelé
+
+Grey Tuff Wall=Mur en tuf gris
+Grey Tuff Block Wall=Mur en bloc de tuf gris
+Cobbled Grey Tuff Wall=Mur en tuf gris pavé
+Grey Tuff Brick Wall=Mur en brique de tuf gris
+Cracked Grey Tuff Wall=Mur en tuf gris craquelé
+
+Red Tuff Wall=Mur en tuf rouge
+Red Tuff Block Wall=Mur en bloc de tuf rouge
+Cobbled Red Tuff Wall=Mur en tuf rouge pavé
+Red Tuff Brick Wall=Mur en brique de tuf rouge
+Cracked Red Tuff Wall=Mur en tuf rouge craquelé
+
+Turquoise Wall=Mur en turquoise
+Turquoise Brick Wall=Mur en brique de turquoise
+Turquoise Block Wall=Mur en bloc de turquoise
+Cracked Turquoise Brick Wall=Mur en brique de turquoise fissurée
+Cobbled Turquoise Wall=Mur pavé en turquoise
+
+Vivianite Wall=Mur en vivianite
+Vivianite Brick Wall=Mur en brique de vivianite
+Vivianite Block Wall=Mur en bloc de vivianite
+Cracked Vivianite Brick Wall=Mur en brique de vivianite fissurée
+
+### stairs.lua ###
+
+Blue Agate Slab=Dalle en Agate bleue
+Gray Agate Slab=Dalle en Agate grise
+Green Agate Slab=Dalle en Agate verte
+Moss Agate Slab=Dalle en Agate mousse
+Orange Agate Slab=Dalle en Agate orange
+Purple Agate Slab=Dalle en Agate violette
+Red Agate Slab=Dalle en Agate rouge
+
+Amazonite Slab=Dalle en Amazonite
+Cobbled Amazonite Slab=Dalle en pavé d'Amazonite
+Amazonite Brick Slab=Dalle en brique d'Amazonite
+Amazonite Block Slab=Dalle en bloc d'Amazonite
+Cracked Amazonite Brick Slab=Dalle en brique d'Amazonite fissurée
+
+Amber Slab=Dalle en ambre
+Amber Brick Slab=Dalle en brique d'ambre
+Amber Block Slab=Dalle en bloc d'ambre
+Cracked Amber Brick Slab=Dalle en brique d'ambre fissurée
+
+Amethyst Slab=Dalle en améthyste
+Amethyst Brick Slab=Dalle en brique d'améthyste
+Amethyst Block Slab=Dalle en bloc d'améthyste
+Cracked Amethyst Brick Slab=Dalle en brique d'améthyste fissurée
+
+Andesite Slab=Dalle en andésite
+Andesite Block Slab=Dalle en bloc d'andésite
+Andesite Brick Slab=Dalle en brique d'andésite
+Cracked Andesite Brick Slab=Dalle en brique d'andésite fissurée
+Cobbled Andesite Slab=Dalle en pavé d'andésite
+
+Basalt Slab=Dalle en basalte
+Basalt Brick Slab=Dalle en brique de basalte
+Basalt Block Slab=Dalle en bloc de basalte
+Cracked Basalt Brick Slab=Dalle en brique de basalte fissurée
+Cobbled Basalt Slab=Dalle en pavé de basalte
+
+Calcite Slab=Dalle en calcite
+Calcite Brick Slab=Dalle en brique de calcite
+Calcite Block Slab=Dalle en bloc de calcite
+Cracked Calcite Brick Slab=Dalle en brique de calcite fissurée
+
+Carnotite Slab=Dalle en carnotite
+Carnotite Brick Slab=Dalle en brique de carnotite
+Carnotite Block Slab=Dalle en bloc de carnotite
+Cracked Carnotite Brick Slab=Dalle en brique de carnotite fissurée
+Cobbled Carnotite Slab=Dalle en pavé de carnotite
+
+Celestine Slab=Dalle en célestine
+Celestine Brick Slab=Dalle en brique de célestine
+Celestine Block Slab=Dalle en bloc de célestine
+Cracked Celestine Brick Slab=Dalle en brique de célestine fissurée
+
+Chrysoprase Slab=Dalle en chrysoprase
+Chrysoprase Brick Slab=Dalle en brique de chrysoprase
+Chrysoprase Block Slab=Dalle en bloc de chrysoprase
+Cracked Chrysoprase Brick Slab=Dalle en brique de chrysoprase fissurée
+
+Citrine Slab=Dalle en Citrine
+Citrine Brick Slab=Dalle en brique de Citrine
+Citrine Block Slab=Dalle en bloc de Citrine
+Cracked Citrine Brick Slab=Dalle en brique de Citrine fissurée
+
+Covellite Slab=Dalle en Covellite
+Covellite Brick Slab=Dalle en brique de Covellite
+Covellite Block Slab=Dalle en bloc de Covellite
+Cracked Covellite Brick Slab=Dalle en brique de Covellite fissurée
+Cobbled Covellite Slab=Dalle en Covellite pavé
+
+Crocoite Slab=Dalle en Crocoite
+Crocoite Brick Slab=Dalle en brique de Crocoite
+Crocoite Block Slab=Dalle en bloc de Crocoite
+Cracked Crocoite Brick Slab=Dalle en brique de Crocoite fissurée
+
+Erythrite Slab=Dalle en Érythrite
+Erythrite Brick Slab=Dalle en brique d'Érythrite
+Erythrite Block Slab=Dalle en bloc d'Érythrite
+Cracked Erythrite Brick Slab=Dalle en brique d'Érythrite fissurée
+
+Eudialite Slab=Dalle en Eudialite
+Eudialite Brick Slab=Dalle en brique d'Eudialite
+Eudialite Block Slab=Dalle en bloc d'Eudialite
+Cracked Eudialite Brick Slab=Dalle en brique d'Eudialite fissurée
+
+Gabbro Slab=Dalle en Gabbro
+Cobbled Gabbro Slab=Dalle en Gabbro pavée
+Gabbro Brick Slab=Dalle en brique de Gabbro
+Gabbro Block Slab=Dalle en bloc de Gabbro
+Cracked Gabbro Brick Slab=Dalle en brique de Gabbro fissurée
+
+Galena Slab=Dalle en Galène
+Galena Brick Slab=Dalle en brique de Galène
+Galena Block Slab=Dalle en bloc de Galène
+Cracked Galena Brick Slab=Dalle en brique de Galène fissurée
+
+Black Granite Slab=Dalle en granit noir
+Black Granite Brick Slab=Dalle en briques de granit noir
+Black Granite Block Slab=Dalle en blocs de granit noir
+Cracked Black Granite Brick Slab=Dalle en briques de granit noir fissuré
+Cobbled Black Granite Slab=Dalle en granite noir pavé
+
+Blue Granite Slab=Dalle en granit bleu
+Blue Granite Brick Slab=Dalle en briques de granit bleu
+Blue Granite Block Slab=Dalle en blocs de granit bleu
+Cracked Blue Granite Brick Slab=Dalle en briques de granit bleu fissuré
+Cobbled Blue Granite Slab=Dalle en granite bleu pavé
+
+Gray Granite Slab=Dalle en granit gris
+Gray Granite Brick Slab=Dalle en briques de granit gris
+Gray Granite Block Slab=Dalle en blocs de granit gris
+Cracked Gray Granite Brick Slab=Dalle en briques de granit gris fissuré
+Cobbled Gray Granite Slab=Dalle en granite gris pavé
+
+Green Granite Slab=Dalle en granit vert
+Green Granite Brick Slab=Dalle en briques de granit vert
+Green Granite Block Slab=Dalle en blocs de granit vert
+Cracked Green Granite Brick Slab=Dalle en briques de granit vert fissuré
+Cobbled Green Granite Slab=Dalle en granite vert pavé
+
+Pink Granite Slab=Dalle en granit rose
+Pink Granite Brick Slab=Dalle en briques de granit rose
+Pink Granite Block Slab=Dalle en blocs de granit rose
+Cracked Pink Granite Brick Slab=Dalle en briques de granit rose fissuré
+Cobbled Pink Granite Slab=Dalle en granite rose pavé
+
+Red Granite Slab=Dalle en granit rouge
+Red Granite Brick Slab=Dalle en briques de granit rouge
+Red Granite Block Slab=Dalle en blocs de granit rouge
+Cracked Red Granite Brick Slab=Dalle en briques de granit rouge fissuré
+Cobbled Red Granite Slab=Dalle en granite rouge pavé
+
+White Granite Slab=Dalle en granit blanc
+White Granite Brick Slab=Dalle en briques de granit blanc
+White Granite Block Slab=Dalle en blocs de granit blanc
+Cracked White Granite Brick Slab=Dalle en briques de granit blanc fissuré
+Cobbled White Granite Slab=Dalle en granite blanc pavé
+
+Heliodor Slab=Dalle en Héliodore
+Heliodor Brick Slab=Dalle en brique d'Héliodore
+Heliodor Block Slab=Dalle en blocs d'Héliodore
+Cracked Heliodor Brick Slab=Dalle en briques d'Héliodore fissurées
+
+Howlite Slab=Dalle en Howlite
+Howlite Brick Slab=Dalle en brique de Howlite
+Howlite Block Slab=Dalle en blocs de Howlite
+Cracked Howlite Brick Slab=Dalle en briques de Howlite fissurées
+Cobbled Howlite Slab=Dalle en pavé de howlite
+
+Ilvaite Slab=Dalle en Ilvaite
+Ilvaite Brick Slab=Dalle en brique d'Ilvaite
+Ilvaite Block Slab=Dalle en blocs d'Ilvaite
+Cracked Ilvaite Brick Slab=Dalle en briques d'Ilvaite fissurées
+Cobbled Ilvaite Slab=Dalle pavé d'Ilvaite
+
+Jade Slab=Dalle en Jade
+Jade Brick Slab=Dalle en brique de Jade
+Jade Block Slab=Dalle en blocs de Jade
+Cracked Jade Brick Slab=Dalle en briques de Jade fissurées
+Cobbled Jade Slab=Dalle pavé en Jade
+
+Kyanite Slab=Dalle en Kyanite
+Kyanite Brick Slab=Dalle en brique de Kyanite
+Kyanite Block Slab=Dalle en blocs de Kyanite
+Cracked Kyanite Brick Slab=Dalle en briques de Kyanite fissurées
+Cobbled Kyanite Slab=Dalle pavé en Kyanite
+
+Lapis Lazuli Slab=Dalle en Lapis-lazuli
+Lapis Lazuli Brick Slab=Dalle en brique de Lapis-lazuli
+Lapis Lazuli Block Slab=Dalle en blocs de Lapis-lazuli
+Cracked Lapis Lazuli Brick Slab=Dalle en briques de Lapis-lazuli fissurées
+
+Blue Limestone Slab=Dalle en calcaire bleu
+Blue Limestone Brick Slab=Dalle en brique de calcaire bleu
+Blue Limestone Block Slab=Dalle en blocs de calcaire bleu
+Cracked Blue Limestone Brick Slab=Dalle en briques de calcaire bleu fissurées
+Cobbled Blue Limestone Slab=Dalle pavé en calcaire bleu
+
+White Limestone Slab=Dalle en calcaire blanc
+White Limestone Brick Slab=Dalle en brique de calcaire blanc
+White Limestone Block Slab=Dalle en blocs de calcaire blanc
+Cracked White Limestone Brick Slab=Dalle en briques de calcaire blanc fissurées
+Cobbled White Limestone Slab=Dalle pavé en calcaire blanc
+
+Marble Slab=Dalle en marbre
+Marble Brick Slab=Dalle en brique de marbre
+Marble Block Slab=Dalle en bloc de marbre
+Cracked Marble Brick Slab=Dalle en brique de marbre fissuré
+Cobbled Marble Slab=Dalle en marbre pavé
+
+Mudstone Slab=Dalle en grès boueux
+Cobbled Mudstone Slab=Dalle en grès boueux pavé
+Mudstone Brick Slab=Dalle en brique de grès boueux
+Mudstone Block Slab=Dalle en bloc de grès boueux
+Cracked Mudstone Brick Slab=Dalle en brique de grès boueux fissuré
+
+Prasiolite Slab=Dalle en prasiolite
+Prasiolite Brick Slab=Dalle en brique de prasiolite
+Prasiolite Block Slab=Dalle en bloc de prasiolite
+Cracked Prasiolite Brick Slab=Dalle en brique de prasiolite fissuré
+
+Pumice Slab=Dalle en ponce
+Pumice Brick Slab=Dalle en brique de ponce
+Pumice Block Slab=Dalle en bloc de ponce
+Cracked Pumice Brick Slab=Dalle en brique de ponce fissuré
+
+Pyrite Slab=Dalle en pyrite
+Pyrite Brick Slab=Dalle en brique de pyrite
+Pyrite Block Slab=Dalle en bloc de pyrite
+Cracked Pyrite Brick Slab=Dalle en brique de pyrite fissuré
+
+Quartz Slab=Dalle en quartz
+Quartz Brick Slab=Dalle en brique de quartz
+Quartz Block Slab=Dalle en bloc de quartz
+Cracked Quartz Brick Slab=Dalle en brique de quartz fissuré
+
+Rose Quartz Slab=Dalle en quartz rose
+Rose Quartz Brick Slab=Dalle en brique de quartz rose
+Rose Quartz Block Slab=Dalle en bloc de quartz rose
+Cracked Rose Quartz Brick Slab=Dalle en brique de quartz rose fissuré
+
+Scoria Slab=Dalle en scorie
+Scoria Brick Slab=Dalle en brique de scorie
+Scoria Block Slab=Dalle en bloc de scorie
+Cracked Scoria Brick Slab=Dalle en brique de scorie fissuré
+Cobbled Scoria Slab=Dalle en scorie pavé
+
+Serpentine Slab=Dalle en serpentine
+Cobbled Serpentine Slab=Dalle en serpentine pavé
+Serpentine Brick Slab=Dalle en brique de serpentine
+Serpentine Block Slab=Dalle en bloc de serpentine
+Cracked Serpentine Brick Slab=Dalle en brique de serpentine fissuré
+
+Slate Slab=Dalle en ardoise
+Slate Brick Slab=Dalle en brique d'ardoise
+Slate Block Slab=Dalle en bloc d'ardoise
+Cracked Slate Brick Slab=Dalle en brique d'ardoise fissurée
+Cobbled Slate Slab=Dalle pavé en ardoise
+Slate Tile Slab=Dalle tuile en ardoise
+
+Smokey Quartz Slab=Dalle en quartz fumé
+Smokey Quartz Brick Slab=Dalle en brique de quartz fumé
+Smokey Quartz Block Slab=Dalle en bloc de quartz fumé
+Cracked Smokey Quartz Brick Slab=Dalle en brique de quartz fumé fissurée
+
+Soapstone Slab=Dalle en pierre à savon
+Soapstone Brick Slab=Dalle en brique de pierre à savon
+Soapstone Block Slab=Dalle en bloc de pierre à savon
+Cracked Soapstone Brick Slab=Dalle en brique de pierre à savon fissurée
+
+Sodalite Slab=Dalle en sodalite
+Cobbled Sodalite Slab=Dalle pavé en sodalite
+Sodalite Brick Slab=Dalle en brique de sodalite
+Sodalite Block Slab=Dalle en bloc de sodalite
+Cracked Sodalite Brick Slab=Dalle en brique de sodalite fissurée
+
+Sugilite Slab=Dalle en sugilite
+Sugilite Brick Slab=Dalle en brique de sugilite
+Sugilite Block Slab=Dalle en bloc de sugilite
+Cracked Sugilite Brick Slab=Dalle en brique de sugilite fissurée
+Cobbled Sugilite Slab=Dalle pavé en sugilite
+
+Travertine Slab=Dalle en travertin
+Cobbled Travertine Slab=Dalle pavé en travertin
+Travertine Brick Slab=Dalle en brique de travertin
+Travertine Block Slab=Dalle en bloc de travertin
+Cracked Travertine Brick Slab=Dalle en brique de travertin fissurée
+
+Beige Tuff Slab=Dalle en tuf beige
+Beige Tuff Block Slab=Dalle en bloc de tuf beige
+Cobbled Beige Tuff Slab=Dalle en tuf beige pavé
+Beige Tuff Brick Slab=Dalle en brique de tuf beige
+Cracked Beige Tuff Slab=Dalle en tuf beige craquelé
+
+Grey Tuff Slab=Dalle en tuf gris
+Grey Tuff Block Slab=Dalle en bloc de tuf gris
+Cobbled Grey Tuff Slab=Dalle en tuf gris pavé
+Grey Tuff Brick Slab=Dalle en brique de tuf gris
+Cracked Grey Tuff Slab=Dalle en tuf gris craquelé
+
+Red Tuff Slab=Dalle en tuf rouge
+Red Tuff Block Slab=Dalle en bloc de tuf rouge
+Cobbled Red Tuff Slab=Dalle en tuf rouge pavé
+Red Tuff Brick Slab=Dalle en brique de tuf rouge
+Cracked Red Tuff Slab=Dalle en tuf rouge craquelé
+
+Turquoise Slab=Dalle en turquoise
+Turquoise Brick Slab=Dalle en brique de turquoise
+Turquoise Block Slab=Dalle en bloc de turquoise
+Cracked Turquoise Brick Slab=Dalle en brique de turquoise fissurée
+Cobbled Turquoise Slab=Dalle pavé en turquoise
+
+Vivianite Slab=Dalle en vivianite
+Vivianite Brick Slab=Dalle en brique de vivianite
+Vivianite Block Slab=Dalle en bloc de vivianite
+Cracked Vivianite Brick Slab=Dalle en brique de vivianite fissurée
+
+
+
+Blue Agate Stair=Escalier en Agate bleue
+Gray Agate Stair=Escalier en Agate grise
+Green Agate Stair=Escalier en Agate verte
+Moss Agate Stair=Escalier en Agate mousse
+Orange Agate Stair=Escalier en Agate orange
+Purple Agate Stair=Escalier en Agate violette
+Red Agate Stair=Escalier en Agate rouge
+
+Amazonite Stair=Escalier en Amazonite
+Cobbled Amazonite Stair=Escalier en pavé d'Amazonite
+Amazonite Brick Stair=Escalier en brique d'Amazonite
+Amazonite Block Stair=Escalier en bloc d'Amazonite
+Cracked Amazonite Brick Stair=Escalier en brique d'Amazonite fissurée
+
+Amber Stair=Escalier en ambre
+Amber Brick Stair=Escalier en brique d'ambre
+Amber Block Stair=Escalier en bloc d'ambre
+Cracked Amber Brick Stair=Escalier en brique d'ambre fissurée
+
+Amethyst Stair=Escalier en améthyste
+Amethyst Brick Stair=Escalier en brique d'améthyste
+Amethyst Block Stair=Escalier en bloc d'améthyste
+Cracked Amethyst Brick Stair=Escalier en brique d'améthyste fissurée
+
+Andesite Stair=Escalier en andésite
+Andesite Block Stair=Escalier en bloc d'andésite
+Andesite Brick Stair=Escalier en brique d'andésite
+Cracked Andesite Brick Stair=Escalier en brique d'andésite fissurée
+Cobbled Andesite Stair=Escalier en pavé d'andésite
+
+Basalt Stair=Escalier en basalte
+Basalt Brick Stair=Escalier en brique de basalte
+Basalt Block Stair=Escalier en bloc de basalte
+Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée
+Cobbled Basalt Stair=Escalier en pavé de basalte
+
+Calcite Stair=Escalier en calcite
+Calcite Brick Stair=Escalier en brique de calcite
+Calcite Block Stair=Escalier en bloc de calcite
+Cracked Calcite Brick Stair=Escalier en brique de calcite fissurée
+
+Carnotite Stair=Escalier en carnotite
+Carnotite Brick Stair=Escalier en brique de carnotite
+Carnotite Block Stair=Escalier en bloc de carnotite
+Cracked Carnotite Brick Stair=Escalier en brique de carnotite fissurée
+Cobbled Carnotite Stair=Escalier en pavé de carnotite
+
+Celestine Stair=Escalier en célestine
+Celestine Brick Stair=Escalier en brique de célestine
+Celestine Block Stair=Escalier en bloc de célestine
+Cracked Celestine Brick Stair=Escalier en brique de célestine fissurée
+
+Chrysoprase Stair=Escalier en chrysoprase
+Chrysoprase Brick Stair=Escalier en brique de chrysoprase
+Chrysoprase Block Stair=Escalier en bloc de chrysoprase
+Cracked Chrysoprase Brick Stair=Escalier en brique de chrysoprase fissurée
+
+Citrine Stair=Escalier en Citrine
+Citrine Brick Stair=Escalier en brique de Citrine
+Citrine Block Stair=Escalier en bloc de Citrine
+Cracked Citrine Brick Stair=Escalier en brique de Citrine fissurée
+
+Covellite Stair=Escalier en Covellite
+Covellite Brick Stair=Escalier en brique de Covellite
+Covellite Block Stair=Escalier en bloc de Covellite
+Cracked Covellite Brick Stair=Escalier en brique de Covellite fissurée
+Cobbled Covellite Stair=Escalier en Covellite pavé
+
+Crocoite Stair=Escalier en Crocoite
+Crocoite Brick Stair=Escalier en brique de Crocoite
+Crocoite Block Stair=Escalier en bloc de Crocoite
+Cracked Crocoite Brick Stair=Escalier en brique de Crocoite fissurée
+
+Erythrite Stair=Escalier en Érythrite
+Erythrite Brick Stair=Escalier en brique d'Érythrite
+Erythrite Block Stair=Escalier en bloc d'Érythrite
+Cracked Erythrite Brick Stair=Escalier en brique d'Érythrite fissurée
+
+Eudialite Stair=Escalier en Eudialite
+Eudialite Brick Stair=Escalier en brique d'Eudialite
+Eudialite Block Stair=Escalier en bloc d'Eudialite
+Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite fissurée
+
+Gabbro Stair=Escalier en Gabbro
+Cobbled Gabbro Stair=Escalier en Gabbro pavée
+Gabbro Brick Stair=Escalier en brique de Gabbro
+Gabbro Block Stair=Escalier en bloc de Gabbro
+Cracked Gabbro Brick Stair=Escalier en brique de Gabbro fissurée
+
+Galena Stair=Escalier en Galène
+Galena Brick Stair=Escalier en brique de Galène
+Galena Block Stair=Escalier en bloc de Galène
+Cracked Galena Brick Stair=Escalier en brique de Galène fissurée
+
+Black Granite Stair=Escalier en granit noir
+Black Granite Brick Stair=Escalier en briques de granit noir
+Black Granite Block Stair=Escalier en blocs de granit noir
+Cracked Black Granite Brick Stair=Escalier en briques de granit noir fissuré
+Cobbled Black Granite Stair=Escalier en granite noir pavé
+
+Blue Granite Stair=Escalier en granit bleu
+Blue Granite Brick Stair=Escalier en briques de granit bleu
+Blue Granite Block Stair=Escalier en blocs de granit bleu
+Cracked Blue Granite Brick Stair=Escalier en briques de granit bleu fissuré
+Cobbled Blue Granite Stair=Escalier en granite bleu pavé
+
+Gray Granite Stair=Escalier en granit gris
+Gray Granite Brick Stair=Escalier en briques de granit gris
+Gray Granite Block Stair=Escalier en blocs de granit gris
+Cracked Gray Granite Brick Stair=Escalier en briques de granit gris fissuré
+Cobbled Gray Granite Stair=Escalier en granite gris pavé
+
+Green Granite Stair=Escalier en granit vert
+Green Granite Brick Stair=Escalier en briques de granit vert
+Green Granite Block Stair=Escalier en blocs de granit vert
+Cracked Green Granite Brick Stair=Escalier en briques de granit vert fissuré
+Cobbled Green Granite Stair=Escalier en granite vert pavé
+
+Pink Granite Stair=Escalier en granit rose
+Pink Granite Brick Stair=Escalier en briques de granit rose
+Pink Granite Block Stair=Escalier en blocs de granit rose
+Cracked Pink Granite Brick Stair=Escalier en briques de granit rose fissuré
+Cobbled Pink Granite Stair=Escalier en granite rose pavé
+
+Red Granite Stair=Escalier en granit rouge
+Red Granite Brick Stair=Escalier en briques de granit rouge
+Red Granite Block Stair=Escalier en blocs de granit rouge
+Cracked Red Granite Brick Stair=Escalier en briques de granit rouge fissuré
+Cobbled Red Granite Stair=Escalier en granite rouge pavé
+
+White Granite Stair=Escalier en granit blanc
+White Granite Brick Stair=Escalier en briques de granit blanc
+White Granite Block Stair=Escalier en blocs de granit blanc
+Cracked White Granite Brick Stair=Escalier en briques de granit blanc fissuré
+Cobbled White Granite Stair=Escalier en granite blanc pavé
+
+Heliodor Stair=Escalier en Héliodore
+Heliodor Brick Stair=Escalier en brique d'Héliodore
+Heliodor Block Stair=Escalier en blocs d'Héliodore
+Cracked Heliodor Brick Stair=Escalier en briques d'Héliodore fissurées
+
+Howlite Stair=Escalier en Howlite
+Howlite Brick Stair=Escalier en brique de Howlite
+Howlite Block Stair=Escalier en blocs de Howlite
+Cracked Howlite Brick Stair=Escalier en briques de Howlite fissurées
+Cobbled Howlite Stair=Escalier en pavé de howlite
+
+Ilvaite Stair=Escalier en Ilvaite
+Ilvaite Brick Stair=Escalier en brique d'Ilvaite
+Ilvaite Block Stair=Escalier en blocs d'Ilvaite
+Cracked Ilvaite Brick Stair=Escalier en briques d'Ilvaite fissurées
+Cobbled Ilvaite Stair=Escalier pavé d'Ilvaite
+
+Jade Stair=Escalier en Jade
+Jade Brick Stair=Escalier en brique de Jade
+Jade Block Stair=Escalier en blocs de Jade
+Cracked Jade Brick Stair=Escalier en briques de Jade fissurées
+Cobbled Jade Stair=Escalier pavé en Jade
+
+Kyanite Stair=Escalier en Kyanite
+Kyanite Brick Stair=Escalier en brique de Kyanite
+Kyanite Block Stair=Escalier en blocs de Kyanite
+Cracked Kyanite Brick Stair=Escalier en briques de Kyanite fissurées
+Cobbled Kyanite Stair=Escalier pavé en Kyanite
+
+Lapis Lazuli Stair=Escalier en Lapis-lazuli
+Lapis Lazuli Brick Stair=Escalier en brique de Lapis-lazuli
+Lapis Lazuli Block Stair=Escalier en blocs de Lapis-lazuli
+Cracked Lapis Lazuli Brick Stair=Escalier en briques de Lapis-lazuli fissurées
+
+Blue Limestone Stair=Escalier en calcaire bleu
+Blue Limestone Brick Stair=Escalier en brique de calcaire bleu
+Blue Limestone Block Stair=Escalier en blocs de calcaire bleu
+Cracked Blue Limestone Brick Stair=Escalier en briques de calcaire bleu fissurées
+Cobbled Blue Limestone Stair=Escalier pavé en calcaire bleu
+
+White Limestone Stair=Escalier en calcaire blanc
+White Limestone Brick Stair=Escalier en brique de calcaire blanc
+White Limestone Block Stair=Escalier en blocs de calcaire blanc
+Cracked White Limestone Brick Stair=Escalier en briques de calcaire blanc fissurées
+Cobbled White Limestone Stair=Escalier pavé en calcaire blanc
+
+Marble Stair=Escalier en marbre
+Marble Brick Stair=Escalier en brique de marbre
+Marble Block Stair=Escalier en bloc de marbre
+Cracked Marble Brick Stair=Escalier en brique de marbre fissuré
+Cobbled Marble Stair=Escalier en marbre pavé
+
+Mudstone Stair=Escalier en grès boueux
+Cobbled Mudstone Stair=Escalier en grès boueux pavé
+Mudstone Brick Stair=Escalier en brique de grès boueux
+Mudstone Block Stair=Escalier en bloc de grès boueux
+Cracked Mudstone Brick Stair=Escalier en brique de grès boueux fissuré
+
+Prasiolite Stair=Escalier en prasiolite
+Prasiolite Brick Stair=Escalier en brique de prasiolite
+Prasiolite Block Stair=Escalier en bloc de prasiolite
+Cracked Prasiolite Brick Stair=Escalier en brique de prasiolite fissuré
+
+Pumice Stair=Escalier en ponce
+Pumice Brick Stair=Escalier en brique de ponce
+Pumice Block Stair=Escalier en bloc de ponce
+Cracked Pumice Brick Stair=Escalier en brique de ponce fissuré
+
+Pyrite Stair=Escalier en pyrite
+Pyrite Brick Stair=Escalier en brique de pyrite
+Pyrite Block Stair=Escalier en bloc de pyrite
+Cracked Pyrite Brick Stair=Escalier en brique de pyrite fissuré
+
+Quartz Stair=Escalier en quartz
+Quartz Brick Stair=Escalier en brique de quartz
+Quartz Block Stair=Escalier en bloc de quartz
+Cracked Quartz Brick Stair=Escalier en brique de quartz fissuré
+
+Rose Quartz Stair=Escalier en quartz rose
+Rose Quartz Brick Stair=Escalier en brique de quartz rose
+Rose Quartz Block Stair=Escalier en bloc de quartz rose
+Cracked Rose Quartz Brick Stair=Escalier en brique de quartz rose fissuré
+
+Scoria Stair=Escalier en scorie
+Scoria Brick Stair=Escalier en brique de scorie
+Scoria Block Stair=Escalier en bloc de scorie
+Cracked Scoria Brick Stair=Escalier en brique de scorie fissuré
+Cobbled Scoria Stair=Escalier en scorie pavé
+
+Serpentine Stair=Escalier en serpentine
+Cobbled Serpentine Stair=Escalier en serpentine pavé
+Serpentine Brick Stair=Escalier en brique de serpentine
+Serpentine Block Stair=Escalier en bloc de serpentine
+Cracked Serpentine Brick Stair=Escalier en brique de serpentine fissuré
+
+Slate Stair=Escalier en ardoise
+Slate Brick Stair=Escalier en brique d'ardoise
+Slate Block Stair=Escalier en bloc d'ardoise
+Cracked Slate Brick Stair=Escalier en brique d'ardoise fissurée
+Cobbled Slate Stair=Escalier pavé en ardoise
+Slate Tile Stair=Escalier tuile en ardoise
+
+Smokey Quartz Stair=Escalier en quartz fumé
+Smokey Quartz Brick Stair=Escalier en brique de quartz fumé
+Smokey Quartz Block Stair=Escalier en bloc de quartz fumé
+Cracked Smokey Quartz Brick Stair=Escalier en brique de quartz fumé fissurée
+
+Soapstone Stair=Escalier en pierre à savon
+Soapstone Brick Stair=Escalier en brique de pierre à savon
+Soapstone Block Stair=Escalier en bloc de pierre à savon
+Cracked Soapstone Brick Stair=Escalier en brique de pierre à savon fissurée
+
+Sodalite Stair=Escalier en sodalite
+Cobbled Sodalite Stair=Escalier pavé en sodalite
+Sodalite Brick Stair=Escalier en brique de sodalite
+Sodalite Block Stair=Escalier en bloc de sodalite
+Cracked Sodalite Brick Stair=Escalier en brique de sodalite fissurée
+
+Sugilite Stair=Escalier en sugilite
+Sugilite Brick Stair=Escalier en brique de sugilite
+Sugilite Block Stair=Escalier en bloc de sugilite
+Cracked Sugilite Brick Stair=Escalier en brique de sugilite fissurée
+Cobbled Sugilite Stair=Escalier pavé en sugilite
+
+Travertine Stair=Escalier en travertin
+Cobbled Travertine Stair=Escalier pavé en travertin
+Travertine Brick Stair=Escalier en brique de travertin
+Travertine Block Stair=Escalier en bloc de travertin
+Cracked Travertine Brick Stair=Escalier en brique de travertin fissurée
+
+Beige Tuff Stair=Escalier en tuf beige
+Beige Tuff Block Stair=Escalier en bloc de tuf beige
+Cobbled Beige Tuff Stair=Escalier en tuf beige pavé
+Beige Tuff Brick Stair=Escalier en brique de tuf beige
+Cracked Beige Tuff Stair=Escalier en tuf beige craquelé
+
+Grey Tuff Stair=Escalier en tuf gris
+Grey Tuff Block Stair=Escalier en bloc de tuf gris
+Cobbled Grey Tuff Stair=Escalier en tuf gris pavé
+Grey Tuff Brick Stair=Escalier en brique de tuf gris
+Cracked Grey Tuff Stair=Escalier en tuf gris craquelé
+
+Red Tuff Stair=Escalier en tuf rouge
+Red Tuff Block Stair=Escalier en bloc de tuf rouge
+Cobbled Red Tuff Stair=Escalier en tuf rouge pavé
+Red Tuff Brick Stair=Escalier en brique de tuf rouge
+Cracked Red Tuff Stair=Escalier en tuf rouge craquelé
+
+Turquoise Stair=Escalier en turquoise
+Turquoise Brick Stair=Escalier en brique de turquoise
+Turquoise Block Stair=Escalier en bloc de turquoise
+Cracked Turquoise Brick Stair=Escalier en brique de turquoise fissurée
+Cobbled Turquoise Stair=Escalier pavé en turquoise
+
+Vivianite Stair=Escalier en vivianite
+Vivianite Brick Stair=Escalier en brique de vivianite
+Vivianite Block Stair=Escalier en bloc de vivianite
+Cracked Vivianite Brick Stair=Escalier en brique de vivianite fissurée
+
+
+
+Inner Blue Agate Stair=Escalier en Agate bleue intérieur
+Inner Gray Agate Stair=Escalier en Agate grise intérieur
+Inner Green Agate Stair=Escalier en Agate verte intérieur
+Inner Moss Agate Stair=Escalier en Agate mousse intérieur
+Inner Orange Agate Stair=Escalier en Agate orange intérieur
+Inner Purple Agate Stair=Escalier en Agate violette intérieur
+Inner Red Agate Stair=Escalier en Agate rouge intérieur
+
+Inner Amazonite Stair=Escalier en Amazonite intérieur
+Inner Cobbled Amazonite Stair=Escalier en pavé d'Amazonite intérieur
+Inner Amazonite Brick Stair=Escalier en brique d'Amazonite intérieur
+Inner Amazonite Block Stair=Escalier en bloc d'Amazonite intérieur
+Inner Cracked Amazonite Brick Stair=Escalier en brique d'Amazonite fissurée intérieur
+
+Inner Amber Stair=Escalier en ambre intérieur
+Inner Amber Brick Stair=Escalier en brique d'ambre intérieur
+Inner Amber Block Stair=Escalier en bloc d'ambre intérieur
+Inner Cracked Amber Brick Stair=Escalier en brique d'ambre fissurée intérieur
+
+Inner Amethyst Stair=Escalier en améthyste intérieur
+Inner Amethyst Brick Stair=Escalier en brique d'améthyste intérieur
+Inner Amethyst Block Stair=Escalier en bloc d'améthyste intérieur
+Inner Cracked Amethyst Brick Stair=Escalier en brique d'améthyste fissurée intérieur
+
+Inner Andesite Stair=Escalier en andésite intérieur
+Inner Andesite Block Stair=Escalier en bloc d'andésite intérieur
+Inner Andesite Brick Stair=Escalier en brique d'andésite intérieur
+Inner Cracked Andesite Brick Stair=Escalier en brique d'andésite fissurée intérieur
+Inner Cobbled Andesite Stair=Escalier en pavé d'andésite intérieur
+
+Inner Basalt Stair=Escalier en basalte intérieur
+Inner Basalt Brick Stair=Escalier en brique de basalte intérieur
+Inner Basalt Block Stair=Escalier en bloc de basalte intérieur
+Inner Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée intérieur
+Inner Cobbled Basalt Stair=Escalier en pavé de basalte intérieur
+
+Inner Calcite Stair=Escalier en calcite intérieur
+Inner Calcite Brick Stair=Escalier en brique de calcite intérieur
+Inner Calcite Block Stair=Escalier en bloc de calcite intérieur
+Inner Cracked Calcite Brick Stair=Escalier en brique de calcite fissurée intérieur
+
+Inner Carnotite Stair=Escalier en carnotite intérieur
+Inner Carnotite Brick Stair=Escalier en brique de carnotite intérieur
+Inner Carnotite Block Stair=Escalier en bloc de carnotite intérieur
+Inner Cracked Carnotite Brick Stair=Escalier en brique de carnotite fissurée intérieur
+Inner Cobbled Carnotite Stair=Escalier en pavé de carnotite intérieur
+
+Inner Celestine Stair=Escalier en célestine intérieur
+Inner Celestine Brick Stair=Escalier en brique de célestine intérieur
+Inner Celestine Block Stair=Escalier en bloc de célestine intérieur
+Inner Cracked Celestine Brick Stair=Escalier en brique de célestine fissurée intérieur
+
+Inner Chrysoprase Stair=Escalier en chrysoprase intérieur
+Inner Chrysoprase Brick Stair=Escalier en brique de chrysoprase intérieur
+Inner Chrysoprase Block Stair=Escalier en bloc de chrysoprase intérieur
+Inner Cracked Chrysoprase Brick Stair=Escalier en brique de chrysoprase fissurée intérieur
+
+Inner Citrine Stair=Escalier en Citrine intérieur
+Inner Citrine Brick Stair=Escalier en brique de Citrine intérieur
+Inner Citrine Block Stair=Escalier en bloc de Citrine intérieur
+Inner Cracked Citrine Brick Stair=Escalier en brique de Citrine intérieur fissurée
+
+Inner Covellite Stair=Escalier en Covellite intérieur
+Inner Covellite Brick Stair=Escalier en brique de Covellite intérieur
+Inner Covellite Block Stair=Escalier en bloc de Covellite intérieur
+Inner Cracked Covellite Brick Stair=Escalier en brique de Covellite intérieur fissurée
+Inner Cobbled Covellite Stair=Escalier en Covellite pavé intérieur
+
+Inner Crocoite Stair=Escalier en Crocoite intérieur
+Inner Crocoite Brick Stair=Escalier en brique de Crocoite intérieur
+Inner Crocoite Block Stair=Escalier en bloc de Crocoite intérieur
+Inner Cracked Crocoite Brick Stair=Escalier en brique de Crocoite intérieur fissurée
+
+Inner Erythrite Stair=Escalier en Érythrite intérieur
+Inner Erythrite Brick Stair=Escalier en brique d'Érythrite intérieur
+Inner Erythrite Block Stair=Escalier en bloc d'Érythrite intérieur
+Inner Cracked Erythrite Brick Stair=Escalier en brique d'Érythrite intérieur fissurée
+
+Inner Eudialite Stair=Escalier en Eudialite intérieur
+Inner Eudialite Brick Stair=Escalier en brique d'Eudialite intérieur
+Inner Eudialite Block Stair=Escalier en bloc d'Eudialite intérieur
+Inner Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite intérieur fissurée
+
+Inner Gabbro Stair=Escalier en Gabbro intérieur
+Inner Cobbled Gabbro Stair=Escalier en Gabbro intérieur pavée
+Inner Gabbro Brick Stair=Escalier en brique de Gabbro intérieur
+Inner Gabbro Block Stair=Escalier en bloc de Gabbro intérieur
+Inner Cracked Gabbro Brick Stair=Escalier en brique de Gabbro intérieur fissurée
+
+Inner Galena Stair=Escalier en Galène intérieur
+Inner Galena Brick Stair=Escalier en brique de Galène intérieur
+Inner Galena Block Stair=Escalier en bloc de Galène intérieur
+Inner Cracked Galena Brick Stair=Escalier en brique de Galène intérieur fissurée
+
+Inner Black Granite Stair=Escalier intérieur en granit noir
+Inner Black Granite Brick Stair=Escalier intérieur en briques de granit noir
+Inner Black Granite Block Stair=Escalier intérieur en blocs de granit noir
+Inner Cracked Black Granite Brick Stair=Escalier intérieur en briques de granit noir fissuré
+Inner Cobbled Black Granite Stair=Escalier intérieur en granite noir pavé
+
+Inner Blue Granite Stair=Escalier intérieur en granit bleu
+Inner Blue Granite Brick Stair=Escalier intérieur en briques de granit bleu
+Inner Blue Granite Block Stair=Escalier intérieur en blocs de granit bleu
+Inner Cracked Blue Granite Brick Stair=Escalier intérieur en briques de granit bleu fissuré
+Inner Cobbled Blue Granite Stair=Escalier intérieur en granite bleu pavé
+
+Inner Gray Granite Stair=Escalier intérieur en granit gris
+Inner Gray Granite Brick Stair=Escalier intérieur en briques de granit gris
+Inner Gray Granite Block Stair=Escalier intérieur en blocs de granit gris
+Inner Cracked Gray Granite Brick Stair=Escalier intérieur en briques de granit gris fissuré
+Inner Cobbled Gray Granite Stair=Escalier intérieur en granite gris pavé
+
+Inner Green Granite Stair=Escalier intérieur en granit vert
+Inner Green Granite Brick Stair=Escalier intérieur en briques de granit vert
+Inner Green Granite Block Stair=Escalier intérieur en blocs de granit vert
+Inner Cracked Green Granite Brick Stair=Escalier intérieur en briques de granit vert fissuré
+Inner Cobbled Green Granite Stair=Escalier intérieur en granite vert pavé
+
+Inner Pink Granite Stair=Escalier intérieur en granit rose
+Inner Pink Granite Brick Stair=Escalier intérieur en briques de granit rose
+Inner Pink Granite Block Stair=Escalier intérieur en blocs de granit rose
+Inner Cracked Pink Granite Brick Stair=Escalier intérieur en briques de granit rose fissuré
+Inner Cobbled Pink Granite Stair=Escalier intérieur en granite rose pavé
+
+Inner Red Granite Stair=Escalier intérieur en granit rouge
+Inner Red Granite Brick Stair=Escalier intérieur en briques de granit rouge
+Inner Red Granite Block Stair=Escalier intérieur en blocs de granit rouge
+Inner Cracked Red Granite Brick Stair=Escalier intérieur en briques de granit rouge fissuré
+Inner Cobbled Red Granite Stair=Escalier intérieur en granite rouge pavé
+
+Inner White Granite Stair=Escalier intérieur en granit blanc
+Inner White Granite Brick Stair=Escalier intérieur en briques de granit blanc
+Inner White Granite Block Stair=Escalier intérieur en blocs de granit blanc
+Inner Cracked White Granite Brick Stair=Escalier intérieur en briques de granit blanc fissuré
+Inner Cobbled White Granite Stair=Escalier intérieur en granite blanc pavé
+
+Inner Heliodor Stair=Escalier en Héliodore intérieur
+Inner Heliodor Brick Stair=Escalier en brique d'Héliodore intérieur
+Inner Heliodor Block Stair=Escalier en blocs d'Héliodore intérieur
+Inner Cracked Heliodor Brick Stair=Escalier en briques d'Héliodore fissurées intérieur
+
+Inner Howlite Stair=Escalier en Howlite intérieur
+Inner Howlite Brick Stair=Escalier en brique de Howlite intérieur
+Inner Howlite Block Stair=Escalier en blocs de Howlite intérieur
+Inner Cracked Howlite Brick Stair=Escalier en briques de Howlite fissurées intérieur
+Inner Cobbled Howlite Stair=Escalier en pavé de howlite intérieur
+
+Inner Ilvaite Stair=Escalier en Ilvaite intérieur
+Inner Ilvaite Brick Stair=Escalier en brique d'Ilvaite intérieur
+Inner Ilvaite Block Stair=Escalier en blocs d'Ilvaite intérieur
+Inner Cracked Ilvaite Brick Stair=Escalier en briques d'Ilvaite fissurées intérieur
+Inner Cobbled Ilvaite Stair=Escalier pavé d'Ilvaite intérieur
+
+Inner Jade Stair=Escalier en Jade intérieur
+Inner Jade Brick Stair=Escalier en brique de Jade intérieur
+Inner Jade Block Stair=Escalier en blocs de Jade intérieur
+Inner Cracked Jade Brick Stair=Escalier en briques de Jade fissurées intérieur
+Inner Cobbled Jade Stair=Escalier pavé en Jade intérieur
+
+Inner Kyanite Stair=Escalier en Kyanite intérieur
+Inner Kyanite Brick Stair=Escalier en brique de Kyanite intérieur
+Inner Kyanite Block Stair=Escalier en blocs de Kyanite intérieur
+Inner Cracked Kyanite Brick Stair=Escalier en briques de Kyanite fissurées intérieur
+Inner Cobbled Kyanite Stair=Escalier pavé en Kyanite intérieur
+
+Inner Lapis Lazuli Stair=Escalier en Lapis-lazuli intérieur
+Inner Lapis Lazuli Brick Stair=Escalier en brique de Lapis-lazuli intérieur
+Inner Lapis Lazuli Block Stair=Escalier en blocs de Lapis-lazuli intérieur
+Inner Cracked Lapis Lazuli Brick Stair=Escalier en briques de Lapis-lazuli fissurées intérieur
+
+Inner Blue Limestone Stair=Escalier en calcaire bleu intérieur
+Inner Blue Limestone Brick Stair=Escalier en brique de calcaire bleu intérieur
+Inner Blue Limestone Block Stair=Escalier en blocs de calcaire bleu intérieur
+Inner Cracked Blue Limestone Brick Stair=Escalier en briques de calcaire bleu fissurées intérieur
+Inner Cobbled Blue Limestone Stair=Escalier pavé en calcaire bleu intérieur
+
+Inner White Limestone Stair=Escalier en calcaire blanc intérieur
+Inner White Limestone Brick Stair=Escalier en brique de calcaire blanc intérieur
+Inner White Limestone Block Stair=Escalier en blocs de calcaire blanc intérieur
+Inner Cracked White Limestone Brick Stair=Escalier en briques de calcaire blanc fissurées intérieur
+Inner Cobbled White Limestone Stair=Escalier pavé en calcaire blanc intérieur
+
+Inner Marble Stair=Escalier en marbre intérieur
+Inner Marble Brick Stair=Escalier en brique de marbre intérieur
+Inner Marble Block Stair=Escalier en bloc de marbre intérieur
+Inner Cracked Marble Brick Stair=Escalier en brique de marbre fissuré intérieur
+Inner Cobbled Marble Stair=Escalier en marbre pavé intérieur
+
+Inner Mudstone Stair=Escalier en grès boueux intérieur
+Inner Cobbled Mudstone Stair=Escalier en grès boueux pavé intérieur
+Inner Mudstone Brick Stair=Escalier en brique de grès boueux intérieur
+Inner Mudstone Block Stair=Escalier en bloc de grès boueux intérieur
+Inner Cracked Mudstone Brick Stair=Escalier en brique de grès boueux fissuré intérieur
+
+Inner Prasiolite Stair=Escalier en prasiolite intérieur
+Inner Prasiolite Brick Stair=Escalier en brique de prasiolite intérieur
+Inner Prasiolite Block Stair=Escalier en bloc de prasiolite intérieur
+Inner Cracked Prasiolite Brick Stair=Escalier en brique de prasiolite fissuré intérieur
+
+Inner Pumice Stair=Escalier en ponce intérieur
+Inner Pumice Brick Stair=Escalier en brique de ponce intérieur
+Inner Pumice Block Stair=Escalier en bloc de ponce intérieur
+Inner Cracked Pumice Brick Stair=Escalier en brique de ponce fissuré intérieur
+
+Inner Pyrite Stair=Escalier en pyrite intérieur
+Inner Pyrite Brick Stair=Escalier en brique de pyrite intérieur
+Inner Pyrite Block Stair=Escalier en bloc de pyrite intérieur
+Inner Cracked Pyrite Brick Stair=Escalier en brique de pyrite fissuré intérieur
+
+Inner Quartz Stair=Escalier en quartz intérieur
+Inner Quartz Brick Stair=Escalier en brique de quartz intérieur
+Inner Quartz Block Stair=Escalier en bloc de quartz intérieur
+Inner Cracked Quartz Brick Stair=Escalier en brique de quartz fissuré intérieur
+
+Inner Rose Quartz Stair=Escalier en quartz rose intérieur
+Inner Rose Quartz Brick Stair=Escalier en brique de quartz rose intérieur
+Inner Rose Quartz Block Stair=Escalier en bloc de quartz rose intérieur
+Inner Cracked Rose Quartz Brick Stair=Escalier en brique de quartz rose fissuré intérieur
+
+Inner Scoria Stair=Escalier en scorie intérieur
+Inner Scoria Brick Stair=Escalier en brique de scorie intérieur
+Inner Scoria Block Stair=Escalier en bloc de scorie intérieur
+Inner Cracked Scoria Brick Stair=Escalier en brique de scorie fissuré intérieur
+Inner Cobbled Scoria Stair=Escalier en scorie pavé intérieur
+
+Inner Serpentine Stair=Escalier en serpentine intérieur
+Inner Cobbled Serpentine Stair=Escalier en serpentine pavé intérieur
+Inner Serpentine Brick Stair=Escalier en brique de serpentine intérieur
+Inner Serpentine Block Stair=Escalier en bloc de serpentine intérieur
+Inner Cracked Serpentine Brick Stair=Escalier en brique de serpentine fissuré intérieur
+
+Inner Slate Stair=Escalier intérieur en ardoise
+Inner Slate Brick Stair=Escalier intérieur en brique d'ardoise
+Inner Slate Block Stair=Escalier intérieur en bloc d'ardoise
+Inner Cracked Slate Brick Stair=Escalier intérieur en brique d'ardoise fissurée
+Inner Cobbled Slate Stair=Escalier intérieur pavé en ardoise
+Inner Slate Tile Wall=Escalier intérieur tuile en ardoise
+
+Inner Smokey Quartz Stair=Escalier intérieur en quartz fumé
+Inner Smokey Quartz Brick Stair=Escalier intérieur en brique de quartz fumé
+Inner Smokey Quartz Block Stair=Escalier intérieur en bloc de quartz fumé
+Inner Cracked Smokey Quartz Brick Stair=Escalier intérieur en brique de quartz fumé fissurée
+
+Inner Soapstone Stair=Escalier intérieur en pierre à savon
+Inner Soapstone Brick Stair=Escalier intérieur en brique de pierre à savon
+Inner Soapstone Block Stair=Escalier intérieur en bloc de pierre à savon
+Inner Cracked Soapstone Brick Stair=Escalier intérieur en brique de pierre à savon fissurée
+
+Inner Sodalite Stair=Escalier intérieur en sodalite
+Inner Cobbled Sodalite Stair=Escalier intérieur pavé en sodalite
+Inner Sodalite Brick Stair=Escalier intérieur en brique de sodalite
+Inner Sodalite Block Stair=Escalier intérieur en bloc de sodalite
+Inner Cracked Sodalite Brick Stair=Escalier intérieur en brique de sodalite fissurée
+
+Inner Sugilite Stair=Escalier intérieur en sugilite
+Inner Sugilite Brick Stair=Escalier intérieur en brique de sugilite
+Inner Sugilite Block Stair=Escalier intérieur en bloc de sugilite
+Inner Cracked Sugilite Brick Stair=Escalier intérieur en brique de sugilite fissurée
+Inner Cobbled Sugilite Stair=Escalier intérieur pavé en sugilite
+
+Inner Travertine Stair=Escalier intérieur en travertin
+Inner Cobbled Travertine Stair=Escalier intérieur pavé en travertin
+Inner Travertine Brick Stair=Escalier intérieur en brique de travertin
+Inner Travertine Block Stair=Escalier intérieur en bloc de travertin
+Inner Cracked Travertine Brick Stair=Escalier intérieur en brique de travertin fissurée
+
+Inner Beige Tuff Stair=Escalier intérieur en tuf beige
+Inner Beige Tuff Block Stair=Escalier intérieur en bloc de tuf beige
+Inner Cobbled Beige Tuff Stair=Escalier intérieur en tuf beige pavé
+InnerBeige Tuff Brick Stair=Escalier intérieur en brique de tuf beige
+Inner Cracked Beige Tuff Stair=Escalier intérieur en tuf beige craquelé
+
+Inner Grey Tuff Stair=Escalier intérieur en tuf gris
+Inner Grey Tuff Block Stair=Escalier intérieur en bloc de tuf gris
+Inner Cobbled Grey Tuff Stair=Escalier intérieur en tuf gris pavé
+Inner Grey Tuff Brick Stair=Escalier intérieur en brique de tuf gris
+Inner Cracked Grey Tuff Stair=Escalier intérieur en tuf gris craquelé
+
+Inner Red Tuff Stair=Escalier intérieur en tuf rouge
+Inner Red Tuff Block Stair=Escalier intérieur en bloc de tuf rouge
+Inner Cobbled Red Tuff Stair=Escalier intérieur en tuf rouge pavé
+Inner Red Tuff Brick Stair=Escalier en intérieur brique de tuf rouge
+Inner Cracked Red Tuff Stair=Escalier intérieur en tuf rouge craquelé
+
+Inner Turquoise Stair=Escalier intérieur en turquoise
+Inner Turquoise Brick Stair=Escalier intérieur en brique de turquoise
+Inner Turquoise Block Stair=Escalier intérieur en bloc de turquoise
+Inner Cracked Turquoise Brick Stair=Escalier intérieur en brique de turquoise fissurée
+Inner Cobbled Turquoise Stair=Escalier intérieur pavé en turquoise
+
+Inner Vivianite Stair=Escalier intérieur en vivianite
+Inner Vivianite Brick Stair=Escalier intérieur en brique de vivianite
+Inner Vivianite Block Stair=Escalier intérieur en bloc de vivianite
+Inner Cracked Vivianite Brick Stair=Escalier intérieur en brique de vivianite fissurée
+
+
+
+Outer Blue Agate Stair=Escalier en Agate bleue extérieure
+Outer Gray Agate Stair=Escalier en Agate grise extérieure
+Outer Green Agate Stair=Escalier en Agate verte extérieure
+Outer Moss Agate Stair=Escalier en Agate mousse extérieure
+Outer Orange Agate Stair=Escalier en Agate orange extérieure
+Outer Purple Agate Stair=Escalier en Agate violette extérieure
+Outer Red Agate Stair=Escalier en Agate rouge extérieure
+
+Outer Amazonite Stair=Escalier en Amazonite extérieure
+Outer Cobbled Amazonite Stair=Escalier en pavé d'Amazonite extérieure
+Outer Amazonite Brick Stair=Escalier en brique d'Amazonite extérieure
+Outer Amazonite Block Stair=Escalier en bloc d'Amazonite extérieure
+Outer Cracked Amazonite Brick Stair=Escalier en brique d'Amazonite fissurée extérieure
+
+Outer Amber Stair=Escalier en ambre extérieure
+Outer Amber Brick Stair=Escalier en brique d'ambre extérieure
+Outer Amber Block Stair=Escalier en bloc d'ambre extérieure
+Outer Cracked Amber Brick Stair=Escalier en brique d'ambre fissurée extérieure
+
+Outer Amethyst Stair=Escalier en améthyste extérieure
+Outer Amethyst Brick Stair=Escalier en brique d'améthyste extérieure
+Outer Amethyst Block Stair=Escalier en bloc d'améthyste extérieure
+Outer Cracked Amethyst Brick Stair=Escalier en brique d'améthyste fissurée extérieure
+
+Outer Andesite Stair=Escalier en andésite extérieure
+Outer Andesite Block Stair=Escalier en bloc d'andésite extérieure
+Outer Andesite Brick Stair=Escalier en brique d'andésite extérieure
+Outer Cracked Andesite Brick Stair=Escalier en brique d'andésite fissurée extérieure
+Outer Cobbled Andesite Stair=Escalier en pavé d'andésite extérieure
+
+Outer Basalt Stair=Escalier en basalte extérieure
+Outer Basalt Brick Stair=Escalier en brique de basalte extérieure
+Outer Basalt Block Stair=Escalier en bloc de basalte extérieure
+Outer Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée extérieure
+Outer Cobbled Basalt Stair=Escalier en pavé de basalte extérieure
+
+Outer Calcite Stair=Escalier en calcite extérieure
+Outer Calcite Brick Stair=Escalier en brique de calcite extérieure
+Outer Calcite Block Stair=Escalier en bloc de calcite extérieure
+Outer Cracked Calcite Brick Stair=Escalier en brique de calcite fissurée extérieure
+
+Outer Carnotite Stair=Escalier en carnotite extérieure
+Outer Carnotite Brick Stair=Escalier en brique de carnotite extérieure
+Outer Carnotite Block Stair=Escalier en bloc de carnotite extérieure
+Outer Cracked Carnotite Brick Stair=Escalier en brique de carnotite fissurée extérieure
+Outer Cobbled Carnotite Stair=Escalier en pavé de carnotite extérieure
+
+Outer Celestine Stair=Escalier en célestine extérieure
+Outer Celestine Brick Stair=Escalier en brique de célestine extérieure
+Outer Celestine Block Stair=Escalier en bloc de célestine extérieure
+Outer Cracked Celestine Brick Stair=Escalier en brique de célestine fissurée extérieure
+
+Outer Chrysoprase Stair=Escalier en chrysoprase extérieure
+Outer Chrysoprase Brick Stair=Escalier en brique de chrysoprase extérieure
+Outer Chrysoprase Block Stair=Escalier en bloc de chrysoprase extérieure
+Outer Cracked Chrysoprase Brick Stair=Escalier en brique de chrysoprase fissurée extérieure
+
+Outer Citrine Stair=Escalier en Citrine extérieure
+Outer Citrine Brick Stair=Escalier en brique de Citrine extérieure
+Outer Citrine Block Stair=Escalier en bloc de Citrine extérieure
+Outer Cracked Citrine Brick Stair=Escalier en brique de Citrine extérieure fissurée
+
+Outer Covellite Stair=Escalier en Covellite extérieure
+Outer Covellite Brick Stair=Escalier en brique de Covellite extérieure
+Outer Covellite Block Stair=Escalier en bloc de Covellite extérieure
+Outer Cracked Covellite Brick Stair=Escalier en brique de Covellite extérieure fissurée
+Outer Cobbled Covellite Stair=Escalier en Covellite pavé extérieure
+
+Outer Crocoite Stair=Escalier en Crocoite extérieure
+Outer Crocoite Brick Stair=Escalier en brique de Crocoite extérieure
+Outer Crocoite Block Stair=Escalier en bloc de Crocoite extérieure
+Outer Cracked Crocoite Brick Stair=Escalier en brique de Crocoite extérieure fissurée
+
+Outer Erythrite Stair=Escalier en Érythrite extérieure
+Outer Erythrite Brick Stair=Escalier en brique d'Érythrite extérieure
+Outer Erythrite Block Stair=Escalier en bloc d'Érythrite extérieure
+Outer Cracked Erythrite Brick Stair=Escalier en brique d'Érythrite extérieure fissurée
+
+Outer Eudialite Stair=Escalier en Eudialite extérieure
+Outer Eudialite Brick Stair=Escalier en brique d'Eudialite extérieure
+Outer Eudialite Block Stair=Escalier en bloc d'Eudialite extérieure
+Outer Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite extérieure fissurée
+
+Outer Gabbro Stair=Escalier en Gabbro extérieure
+Outer Cobbled Gabbro Stair=Escalier en Gabbro extérieure pavée
+Outer Gabbro Brick Stair=Escalier en brique de Gabbro extérieure
+Outer Gabbro Block Stair=Escalier en bloc de Gabbro extérieure
+Outer Cracked Gabbro Brick Stair=Escalier en brique de Gabbro extérieure fissurée
+
+Outer Galena Stair=Escalier en Galène extérieure
+Outer Galena Brick Stair=Escalier en brique de Galène extérieure
+Outer Galena Block Stair=Escalier en bloc de Galène extérieure
+Outer Cracked Galena Brick Stair=Escalier en brique de Galène extérieure fissurée
+
+Outer Black Granite Stair=Escalier extérieur en granit noir
+Outer Black Granite Brick Stair=Escalier extérieur en briques de granit noir
+Outer Black Granite Block Stair=Escalier extérieur en blocs de granit noir
+Outer Cracked Black Granite Brick Stair=Escalier extérieur en briques de granit noir fissuré
+Outer Cobbled Black Granite Stair=Escalier extérieur en granite noir pavé
+
+Outer Blue Granite Stair=Escalier extérieur en granit bleu
+Outer Blue Granite Brick Stair=Escalier extérieur en briques de granit bleu
+Outer Blue Granite Block Stair=Escalier extérieur en blocs de granit bleu
+Outer Cracked Blue Granite Brick Stair=Escalier extérieur en briques de granit bleu fissuré
+Outer Cobbled Blue Granite Stair=Escalier extérieur en granite bleu pavé
+
+Outer Gray Granite Stair=Escalier extérieur en granit gris
+Outer Gray Granite Brick Stair=Escalier extérieur en briques de granit gris
+Outer Gray Granite Block Stair=Escalier extérieur en blocs de granit gris
+Outer Cracked Gray Granite Brick Stair=Escalier extérieur en briques de granit gris fissuré
+Outer Cobbled Gray Granite Stair=Escalier extérieur en granite gris pavé
+
+Outer Green Granite Stair=Escalier extérieur en granit vert
+Outer Green Granite Brick Stair=Escalier extérieur en briques de granit vert
+Outer Green Granite Block Stair=Escalier extérieur en blocs de granit vert
+Outer Cracked Green Granite Brick Stair=Escalier extérieur en briques de granit vert fissuré
+Outer Cobbled Green Granite Stair=Escalier extérieur en granite vert pavé
+
+Outer Pink Granite Stair=Escalier extérieur en granit rose
+Outer Pink Granite Brick Stair=Escalier extérieur en briques de granit rose
+Outer Pink Granite Block Stair=Escalier extérieur en blocs de granit rose
+Outer Cracked Pink Granite Brick Stair=Escalier extérieur en briques de granit rose fissuré
+Outer Cobbled Pink Granite Stair=Escalier extérieur en granite rose pavé
+
+Outer Red Granite Stair=Escalier extérieur en granit rouge
+Outer Red Granite Brick Stair=Escalier extérieur en briques de granit rouge
+Outer Red Granite Block Stair=Escalier extérieur en blocs de granit rouge
+Outer Cracked Red Granite Brick Stair=Escalier extérieur en briques de granit rouge fissuré
+Outer Cobbled Red Granite Stair=Escalier extérieur en granite rouge pavé
+
+Outer White Granite Stair=Escalier extérieur en granit blanc
+Outer White Granite Brick Stair=Escalier extérieur en briques de granit blanc
+Outer White Granite Block Stair=Escalier extérieur en blocs de granit blanc
+Outer Cracked White Granite Brick Stair=Escalier extérieur en briques de granit blanc fissuré
+Outer Cobbled White Granite Stair=Escalier extérieur en granite blanc pavé
+
+Outer Heliodor Stair=Escalier en Héliodore extérieur
+Outer Heliodor Brick Stair=Escalier en brique d'Héliodore extérieur
+Outer Heliodor Block Stair=Escalier en blocs d'Héliodore extérieur
+Outer Cracked Heliodor Brick Stair=Escalier en briques d'Héliodore fissurées extérieur
+
+Outer Howlite Stair=Escalier en Howlite extérieur
+Outer Howlite Brick Stair=Escalier en brique de Howlite extérieur
+Outer Howlite Block Stair=Escalier en blocs de Howlite extérieur
+Outer Cracked Howlite Brick Stair=Escalier en briques de Howlite fissurées extérieur
+Outer Cobbled Howlite Stair=Escalier en pavé de howlite extérieur
+
+Outer Ilvaite Stair=Escalier en Ilvaite extérieur
+Outer Ilvaite Brick Stair=Escalier en brique d'Ilvaite extérieur
+Outer Ilvaite Block Stair=Escalier en blocs d'Ilvaite extérieur
+Outer Cracked Ilvaite Brick Stair=Escalier en briques d'Ilvaite fissurées extérieur
+Outer Cobbled Ilvaite Stair=Escalier pavé d'Ilvaite extérieur
+
+Outer Jade Stair=Escalier en Jade extérieur
+Outer Jade Brick Stair=Escalier en brique de Jade extérieur
+Outer Jade Block Stair=Escalier en blocs de Jade extérieur
+Outer Cracked Jade Brick Stair=Escalier en briques de Jade fissurées extérieur
+Outer Cobbled Jade Stair=Escalier pavé en Jade extérieur
+
+Outer Kyanite Stair=Escalier en Kyanite extérieur
+Outer Kyanite Brick Stair=Escalier en brique de Kyanite extérieur
+Outer Kyanite Block Stair=Escalier en blocs de Kyanite extérieur
+Outer Cracked Kyanite Brick Stair=Escalier en briques de Kyanite fissurées extérieur
+Outer Cobbled Kyanite Stair=Escalier pavé en Kyanite extérieur
+
+Outer Lapis Lazuli Stair=Escalier en Lapis-lazuli extérieur
+Outer Lapis Lazuli Brick Stair=Escalier en brique de Lapis-lazuli extérieur
+Outer Lapis Lazuli Block Stair=Escalier en blocs de Lapis-lazuli extérieur
+Outer Cracked Lapis Lazuli Brick Stair=Escalier en briques de Lapis-lazuli fissurées extérieur
+
+Outer Blue Limestone Stair=Escalier en calcaire bleu extérieur
+Outer Blue Limestone Brick Stair=Escalier en brique de calcaire bleu extérieur
+Outer Blue Limestone Block Stair=Escalier en blocs de calcaire bleu extérieur
+Outer Cracked Blue Limestone Brick Stair=Escalier en briques de calcaire bleu fissurées extérieur
+Outer Cobbled Blue Limestone Stair=Escalier pavé en calcaire bleu extérieur
+
+Outer White Limestone Stair=Escalier en calcaire blanc extérieur
+Outer White Limestone Brick Stair=Escalier en brique de calcaire blanc extérieur
+Outer White Limestone Block Stair=Escalier en blocs de calcaire blanc extérieur
+Outer Cracked White Limestone Brick Stair=Escalier en briques de calcaire blanc fissurées extérieur
+Outer Cobbled White Limestone Stair=Escalier pavé en calcaire blanc extérieur
+
+Outer Marble Stair=Escalier en marbre extérieur
+Outer Marble Brick Stair=Escalier en brique de marbre extérieur
+Outer Marble Block Stair=Escalier en bloc de marbre extérieur
+Outer Cracked Marble Brick Stair=Escalier en brique de marbre fissuré extérieur
+Outer Cobbled Marble Stair=Escalier en marbre pavé extérieur
+
+Outer Mudstone Stair=Escalier en grès boueux extérieur
+Outer Cobbled Mudstone Stair=Escalier en grès boueux pavé extérieur
+Outer Mudstone Brick Stair=Escalier en brique de grès boueux extérieur
+Outer Mudstone Block Stair=Escalier en bloc de grès boueux extérieur
+Outer Cracked Mudstone Brick Stair=Escalier en brique de grès boueux fissuré extérieur
+
+Outer Prasiolite Stair=Escalier en prasiolite extérieur
+Outer Prasiolite Brick Stair=Escalier en brique de prasiolite extérieur
+Outer Prasiolite Block Stair=Escalier en bloc de prasiolite extérieur
+Outer Cracked Prasiolite Brick Stair=Escalier en brique de prasiolite fissuré extérieur
+
+Outer Pumice Stair=Escalier en ponce extérieur
+Outer Pumice Brick Stair=Escalier en brique de ponce extérieur
+Outer Pumice Block Stair=Escalier en bloc de ponce extérieur
+Outer Cracked Pumice Brick Stair=Escalier en brique de ponce fissuré extérieur
+
+Outer Pyrite Stair=Escalier en pyrite extérieur
+Outer Pyrite Brick Stair=Escalier en brique de pyrite extérieur
+Outer Pyrite Block Stair=Escalier en bloc de pyrite extérieur
+Outer Cracked Pyrite Brick Stair=Escalier en brique de pyrite fissuré extérieur
+
+Outer Quartz Stair=Escalier en quartz extérieur
+Outer Quartz Brick Stair=Escalier en brique de quartz extérieur
+Outer Quartz Block Stair=Escalier en bloc de quartz extérieur
+Outer Cracked Quartz Brick Stair=Escalier en brique de quartz fissuré extérieur
+
+Outer Rose Quartz Stair=Escalier en quartz rose extérieur
+Outer Rose Quartz Brick Stair=Escalier en brique de quartz rose extérieur
+Outer Rose Quartz Block Stair=Escalier en bloc de quartz rose extérieur
+Outer Cracked Rose Quartz Brick Stair=Escalier en brique de quartz rose fissuré extérieur
+
+Outer Scoria Stair=Escalier en scorie extérieur
+Outer Scoria Brick Stair=Escalier en brique de scorie extérieur
+Outer Scoria Block Stair=Escalier en bloc de scorie extérieur
+Outer Cracked Scoria Brick Stair=Escalier en brique de scorie fissuré extérieur
+Outer Cobbled Scoria Stair=Escalier en scorie pavé extérieur
+
+Outer Serpentine Stair=Escalier en serpentine extérieur
+Outer Cobbled Serpentine Stair=Escalier en serpentine pavé extérieur
+Outer Serpentine Brick Stair=Escalier en brique de serpentine extérieur
+Outer Serpentine Block Stair=Escalier en bloc de serpentine extérieur
+Outer Cracked Serpentine Brick Stair=Escalier en brique de serpentine fissuré extérieur
+
+Outer Slate Stair=Escalier extérieur en ardoise
+Outer Slate Brick Stair=Escalier extérieur en brique d'ardoise
+Outer Slate Block Stair=Escalier extérieur en bloc d'ardoise
+Outer Cracked Slate Brick Stair=Escalier extérieur en brique d'ardoise fissurée
+Outer Cobbled Slate Stair=Escalier extérieur pavé en ardoise
+Outer Slate Tile Wall=Escalier extérieur tuile en ardoise
+
+Outer Smokey Quartz Stair=Escalier extérieur en quartz fumé
+Outer Smokey Quartz Brick Stair=Escalier extérieur en brique de quartz fumé
+Outer Smokey Quartz Block Stair=Escalier extérieur en bloc de quartz fumé
+Outer Cracked Smokey Quartz Brick Stair=Escalier extérieur en brique de quartz fumé fissurée
+
+Outer Soapstone Stair=Escalier extérieur en pierre à savon
+Outer Soapstone Brick Stair=Escalier extérieur en brique de pierre à savon
+Outer Soapstone Block Stair=Escalier extérieur en bloc de pierre à savon
+Outer Cracked Soapstone Brick Stair=Escalier extérieur en brique de pierre à savon fissurée
+
+Outer Sodalite Stair=Escalier extérieur en sodalite
+Outer Cobbled Sodalite Stair=Escalier extérieur pavé en sodalite
+Outer Sodalite Brick Stair=Escalier extérieur en brique de sodalite
+Outer Sodalite Block Stair=Escalier extérieur en bloc de sodalite
+Outer Cracked Sodalite Brick Stair=Escalier extérieur en brique de sodalite fissurée
+
+Outer Sugilite Stair=Escalier extérieur en sugilite
+Outer Sugilite Brick Stair=Escalier extérieur en brique de sugilite
+Outer Sugilite Block Stair=Escalier extérieur en bloc de sugilite
+Outer Cracked Sugilite Brick Stair=Escalier extérieur en brique de sugilite fissurée
+Outer Cobbled Sugilite Stair=Escalier extérieur pavé en sugilite
+
+Outer Travertine Stair=Escalier extérieur en travertin
+Outer Cobbled Travertine Stair=Escalier extérieur pavé en travertin
+Outer Travertine Brick Stair=Escalier extérieur en brique de travertin
+Outer Travertine Block Stair=Escalier extérieur en bloc de travertin
+Outer Cracked Travertine Brick Stair=Escalier extérieur en brique de travertin fissurée
+
+Outer Beige Tuff Stair=Escalier extérieur en tuf beige
+Outer Beige Tuff Block Stair=Escalier extérieur en bloc de tuf beige
+Outer Cobbled Beige Tuff Stair=Escalier extérieur en tuf beige pavé
+OuterBeige Tuff Brick Stair=Escalier extérieur en brique de tuf beige
+Outer Cracked Beige Tuff Stair=Escalier extérieur en tuf beige craquelé
+
+Outer Grey Tuff Stair=Escalier extérieur en tuf gris
+Outer Grey Tuff Block Stair=Escalier extérieur en bloc de tuf gris
+Outer Cobbled Grey Tuff Stair=Escalier extérieur en tuf gris pavé
+Outer Grey Tuff Brick Stair=Escalier extérieur en brique de tuf gris
+Outer Cracked Grey Tuff Stair=Escalier extérieur en tuf gris craquelé
+
+Outer Red Tuff Stair=Escalier extérieur en tuf rouge
+Outer Red Tuff Block Stair=Escalier extérieur en bloc de tuf rouge
+Outer Cobbled Red Tuff Stair=Escalier extérieur en tuf rouge pavé
+Outer Red Tuff Brick Stair=Escalier en extérieur brique de tuf rouge
+Outer Cracked Red Tuff Stair=Escalier extérieur en tuf rouge craquelé
+
+Outer Turquoise Stair=Escalier extérieur en turquoise
+Outer Turquoise Brick Stair=Escalier extérieur en brique de turquoise
+Outer Turquoise Block Stair=Escalier extérieur en bloc de turquoise
+Outer Cracked Turquoise Brick Stair=Escalier extérieur en brique de turquoise fissurée
+Outer Cobbled Turquoise Stair=Escalier extérieur pavé en turquoise
+
+Outer Vivianite Stair=Escalier extérieur en vivianite
+Outer Vivianite Brick Stair=Escalier extérieur en brique de vivianite
+Outer Vivianite Block Stair=Escalier extérieur en bloc de vivianite
+Outer Cracked Vivianite Brick Stair=Escalier extérieur en brique de vivianite fissurée
+
+### nodes_glowing.lua ###
+
+Glowing Apatite=Apatite luminescente
+Glowing Apatite Block=Bloc d'apatite luminescente
+Cobbled Glowing Apatite=Apatite luminescente pavée
+Glowing Apatite Brick=Brique d'apatite luminescente
+Cracked Glowing Apatite Brick=Brique d'apatite luminescente fissurée
+
+Glowing Calcite=Calcite luminescente
+Glowing Calcite Block=Bloc de calcite luminescente
+Cobbled Glowing Calcite=Calcite luminescente pavée
+Glowing Calcite Brick=Brique de calcite luminescente
+Cracked Glowing Calcite Brick=Brique de calcite luminescente fissurée
+
+Glowing Esperite=Esperite luminescente
+Glowing Esperite Block=Bloc d'esperite luminescente
+Cobbled Glowing Esperite=Esperite luminescente pavée
+Glowing Esperite Brick=Brique d'esperite luminescente
+Cracked Glowing Esperite Brick=Brique d'esperite luminescente fissurée
+
+Glowing Fluorite=Fluorite luminescente
+Glowing Fluorite Block=Bloc de fluorite luminescente
+Cobbled Glowing Fluorite=Fluorite luminescente pavée
+Glowing Fluorite Brick=Brique de fluorite luminescente
+Cracked Glowing Fluorite Brick=Brique de fluorite luminescente fissurée
+
+Glowing Selenite=Sélénite luminescente
+Glowing Selenite Block=Bloc de sélénite luminescente
+Cobbled Glowing Selenite=Sélénite luminescente pavée
+Glowing Selenite Brick=Brique de sélénite luminescente
+Cracked Glowing Selenite Brick=Brique de sélénite luminescente fissurée
+
+Glowing Sodalite=Sodalite luminescente
+Glowing Sodalite Block=Bloc de sodalite luminescente
+Cobbled Glowing Sodalite=Sodalite luminescente pavée
+Glowing Sodalite Brick=Brique de sodalite luminescente
+Cracked Glowing Sodalite Brick=Brique de sodalite luminescente fissurée
+
+Glowing Willemite=Willemite luminescente
+Glowing Willemite Block=Bloc de willemite luminescente
+Cobbled Glowing Willemite=Willemite luminescente pavée
+Glowing Willemite Brick=Brique de willemite luminescente
+Cracked Glowing Willemite Brick=Brique de willemite luminescente fissurée
