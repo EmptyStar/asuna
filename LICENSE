@@ -59,6 +59,10 @@ made to the below listed works are officially made on or after 25 January 2023.
 - Flowerpot
   - Location: ./mods/flowerpot/
   - License file: ./mods/flowerpot/LICENSE
+- Geodes
+  - Location: ./mods/geodes/
+  - License file: ./mods/geodes/LICENSE.txt
+  - Changes were made to this work
 - Herbs
   - Location: ./mods/herbs/
   - License file: ./mods/herbs/LICENSE

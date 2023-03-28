@@ -1,0 +1,107 @@
+No changes available for versions before v0.2.0 Beta
+
+V0.2.0
+Added Pink Granite
+Added White Granite
+Added Gray Granite
+Added Black Granite
+Fixed the internal names of Sodalite and Jade
+Changed all cracked bricks to be unique
+Added several new geodes if you have it installed
+Added Amber
+Added Amethyst
+Added Citrine
+Added Crocoite
+Added Eudialite
+Added Gabbro
+Added Mudstone
+Added Opal
+Added Pyrite
+Added Serpentine
+Added Smokey Quartz
+Added Travertine
+Added Vivianite
+Made the translation template easier to read
+
+V0.2.1
+Added Glow Apatite
+Added Glow Calcite
+Added Glow Esperite
+Added Glow Fluorite
+Added Glow Selenite
+Added Glow Sodalite
+Added Glow Willemite
+Added Geodes Library comapatibility
+Added Heliodor
+Added Black Opal
+
+V0.2.2
+Added Celestine
+Added Crysoprase
+Added Covellite
+Added Erythrite
+Added Galena
+Added Howlite
+Adjusted Some cobblestone colors to match their stone types better
+Added Lapis Lazuli
+Change the crack pattern on several stones
+Added Soapstone
+Added Pumice
+
+V0.2.3
+Added Budding crystals
+Added Crystal items and crystal blocks
+Improve Geodes
+Redo some textures
+
+V0.2.4
+Added Prasiolite
+Added Quartz
+
+V0.3.0
+Default is now optional
+Stair and Slab names can now be translated into other languages
+Hades Revisted is now a mapgen supported game and can spawn Geodes with geodes_lib only
+Turquoise ore no longer uses default textures from MTG, TMS supplies them
+TMS now uses its own sound library
+Crystals and polished Crystals now make crystalline sounds
+French now supported by TMS
+
+V0.3.1
+Cave Game is now supported with mapgen and optional geodes
+Fogblox is now supported with mapgen and optional geodes
+Minebase is now supported with mapgen and optional geodes
+Nodecore is now supported with mapgen and optional geodes
+Fixed the no sound bug from 0.3.0 by registering sounds for nodes that don't exist and including sound files for them
+
+V0.3.2
+Added Blue Agate
+Added Gray Agate
+Added Green Agate
+Added Moss Agate
+Added Orange Agate
+Added Purple Agate
+Added Red Agate
+Added Basalt
+Added Columnar Basalt
+Added more geodes (mostly agate) and removed slate as a geode shell for realism
+Each Geode mod now supplies a vastly different experience, geodes does not supply budding blocks, but has full agate geodes, geodes_lib supplies geodes in every game I made mapgen for and has budding blocks
+
+V0.3.3
+Fixed a bug where several stones still required default for no reason
+All games that use mapgen_stone are now supported: i.e. Anything that actually has mapgen and not a premade map or otherwise has no terrain
+Removed several uneeded files
+
+V0.3.4
+Added Fire Opal
+Redo Black Opal, remove its transparency as it was ugly
+Crystals now pop off of broken blocks
+Add Covellite Cobblestone
+Add Andesite
+Add Beige tuff
+Add Grey Tuff
+Add Red Tuff
+Add Howlite Cobble
+Add Glass Batch
+Redo Mapgen to spread stones better
+Add Slate Tiles

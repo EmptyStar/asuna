@@ -1,0 +1,74 @@
+GLOBAL (all climates)
+Amber
+Amethyst
+Calcite
+Chrysoprase
+Galena
+Gray Granite
+White Granite
+Heliodor
+Jade
+Quartz
+Slate
+Sugilite
+Travertine
+
+POLAR (low temperature, low humidity)
+
+GLACIAL (low temperature, high humidity)
+Blue Granite
+Kyanite
+
+COLD (low temperature, all humidity)
+Black Granite
+Pink Granite
+Howlite
+Ilvaite
+Rose Quartz
+Soapstone
+Sodalite
+
+HUMID (all temperature, high humidity)
+Celestine
+Green Granite
+Blue Limestone
+White Limestone
+Mudstone
+Serpentine
+Vivianite
+
+TROPICAL (high temperature, high humidity)
+Blue Agate
+Gray Agate
+Green Agate
+Moss Agate
+Orange Agate
+Purple Agate
+Red Agate
+Amazonite
+Marble
+
+ARID (high temperature, low humidity)
+Basalt
+Carnotite
+Columnar Basalt
+Eudialite
+Pumice
+Scoria
+Smokey Quartz
+
+DRY (all temperature, low humidity)
+Prasiolite
+
+HOT (high temperature, all humidity)
+Andesite
+Citrine
+Gabbro
+Red Granite
+Beige Tuff
+Grey Tuff
+Red Tuff
+
+SPECIAL (alternate qualities)
+Lapis Lazuli (desert/sandstone only)
+Turquoise (desert/sandstone only)
