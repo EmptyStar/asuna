@@ -143,7 +143,7 @@ minetest.register_node("dorwinion:dorwinion_grass", {
 	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_dirt_footstep", gain = 0.25},
+		footstep = {name = "default_grass_footstep", gain = 0.25},
 	}),
 })
 

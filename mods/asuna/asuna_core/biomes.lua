@@ -134,7 +134,7 @@ asuna.biomes = {
     dungeon = {
       node = "dorwinion:dorwinion_brick_with_moss",
       alt = "dorwinion:dorwinion_brick",
-      stair = "stairs:stair_travertine",
+      stair = "stairs:stair_dorwinion_brick",
     },
     caverealm = caverealms_biomes.moss,
   },
