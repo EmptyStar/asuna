@@ -468,6 +468,53 @@ if minetest.get_modpath("default") ~= nil then
 		},
 	})
 
+-- Black Moonstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion", "default:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone", "default:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
 -- Calcite
 
 	register_ore_by_climate({
@@ -744,6 +791,31 @@ if minetest.get_modpath("default") ~= nil then
 		ore_type        = "blob",
 		ore             = "too_many_stones:eudialite",
 		wherein         = {"mapgen_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion","default:desert_stone","default:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Fluorite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:fluorite",
+		wherein         = {"mapgen_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion","default:desert_stone"},
 		clust_scarcity  = 72 * 72 * 72,
 		clust_size      = 7,
 		heat_min		= 0,
@@ -1060,6 +1132,31 @@ if minetest.get_modpath("default") ~= nil then
 		},
 	})
 
+-- Yellow Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_yellow",
+		wherein         = {"mapgen_stone", "default:desert_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 10,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
 -- Heliodor
 
 	register_ore_by_climate({
@@ -1346,6 +1443,50 @@ if minetest.get_modpath("default") ~= nil then
 			scale = 0.2,
 			spread = {x = 5, y = 5, z = 5},
 			seed = 50,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Morion Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:morion_quartz",
+		wherein         = {"mapgen_stone", "default:desert_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:morion_quartz",
+		wherein         = {"default:sand", "default:silver_sand", "default:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		y_max           = -2,
+		y_min           = -50,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
 			octaves = 1,
 			persist = 0.0,
 			seed = seed(),
@@ -1990,6 +2131,31 @@ if minetest.get_modpath("default") ~= nil then
 		},
 	})
 
+-- Yellow Travertine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine_yellow",
+		wherein         = {"mapgen_stone", "default:desert_stone","naturalbiomes:mediterran_rock","naturalbiomes:alpine_rock","naturalbiomes:outback_ground","dorwinion:dorwinion"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
 -- Beige Tuff
 
 	register_ore_by_climate({
@@ -2168,3934 +2334,4248 @@ if minetest.get_modpath("default") ~= nil then
 
 elseif minetest.get_modpath("base_earth") ~= nil then
 
-	-- Blue Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_blue",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gray Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_gray",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Green Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_green",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Moss Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_moss",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Orange Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_orange",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Purple Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_purple",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_red",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amazonite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amazonite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amber
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amber",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amber",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amethyst
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amethyst",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amethyst",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Andesite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:andesite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 10,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Basalt
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:basalt",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Columnar Basalt
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:basalt_columnar",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Calcite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:calcite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 43,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:calcite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 43,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:calcite",
-			wherein         = {"base_earth:sand", "base_earth:silver_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 10,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 0,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 43,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Carnotite
-	
-			register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:carnotite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = -300,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Celestine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:celestine",
-			wherein         = {"base_earth:silver_sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Citrine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:citrine",
-			wherein         = {"base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Chrysoprase
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:chrysoprase",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:chrysoprase",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Covellite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:covellite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Crocoite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:crocoite",
-			wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Erythrite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:erythrite",
-			wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Eudialite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:eudialite",
-			wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gabbro
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:gabbro",
-			wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 20,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Galena
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:galena",
-			ore_param2 = 1,
-			wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:galena",
-			wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Black Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_black",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Blue Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_blue",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 30,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gray Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_gray",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_gray",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Green Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_green",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 56,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pink Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_pink",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 10,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_red",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 55,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- White Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_white",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_white",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Heliodor
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:heliodor",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -30,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:heliodor",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = -30,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Howlite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:howlite",
-			wherein         = {"mapgen_stone", "base_earth:silver_sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Ilvaite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:ilvaite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone", "base_earth:permafrost"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -100,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Jade
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:jade",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:jade",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Kyanite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:kyanite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:kyanite",
-			wherein         = {"base_earth:silver_sand"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Lapis Lazuli
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:lapis_lazuli",
-			wherein         = {"base_earth:sandstone", "base_earth:desert_stone", "base_earth:silver_sandstone"},
-			clust_scarcity  = 80 * 48 * 80,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			ore_param2 = 1,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Blue Limestone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:limestone_blue",
-			wherein         = {"mapgen_stone", "base_earth:sand", "base_earth:desert_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- White Limestone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:limestone_white",
-			wherein         = {"mapgen_stone", "base_earth:silver_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Marble
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:marble",
-			wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:silver_sandstone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 50,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Mudstone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:mudstone",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -100,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Black Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:black_opal",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Fire Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:fire_opal",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:opal",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Prasiolite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:prasiolite",
-			wherein         = {"mapgen_stone", "base_earth:silver_sandstone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 50,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:prasiolite",
-			wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			y_max           = -2,
-			y_min           = -50,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pumice
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pumice",
-			wherein         = {"mapgen_stone", "base_earth:gravel", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pumice",
-			wherein         = {"mapgen_water_source"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			y_max           = 31000,
-			y_min           = -1,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pyrite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pyrite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 48 * 48 * 48,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -40,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pyrite",
-			wherein         = {"base_earth:sandstone", "base_earth:desert_stone", "base_earth:silver_sandstone"},
-			clust_scarcity  = 80 * 48 * 80,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:quartz",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:quartz",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:quartz",
-			wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			y_max           = -2,
-			y_min           = -50,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Rose Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:rose_quartz",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:rose_quartz",
-			wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			y_max           = -2,
-			y_min           = -50,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Scoria
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:scoria",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Serpentine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:serpentine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Slate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:slate",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:slate",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Smokey Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:smokey_quartz",
-			wherein         = {"base_earth:sandstone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Soapstone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:soapstone",
-			wherein         = {"base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:soapstone",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 0,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Sodalite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sodalite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Sugilite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sugilite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 30,
-			y_min           = -2000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sugilite",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 30,
-			y_min           = -2000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Travertine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:travertine",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:travertine",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:travertine",
-			wherein         = {"base_earth:sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 30,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Beige Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_beige",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Grey Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_grey",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_red",
-			wherein         = {"mapgen_stone", "base_earth:desert_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Turquoise
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sandstone_with_turquoise",
-			wherein         = {"base_earth:sandstone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 15,
-	--		heat_min		= 20,
-	--		heat_max		= 60,
-	--		humidity_min	= 20,
-	--		humidity_max	= 60,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 61,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:desert_sandstone_with_turquoise",
-			wherein         = {"base_earth:desert_sandstone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 15,
-	--		heat_min		= 20,
-	--		heat_max		= 60,
-	--		humidity_min	= 20,
-	--		humidity_max	= 60,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 61,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:silver_sandstone_with_turquoise",
-			wherein         = {"base_earth:silver_sandstone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 15,
-	--		heat_min		= 20,
-	--		heat_max		= 60,
-	--		humidity_min	= 20,
-	--		humidity_max	= 60,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 61,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Vivianite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:vivianite",
-			wherein         = {"mapgen_stone", "base_earth:silver_sandstone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Universal
-	
-	else
-	
-	-- Blue Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_blue",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gray Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_gray",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Green Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_green",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Moss Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_moss",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Orange Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_orange",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Purple Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_purple",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Agate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:agate_red",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amazonite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amazonite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amber
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amber",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amber",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Amethyst
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amethyst",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:amethyst",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Andesite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:andesite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 10,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Basalt
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:basalt",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Columnar Basalt
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:basalt_columnar",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Calcite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:calcite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 43,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:calcite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 43,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Carnotite
-	
-			register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:carnotite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = -300,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Celestine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:celestine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Citrine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:citrine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Chrysoprase
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:chrysoprase",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:chrysoprase",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Covellite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:covellite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Crocoite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:crocoite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Erythrite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:erythrite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Eudialite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:eudialite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gabbro
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:gabbro",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 20,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Galena
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:galena",
-			ore_param2 = 1,
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:galena",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Black Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_black",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Blue Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_blue",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 30,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Gray Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_gray",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_gray",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Green Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_green",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 56,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pink Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_pink",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 10,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_red",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 55,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- White Granite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_white",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:granite_white",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Heliodor
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:heliodor",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -30,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:heliodor",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = -30,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Howlite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:howlite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Ilvaite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:ilvaite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -100,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Jade
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:jade",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:jade",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Kyanite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:kyanite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Lapis Lazuli
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:lapis_lazuli",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 80 * 48 * 80,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			ore_param2 = 1,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Blue Limestone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:limestone_blue",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- White Limestone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:limestone_white",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -300,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Marble
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:marble",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -500,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 50,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Mudstone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:mudstone",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -100,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Black Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:black_opal",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Fire Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:fire_opal",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Opal
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:opal",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 80 * 80 * 80,
-			clust_size      = 4,
-			y_max           = -1000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Prasiolite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:prasiolite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 50,
-			y_min           = -1000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pumice
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pumice",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pumice",
-			wherein         = {"mapgen_water_source"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 10,
-			y_max           = 31000,
-			y_min           = -1,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Pyrite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:pyrite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 48 * 48 * 48,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -40,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0
-			},
-		})
-	
-	-- Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:quartz",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:quartz",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Rose Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:rose_quartz",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = -300,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Scoria
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:scoria",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Serpentine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:serpentine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Slate
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:slate",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:slate",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Smokey Quartz
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:smokey_quartz",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 40,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Soapstone
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:soapstone",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 0,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Sodalite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sodalite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 40,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Sugilite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sugilite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 30,
-			y_min           = -2000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:sugilite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 68 * 68 * 68,
-			clust_size      = 7,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 30,
-			y_min           = -2000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Travertine
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:travertine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:travertine",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 70 * 70 * 70,
-			clust_size      = 14,
-			heat_min		= 41,
-			heat_max		= 59,
-			humidity_min	= 41,
-			humidity_max	= 59,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Beige Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_beige",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Grey Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_grey",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Red Tuff
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:tuff_red",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 14,
-			heat_min		= 60,
-			heat_max		= 100,
-			humidity_min	= 0,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Turquoise
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:turquoise",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 56 * 56 * 56,
-			clust_size      = 15,
-			heat_min		= 20,
-			heat_max		= 60,
-			humidity_min	= 20,
-			humidity_max	= 60,
-			y_max           = 300,
-			y_min           = -60,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				seed = 61,
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	-- Vivianite
-	
-		register_ore_by_climate({
-			ore_type        = "blob",
-			ore             = "too_many_stones:vivianite",
-			wherein         = {"mapgen_stone"},
-			clust_scarcity  = 72 * 72 * 72,
-			clust_size      = 7,
-			heat_min		= 0,
-			heat_max		= 100,
-			humidity_min	= 60,
-			humidity_max	= 100,
-			y_max           = 31000,
-			y_min           = -31000,
-			noise_threshold = 0.0,
-			noise_params    = {
-				offset = 0.5,
-				scale = 0.2,
-				spread = {x = 5, y = 5, z = 5},
-				octaves = 1,
-				persist = 0.0,
-				seed = seed(),
-			},
-		})
-	
-	end
-	
+-- Blue Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_blue",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gray Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_gray",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Green Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_green",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Moss Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_moss",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Orange Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_orange",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Purple Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_purple",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_red",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amazonite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amazonite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amber
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amber",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amber",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amethyst
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amethyst",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amethyst",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Andesite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:andesite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 10,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Basalt
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:basalt",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Columnar Basalt
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:basalt_columnar",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Moonstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Calcite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:calcite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 43,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:calcite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 43,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:calcite",
+		wherein         = {"base_earth:sand", "base_earth:silver_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 10,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 0,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 43,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Carnotite
+
+		register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:carnotite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = -300,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Celestine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:celestine",
+		wherein         = {"base_earth:silver_sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Citrine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:citrine",
+		wherein         = {"base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Chrysoprase
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:chrysoprase",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:chrysoprase",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Covellite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:covellite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Crocoite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:crocoite",
+		wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Erythrite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:erythrite",
+		wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Eudialite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:eudialite",
+		wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Fluorite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:fluorite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gabbro
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:gabbro",
+		wherein         = {"mapgen_stone","base_earth:desert_stone","base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 20,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Galena
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:galena",
+		ore_param2 = 1,
+		wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:galena",
+		wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_black",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Blue Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_blue",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 30,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gray Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_gray",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_gray",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Green Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_green",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 56,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pink Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_pink",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 10,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_red",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 55,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- White Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_white",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_white",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Yellow Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_yellow",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 10,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Heliodor
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:heliodor",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -30,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:heliodor",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = -30,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Howlite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:howlite",
+		wherein         = {"mapgen_stone", "base_earth:silver_sandstone", "base_earth:desert_sandstone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Ilvaite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:ilvaite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone", "base_earth:permafrost"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -100,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Jade
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:jade",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:jade",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Kyanite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:kyanite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:kyanite",
+		wherein         = {"base_earth:silver_sand"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Lapis Lazuli
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:lapis_lazuli",
+		wherein         = {"base_earth:sandstone", "base_earth:desert_stone", "base_earth:silver_sandstone"},
+		clust_scarcity  = 80 * 48 * 80,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		ore_param2 = 1,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Blue Limestone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:limestone_blue",
+		wherein         = {"mapgen_stone", "base_earth:sand", "base_earth:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- White Limestone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:limestone_white",
+		wherein         = {"mapgen_stone", "base_earth:silver_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Marble
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:marble",
+		wherein         = {"mapgen_stone", "base_earth:sandstone", "base_earth:silver_sandstone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 50,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Morion Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:morion_quartz",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:morion_quartz",
+		wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		y_max           = -2,
+		y_min           = -50,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Mudstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:mudstone",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -100,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_opal",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Fire Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:fire_opal",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:opal",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Prasiolite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:prasiolite",
+		wherein         = {"mapgen_stone", "base_earth:silver_sandstone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 50,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:prasiolite",
+		wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		y_max           = -2,
+		y_min           = -50,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pumice
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pumice",
+		wherein         = {"mapgen_stone", "base_earth:gravel", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pumice",
+		wherein         = {"mapgen_water_source"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		y_max           = 31000,
+		y_min           = -1,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pyrite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pyrite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 48 * 48 * 48,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -40,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pyrite",
+		wherein         = {"base_earth:sandstone", "base_earth:desert_stone", "base_earth:silver_sandstone"},
+		clust_scarcity  = 80 * 48 * 80,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:quartz",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:quartz",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:quartz",
+		wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		y_max           = -2,
+		y_min           = -50,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Rose Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:rose_quartz",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:rose_quartz",
+		wherein         = {"base_earth:sand", "base_earth:silver_sand", "base_earth:desert_sand"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		y_max           = -2,
+		y_min           = -50,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Scoria
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:scoria",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Serpentine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:serpentine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Slate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:slate",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:slate",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Smokey Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:smokey_quartz",
+		wherein         = {"base_earth:sandstone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Soapstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:soapstone",
+		wherein         = {"base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:soapstone",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 0,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Sodalite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sodalite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Sugilite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sugilite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 30,
+		y_min           = -2000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sugilite",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 30,
+		y_min           = -2000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Travertine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine",
+		wherein         = {"base_earth:sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 30,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Yellow Travertine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine_yellow",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Beige Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_beige",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Grey Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_grey",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_red",
+		wherein         = {"mapgen_stone", "base_earth:desert_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Turquoise
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sandstone_with_turquoise",
+		wherein         = {"base_earth:sandstone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 15,
+--		heat_min		= 20,
+--		heat_max		= 60,
+--		humidity_min	= 20,
+--		humidity_max	= 60,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 61,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:desert_sandstone_with_turquoise",
+		wherein         = {"base_earth:desert_sandstone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 15,
+--		heat_min		= 20,
+--		heat_max		= 60,
+--		humidity_min	= 20,
+--		humidity_max	= 60,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 61,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:silver_sandstone_with_turquoise",
+		wherein         = {"base_earth:silver_sandstone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 15,
+--		heat_min		= 20,
+--		heat_max		= 60,
+--		humidity_min	= 20,
+--		humidity_max	= 60,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 61,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Vivianite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:vivianite",
+		wherein         = {"mapgen_stone", "base_earth:silver_sandstone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Universal
+
+else
+
+-- Blue Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_blue",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gray Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_gray",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Green Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_green",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Moss Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_moss",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Orange Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_orange",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Purple Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_purple",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Agate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:agate_red",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amazonite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amazonite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amber
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amber",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amber",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Amethyst
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amethyst",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:amethyst",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Andesite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:andesite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 10,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Basalt
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:basalt",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Columnar Basalt
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:basalt_columnar",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Moonstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_moonstone",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Calcite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:calcite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 43,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:calcite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 43,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Carnotite
+
+		register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:carnotite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = -300,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Celestine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:celestine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Citrine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:citrine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Chrysoprase
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:chrysoprase",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:chrysoprase",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Covellite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:covellite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Crocoite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:crocoite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Erythrite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:erythrite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Eudialite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:eudialite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Fluorite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:fluorite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gabbro
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:gabbro",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 20,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Galena
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:galena",
+		ore_param2 = 1,
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:galena",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_black",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Blue Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_blue",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 30,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Gray Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_gray",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_gray",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Green Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_green",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 56,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pink Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_pink",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 10,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_red",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 55,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- White Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_white",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_white",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Yellow Granite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:granite_yellow",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 10,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Heliodor
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:heliodor",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -30,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:heliodor",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = -30,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Howlite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:howlite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Ilvaite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:ilvaite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -100,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Jade
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:jade",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:jade",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Kyanite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:kyanite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Lapis Lazuli
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:lapis_lazuli",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 80 * 48 * 80,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		ore_param2 = 1,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Blue Limestone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:limestone_blue",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- White Limestone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:limestone_white",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -300,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Marble
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:marble",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -500,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 50,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Morion Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:morion_quartz",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Mudstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:mudstone",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -100,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Black Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:black_opal",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Fire Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:fire_opal",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Opal
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:opal",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 80 * 80 * 80,
+		clust_size      = 4,
+		y_max           = -1000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Prasiolite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:prasiolite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 50,
+		y_min           = -1000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pumice
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pumice",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pumice",
+		wherein         = {"mapgen_water_source"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 10,
+		y_max           = 31000,
+		y_min           = -1,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Pyrite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:pyrite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 48 * 48 * 48,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -40,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0
+		},
+	})
+
+-- Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:quartz",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:quartz",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Rose Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:rose_quartz",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = -300,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Scoria
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:scoria",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Serpentine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:serpentine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Slate
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:slate",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:slate",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Smokey Quartz
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:smokey_quartz",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 40,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Soapstone
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:soapstone",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 0,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Sodalite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sodalite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 40,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Sugilite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sugilite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 30,
+		y_min           = -2000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:sugilite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 68 * 68 * 68,
+		clust_size      = 7,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 30,
+		y_min           = -2000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Travertine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 70 * 70 * 70,
+		clust_size      = 14,
+		heat_min		= 41,
+		heat_max		= 59,
+		humidity_min	= 41,
+		humidity_max	= 59,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Yellow Travertine
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:travertine_yellow",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Beige Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_beige",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Grey Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_grey",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Red Tuff
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:tuff_red",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 14,
+		heat_min		= 60,
+		heat_max		= 100,
+		humidity_min	= 0,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Turquoise
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:turquoise",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 56 * 56 * 56,
+		clust_size      = 15,
+		heat_min		= 20,
+		heat_max		= 60,
+		humidity_min	= 20,
+		humidity_max	= 60,
+		y_max           = 300,
+		y_min           = -60,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			seed = 61,
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+-- Vivianite
+
+	register_ore_by_climate({
+		ore_type        = "blob",
+		ore             = "too_many_stones:vivianite",
+		wherein         = {"mapgen_stone"},
+		clust_scarcity  = 72 * 72 * 72,
+		clust_size      = 7,
+		heat_min		= 0,
+		heat_max		= 100,
+		humidity_min	= 60,
+		humidity_max	= 100,
+		y_max           = 31000,
+		y_min           = -31000,
+		noise_threshold = 0.0,
+		noise_params    = {
+			offset = 0.5,
+			scale = 0.2,
+			spread = {x = 5, y = 5, z = 5},
+			octaves = 1,
+			persist = 0.0,
+			seed = seed(),
+		},
+	})
+
+end

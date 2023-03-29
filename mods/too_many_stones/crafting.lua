@@ -114,6 +114,23 @@ minetest.register_craft({
 		{"too_many_stones:basalt", "too_many_stones:basalt", "too_many_stones:basalt"},
 	}
 })
+-- Black Moonstone
+minetest.register_craft({
+	output = "too_many_stones:black_moonstone_brick 4",
+	recipe = {
+		{"too_many_stones:black_moonstone", "too_many_stones:black_moonstone"},
+		{"too_many_stones:black_moonstone", "too_many_stones:black_moonstone"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:black_moonstone_block 9",
+	recipe = {
+		{"too_many_stones:black_moonstone", "too_many_stones:black_moonstone", "too_many_stones:black_moonstone"},
+		{"too_many_stones:black_moonstone", "too_many_stones:black_moonstone", "too_many_stones:black_moonstone"},
+		{"too_many_stones:black_moonstone", "too_many_stones:black_moonstone", "too_many_stones:black_moonstone"},
+	}
+})
 -- Calcite
 minetest.register_craft({
 	output = "too_many_stones:calcite_brick 4",
@@ -303,6 +320,23 @@ minetest.register_craft({
 		{"too_many_stones:eudialite", "too_many_stones:eudialite", "too_many_stones:eudialite"},
 	}
 })
+-- Fluorite
+minetest.register_craft({
+	output = "too_many_stones:fluorite_brick 4",
+	recipe = {
+		{"too_many_stones:fluorite", "too_many_stones:fluorite"},
+		{"too_many_stones:fluorite", "too_many_stones:fluorite"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:fluorite_block 9",
+	recipe = {
+		{"too_many_stones:fluorite", "too_many_stones:fluorite", "too_many_stones:fluorite"},
+		{"too_many_stones:fluorite", "too_many_stones:fluorite", "too_many_stones:fluorite"},
+		{"too_many_stones:fluorite", "too_many_stones:fluorite", "too_many_stones:fluorite"},
+	}
+})
 -- Gabbro
 minetest.register_craft({
 	output = "too_many_stones:gabbro_brick 4",
@@ -454,6 +488,23 @@ minetest.register_craft({
 		{"too_many_stones:granite_white", "too_many_stones:granite_white", "too_many_stones:granite_white"},
 		{"too_many_stones:granite_white", "too_many_stones:granite_white", "too_many_stones:granite_white"},
 		{"too_many_stones:granite_white", "too_many_stones:granite_white", "too_many_stones:granite_white"},
+	}
+})
+-- Yellow Granite
+minetest.register_craft({
+	output = "too_many_stones:granite_yellow_brick 4",
+	recipe = {
+		{"too_many_stones:granite_yellow", "too_many_stones:granite_yellow"},
+		{"too_many_stones:granite_yellow", "too_many_stones:granite_yellow"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:granite_yellow_block 9",
+	recipe = {
+		{"too_many_stones:granite_yellow", "too_many_stones:granite_yellow", "too_many_stones:granite_yellow"},
+		{"too_many_stones:granite_yellow", "too_many_stones:granite_yellow", "too_many_stones:granite_yellow"},
+		{"too_many_stones:granite_yellow", "too_many_stones:granite_yellow", "too_many_stones:granite_yellow"},
 	}
 })
 -- Heliodor
@@ -625,6 +676,32 @@ minetest.register_craft({
 		{"too_many_stones:marble", "too_many_stones:marble", "too_many_stones:marble"},
 		{"too_many_stones:marble", "too_many_stones:marble", "too_many_stones:marble"},
 		{"too_many_stones:marble", "too_many_stones:marble", "too_many_stones:marble"},
+	}
+})
+-- Morion Quartz
+minetest.register_craft({
+	output = "too_many_stones:morion_quartz",
+	recipe = {
+		{"too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards"},
+		{"too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards"},
+		{"too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards", "too_many_stones:morion_quartz_shards"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:morion_quartz_brick 4",
+	recipe = {
+		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
+		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:morion_quartz_block 9",
+	recipe = {
+		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
+		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
+		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
 	}
 })
 -- Mudstone
@@ -1035,6 +1112,12 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	output = "too_many_stones:black_moonstone_cracked_brick",
+	recipe = "too_many_stones:black_moonstone_brick",
+})
+
+minetest.register_craft({
+	type = "cooking",
 	output = "too_many_stones:calcite_cracked_brick",
 	recipe = "too_many_stones:calcite_brick",
 })
@@ -1128,6 +1211,12 @@ minetest.register_craft({
 	type = "cooking",
 	output = "too_many_stones:eudialite_budding",
 	recipe = "too_many_stones:eudialite",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "too_many_stones:fluorite_cracked_brick",
+	recipe = "too_many_stones:fluorite_brick",
 })
 
 minetest.register_craft({
@@ -1234,6 +1323,18 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
+	output = "too_many_stones:granite_yellow",
+	recipe = "too_many_stones:granite_yellow_cobble",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "too_many_stones:granite_yellow_cracked_brick",
+	recipe = "too_many_stones:granite_yellow_brick",
+})
+
+minetest.register_craft({
+	type = "cooking",
 	output = "too_many_stones:heliodor_cracked_brick",
 	recipe = "too_many_stones:heliodor_brick",
 })
@@ -1332,6 +1433,12 @@ minetest.register_craft({
 	type = "cooking",
 	output = "too_many_stones:marble_cracked_brick",
 	recipe = "too_many_stones:marble_brick",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "too_many_stones:morion_quartz_cracked_brick",
+	recipe = "too_many_stones:morion_quartz_brick",
 })
 
 minetest.register_craft({
@@ -1475,13 +1582,25 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "cooking",
 	output = "too_many_stones:travertine",
-	recipe = "too_many_stones:traveritne_cobble",
+	recipe = "too_many_stones:travertine_cobble",
 })
 
 minetest.register_craft({
 	type = "cooking",
 	output = "too_many_stones:travertine_cracked_brick",
 	recipe = "too_many_stones:travertine_brick",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "too_many_stones:travertine_yellow",
+	recipe = "too_many_stones:travertine_yellow_cobble",
+})
+
+minetest.register_craft({
+	type = "cooking",
+	output = "too_many_stones:travertine_yellow_cracked_brick",
+	recipe = "too_many_stones:travertine_yellow_brick",
 })
 
 minetest.register_craft({
@@ -1721,6 +1840,15 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
+	output = "too_many_stones:morion_quartz 8",
+	recipe = {
+		{"group:quartz", "group:quartz", "group:quartz"},
+		{"group:quartz", "dye:black", "group:quartz"},
+		{"group:quartz", "group:quartz", "group:quartz"},
+	}
+})
+
+minetest.register_craft({
 	output = "too_many_stones:prasiolite 8",
 	recipe = {
 		{"group:quartz", "group:quartz", "group:quartz"},
@@ -1850,6 +1978,15 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "too_many_stones:granite_yellow 8",
+	recipe = {
+		{"group:granite", "group:granite", "group:granite"},
+		{"group:granite", "dye:yellow", "group:granite"},
+		{"group:granite", "group:granite", "group:granite"},
+	}
+})
+
 -- Glow Stones
 
 minetest.register_craft({
@@ -1935,6 +2072,15 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "too_many_stones:travertine_yellow 8",
+	recipe = {
+		{"too_many_stones:travertine", "too_many_stones:travertine", "too_many_stones:travertine"},
+		{"too_many_stones:travertine", "dye:yellow", "too_many_stones:travertine"},
+		{"too_many_stones:travertine", "too_many_stones:travertine", "too_many_stones:travertine"},
+	}
+})
+
 end
 
 if minetest.get_modpath("default") ~= nil then
@@ -1951,6 +2097,15 @@ minetest.register_craft({
 		{"too_many_stones:calcite", "too_many_stones:calcite", "too_many_stones:calcite"},
 		{"too_many_stones:calcite", "default:mese_shard", "too_many_stones:calcite"},
 		{"too_many_stones:calcite", "too_many_stones:calcite", "too_many_stones:calcite"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:glow_fluorite 8",
+	recipe = {
+		{"too_many_stones:fluorite", "too_many_stones:fluorite", "too_many_stones:fluorite"},
+		{"too_many_stones:fluorite", "default:mese_shard", "too_many_stones:fluorite"},
+		{"too_many_stones:fluorite", "too_many_stones:fluorite", "too_many_stones:fluorite"},
 	}
 })
 

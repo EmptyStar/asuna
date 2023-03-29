@@ -19,6 +19,7 @@ Amethyst
 Andesite
 Basalt
 Columnar Basalt
+Black Moonstone
 Black Opal
 Calcite
 Carnotite
@@ -30,6 +31,7 @@ Crocoite
 Erythrite
 Eudialite
 Fire Opal
+Fluorite
 Gabbro
 Galena
 Granite
@@ -41,6 +43,7 @@ Kyanite
 Lapis Lazuli
 Limestone
 Marble
+Morion Quartz
 Mudstone
 Opal
 Prasiolite
@@ -56,6 +59,7 @@ Soapstone
 Sodalite
 Sugilite
 Travertine
+Yellow Travertine
 Beige Tuff
 Grey Tuff
 Red Tuff
@@ -375,6 +379,42 @@ minetest.register_node("too_many_stones:basalt_columnar", {
 	groups = {cracky = 2, grey_stone = 1, stone = 1},
 	sounds = default.node_sound_stone_defaults(),
 	on_place = minetest.rotate_node
+})
+-- Black Moonstone
+minetest.register_node("too_many_stones:black_moonstone", {
+	description = S("Black Moonstone"),
+	tiles = {"tms_black_moonstone.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, black_stone = 1, stone = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:black_moonstone_block", {
+	description = S("Black Moonstone Block"),
+	tiles = {"tms_black_moonstone_block.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, black_stone = 1, stone = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:black_moonstone_brick", {
+	description = S("Black Moonstone Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_black_moonstone_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, black_stone = 1, stone = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:black_moonstone_cracked_brick", {
+	description = S("Cracked Black Moonstone Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_black_moonstone_cracked_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, black_stone = 1, stone = 1},
+	sounds = default.node_sound_glass_defaults(),
 })
 -- Black Opal
 minetest.register_node("too_many_stones:black_opal", {
@@ -839,6 +879,42 @@ minetest.register_node("too_many_stones:fire_opal", {
 	groups = {cracky = 3, orange_stone = 1, stone = 1, opal = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
+-- Fluorite
+minetest.register_node("too_many_stones:fluorite", {
+	description = S("Fluorite"),
+	tiles = {"tms_fluorite.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, blue_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:fluorite_block", {
+	description = S("Fluorite Block"),
+	tiles = {"tms_fluorite_block.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, blue_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:fluorite_brick", {
+	description = S("Fluorite Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_fluorite_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, blue_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:fluorite_cracked_brick", {
+	description = S("Cracked Fluorite Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_fluorite_cracked_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, blue_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
 -- Gabbro
 minetest.register_node("too_many_stones:gabbro", {
 	description = S("Gabbro"),
@@ -1257,6 +1333,51 @@ minetest.register_node("too_many_stones:granite_white_cracked_brick", {
 	groups = {cracky = 2, white_stone = 1, stone = 1, granite = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
+-- Yellow Granite
+minetest.register_node("too_many_stones:granite_yellow", {
+	description = S("Yellow Granite"),
+	tiles = {"tms_granite_yellow.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 1, granite = 1},
+	drop = "too_many_stones:granite_yellow_cobble",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:granite_yellow_block", {
+	description = S("Yellow Granite Block"),
+	tiles = {"tms_granite_yellow_block.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 1, granite = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:granite_yellow_cobble", {
+	description = S("Cobbled Yellow Granite"),
+	tiles = {"tms_granite_yellow_cobble.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 2, granite = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:granite_yellow_brick", {
+	description = S("Yellow Granite Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_granite_yellow_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, yellow_stone = 1, stone = 1, granite = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:granite_yellow_cracked_brick", {
+	description = S("Cracked Yellow Granite Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_granite_yellow_cracked_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, yellow_stone = 1, stone = 1, granite = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
 -- Heliodor
 minetest.register_node("too_many_stones:heliodor", {
 	description = S("Heliodor"),
@@ -1618,6 +1739,42 @@ minetest.register_node("too_many_stones:limestone_white_cracked_brick", {
 	is_ground_content = false,
 	groups = {limestone = 1, cracky = 2, white_stone = 1, stone = 1},
 	sounds = default.node_sound_stone_defaults(),
+})
+-- Morion Quartz
+minetest.register_node("too_many_stones:morion_quartz", {
+	description = S("Morion Quartz"),
+	tiles = {"tms_morion_quartz.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, white_stone = 1, stone = 1, quartz =1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:morion_quartz_block", {
+	description = S("Morion Quartz Block"),
+	tiles = {"tms_morion_quartz_block.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, white_stone = 1, stone = 1, quartz = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:morion_quartz_brick", {
+	description = S("Morion Quartz Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_morion_quartz_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, white_stone = 1, stone = 1, quartz = 1},
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:morion_quartz_cracked_brick", {
+	description = S("Cracked Morion Quartz Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_morion_quartz_cracked_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, white_stone = 1, stone = 1, quartz = 1},
+	sounds = default.node_sound_glass_defaults(),
 })
 -- Marble
 minetest.register_node("too_many_stones:marble", {
@@ -2343,6 +2500,52 @@ minetest.register_node("too_many_stones:travertine_cracked_brick", {
 	paramtype2 = "facedir",
 	place_param2 = 0,
 	tiles = {"tms_travertine_cracked_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, yellow_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+-- Yellow Travertine
+minetest.register_node("too_many_stones:travertine_yellow", {
+	description = S("Yellow Travertine"),
+	tiles = {"tms_travertine_yellow.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 1},
+	drop = "too_many_stones:travertine_yellow_cobble",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:travertine_yellow_block", {
+	description = S("Yellow Travertine Block"),
+	tiles = {"tms_travertine_yellow_block.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 1},
+	drop = "too_many_stones:travertine_yellow_block",
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:travertine_yellow_cobble", {
+	description = S("Cobbled Yellow Travertine"),
+	tiles = {"tms_travertine_yellow_cobble.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, yellow_stone = 1, stone = 2},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:travertine_yellow_brick", {
+	description = S("Yellow Travertine Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_travertine_yellow_brick.png"},
+	is_ground_content = false,
+	groups = {cracky = 2, yellow_stone = 1, stone = 1},
+	sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("too_many_stones:travertine_yellow_cracked_brick", {
+	description = S("Cracked Yellow Travertine Brick"),
+	paramtype2 = "facedir",
+	place_param2 = 0,
+	tiles = {"tms_travertine_yellow_cracked_brick.png"},
 	is_ground_content = false,
 	groups = {cracky = 2, yellow_stone = 1, stone = 1},
 	sounds = default.node_sound_stone_defaults(),
