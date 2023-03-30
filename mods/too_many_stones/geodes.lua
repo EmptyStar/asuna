@@ -46,4 +46,6 @@ geodes.register_geode("too_many_stones:pumice", "too_many_stones:calcite", "too_
 
 geodes.register_geode("too_many_stones:limestone_white", "too_many_stones:calcite", "too_many_stones:prasiolite", "too_many_stones:prasiolite_crystal")
 
+geodes.register_geode("too_many_stones:travertine_yellow", "too_many_stones:calcite", "too_many_stones:morion_quartz", "too_many_stones:morion_quartz_crystal")
+
 end

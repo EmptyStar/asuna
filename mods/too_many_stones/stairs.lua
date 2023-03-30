@@ -335,6 +335,50 @@ stairs.register_stair_and_slab(
 	default.node_sound_stone_defaults(),
 	false
 )
+-- Black Moonstone
+stairs.register_stair_and_slab(
+	"black_moonstone",
+	"too_many_stones:black_moonstone",
+	{cracky = 3},
+	{"tms_black_moonstone.png"},
+	"Black Moonstone Stair",
+	"Black Moonstone Slab",
+	default.node_sound_glass_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"black_moonstone_brick",
+	"too_many_stones:black_moonstone_brick",
+	{cracky = 2},
+	{"tms_black_moonstone_brick.png"},
+	"Black Moonstone Brick Stair",
+	"Black Moonstone Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"black_moonstone_cracked_brick",
+	"too_many_stones:black_moonstone_cracked_brick",
+	{cracky = 2},
+	{"tms_black_moonstone_cracked_brick.png"},
+	"Cracked Black Moonstone Brick Stair",
+	"Cracked Black Moonstone Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"black_moonstone_block",
+	"too_many_stones:black_moonstone_block",
+	{cracky = 2},
+	{"tms_black_moonstone_block.png"},
+	"Black Moonstone Block Stair",
+	"Black Moonstone Block Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
 -- Calcite
 stairs.register_stair_and_slab(
 	"calcite",
@@ -750,6 +794,50 @@ stairs.register_stair_and_slab(
 	{"tms_eudialite_block.png"},
 	"Eudialite Block Stair",
 	"Eudialite Block Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+-- Fluorite
+stairs.register_stair_and_slab(
+	"fluorite",
+	"too_many_stones:fluorite",
+	{cracky = 3},
+	{"tms_fluorite.png"},
+	"Fluorite Stair",
+	"Fluorite Slab",
+	default.node_sound_glass_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"fluorite_brick",
+	"too_many_stones:fluorite_brick",
+	{cracky = 2},
+	{"tms_fluorite_brick.png"},
+	"Fluorite Brick Stair",
+	"Fluorite Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"fluorite_cracked_brick",
+	"too_many_stones:fluorite_cracked_brick",
+	{cracky = 2},
+	{"tms_fluorite_cracked_brick.png"},
+	"Cracked Fluorite Brick Stair",
+	"Cracked Fluorite Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"fluorite_block",
+	"too_many_stones:fluorite_block",
+	{cracky = 2},
+	{"tms_fluorite_block.png"},
+	"Fluorite Block Stair",
+	"Fluorite Block Slab",
 	default.node_sound_glass_defaults(),
 	false
 )
@@ -1234,6 +1322,61 @@ stairs.register_stair_and_slab(
 	{"tms_granite_white_cobble.png"},
 	"Cobbled White Granite Stair",
 	"Cobbled White Granite Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+-- Yellow Granite
+stairs.register_stair_and_slab(
+	"granite_yellow",
+	"too_many_stones:granite_yellow",
+	{cracky = 3},
+	{"tms_granite_yellow.png"},
+	"Yellow Granite Stair",
+	"Yellow Granite Slab",
+	default.node_sound_stone_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"granite_yellow_brick",
+	"too_many_stones:granite_yellow_brick",
+	{cracky = 2},
+	{"tms_granite_yellow_brick.png"},
+	"Yellow Granite Brick Stair",
+	"Yellow Granite Brick Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"granite_yellow_cracked_brick",
+	"too_many_stones:granite_yellow_cracked_brick",
+	{cracky = 2},
+	{"tms_granite_yellow_cracked_brick.png"},
+	"Cracked Yellow Granite Brick Stair",
+	"Cracked Yellow Granite Brick Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"granite_yellow_block",
+	"too_many_stones:granite_yellow_block",
+	{cracky = 2},
+	{"tms_granite_yellow_block.png"},
+	"Yellow Granite Block Stair",
+	"Yellow Granite Block Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"granite_yellow_cobble",
+	"too_many_stones:granite_yellow_cobble",
+	{cracky = 2},
+	{"tms_granite_yellow_cobble.png"},
+	"Cobbled Yellow Granite Stair",
+	"Cobbled Yellow Granite Slab",
 	default.node_sound_stone_defaults(),
 	false
 )
@@ -1732,6 +1875,50 @@ stairs.register_stair_and_slab(
 	"Marble Block Stair",
 	"Marble Block Slab",
 	default.node_sound_stone_defaults(),
+	false
+)
+-- Morion Quartz
+stairs.register_stair_and_slab(
+	"morion_quartz",
+	"too_many_stones:morion_quartz",
+	{cracky = 3},
+	{"tms_morion_quartz.png"},
+	"Morion Quartz Stair",
+	"Morion Quartz Slab",
+	default.node_sound_glass_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"morion_quartz_brick",
+	"too_many_stones:morion_quartz_brick",
+	{cracky = 2},
+	{"tms_morion_quartz_brick.png"},
+	"Morion Quartz Brick Stair",
+	"Morion Quartz Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"morion_quartz_cracked_brick",
+	"too_many_stones:morion_quartz_cracked_brick",
+	{cracky = 2},
+	{"tms_morion_quartz_cracked_brick.png"},
+	"Cracked Morion Quartz Brick Stair",
+	"Cracked Morion Quartz Brick Slab",
+	default.node_sound_glass_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"morion_quartz_block",
+	"too_many_stones:morion_quartz_block",
+	{cracky = 2},
+	{"tms_morion_quartz_block.png"},
+	"Morion Quartz Block Stair",
+	"Morion Quartz Block Slab",
+	default.node_sound_glass_defaults(),
 	false
 )
 -- Mudstone
@@ -2459,6 +2646,61 @@ stairs.register_stair_and_slab(
 	{"tms_travertine_block.png"},
 	"Travertine Block Stair",
 	"Travertine Block Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+-- Yellow Travertine
+stairs.register_stair_and_slab(
+	"travertine_yellow",
+	"too_many_stones:travertine_yellow",
+	{cracky = 3},
+	{"tms_travertine_yellow.png"},
+	"Yellow Travertine Stair",
+	"Yellow Travertine Slab",
+	default.node_sound_stone_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"travertine_yellow_cobble",
+	"too_many_stones:travertine_yellow_cobble",
+	{cracky = 3},
+	{"tms_travertine_yellow_cobble.png"},
+	"Cobbled Yellow Travertine Stair",
+	"Cobbled Yellow Travertine Slab",
+	default.node_sound_stone_defaults(),
+	true
+)
+
+stairs.register_stair_and_slab(
+	"travertine_yellow_brick",
+	"too_many_stones:travertine_yellow_brick",
+	{cracky = 2},
+	{"tms_travertine_yellow_brick.png"},
+	"Yellow Travertine Brick Stair",
+	"Yellow Travertine Brick Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"travertine_yellow_cracked_brick",
+	"too_many_stones:travertine_yellow_cracked_brick",
+	{cracky = 2},
+	{"tms_travertine_yellow_cracked_brick.png"},
+	"Cracked Yellow Travertine Brick Stair",
+	"Cracked Yellow Travertine Brick Slab",
+	default.node_sound_stone_defaults(),
+	false
+)
+
+stairs.register_stair_and_slab(
+	"travertine_yellow_block",
+	"too_many_stones:travertine_yellow_block",
+	{cracky = 2},
+	{"tms_travertine_yellow_block.png"},
+	"Yellow Travertine Block Stair",
+	"Yellow Travertine Block Slab",
 	default.node_sound_stone_defaults(),
 	false
 )

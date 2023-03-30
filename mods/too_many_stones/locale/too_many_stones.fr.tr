@@ -92,6 +92,13 @@ Eudialite Block=Bloc d'eudialite
 Eudialite Brick=Brique d'eudialite
 Cracked Eudialite Brick=Brique d'eudialite fissurée
 
+Fluorite=Fluorite
+Fluorite Block=Bloc de fluorite
+Fluorite Brick=Brique de fluorite
+Cracked Fluorite Brick=Brique de fluorite fissurée
+
+Fire Opal=Opale de feu
+
 Gabbro=Gabbro
 Gabbro Block=Bloc de gabbro
 Cobbled Gabbro=Gabbro pavé
@@ -145,6 +152,12 @@ White Granite Brick=Brique de granit blanc
 Cracked White Granite Brick=Brique de granit blanc fissurée
 Cobbled White Granite=Granite blanc pavé
 
+Yellow Granite=Granit jaune
+Yellow Granite Block=Bloc de granit jaune
+Yellow Granite Brick=Brique de granit jaune
+Cracked Yellow Granite Brick=Brique de granit jaune fissurée
+Cobbled Yellow Granite=Granite jaune pavé
+
 Heliodor=Héliodore
 Heliodor Block=Bloc d'héliodore
 Heliodor Brick=Brique d'héliodore
@@ -196,6 +209,11 @@ Marble Block=Bloc de marbre
 Marble Brick=Brique de marbre
 Cracked Marble Brick=Brique de marbre fissurée
 Cobbled Marble=Pavé de marbre
+
+Morion Quartz=Quartz morion
+Morion Quartz Block=Bloc de quartz morion
+Morion Quartz Brick=Brique de quartz morion
+Cracked Morion Quartz Brick=Brique de quartz morion fissurée
 
 Mudstone=Mudstone
 Mudstone Block=Bloc de mudstone
@@ -278,6 +296,12 @@ Cobbled Travertine=Travertin pavé
 Travertine Brick=Brique de travertin
 Cracked Travertine Brick=Brique de travertin fissurée
 
+Yellow Travertine=Travertin jaune
+Yellow Travertine Block=Bloc de travertin jaune
+Cobbled Yellow Travertine=Travertin pavé
+Yellow Travertine Brick=Brique de travertin jaune
+Cracked Yellow Travertine Brick=Brique de travertin jaune fissurée
+
 Beige Tuff=Tuf beige
 Beige Tuff Block=Bloc de tuf beige
 Cobbled Beige Tuff=Tuf beige pavé
@@ -346,6 +370,11 @@ Basalt Block Wall=Mur en bloc de basalte
 Cracked Basalt Brick Wall=Mur en brique de basalte fissurée
 Cobbled Basalt Wall=Mur en pavé de basalte
 
+Black Moonstone Wall=Mur en pierre de lune noire
+Black Moonstone Brick Wall=Mur en brique de pierre de lune noire
+Black Moonstone Block Wall=Mur en bloc de pierre de lune noire
+Cracked Black Moonstone Brick Wall=Mur en brique de pierre de lune noire fissurée
+
 Calcite Wall=Mur en calcite
 Calcite Brick Wall=Mur en brique de calcite
 Calcite Block Wall=Mur en bloc de calcite
@@ -392,6 +421,11 @@ Eudialite Wall=Mur en Eudialite
 Eudialite Brick Wall=Mur en brique d'Eudialite
 Eudialite Block Wall=Mur en bloc d'Eudialite
 Cracked Eudialite Brick Wall=Mur en brique d'Eudialite fissurée
+
+Fluorite Wall=Mur en fluorite
+Fluorite Brick Wall=Mur en brique de fluorite
+Fluorite Block Wall=Mur en bloc de fluorite
+Cracked Fluorite Brick Wall=Mur en brique de fluorite fissurée
 
 Gabbro Wall=Mur en Gabbro
 Cobbled Gabbro Wall=Mur en Gabbro pavée
@@ -446,6 +480,12 @@ White Granite Block Wall=Mur en blocs de granit blanc
 Cracked White Granite Brick Wall=Mur en briques de granit blanc fissuré
 Cobbled White Granite Wall=Mur en granite blanc pavé
 
+Yellow Granite Wall=Mur en granit jaune
+Yellow Granite Brick Wall=Mur en briques de granit jaune
+Yellow Granite Block Wall=Mur en blocs de granit jaune
+Cracked Yellow Granite Brick Wall=Mur en briques de granit jaune fissuré
+Cobbled Yellow Granite Wall=Mur en granite jaune pavé
+
 Heliodor Wall=Mur en Héliodore
 Heliodor Brick Wall=Mur en brique d'Héliodore
 Heliodor Block Wall=Mur en blocs d'Héliodore
@@ -497,6 +537,11 @@ Marble Brick Wall=Mur en brique de marbre
 Marble Block Wall=Mur en bloc de marbre
 Cracked Marble Brick Wall=Mur en brique de marbre fissuré
 Cobbled Marble Wall=Mur en marbre pavé
+
+Morion Quartz Wall=Mur en quartz morion
+Morion Quartz Brick Wall=Mur en brique de quartz morion
+Morion Quartz Block Wall=Mur en bloc de quartz morion
+Cracked Morion Quartz Brick Wall=Mur en brique de quartz morion fissurées
 
 Mudstone Wall=Mur en grès boueux
 Cobbled Mudstone Wall=Mur en grès boueux pavé
@@ -576,6 +621,12 @@ Travertine Brick Wall=Mur en brique de travertin
 Travertine Block Wall=Mur en bloc de travertin
 Cracked Travertine Brick Wall=Mur en brique de travertin fissurée
 
+Yellow Travertine Wall=Mur en travertin jaune
+Cobbled Yellow Travertine Wall=Mur pavé en travertin jaune
+Yellow Travertine Brick Wall=Mur en brique de travertin jaune
+Yellow Travertine Block Wall=Mur en bloc de travertin jaune
+Cracked Yellow Travertine Brick Wall=Mur en brique de travertin jaune fissurée
+
 Beige Tuff Wall=Mur en tuf beige
 Beige Tuff Block Wall=Mur en bloc de tuf beige
 Cobbled Beige Tuff Wall=Mur en tuf beige pavé
@@ -643,6 +694,11 @@ Basalt Block Slab=Dalle en bloc de basalte
 Cracked Basalt Brick Slab=Dalle en brique de basalte fissurée
 Cobbled Basalt Slab=Dalle en pavé de basalte
 
+Black Moonstone Slab=Dalle en pierre de lune noire
+Black Moonstone Brick Slab=Dalle en brique de pierre de lune noire
+Black Moonstone Block Slab=Dalle en bloc de pierre de lune noire
+Cracked Black Moonstone Brick Slab=Dalle en brique de pierre de lune noire fissurée
+
 Calcite Slab=Dalle en calcite
 Calcite Brick Slab=Dalle en brique de calcite
 Calcite Block Slab=Dalle en bloc de calcite
@@ -689,6 +745,11 @@ Eudialite Slab=Dalle en Eudialite
 Eudialite Brick Slab=Dalle en brique d'Eudialite
 Eudialite Block Slab=Dalle en bloc d'Eudialite
 Cracked Eudialite Brick Slab=Dalle en brique d'Eudialite fissurée
+
+Fluorite Slab=Dalle en fluorite
+Fluorite Brick Slab=Dalle en brique de fluorite
+Fluorite Block Slab=Dalle en bloc de fluorite
+Cracked Fluorite Brick Slab=Dalle en brique de fluorite fissurée
 
 Gabbro Slab=Dalle en Gabbro
 Cobbled Gabbro Slab=Dalle en Gabbro pavée
@@ -743,6 +804,12 @@ White Granite Block Slab=Dalle en blocs de granit blanc
 Cracked White Granite Brick Slab=Dalle en briques de granit blanc fissuré
 Cobbled White Granite Slab=Dalle en granite blanc pavé
 
+Yellow Granite Slab=Dalle en granit jaune
+Yellow Granite Brick Slab=Dalle en briques de granit jaune
+Yellow Granite Block Slab=Dalle en blocs de granit jaune
+Cracked Yellow Granite Brick Slab=Dalle en briques de granit jaune fissuré
+Cobbled Yellow Granite Slab=Dalle en granite jaune pavé
+
 Heliodor Slab=Dalle en Héliodore
 Heliodor Brick Slab=Dalle en brique d'Héliodore
 Heliodor Block Slab=Dalle en blocs d'Héliodore
@@ -794,6 +861,11 @@ Marble Brick Slab=Dalle en brique de marbre
 Marble Block Slab=Dalle en bloc de marbre
 Cracked Marble Brick Slab=Dalle en brique de marbre fissuré
 Cobbled Marble Slab=Dalle en marbre pavé
+
+Morion Quartz Slab=Dalle en quartz morion
+Morion Quartz Brick Slab=Dalle en brique de quartz morion
+Morion Quartz Block Slab=Dalle en bloc de quartz morion
+Cracked Morion Quartz Brick Slab=Dalle en brique de quartz morion fissurées
 
 Mudstone Slab=Dalle en grès boueux
 Cobbled Mudstone Slab=Dalle en grès boueux pavé
@@ -873,6 +945,12 @@ Travertine Brick Slab=Dalle en brique de travertin
 Travertine Block Slab=Dalle en bloc de travertin
 Cracked Travertine Brick Slab=Dalle en brique de travertin fissurée
 
+Yellow Travertine Slab=Dalle en travertin jaune
+Cobbled Yellow Travertine Slab=Dalle pavé en travertin jaune
+Yellow Travertine Brick Slab=Dalle en brique de travertin jaune
+Yellow Travertine Block Slab=Dalle en bloc de travertin jaune
+Cracked Yellow Travertine Brick Slab=Dalle en brique de travertin jaune fissurée
+
 Beige Tuff Slab=Dalle en tuf beige
 Beige Tuff Block Slab=Dalle en bloc de tuf beige
 Cobbled Beige Tuff Slab=Dalle en tuf beige pavé
@@ -940,6 +1018,11 @@ Basalt Block Stair=Escalier en bloc de basalte
 Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée
 Cobbled Basalt Stair=Escalier en pavé de basalte
 
+Black Moonstone Stair=Escalier en pierre de lune noire
+Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire
+Black Moonstone Block Stair=Escalier en bloc de pierre de lune noire
+Cracked Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire fissurée
+
 Calcite Stair=Escalier en calcite
 Calcite Brick Stair=Escalier en brique de calcite
 Calcite Block Stair=Escalier en bloc de calcite
@@ -986,6 +1069,11 @@ Eudialite Stair=Escalier en Eudialite
 Eudialite Brick Stair=Escalier en brique d'Eudialite
 Eudialite Block Stair=Escalier en bloc d'Eudialite
 Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite fissurée
+
+Fluorite Stair=Escalier en fluorite
+Fluorite Brick Stair=Escalier en brique de fluorite
+Fluorite Block Stair=Escalier en bloc de fluorite
+Cracked Fluorite Brick Stair=Escalier en brique de fluorite fissurée
 
 Gabbro Stair=Escalier en Gabbro
 Cobbled Gabbro Stair=Escalier en Gabbro pavée
@@ -1040,6 +1128,12 @@ White Granite Block Stair=Escalier en blocs de granit blanc
 Cracked White Granite Brick Stair=Escalier en briques de granit blanc fissuré
 Cobbled White Granite Stair=Escalier en granite blanc pavé
 
+Yellow Granite Stair=Escalier en granit jaune
+Yellow Granite Brick Stair=Escalier en briques de granit jaune
+Yellow Granite Block Stair=Escalier en blocs de granit jaune
+Cracked Yellow Granite Brick Stair=Escalier en briques de granit jaune fissuré
+Cobbled Yellow Granite Stair=Escalier en granite jaune pavé
+
 Heliodor Stair=Escalier en Héliodore
 Heliodor Brick Stair=Escalier en brique d'Héliodore
 Heliodor Block Stair=Escalier en blocs d'Héliodore
@@ -1091,6 +1185,11 @@ Marble Brick Stair=Escalier en brique de marbre
 Marble Block Stair=Escalier en bloc de marbre
 Cracked Marble Brick Stair=Escalier en brique de marbre fissuré
 Cobbled Marble Stair=Escalier en marbre pavé
+
+Morion Quartz Stair=Escalier en quartz morion
+Morion Quartz Brick Stair=Escalier en brique de quartz morion
+Morion Quartz Block Stair=Escalier en bloc de quartz morion
+Cracked Morion Quartz Brick Stair=Escalier en brique de quartz morion fissurées
 
 Mudstone Stair=Escalier en grès boueux
 Cobbled Mudstone Stair=Escalier en grès boueux pavé
@@ -1170,6 +1269,12 @@ Travertine Brick Stair=Escalier en brique de travertin
 Travertine Block Stair=Escalier en bloc de travertin
 Cracked Travertine Brick Stair=Escalier en brique de travertin fissurée
 
+Yellow Travertine Stair=Escalier en travertin jaune
+Cobbled Yellow Travertine Stair=Escalier pavé en travertin jaune
+Yellow Travertine Brick Stair=Escalier en brique de travertin jaune
+Yellow Travertine Block Stair=Escalier en bloc de travertin jaune
+Cracked Yellow Travertine Brick Stair=Escalier en brique de travertin jaune fissurée
+
 Beige Tuff Stair=Escalier en tuf beige
 Beige Tuff Block Stair=Escalier en bloc de tuf beige
 Cobbled Beige Tuff Stair=Escalier en tuf beige pavé
@@ -1237,6 +1342,11 @@ Inner Basalt Block Stair=Escalier en bloc de basalte intérieur
 Inner Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée intérieur
 Inner Cobbled Basalt Stair=Escalier en pavé de basalte intérieur
 
+Inner Black Moonstone Stair=Escalier en pierre de lune noire intérieur
+Inner Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire intérieur
+Inner Black Moonstone Block Stair=Escalier en bloc de pierre de lune noire intérieur
+Inner Cracked Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire fissurée intérieur
+
 Inner Calcite Stair=Escalier en calcite intérieur
 Inner Calcite Brick Stair=Escalier en brique de calcite intérieur
 Inner Calcite Block Stair=Escalier en bloc de calcite intérieur
@@ -1283,6 +1393,11 @@ Inner Eudialite Stair=Escalier en Eudialite intérieur
 Inner Eudialite Brick Stair=Escalier en brique d'Eudialite intérieur
 Inner Eudialite Block Stair=Escalier en bloc d'Eudialite intérieur
 Inner Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite intérieur fissurée
+
+Inner Fluorite Stair=Escalier en fluorite intérieur
+Inner Fluorite Brick Stair=Escalier en brique de fluorite intérieur
+Inner Fluorite Block Stair=Escalier en bloc de fluorite intérieur
+Inner Cracked Fluorite Brick Stair=Escalier en brique de fluorite intérieur fissurée
 
 Inner Gabbro Stair=Escalier en Gabbro intérieur
 Inner Cobbled Gabbro Stair=Escalier en Gabbro intérieur pavée
@@ -1337,6 +1452,12 @@ Inner White Granite Block Stair=Escalier intérieur en blocs de granit blanc
 Inner Cracked White Granite Brick Stair=Escalier intérieur en briques de granit blanc fissuré
 Inner Cobbled White Granite Stair=Escalier intérieur en granite blanc pavé
 
+Inner Yellow Granite Stair=Escalier intérieur en granit jaune
+Inner Yellow Granite Brick Stair=Escalier intérieur en briques de granit jaune
+Inner Yellow Granite Block Stair=Escalier intérieur en blocs de granit jaune
+Inner Cracked Yellow Granite Brick Stair=Escalier intérieur en briques de granit jaune fissuré
+Inner Cobbled Yellow Granite Stair=Escalier intérieur en granite jaune pavé
+
 Inner Heliodor Stair=Escalier en Héliodore intérieur
 Inner Heliodor Brick Stair=Escalier en brique d'Héliodore intérieur
 Inner Heliodor Block Stair=Escalier en blocs d'Héliodore intérieur
@@ -1388,6 +1509,11 @@ Inner Marble Brick Stair=Escalier en brique de marbre intérieur
 Inner Marble Block Stair=Escalier en bloc de marbre intérieur
 Inner Cracked Marble Brick Stair=Escalier en brique de marbre fissuré intérieur
 Inner Cobbled Marble Stair=Escalier en marbre pavé intérieur
+
+Inner Morion Quartz Stair=Escalier en quartz morion intérieur
+Inner Morion Quartz Brick Stair=Escalier en brique de quartz morion intérieur
+Inner Morion Quartz Block Stair=Escalier en bloc de quartz morion intérieur
+Inner Cracked Morion Quartz Brick Stair=Escalier en brique de quartz morion fissuré intérieur
 
 Inner Mudstone Stair=Escalier en grès boueux intérieur
 Inner Cobbled Mudstone Stair=Escalier en grès boueux pavé intérieur
@@ -1467,6 +1593,12 @@ Inner Travertine Brick Stair=Escalier intérieur en brique de travertin
 Inner Travertine Block Stair=Escalier intérieur en bloc de travertin
 Inner Cracked Travertine Brick Stair=Escalier intérieur en brique de travertin fissurée
 
+Inner Yellow Travertine Stair=Escalier intérieur en travertin jaune
+Inner Cobbled Yellow Travertine Stair=Escalier intérieur pavé en travertin jaune
+Inner Yellow Travertine Brick Stair=Escalier intérieur en brique de travertin jaune
+Inner Yellow Travertine Block Stair=Escalier intérieur en bloc de travertin jaune
+Inner Cracked Yellow Travertine Brick Stair=Escalier intérieur en brique de travertin jaune fissurée
+
 Inner Beige Tuff Stair=Escalier intérieur en tuf beige
 Inner Beige Tuff Block Stair=Escalier intérieur en bloc de tuf beige
 Inner Cobbled Beige Tuff Stair=Escalier intérieur en tuf beige pavé
@@ -1534,6 +1666,11 @@ Outer Basalt Block Stair=Escalier en bloc de basalte extérieure
 Outer Cracked Basalt Brick Stair=Escalier en brique de basalte fissurée extérieure
 Outer Cobbled Basalt Stair=Escalier en pavé de basalte extérieure
 
+Outer Black Moonstone Stair=Escalier en pierre de lune noire extérieure
+Outer Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire extérieure
+Outer Black Moonstone Block Stair=Escalier en bloc de pierre de lune noire extérieure
+Outer Cracked Black Moonstone Brick Stair=Escalier en brique de pierre de lune noire fissurée extérieure
+
 Outer Calcite Stair=Escalier en calcite extérieure
 Outer Calcite Brick Stair=Escalier en brique de calcite extérieure
 Outer Calcite Block Stair=Escalier en bloc de calcite extérieure
@@ -1580,6 +1717,11 @@ Outer Eudialite Stair=Escalier en Eudialite extérieure
 Outer Eudialite Brick Stair=Escalier en brique d'Eudialite extérieure
 Outer Eudialite Block Stair=Escalier en bloc d'Eudialite extérieure
 Outer Cracked Eudialite Brick Stair=Escalier en brique d'Eudialite extérieure fissurée
+
+Outer Fluorite Stair=Escalier en fluorite extérieure
+Outer Fluorite Brick Stair=Escalier en brique de fluorite extérieure
+Outer Fluorite Block Stair=Escalier en bloc de fluorite extérieure
+Outer Cracked Fluorite Brick Stair=Escalier en brique de fluorite extérieure fissurée
 
 Outer Gabbro Stair=Escalier en Gabbro extérieure
 Outer Cobbled Gabbro Stair=Escalier en Gabbro extérieure pavée
@@ -1634,6 +1776,12 @@ Outer White Granite Block Stair=Escalier extérieur en blocs de granit blanc
 Outer Cracked White Granite Brick Stair=Escalier extérieur en briques de granit blanc fissuré
 Outer Cobbled White Granite Stair=Escalier extérieur en granite blanc pavé
 
+Outer Yellow Granite Stair=Escalier extérieur en granit jaune
+Outer Yellow Granite Brick Stair=Escalier extérieur en briques de granit jaune
+Outer Yellow Granite Block Stair=Escalier extérieur en blocs de granit jaune
+Outer Cracked Yellow Granite Brick Stair=Escalier extérieur en briques de granit jaune fissuré
+Outer Cobbled Yellow Granite Stair=Escalier extérieur en granite jaune pavé
+
 Outer Heliodor Stair=Escalier en Héliodore extérieur
 Outer Heliodor Brick Stair=Escalier en brique d'Héliodore extérieur
 Outer Heliodor Block Stair=Escalier en blocs d'Héliodore extérieur
@@ -1685,6 +1833,11 @@ Outer Marble Brick Stair=Escalier en brique de marbre extérieur
 Outer Marble Block Stair=Escalier en bloc de marbre extérieur
 Outer Cracked Marble Brick Stair=Escalier en brique de marbre fissuré extérieur
 Outer Cobbled Marble Stair=Escalier en marbre pavé extérieur
+
+Outer Morion Quartz Stair=Escalier en quartz morion extérieur
+Outer Morion Quartz Brick Stair=Escalier en brique de quartz morion extérieur
+Outer Morion Quartz Block Stair=Escalier en bloc de quartz morion extérieur
+Outer Cracked Morion Quartz Brick Stair=Escalier en brique de quartz morion fissuré extérieur
 
 Outer Mudstone Stair=Escalier en grès boueux extérieur
 Outer Cobbled Mudstone Stair=Escalier en grès boueux pavé extérieur
@@ -1763,6 +1916,12 @@ Outer Cobbled Travertine Stair=Escalier extérieur pavé en travertin
 Outer Travertine Brick Stair=Escalier extérieur en brique de travertin
 Outer Travertine Block Stair=Escalier extérieur en bloc de travertin
 Outer Cracked Travertine Brick Stair=Escalier extérieur en brique de travertin fissurée
+
+Outer Yellow Travertine Stair=Escalier extérieur en travertin jaune
+Outer Cobbled Yellow Travertine Stair=Escalier extérieur pavé en travertin jaune
+Outer Yellow Travertine Brick Stair=Escalier extérieur en brique de travertin jaune
+Outer Yellow Travertine Block Stair=Escalier extérieur en bloc de travertin jaune
+Outer Cracked Yellow Travertine Brick Stair=Escalier extérieur en brique de travertin jaune fissurée
 
 Outer Beige Tuff Stair=Escalier extérieur en tuf beige
 Outer Beige Tuff Block Stair=Escalier extérieur en bloc de tuf beige

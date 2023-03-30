@@ -1,6 +1,6 @@
 # Too Many Stones
 
-A Minetest mod that adds as many stones as I can make good textures for. Recent addition is support for nearly all Minetest subgames including Fogblox, Hades Revisited, Nodecore, and Mineclone2. TMS currently features 68 stone types (7 of which glow), cobble for most of them, and bricks, cracked bricks, and blocks for all stone types. There are optional features that each require different mods to add: Mapgen requires default or hades_core, Stairs and Slabs require stairs, Walls require walls, and geodes require either geode mod. More stones will be added, and you can put a feature request on ContentDB or the repo for new ones. I will prioritize stones that are unique. French and Russian translations by me and ChatGPT. So, sorry for bad grammar in advance.
+A Minetest mod that adds as many stones as I can make good textures for. Recent addition is support for nearly all Minetest subgames including Fogblox, Hades Revisited, Nodecore, and Mineclone2. TMS currently features 74 stone types (7 of which glow), cobble for most of them, and bricks, cracked bricks, and blocks for all stone types. There are optional features that each require different mods to add: Mapgen requires default or hades_core, Stairs and Slabs require stairs, Walls require walls, and geodes require either geode mod. More stones will be added, and you can put a feature request on ContentDB or the repo for new ones. I will prioritize stones that are unique. French and Russian translations by me and ChatGPT. So, sorry for bad grammar in advance.
 
 ## Done:
 ##### Blue Agate-(blue and white)
@@ -14,6 +14,7 @@ A Minetest mod that adds as many stones as I can make good textures for. Recent 
 ##### Amber-(dark orange)
 ##### Amethyst-(dark purple)
 ##### Andesite-(dark gray)
+##### Black Moonstone-(black)
 ##### Black Opal-(black to green)
 ##### Basalt-(dark greenish grey)
 ##### Columnar Basalt-(reddish light gray)
@@ -26,6 +27,8 @@ A Minetest mod that adds as many stones as I can make good textures for. Recent 
 ##### Crocoite-(bright orange)
 ##### Erythrite-(dark purpley red)
 ##### Eudialite-(dark red)
+##### Fluorite-(blueish lavender)
+##### Fire Opal-(orange)
 ##### Gabbro-(dark grey)
 ##### Galena-(silver)
 ##### Glow Apatite-(light purple)
@@ -42,6 +45,7 @@ A Minetest mod that adds as many stones as I can make good textures for. Recent 
 ##### Pink Granite-(pale pink)
 ##### Red Granite-(red)
 ##### White Granite-(white)
+##### Yellow Granite-(dark yellow)
 ##### Heliodor-(yellow)
 ##### Howlite-(white)
 ##### Ilvaite-(black)
@@ -51,6 +55,7 @@ A Minetest mod that adds as many stones as I can make good textures for. Recent 
 ##### Blue Limestone-(blue grey)
 ##### White Limestone-(yellow grey)
 ##### Marble-(white)
+##### Morion Quartz-(black)
 ##### Mudstone-(brown)
 ##### Prasiolite-(glass bottle green)
 ##### Opal-(white to blue)
@@ -66,6 +71,7 @@ A Minetest mod that adds as many stones as I can make good textures for. Recent 
 ##### Sodalite-(dark blue) was Bluestone
 ##### Sugilite-(purple)
 ##### Travertine-(light tan)
+##### Yellow Travertine-(yellow)
 ##### Beige Tuff-(beige)
 ##### Grey Tuff-(dirty gray)
 ##### Red Tuff-(orange)

@@ -43,6 +43,11 @@ Columnar Basalt=
 
 Batch=
 
+Black Moonstone=
+Black Moonstone Block=
+Black Moonstone Brick=
+Cracked Black Moonstone Brick=
+
 Black Opal=
 
 Calcite=
@@ -91,6 +96,11 @@ Eudialite=
 Eudialite Block=
 Eudialite Brick=
 Cracked Eudialite Brick=
+
+Fluorite=
+Fluorite Block=
+Fluorite Brick=
+Cracked Fluorite Brick=
 
 Fire Opal=
 
@@ -147,6 +157,12 @@ White Granite Brick=
 Cracked White Granite Brick=
 Cobbled White Granite=
 
+Yellow Granite=
+Yellow Granite Block=
+Yellow Granite Brick=
+Cracked Yellow Granite Brick=
+Cobbled Yellow Granite=
+
 Heliodor=
 Heliodor Block=
 Heliodor Brick=
@@ -198,6 +214,11 @@ Marble Block=
 Marble Brick=
 Cracked Marble Brick=
 Cobbled Marble=
+
+Morion Quartz=
+Morion Quartz Block=
+Morion Quartz Brick=
+Cracked Morion Quartz Brick=
 
 Mudstone=
 Mudstone Block=
@@ -280,6 +301,12 @@ Cobbled Travertine=
 Travertine Brick=
 Cracked Travertine Brick=
 
+Yellow Travertine=
+Yellow Travertine Block=
+Cobbled Yellow Travertine=
+Yellow Travertine Brick=
+Cracked Yellow Travertine Brick=
+
 Beige Tuff=
 Beige Tuff Block=
 Cobbled Beige Tuff=
@@ -348,6 +375,11 @@ Basalt Brick Wall=
 Cracked Basalt Brick Wall=
 Cobbled Basalt Wall=
 
+Black Moonstone Wall=
+Black Moonstone Brick Wall=
+Black Moonstone Block Wall=
+Cracked Black Moonstone Brick Wall=
+
 Calcite Wall=
 Calcite Brick Wall=
 Calcite Block Wall=
@@ -394,6 +426,11 @@ Eudialite Wall=
 Eudialite Brick Wall=
 Eudialite Block Wall=
 Cracked Eudialite Brick Wall=
+
+Fluorite Wall=
+Fluorite Brick Wall=
+Fluorite Block Wall=
+Cracked Fluorite Brick Wall=
 
 Gabbro Wall=
 Cobbled Gabbro Wall=
@@ -448,6 +485,12 @@ White Granite Block Wall=
 Cracked White Granite Brick Wall=
 Cobbled White Granite Wall=
 
+Yellow Granite Wall=
+Yellow Granite Brick Wall=
+Yellow Granite Block Wall=
+Cracked Yellow Granite Brick Wall=
+Cobbled Yellow Granite Wall=
+
 Heliodor Wall=
 Heliodor Brick Wall=
 Heliodor Block Wall=
@@ -499,6 +542,11 @@ Marble Brick Wall=
 Marble Block Wall=
 Cracked Marble Brick Wall=
 Cobbled Marble Wall=
+
+Morion Quartz Wall=
+Morion Quartz Brick Wall=
+Morion Quartz Block Wall=
+Cracked Morion Quartz Brick Wall=
 
 Mudstone Wall=
 Cobbled Mudstone Wall=
@@ -578,6 +626,12 @@ Travertine Brick Wall=
 Travertine Block Wall=
 Cracked Travertine Brick Wall=
 
+Yellow Travertine Wall=
+Cobbled Yellow Travertine Wall=
+Yellow Travertine Brick Wall=
+Yellow Travertine Block Wall=
+Cracked Yellow Travertine Brick Wall=
+
 Beige Tuff Wall=
 Cobbled Beige Tuff Wall=
 Beige Tuff Block Wall=
@@ -645,6 +699,11 @@ Basalt Brick Slab=
 Cracked Basalt Brick Slab=
 Cobbled Basalt Slab=
 
+Black Moonstone Slab=
+Black Moonstone Brick Slab=
+Black Moonstone Block Slab=
+Cracked Black Moonstone Brick Slab=
+
 Calcite Slab=
 Calcite Brick Slab=
 Calcite Block Slab=
@@ -691,6 +750,11 @@ Eudialite Slab=
 Eudialite Brick Slab=
 Eudialite Block Slab=
 Cracked Eudialite Brick Slab=
+
+Fluorite Slab=
+Fluorite Brick Slab=
+Fluorite Block Slab=
+Cracked Fluorite Brick Slab=
 
 Gabbro Slab=
 Cobbled Gabbro Slab=
@@ -745,6 +809,12 @@ White Granite Block Slab=
 Cracked White Granite Brick Slab=
 Cobbled White Granite Slab=
 
+Yellow Granite Slab=
+Yellow Granite Brick Slab=
+Yellow Granite Block Slab=
+Cracked Yellow Granite Brick Slab=
+Cobbled Yellow Granite Slab=
+
 Heliodor Slab=
 Heliodor Brick Slab=
 Heliodor Block Slab=
@@ -796,6 +866,11 @@ Marble Brick Slab=
 Marble Block Slab=
 Cracked Marble Brick Slab=
 Cobbled Marble Slab=
+
+Morion Quartz Slab=
+Morion Quartz Brick Slab=
+Morion Quartz Block Slab=
+Cracked Morion Quartz Brick Slab=
 
 Mudstone Slab=
 Cobbled Mudstone Slab=
@@ -877,6 +952,12 @@ Travertine Brick Slab=
 Travertine Block Slab=
 Cracked Travertine Brick Slab=
 
+Yellow Travertine Slab=
+Cobbled Yellow Travertine Slab=
+Yellow Travertine Brick Slab=
+Yellow Travertine Block Slab=
+Cracked Yellow Travertine Brick Slab=
+
 Beige Tuff Slab=
 Cobbled Beige Tuff Slab=
 Beige Tuff Block Slab=
@@ -945,6 +1026,11 @@ Basalt Brick Stair=
 Cracked Basalt Brick Stair=
 Cobbled Basalt Stair=
 
+Black Moonstone Stair=
+Black Moonstone Brick Stair=
+Black Moonstone Block Stair=
+Cracked Black Moonstone Brick Stair=
+
 Calcite Stair=
 Calcite Brick Stair=
 Calcite Block Stair=
@@ -991,6 +1077,11 @@ Eudialite Stair=
 Eudialite Brick Stair=
 Eudialite Block Stair=
 Cracked Eudialite Brick Stair=
+
+Fluorite Stair=
+Fluorite Brick Stair=
+Fluorite Block Stair=
+Cracked Fluorite Brick Stair=
 
 Gabbro Stair=
 Cobbled Gabbro Stair=
@@ -1045,6 +1136,12 @@ White Granite Block Stair=
 Cracked White Granite Brick Stair=
 Cobbled White Granite Stair=
 
+Yellow Granite Stair=
+Yellow Granite Brick Stair=
+Yellow Granite Block Stair=
+Cracked Yellow Granite Brick Stair=
+Cobbled Yellow Granite Stair=
+
 Heliodor Stair=
 Heliodor Brick Stair=
 Heliodor Block Stair=
@@ -1096,6 +1193,11 @@ Marble Brick Stair=
 Marble Block Stair=
 Cracked Marble Brick Stair=
 Cobbled Marble Stair=
+
+Morion Quartz Stair=
+Morion Quartz Brick Stair=
+Morion Quartz Block Stair=
+Cracked Morion Quartz Brick Stair=
 
 Mudstone Stair=
 Cobbled Mudstone Stair=
@@ -1175,6 +1277,12 @@ Travertine Brick Stair=
 Travertine Block Stair=
 Cracked Travertine Brick Stair=
 
+Yellow Travertine Stair=
+Cobbled Yellow Travertine Stair=
+Yellow Travertine Brick Stair=
+Yellow Travertine Block Stair=
+Cracked Yellow Travertine Brick Stair=
+
 Beige Tuff Stair=
 Beige Tuff Brick Stair=
 Beige Tuff Block Stair=
@@ -1242,6 +1350,11 @@ Inner Basalt Brick Stair=
 Inner Cracked Basalt Brick Stair=
 Inner Cobbled Basalt Stair=
 
+Inner Black Moonstone Stair=
+Inner Black Moonstone Brick Stair=
+Inner Black Moonstone Block Stair=
+Inner Cracked Black Moonstone Brick Stair=
+
 Inner Calcite Stair=
 Inner Calcite Brick Stair=
 Inner Calcite Block Stair=
@@ -1288,6 +1401,11 @@ Inner Eudialite Stair=
 Inner Eudialite Brick Stair=
 Inner Eudialite Block Stair=
 Inner Cracked Eudialite Brick Stair=
+
+Inner Fluorite Stair=
+Inner Fluorite Brick Stair=
+Inner Fluorite Block Stair=
+Inner Cracked Fluorite Brick Stair=
 
 Inner Gabbro Stair=
 Inner Cobbled Gabbro Stair=
@@ -1342,6 +1460,12 @@ Inner White Granite Block Stair=
 Inner Cracked White Granite Brick Stair=
 Inner Cobbled White Granite Stair=
 
+Inner Yellow Granite Stair=
+Inner Yellow Granite Brick Stair=
+Inner Yellow Granite Block Stair=
+Inner Cracked Yellow Granite Brick Stair=
+Inner Cobbled Yellow Granite Stair=
+
 Inner Heliodor Stair=
 Inner Heliodor Brick Stair=
 Inner Heliodor Block Stair=
@@ -1393,6 +1517,11 @@ Inner Marble Brick Stair=
 Inner Marble Block Stair=
 Inner Cracked Marble Brick Stair=
 Inner Cobbled Marble Stair=
+
+Inner Morion Quartz Stair=
+Inner Morion Quartz Brick Stair=
+Inner Morion Quartz Block Stair=
+Inner Cracked Morion Quartz Brick Stair=
 
 Inner Mudstone Stair=
 Inner Cobbled Mudstone Stair=
@@ -1472,6 +1601,12 @@ Inner Travertine Brick Stair=
 Inner Travertine Block Stair=
 Inner Cracked Travertine Brick Stair=
 
+Inner Yellow Travertine Stair=
+Inner Cobbled Yellow Travertine Stair=
+Inner Yellow Travertine Brick Stair=
+Inner Yellow Travertine Block Stair=
+Inner Cracked Yellow Travertine Brick Stair=
+
 Inner Beige Tuff Stair=
 Inner Cobbled Beige Tuff Stair=
 Inner Beige Tuff Brick Stair=
@@ -1539,6 +1674,11 @@ Outer Basalt Brick Stair=
 Outer Cracked Basalt Brick Stair=
 Outer Cobbled Basalt Stair=
 
+Outer Black Moonstone Stair=
+Outer Black Moonstone Brick Stair=
+Outer Black Moonstone Block Stair=
+Outer Cracked Black Moonstone Brick Stair=
+
 Outer Calcite Stair=
 Outer Calcite Brick Stair=
 Outer Calcite Block Stair=
@@ -1585,6 +1725,11 @@ Outer Eudialite Stair=
 Outer Eudialite Brick Stair=
 Outer Eudialite Block Stair=
 Outer Cracked Eudialite Brick Stair=
+
+Outer Fluorite Stair=
+Outer Fluorite Brick Stair=
+Outer Fluorite Block Stair=
+Outer Cracked Fluorite Brick Stair=
 
 Outer Gabbro Stair=
 Outer Cobbled Gabbro Stair=
@@ -1639,6 +1784,12 @@ Outer White Granite Block Stair=
 Outer Cracked White Granite Brick Stair=
 Outer Cobbled White Granite Stair=
 
+Outer Yellow Granite Stair=
+Outer Yellow Granite Brick Stair=
+Outer Yellow Granite Block Stair=
+Outer Cracked Yellow Granite Brick Stair=
+Outer Cobbled Yellow Granite Stair=
+
 Outer Heliodor Stair=
 Outer Heliodor Brick Stair=
 Outer Heliodor Block Stair=
@@ -1690,6 +1841,11 @@ Outer Marble Brick Stair=
 Outer Marble Block Stair=
 Outer Cracked Marble Brick Stair=
 Outer Cobbled Marble Stair=
+
+Outer Morion Quartz Stair=
+Outer Morion Quartz Brick Stair=
+Outer Morion Quartz Block Stair=
+Outer Cracked Morion Quartz Brick Stair=
 
 Outer Mudstone Stair=
 Outer Cobbled Mudstone Stair=
@@ -1768,6 +1924,12 @@ Outer Cobbled Travertine Stair=
 Outer Travertine Brick Stair=
 Outer Travertine Block Stair=
 Outer Cracked Travertine Brick Stair=
+
+Outer Yellow Travertine Stair=
+Outer Cobbled Yellow Travertine Stair=
+Outer Yellow Travertine Brick Stair=
+Outer Yellow Travertine Block Stair=
+Outer Cracked Yellow Travertine Brick Stair=
 
 Outer Beige Tuff Stair=
 Outer Cobbled Beige Tuff Stair=

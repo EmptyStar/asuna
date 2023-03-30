@@ -105,3 +105,10 @@ Add Howlite Cobble
 Add Glass Batch
 Redo Mapgen to spread stones better
 Add Slate Tiles
+
+V0.3.5
+Added Black Moonstone
+Added Fluorite
+Added Yellow Granite
+Added Morion Quartz
+Added Yellow Travertine

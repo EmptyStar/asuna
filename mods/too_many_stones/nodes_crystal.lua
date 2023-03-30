@@ -569,6 +569,62 @@ minetest.register_craftitem("too_many_stones:prasiolite_shards", {
     inventory_image = "tms_prasiolite_shards.png",
 })
 
+-- Morion Quartz
+
+minetest.register_abm({
+    label = "TMS Morion Quartz Crystal growth",
+    nodenames = "too_many_stones:morion_quartz_budding",
+    interval = 10,
+    chance = 1,
+    action = function(pos)
+        local check_pos = vector.add(all_directions[math.random(1, #all_directions)], pos)
+        local check_node = minetest.get_node(check_pos)
+        local check_node_name = check_node.name
+        local param2 = minetest.dir_to_wallmounted(vector.subtract(pos, check_pos))
+        local new_node
+        if check_node_name == "air" then
+            new_node = "too_many_stones:morion_quartz_crystal"
+        else return end
+        minetest.swap_node(check_pos, {name = new_node, param2 = param2})
+    end,
+})
+
+minetest.register_node("too_many_stones:morion_quartz_crystal", {
+    description = "Morion Quartz Crystal",
+    use_texture_alpha = "blend",
+    tiles = {"tms_morion_quartz_crystal.png"},
+    drawtype = "plantlike",
+    sunlight_propagates = true,
+    light_source = 6,
+    paramtype = "light",
+    paramtype2 = "wallmounted",
+    walkable = false,
+    selection_box = {
+        type = "fixed",
+        fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
+    },
+    groups = {cracky = 3, attached_node = 1},
+	drop = "too_many_stones:morion_quartz_shards",
+	sounds = default.node_sound_glass_defaults(),
+})
+
+minetest.register_node("too_many_stones:morion_quartz_budding", {
+	description = S("Budding Morion Quartz"),
+    use_texture_alpha = "blend",
+	drawtype = "glasslike",
+	tiles = {"tms_morion_quartz_budding.png"},
+	sunlight_propagates = true,
+	is_ground_content = false,
+	groups = {cracky = 3, stone = 1},
+	sounds = default.node_sound_glass_defaults(),
+    paramtype = "light",
+})
+
+minetest.register_craftitem("too_many_stones:morion_quartz_shards", {
+    description = "Morion Quartz Shards",
+    inventory_image = "tms_morion_quartz_shards.png",
+})
+
 -- Quartz
 
 minetest.register_abm({

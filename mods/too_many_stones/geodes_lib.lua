@@ -302,4 +302,17 @@ geodes_lib:register_geode({
     radius_max = 10,
 })
 
+geodes_lib:register_geode({
+    wherein = "mapgen_stone",
+    y_min = -31000,
+    y_max = -10,
+    scarcity = 80,
+    core = "too_many_stones:morion_quartz",
+    core_alt = "too_many_stones:morion_quartz_budding",
+    core_alt_chance = 100,
+    shell = {"too_many_stones:travertine_yellow", "too_many_stones:calcite"},
+    radius_min = 2,
+    radius_max = 10,
+})
+
 end
