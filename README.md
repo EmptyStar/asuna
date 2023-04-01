@@ -24,10 +24,19 @@ Gameplay
 
 Asuna's features provide a beautiful setting for your own adventures and creations, and a colorful palette with which to create. It's up to you to write your own story, to build your own marvels, and to find your own purpose.
 
-If you're looking for a game that delivers:
+While Asuna is a traditional voxel sandbox game at its core, some provided gameplay features are listed below. For even more gameplay options, check out [ContentDB](https://content.minetest.net/) to find mods that can fulfill all of your wildest dreams.
 
-- Complex and rewarding new survival mechanics
-- Emergent gameplay based on new dimensions of world interaction
-- A deep progression system that brings players to new heights of power
+All gameplay elements listed below are made optional and configurable via `Settings > All Settings > Content: Games > Asuna`.
 
-...then it's up to you to construct these experiences because Asuna provides **none of this**! Asuna utilizes but a fraction of what the Minetest community has to offer to its fellow modders and players. Take a look at [ContentDB](https://content.minetest.net/) to find more mods that can fulfill all of your wildest dreams.
+### Nutrition
+
+Players in the world of Asuna benefit from helpful effects granted by staying well fed. A derivative of the "hunger" concept, Asuna revamps this familiar gameplay mechanic to be strictly beneficial to players in a way that aids in exploration and survival. Players will enjoy the following effects when they have eaten:
+
+- Increased movement speed (up to +25% when full)
+- The ability to sprint (+100% movement speed while holding the `aux1` key)
+- Health regeneration (chance to recover health every five seconds)
+- Resistance to poisonous foods (chance to lose nutrition instead of health)
+
+These effects are most pronounced when a player is fully satiated and will diminish gradually as a player becomes hungry. Hunger will only diminish these effects and cannot hurt players unless starvation is explicitly enabled via game settings (disabled by default). Other settings exist to disable nutrition altogether and to modify how slowly or how quickly players become hungry.
+
+This functionality is implemented using a modified version of the [Stamina](https://content.minetest.net/packages/sofar/stamina/) mod.
