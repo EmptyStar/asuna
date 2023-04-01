@@ -97,6 +97,9 @@ made to the below listed works are officially made on or after 25 January 2023.
 - Player Monoids
   - Location: ./mods/player_monoids/
   - License file: ./mods/player_monoids/COPYING
+- Simple Fast Inventory Buttons
+  - Location: ./mods/sfinv_buttons/
+  - License: ./mods/sfinv_buttons/README.md
 - Soup
   - Location: ./mods/soup/
   - License file: ./mods/soup/LICENSE.md
