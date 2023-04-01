@@ -1,0 +1,1 @@
+Adds a tab to the Simple Fast Inventory on which mods can add buttons for easy access.
