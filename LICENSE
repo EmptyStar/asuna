@@ -94,9 +94,16 @@ made to the below listed works are officially made on or after 25 January 2023.
   - Location: ./mods/plantlife_modpack/
   - License file: ./mods/plantlife_modpack/LICENSE
   - Changes were made to this work
+- Player Monoids
+  - Location: ./mods/player_monoids/
+  - License file: ./mods/player_monoids/COPYING
 - Soup
   - Location: ./mods/soup/
   - License file: ./mods/soup/LICENSE.md
+  - Changes were made to this work
+- Stamina
+  - Location: ./mods/stamina/
+  - License file: ./mods/stamina/README.txt
   - Changes were made to this work
 - Too Many Stones
   - Location: ./mods/too_many_stones/
