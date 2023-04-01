@@ -1450,6 +1450,14 @@ minetest.register_node("too_many_stones:howlite_block", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
+minetest.register_node("too_many_stones:howlite_cobble", {
+	description = S("Cobbled Howlite"),
+	tiles = {"tms_howlite_cobble.png"},
+	is_ground_content = false,
+	groups = {cracky = 3, white_stone = 1, stone = 2},
+	sounds = default.node_sound_stone_defaults(),
+})
+
 minetest.register_node("too_many_stones:howlite_brick", {
 	description = S("Howlite Brick"),
 	paramtype2 = "facedir",
