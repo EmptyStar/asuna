@@ -99,7 +99,11 @@ made to the below listed works are officially made on or after 25 January 2023.
   - License file: ./mods/player_monoids/COPYING
 - Simple Fast Inventory Buttons
   - Location: ./mods/sfinv_buttons/
-  - License: ./mods/sfinv_buttons/README.md
+  - License file: ./mods/sfinv_buttons/README.md
+- Show Wielded Item
+  - Location: ./mods/show_wielded_item/
+  - License file: ./mods/show_wielded_item/README.md
+  - Changes were made to this work
 - Soup
   - Location: ./mods/soup/
   - License file: ./mods/soup/LICENSE.md
