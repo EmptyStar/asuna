@@ -463,7 +463,7 @@ minetest.register_on_mods_loaded(function()
 		air = minetest.get_content_id("air"),
 		vine = minetest.get_content_id("ethereal:vine"),
 		water = minetest.get_content_id("default:water_source"), -- used for waterfalls below; unrelated to vines
-		water_flowing = minetest.get_content_id("default:water_flowing"), -- used for waterfalls below; unrelated to vines
+		water_flowing = minetest.get_content_id("default:water_flowing"), -- used for cave liquids below; unrelated to vines
 		lava = minetest.get_content_id("default:lava_source"), -- used for cave liquids below; unrelated to vines
 		lava_flowing = minetest.get_content_id("default:lava_flowing"), -- used for cave liquids below; unrelated to vines
 		stone = minetest.get_content_id("default:stone"),
@@ -712,7 +712,7 @@ minetest.register_on_mods_loaded(function()
 
 	local enclosing_nodes = valid_wall_stones
 
-	abdecor.register_advanced_decoration("cave_liquids",{
+	abdecor.register_advanced_decoration("asuna_cave_liquids",{
 		target = {
 			place_on = {
 				"group:stone",
