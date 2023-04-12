@@ -463,6 +463,9 @@ minetest.register_on_mods_loaded(function()
 		air = minetest.get_content_id("air"),
 		vine = minetest.get_content_id("ethereal:vine"),
 		water = minetest.get_content_id("default:water_source"), -- used for waterfalls below; unrelated to vines
+		water_flowing = minetest.get_content_id("default:water_flowing"), -- used for waterfalls below; unrelated to vines
+		lava = minetest.get_content_id("default:lava_source"), -- used for cave liquids below; unrelated to vines
+		lava_flowing = minetest.get_content_id("default:lava_flowing"), -- used for cave liquids below; unrelated to vines
 		stone = minetest.get_content_id("default:stone"),
 	}
 
@@ -700,6 +703,86 @@ minetest.register_on_mods_loaded(function()
 		end,
 		flags = {
 			liquid = true,
+		},
+	})
+
+	--[[
+		Cave ceiling liquids
+	]]
+
+	local enclosing_nodes = valid_wall_stones
+
+	abdecor.register_advanced_decoration("cave_liquids",{
+		target = {
+			place_on = {
+				"group:stone",
+			},
+			sidelen = 80,
+			spawn_by = {
+				"group:stone",
+			},
+			num_spawn_by = 9,
+			fill_ratio = 0.000015,
+			y_max = -30,
+			y_min = -31000,
+			flags = "all_ceilings",
+		},
+		fn = function(mapgen)
+			-- Get provided values
+			local va = mapgen.voxelarea
+			local vdata = mapgen.data
+			local vparam2 = mapgen.param2
+			local pos = mapgen.pos
+
+			-- Get stride values and set position
+			local ystride = va.ystride
+			local zstride = va.zstride
+			local pos = va:index(pos.x,pos.y,pos.z)
+
+			-- Liquid must be enclosed to its sides and above
+			for _,adjacent in ipairs({
+				ystride,
+				1,
+				-1,
+				zstride,
+				-zstride,
+			}) do
+				if not enclosing_nodes[vdata[pos + adjacent]] then
+					return -- liquid is not fully enclosed
+				end
+			end
+
+			-- Liquid must have sufficient clearance below
+			-- Scanning from bottom up should typically fail faster than top down
+			for below = pos - ystride * 8, pos - ystride, ystride do
+				if vdata[below] ~= minetest.CONTENT_AIR then
+					return -- not enough space between ceiling and ground
+				end
+			end
+
+			-- Fill the position and all air below with liquid based on climate + bias
+			-- Dry/hot climates are more likely to be lava, vice-versa with water
+			local liquid = (function()
+				local heatmap = minetest.get_mapgen_object("heatmap") or {}
+				local humiditymap = minetest.get_mapgen_object("humiditymap") or {}
+				local pos2d = mapgen.index2d(mapgen.pos)
+				local heat = heatmap[pos2d] or 50
+				local humidity = humiditymap[pos2d] or 50
+				local climate = 50 + (heat / 2 - 25) - (humidity / 2 - 25)
+				local pos_random = (pos ^ 2 + pos) % 38 * (pos % 2 == 0 and 1 or -1) + climate -- not actually random but good enough
+				return pos_random > 56 and {cids.lava,cids.lava_flowing} or {cids.water,cids.water_flowing} -- bias in favor of water
+			end)()
+			vdata[pos] = liquid[1]
+			pos = pos - ystride
+			while vdata[pos] == minetest.CONTENT_AIR do
+				vdata[pos] = liquid[2]
+				vparam2[pos] = 15
+				pos = pos - ystride
+			end
+		end,
+		flags = {
+			liquid = true,
+			param2 = true,
 		},
 	})
 end)
