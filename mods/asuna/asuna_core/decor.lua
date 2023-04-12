@@ -466,67 +466,77 @@ minetest.register_on_mods_loaded(function()
 		stone = minetest.get_content_id("default:stone"),
 	}
 
-	abdecor.register_advanced_decoration("vine",{
-		place_on = {
-			"group:stone",
-			"default:dirt",
+	abdecor.register_advanced_decoration("asuna_hanging_vines",{
+		target = {
+			place_on = {
+				"group:stone",
+				"default:dirt",
+			},
+			spawn_by = "air",
+			num_spawn_by = 5,
+			sidelen = 80,
+			fill_ratio = 0.3,
+			biomes = {
+				"swamp",
+				"alderswamp",
+				"marsh",
+				"junglee",
+				"bambooforest",
+				"jumble",
+				"livingjungle",
+			},
+			y_max = 31000,
+			y_min = 1,
+			flags = "all_ceilings",
 		},
-		spawn_by = "air",
-		num_spawn_by = 5,
-		sidelen = 80,
-		fill_ratio = 0.3,
-		biomes = {
-			"swamp",
-			"alderswamp",
-			"marsh",
-			"junglee",
-			"bambooforest",
-			"jumble",
-			"livingjungle",
-		},
-		y_max = 31000,
-		y_min = 1,
-		flags = "all_ceilings",
-	},function(pos, va, vdata, vparam2)
-		-- Get stride values and set position
-		local ystride = va.ystride
-		local zstride = va.zstride
-		pos = va:index(pos.x,pos.y,pos.z)
+	  fn = function(mapgen)
+			-- Get provided values
+			local pos = mapgen.pos
+			local va = mapgen.voxelarea
+			local vdata = mapgen.data
+			local vparam2 = mapgen.param2
 
-		-- Scan for dirt or surface nodes for a short distance above the position
-		for above = 1, 2 do
-			above = pos + above * ystride
-			if soil_nodes[vdata[above]] then
-				pos = above
-				break
+			-- Get stride values and set position
+			local ystride = va.ystride
+			local zstride = va.zstride
+			pos = va:index(pos.x,pos.y,pos.z)
+
+			-- Scan for dirt or surface nodes for a short distance above the position
+			for above = 1, 2 do
+				above = pos + above * ystride
+				if soil_nodes[vdata[above]] then
+					pos = above
+					break
+				end
 			end
-		end
 
-		-- List of cardinal directions relative to the current position
-		local cardinal = {
-			pos - 1,
-			pos + 1,
-			pos - zstride,
-			pos + zstride,
-		}
+			-- List of cardinal directions relative to the current position
+			local cardinal = {
+				pos - 1,
+				pos + 1,
+				pos - zstride,
+				pos + zstride,
+			}
 
-		-- Iterate over cardinal positions and place vines at and below those positions
-		for i = 1, 4 do
-			local dir = cardinal[i]
-			if vdata[dir] == cids.air then
-				for below = 0, ((dir ^ 2 + (dir + pos) % 3) % 4 + 2) do
-					below = dir - below * ystride
-					if vdata[below] == cids.air then
-						vdata[below] = cids.vine
-						vparam2[below] = i + 1
-					else
-						break
+			-- Iterate over cardinal positions and place vines at and below those positions
+			for i = 1, 4 do
+				local dir = cardinal[i]
+				if vdata[dir] == cids.air then
+					for below = 0, ((dir ^ 2 + (dir + pos) % 3) % 4 + 2) do
+						below = dir - below * ystride
+						if vdata[below] == cids.air then
+							vdata[below] = cids.vine
+							vparam2[below] = i + 1
+						else
+							break
+						end
 					end
 				end
 			end
-		end
-	end,{
-		param2 = true,
+		end,
+		flags = {
+			param2 = true,
+		},
 	})
 
 	--[[
@@ -623,64 +633,73 @@ minetest.register_on_mods_loaded(function()
 		valid_wall_stones[minetest.get_content_id(node)] = true
 	end
 
-	abdecor.register_advanced_decoration("waterfall",{
-		place_on = "default:water_source",
-		spawn_by = wall_stones,
-		num_spawn_by = 3,
-		sidelen = 80,
-		fill_ratio = 0.11,
-		biomes = asuna.biome_groups.shore,
-		y_max = 1,
-		y_min = 1,
-		flags = "liquid_surface",
-	},function(pos, va, vdata)
-		-- Get stride values and adjust position
-		local ystride = va.ystride
-		local zstride = va.zstride
-		pos = va:index(pos.x,pos.y + 1,pos.z)
-		local too_low_pos = 0
+	abdecor.register_advanced_decoration("asuna_waterfalls",{
+		target = {
+			place_on = "default:water_source",
+			spawn_by = wall_stones,
+			num_spawn_by = 3,
+			sidelen = 80,
+			fill_ratio = 0.11,
+			biomes = asuna.biome_groups.shore,
+			y_max = 1,
+			y_min = 1,
+			flags = "liquid_surface",
+		},
+		fn = function(mapgen)
+			-- Get provided values
+			local pos = mapgen.pos
+			local va = mapgen.voxelarea
+			local vdata = mapgen.data
 
-		-- Get stone wall direction
-		local cardinal = {
-			-1,
-			-zstride,
-			1,
-			zstride,
-		}
+			-- Get stride values and adjust position
+			local ystride = va.ystride
+			local zstride = va.zstride
+			pos = va:index(pos.x,pos.y + 1,pos.z)
+			local too_low_pos = 0
 
-		local found_stone = false
-		local check_wall = nil
-		for i = 1, 4 do
-			local wallpos = pos + cardinal[i]
-			local wallleft = cardinal[i % 4 + 1]
-			local wallright = cardinal[(i + 2) % 4 + 1]
-			check_wall = function(pos) -- is the entire row of wall nodes made of stone?
-				return valid_wall_stones[vdata[pos]] and valid_wall_stones[vdata[pos + wallleft]] and valid_wall_stones[vdata[pos + wallright]] and true or false
+			-- Get stone wall direction
+			local cardinal = {
+				-1,
+				-zstride,
+				1,
+				zstride,
+			}
+
+			local found_stone = false
+			local check_wall = nil
+			for i = 1, 4 do
+				local wallpos = pos + cardinal[i]
+				local wallleft = cardinal[i % 4 + 1]
+				local wallright = cardinal[(i + 2) % 4 + 1]
+				check_wall = function(pos) -- is the entire row of wall nodes made of stone?
+					return valid_wall_stones[vdata[pos]] and valid_wall_stones[vdata[pos + wallleft]] and valid_wall_stones[vdata[pos + wallright]] and true or false
+				end
+				if check_wall(wallpos) then
+					pos = wallpos
+					too_low_pos = pos
+					found_stone = true
+					break
+				end
 			end
-			if check_wall(wallpos) then
-				pos = wallpos
-				too_low_pos = pos
-				found_stone = true
-				break
+
+			-- Do nothing if no stone wall found
+			if not found_stone then
+				return
 			end
-		end
 
-		-- Do nothing if no stone wall found
-		if not found_stone then
-			return
-		end
+			-- Iterate above 'rows' of stone wall until we find something that isn't stone
+			repeat
+				pos = pos + ystride
+			until not check_wall(pos)
 
-		-- Iterate above 'rows' of stone wall until we find something that isn't stone
-		repeat
-			pos = pos + ystride
-		until not check_wall(pos)
-
-		-- Set two below stone position to water if higher than one node
-		local placepos = pos - 2 * ystride
-		if placepos > too_low_pos then
-			vdata[placepos] = cids.water
-		end
-	end,{
-		liquid = true,
+			-- Set two below stone position to water if higher than one node
+			local placepos = pos - 2 * ystride
+			if placepos > too_low_pos then
+				vdata[placepos] = cids.water
+			end
+		end,
+		flags = {
+			liquid = true,
+		},
 	})
 end)

@@ -93,28 +93,32 @@ local cids = {
 	top = minetest.get_content_id("youngtrees:youngtree_top"),
 }
 
-abdecor.register_advanced_decoration("youngtree",{
-	place_on = "default:dirt_with_grass",
-	sidelen = 80,
-	fill_ratio = 0.00032,
-	y_min = 3,
-	y_max = 31000,
-	biomes = {
-		"grassland",
-		"deciduous_forest",
-		"grassytwo",
-		"jumble",
+abdecor.register_advanced_decoration("plantlife_youngtrees",{
+	target = {
+		place_on = "default:dirt_with_grass",
+		sidelen = 80,
+		fill_ratio = 0.00032,
+		y_min = 3,
+		y_max = 31000,
+		biomes = {
+			"grassland",
+			"deciduous_forest",
+			"grassytwo",
+			"jumble",
+		},
 	},
-},function(pos, va, vdata)
-	-- Remove mapgen node
-	pos = va:index(pos.x,pos.y + 1,pos.z)
-	vdata[pos] = cids.air
+	fn = function(mapgen)
+		-- Get provided values
+		local va = mapgen.voxelarea
+		local pos = va:index(mapgen.pos.x,mapgen.pos.y + 1,mapgen.pos.z)
+		local vdata = mapgen.data
 
-	-- Place tree only if all air above the mapgen node
-	local ystride = va.ystride
-	if vdata[pos + 2 * ystride] == cids.air and vdata[pos + ystride] == cids.air then
-		vdata[pos] = cids.bottom
-		vdata[pos + ystride] = cids.middle
-		vdata[pos + 2 * ystride] = cids.top
-	end
-end)
+		-- Place tree only if all air above the mapgen node
+		local ystride = va.ystride
+		if vdata[pos + 2 * ystride] == cids.air and vdata[pos + ystride] == cids.air then
+			vdata[pos] = cids.bottom
+			vdata[pos + ystride] = cids.middle
+			vdata[pos + 2 * ystride] = cids.top
+		end
+	end,
+})

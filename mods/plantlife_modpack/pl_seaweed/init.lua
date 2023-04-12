@@ -131,97 +131,104 @@ local cids = {
 	water = minetest.get_content_id("default:water_source"),
 }
 
-abdecor.register_advanced_decoration("seaweed",{
-	place_on = {
-		"default:sand",
-		"default:dirt_with_grass",
-		"default:dirt_with_rainforest_litter",
-		"livingjungle:jungleground",
-		"livingjungle:leafyjungleground",
-		"naturalbiomes:alderswamp_litter",
+abdecor.register_advanced_decoration("plantlife_seaweed",{
+	target = {
+		place_on = {
+			"default:sand",
+			"default:dirt_with_grass",
+			"default:dirt_with_rainforest_litter",
+			"livingjungle:jungleground",
+			"livingjungle:leafyjungleground",
+			"naturalbiomes:alderswamp_litter",
+		},
+		spawn_by = "default:water_source",
+		num_spawn_by = 3,
+		sidelen = 80,
+		fill_ratio = 0.4,
+		biomes = warm_shores,
+		y_max = 1,
+		y_min = 1,
 	},
-	spawn_by = "default:water_source",
-	num_spawn_by = 3,
-	sidelen = 80,
-	fill_ratio = 0.4,
-	biomes = warm_shores,
-	y_max = 1,
-	y_min = 1,
-},function(pos, va, vdata)
-	-- Get stride values
-	local ystride = va.ystride
-	local zstride = va.zstride
+	fn = function(mapgen)
+		-- Get provided values
+		local va = mapgen.voxelarea
+		local pos = va:index(mapgen.pos.x,mapgen.pos.y,mapgen.pos.z)
+		local vdata = mapgen.data
 
-	-- Set mapgen node to air
-	pos = va:index(pos.x,pos.y,pos.z)
-	vdata[pos + ystride] = cids.air
+		-- Get stride values
+		local ystride = va.ystride
+		local zstride = va.zstride
 
-	-- List of potential open water spots where seaweed can be placed
-	local open_water = {0,0,0,0}
+		-- Set mapgen node to air
+		vdata[pos + ystride] = cids.air
 
-	-- Semi-pseudo-random number for how many nodes from shore to place seaweed
-	local scan_limit = (pos ^ 2 + 1) % 4 + 2
+		-- List of potential open water spots where seaweed can be placed
+		local open_water = {0,0,0,0}
 
-	-- Scan -x for the furthest available open water
-	for xscan = 1, scan_limit do
-		local ipos = pos - xscan
-		if vdata[ipos] == cids.water then
-			open_water[1] = ipos + ystride
-		else
-			break
+		-- Semi-pseudo-random number for how many nodes from shore to place seaweed
+		local scan_limit = (pos ^ 2 + 2 * pos + 1) % 4 + 2
+
+		-- Scan -x for the furthest available open water
+		for xscan = 1, scan_limit do
+			local ipos = pos - xscan
+			if vdata[ipos] == cids.water then
+				open_water[1] = ipos + ystride
+			else
+				break
+			end
 		end
-	end
 
-	-- Scan +x for the furthest available open water
-	for xscan = 1, scan_limit do
-		local ipos = pos + xscan
-		if vdata[ipos] == cids.water then
-			open_water[2] = ipos + ystride
-		else
-			break
+		-- Scan +x for the furthest available open water
+		for xscan = 1, scan_limit do
+			local ipos = pos + xscan
+			if vdata[ipos] == cids.water then
+				open_water[2] = ipos + ystride
+			else
+				break
+			end
 		end
-	end
 
-	-- Scan -z for the furthest available open water
-	for zscan = 1, scan_limit do
-		local ipos = pos - zscan * zstride
-		if vdata[ipos] == cids.water then
-			open_water[3] = ipos + ystride
-		else
-			break
+		-- Scan -z for the furthest available open water
+		for zscan = 1, scan_limit do
+			local ipos = pos - zscan * zstride
+			if vdata[ipos] == cids.water then
+				open_water[3] = ipos + ystride
+			else
+				break
+			end
 		end
-	end
 
-	-- Scan +z for the furthest available open water
-	for zscan = 1, scan_limit do
-		local ipos = pos + zscan * zstride
-		if vdata[ipos] == cids.water then
-			open_water[4] = ipos + ystride
-		else
-			break
+		-- Scan +z for the furthest available open water
+		for zscan = 1, scan_limit do
+			local ipos = pos + zscan * zstride
+			if vdata[ipos] == cids.water then
+				open_water[4] = ipos + ystride
+			else
+				break
+			end
 		end
-	end
 
-	-- Iterate through open water and generate seaweed where possible
-	for i = 1, 4 do
-		local owpos = open_water[i]
-		if owpos ~= 0 then -- valid open water
-			vdata[owpos] = seaweed_selector[(owpos ^ 2 + pos % 5) % 3 + 1]
+		-- Iterate through open water and generate seaweed where possible
+		for i = 1, 4 do
+			local owpos = open_water[i]
+			if owpos ~= 0 then -- valid open water
+				vdata[owpos] = seaweed_selector[(owpos ^ 2 + pos % 5) % 3 + 1]
+			end
 		end
-	end
-end)
-
-minetest.register_decoration({
-	deco_type = "simple",
-	place_on = "default:sand",
-	sidelen = 80,
-	fill_ratio = 0.0025,
-	biomes = warm_shores,
-	y_max = 1,
-	y_min = 1,
-	decoration = {
-		"flowers:seaweed_2",
-		"flowers:seaweed_3",
-		"flowers:seaweed_4",
-	},
+	end,
 })
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = "default:sand",
+		sidelen = 80,
+		fill_ratio = 0.0025,
+		biomes = warm_shores,
+		y_max = 1,
+		y_min = 1,
+		decoration = {
+			"flowers:seaweed_2",
+			"flowers:seaweed_3",
+			"flowers:seaweed_4",
+		},
+	})
