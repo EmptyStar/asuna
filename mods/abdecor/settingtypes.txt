@@ -1,2 +1,3 @@
 abdecor_ocean_waterfalls (Generate ocean waterfalls in Minetest Game worlds) bool false
 abdecor_hanging_vines (Generate hanging vines in Ethereal worlds) bool false
+abdecor_boulders (Generate boulders in Minetest Game worlds) bool false

@@ -217,64 +217,73 @@ local bush = {
 	leaves = minetest.get_content_id("bushes:BushLeaves2"),
 }
 
-abdecor.register_advanced_decoration("bushes",{
-	place_on = "default:dirt_with_grass",
-	sidelen = 80,
-	fill_ratio = 0.002,
-	y_min = 2,
-	y_max = 31000,
-	biomes = {
-		"grassland",
-		"deciduous_forest",
-		"grassytwo",
-		"jumble",
-		"marsh",
+abdecor.register_advanced_decoration("plantlife_bushes",{
+	target = {
+		place_on = "default:dirt_with_grass",
+		sidelen = 80,
+		fill_ratio = 0.002,
+		y_min = 2,
+		y_max = 31000,
+		biomes = {
+			"grassland",
+			"deciduous_forest",
+			"grassytwo",
+			"jumble",
+			"marsh",
+		},
 	},
-},function(pos, va, vdata, vparam2)
-	-- Adjust position and get stride values
-	pos = va:index(pos.x,pos.y + 1,pos.z)
-	local ystride = va.ystride
-	local zstride = va.zstride
+	fn = function(mapgen)
+		-- Get provided values
+		local va = mapgen.voxelarea
+		local pos = va:index(mapgen.pos.x,mapgen.pos.y + 1,mapgen.pos.z)
+		local vdata = mapgen.data
+		local vparam2 = mapgen.param2
 
-	-- Fail if no air above the center position
-	if not vdata[pos + ystride] == bush.air then
-		return
-	end
+		-- Get stride values
+		local ystride = va.ystride
+		local zstride = va.zstride
 
-	-- Place center bush stem with random rotation and bush leaves on top of it
-	vdata[pos] = bush.center
-	vparam2[pos] = pos % 2
-	vdata[pos + ystride] = bush.leaves
+		-- Fail if no air above the center position
+		if not vdata[pos + ystride] == bush.air then
+			return
+		end
 
-	-- Random-ish second leaves above if possible
-	if pos % 5 < 3 and vdata[pos + 2 * ystride] == bush.air then
-		vdata[pos + 2 * ystride] = bush.leaves
-	end
+		-- Place center bush stem with random rotation and bush leaves on top of it
+		vdata[pos] = bush.center
+		vparam2[pos] = pos % 2
+		vdata[pos + ystride] = bush.leaves
 
-	-- Determine how many branches to attempt
-	local num_branches = pos % 17 % 3
-	if num_branches > 0 then
-		-- List of cardinal directions relative to the current position
-		local cardinal = {
-			pos - zstride,
-			pos - 1,
-			pos + zstride,
-			pos + 1,
-		}
+		-- Random-ish second leaves above if possible
+		if pos % 5 < 3 and vdata[pos + 2 * ystride] == bush.air then
+			vdata[pos + 2 * ystride] = bush.leaves
+		end
 
-		for i = 1, num_branches do
-			local cindex = (pos + i ^ 2) % 4 + 1
-			local dir = cardinal[cindex]
-			if vdata[dir] == bush.air and vdata[dir + ystride] == bush.air then
-				vdata[dir] = bush.branch
-				vparam2[dir] = cindex - 1
-				vdata[dir + ystride] = bush.leaves
-				if i % 2 == 1 and vdata[dir + 2 * ystride] == bush.air then
-					vdata[dir + 2 * ystride] = bush.leaves
+		-- Determine how many branches to attempt
+		local num_branches = pos % 17 % 3
+		if num_branches > 0 then
+			-- List of cardinal directions relative to the current position
+			local cardinal = {
+				pos - zstride,
+				pos - 1,
+				pos + zstride,
+				pos + 1,
+			}
+
+			for i = 1, num_branches do
+				local cindex = (pos + i ^ 2) % 4 + 1
+				local dir = cardinal[cindex]
+				if vdata[dir] == bush.air and vdata[dir + ystride] == bush.air then
+					vdata[dir] = bush.branch
+					vparam2[dir] = cindex - 1
+					vdata[dir + ystride] = bush.leaves
+					if i % 2 == 1 and vdata[dir + 2 * ystride] == bush.air then
+						vdata[dir + 2 * ystride] = bush.leaves
+					end
 				end
 			end
 		end
-	end
-end,{
-	param2 = true,
+	end,
+	flags = {
+		param2 = true,
+	},
 })
