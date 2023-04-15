@@ -51,3 +51,7 @@ Players can find caches of useful items hidden throughout the caves and landscap
 - **Ocean Chests**: These chests are found in deep ocean amidst dense kelp and near shipwrecks, and they contain a variety of useful items in addition to aquatic decorations.
 
 These chests are implemented by a modified version of [LootChests modpack](https://content.minetest.net/packages/mt-mods/lootchest_modpack/).
+
+### Animals
+
+Asuna is home to a number of wild animals which can be found roaming about their natural habitats. These animals are highly interactive and can be fed, bred, tamed, and hunted. These animals are implemented via the [Animalia](https://content.minetest.net/packages/ElCeejo/animalia/) mod which describes the animals in greater detail.

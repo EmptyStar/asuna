@@ -60,6 +60,7 @@ for i = 1, #animalia.animals do
 	dofile(path.."/mobs/" .. name .. ".lua")
 end
 
+minetest.settings:set_bool("spawn_mobs", minetest.settings:get_bool("asuna.animals", true))
 if minetest.settings:get_bool("spawn_mobs", true) then
 	dofile(path.."/api/spawning.lua")
 end
