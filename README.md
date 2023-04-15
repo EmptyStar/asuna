@@ -40,3 +40,14 @@ Players in the world of Asuna benefit from helpful effects granted by staying we
 These effects are most pronounced when a player is fully satiated and will diminish gradually as a player becomes hungry. Hunger will only diminish these effects and cannot hurt players unless starvation is explicitly enabled via game settings (disabled by default). Other settings exist to disable nutrition altogether and to modify how slowly or how quickly players become hungry.
 
 This functionality is implemented using a modified version of the [Stamina](https://content.minetest.net/packages/sofar/stamina/) mod.
+
+### Loot Chests
+
+Players can find caches of useful items hidden throughout the caves and landscapes of Asuna. Loot chests, their contents, and their distribution are dependent on the environment in which they are found.
+
+- **Baskets**: Found next to hills, trees, bushes, and in shallow caves, baskets contain items such as food, grasses, wood, seeds, flowers, and leaves.
+- **Urns**: These stone vessels are found at a limited depth in caves and can contain tools, stones, gems, crystals, ores, and some limited food items.
+- **Ancient Chests**: These old stone chests are found rarely in caves and contain high quality tools, rare gems, mese crystals, and many exotic items that are otherwise rare in the world.
+- **Ocean Chests**: These chests are found in deep ocean amidst dense kelp and near shipwrecks, and they contain a variety of useful items in addition to aquatic decorations.
+
+These chests are implemented by a modified version of [LootChests modpack](https://content.minetest.net/packages/mt-mods/lootchest_modpack/).

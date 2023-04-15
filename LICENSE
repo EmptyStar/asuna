@@ -70,6 +70,9 @@ made to the below listed works are officially made on or after 25 January 2023.
 - Leafstride
   - Location: ./mods/leafstride/
   - License file: ./mods/leafstride/LICENSE
+- LootChests
+  - Location: ./mods/lootchests/
+  - License file: ./mods/lootchests/README.md
 - Wilhelmines Living Jungle
   - Location: ./mods/livingjungle/
   - License file: ./mods/livingjungle/LICENSE
