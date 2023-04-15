@@ -25,7 +25,7 @@ abdecor.register_advanced_decoration = function(name, def)
   local is_ceiling = false
   local is_water_surface = false
 	def.target.flags = def.target.flags or ""
-  if def.target.flags and def.target.flags:find("all_floors") and def.target.flags("all_ceilings") then
+  if def.target.flags and def.target.flags:find("all_floors") and def.target.flags:find("all_ceilings") then
     minetest.warn("[abdecor] Advanced decoration '" .. name .. "' specifies all_floors and all_ceilings which the abdecor API does not support.")
     return false
   else
