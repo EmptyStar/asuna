@@ -24,6 +24,9 @@ asuna.nutrition_starvation (Nutrition: starvation) bool false
 #    items and materials that reward players as they explore.
 asuna.loot_chests (Loot Chests) bool true
 
+#    Enable animals that roam about the world.
+asuna.animals (Animals) bool true
+
 #    In creative mode players are able to dig all kind of blocks nearly
 #    instantly, and have access to unlimited resources.
 #    Some of the functionality is only available if this setting is present
