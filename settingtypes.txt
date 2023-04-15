@@ -19,6 +19,11 @@ asuna.nutrition_exhaustion_level (Nutrition: exhaustion level) float 160
 #    from suffering health loss due to hunger.
 asuna.nutrition_starvation (Nutrition: starvation) bool false
 
+#    Enable loot chests which causes chests and other loot containers to
+#    generate randomly throughout the world. These chests contain many useful
+#    items and materials that reward players as they explore.
+asuna.loot_chests (Loot Chests) bool true
+
 #    In creative mode players are able to dig all kind of blocks nearly
 #    instantly, and have access to unlimited resources.
 #    Some of the functionality is only available if this setting is present
