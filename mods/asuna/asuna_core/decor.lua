@@ -45,7 +45,7 @@ local flower_colors = {
 		"beautiflowers:victoria",
 		"beautiflowers:virginia",
 		"beautiflowers:xenia",
-		"beautiflowers:zadia",
+		"beautiflowers:zaida",
 	},
 	orange = {
 		"beautiflowers:dafne",
