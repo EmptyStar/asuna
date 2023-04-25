@@ -6,14 +6,14 @@ abdecor.registered_advanced_decorations = {}
 abdecor.register_advanced_decoration = function(name, def)
 	-- Ensure that all necessary arguments are defined
 	if not name or not def.target or not def.fn then
-    minetests.warn("[abdecor] Advanced decoration '" .. (name or "???") .. "' was not provided with all necessary values.")
+    minetest.warn("[abdecor] Advanced decoration '" .. (name or "???") .. "' was not provided with all necessary values.")
 		return false
 	end
 
 	-- Ensure that the name isn't already in use
 	local mapgen = nil
 	if abdecor.registered_names[name] then
-    minetests.warn("[abdecor] Advanced decoration '" .. name .. "' was already registered.")
+    minetest.warn("[abdecor] Advanced decoration '" .. name .. "' was already registered.")
 		return false
 	else
 		mapgen = {}
@@ -148,6 +148,10 @@ minetest.register_on_generated(function(minp, maxp, seed)
 		end
 	end
 
+	mapgen.calc_lighting = function(p1,p2,propagate_shadow)
+		return mapgen.vm:calc_lighting(p1,p2,propagate_shadow)
+	end
+
 	local is_liquid = false
 
 	-- Place any targeted decorations that were generated
@@ -186,6 +190,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 					maxp = maxp,
 					seed = seed,
 					place_schematic = mapgen.place_schematic,
+					calc_lighting = mapgen.calc_lighting,
 					index2d = function(x,z) -- (portions of this function © FaceDeer 2018, licensed MIT, copied from https://github.com/minetest-mods/mapgen_helper/blob/2521562a42472271d9d761f2b1e84ead59250a14/noise_manager.lua)
 						if type(x) == "table" then -- accept x/y/z pos table
 							z = x.z
@@ -220,16 +225,3 @@ minetest.register_on_generated(function(minp, maxp, seed)
 		end
 	end
 end)
-
--- Load bundled decorations if enabled
-if minetest.settings:get_bool("abdecor_ocean_waterfalls",false) and minetest.get_modpath("default") then
-	dofile(modpath .. "/ocean_waterfalls.lua")
-end
-
-if minetest.settings:get_bool("abdecor_hanging_vines",false) and minetest.get_modpath("ethereal") then
-	dofile(modpath .. "/hanging_vines.lua")
-end
-
-if minetest.settings:get_bool("abdecor_boulders",false) and minetest.get_modpath("default") then
-	dofile(modpath .. "/boulders.lua")
-end

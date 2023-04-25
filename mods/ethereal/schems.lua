@@ -62,13 +62,34 @@ add_schem({"ethereal:bamboo_dirt"}, 0.002, {"sakura"}, 7, 100,
 	"ethereal:bamboo_dirt", 6)
 
 -- redwood tree
-add_schem({"default:dirt_with_dry_grass"}, 0.0005, {"mesa"}, 1, 100,
+add_schem({"default:dirt_with_dry_grass"}, 0.000625, {"mesa"}, 6, 31000,
 	ethereal.redwood_tree, ethereal.mesa, nil,
 	"default:dirt_with_dry_grass", 8)
 
 -- banana tree
 add_schem({"ethereal:grove_dirt"}, 0.004, {"grove"}, 1, 100,
 	ethereal.bananatree, ethereal.grove)
+
+--[[minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = {"ethereal:grove_dirt"},
+	sidelen = 16,
+	noise_params = {
+		offset = -0.0038,
+		scale = 0.021,
+		spread = {x = 20, y = 20, z = 20},
+		seed = 4,
+		octaves = 2,
+		persist = 0.735,
+		lacunarity = 0.5,
+	},
+	biomes = {"grove"},
+	y_min = 1,
+	y_max = 64,
+	schematic = ethereal.bananatree,
+	flags = "place_center_x,place_center_z",
+	rotation = "random",
+})]]
 
 -- healing tree
 add_schem({"default:dirt_with_snow","default:ice","ethereal:crystal_grass"}, 0.01, {"taiga","frost","frost_floatland"}, 120, 140,
@@ -83,6 +104,9 @@ add_schem({"ethereal:crystal_dirt"}, 0.01, {"frost", "frost_floatland"}, 1, 1750
 add_schem("ethereal:mushroom_dirt", 0.02, {"mushroom"}, 1, 100,
 	ethereal.mushroomone, ethereal.mushroom, nil,
 	"ethereal:mushroom_dirt", 8)
+
+add_schem("default:dirt_with_grass", 0.000075, {"jumble"}, 1, 100,
+	ethereal.mushroomone, ethereal.mushroom)
 
 -- small lava crater
 add_schem("ethereal:fiery_dirt", 0.01, {"fiery"}, 1, 100,
@@ -161,7 +185,7 @@ add_schem({"ethereal:bamboo_dirt"}, 0.08, {"bamboo"}, 1, 100, ethereal.bush,
 	ethereal.bamboo)
 
 -- vine tree
-add_schem({"default:dirt_with_grass"}, 0.02, {"swamp"}, 1, 100,
+add_schem({"default:dirt_with_grass"}, 0.02, {"swamp"}, 1, 31000,
 	ethereal.vinetree, ethereal.swamp)
 
 -- lemon tree
@@ -249,16 +273,16 @@ minetest.register_decoration({
 	place_on = {
 		"default:dirt_with_dry_grass", "default:dry_dirt_with_dry_grass"},
 	sidelen = 16,
-	--[[noise_params = {
-		offset = -0.004,
-		scale = 0.01,
-		spread = {x = 100, y = 100, z = 100},
+	noise_params = {
+		offset = -0.00525,
+		scale = 0.0125,
+		spread = {x = 7, y = 7, z = 7},
 		seed = 90155,
-		octaves = 3,
-		persist = 0.7,
-		lacunarity = 2.0
-	},]]
-	fill_ratio = 0.0075,
+		octaves = 2,
+		persist = 0.8,
+		lacunarity = 1.5,
+	},
+	--fill_ratio = 0.0075,
 	biomes = {"mesa"},
 	y_min = 1,
 	y_max = 31000,
@@ -317,6 +341,24 @@ end
 
 
 -- place waterlily in beach areas
+local sandy_biomes = {}
+local desert_biomes = {
+	desert = true,
+	sandstone = true,
+	desert_shore = true,
+	sandstone_shore = true,
+	desert_below = true,
+	sandstone_below = true,
+}
+for biome,def in pairs(asuna.biomes) do
+	if def.shore == "default:sand" and
+		(def.ocean == "temperate" or def.ocean == "tropical") and
+		not desert_biomes[biome]
+	then
+		table.insert(sandy_biomes,biome)
+	end
+end
+
 minetest.register_decoration({
 	deco_type = "schematic",
 	place_on = {"default:sand"},
@@ -329,8 +371,7 @@ minetest.register_decoration({
 		octaves = 3,
 		persist = 0.7
 	},
-	biomes = {"desert_ocean", "plains_ocean", "sandclay",
-		"mesa_ocean", "grove_ocean", "deciduous_forest_ocean", "swamp_ocean"},
+	biomes = sandy_biomes,
 	y_min = 0,
 	y_max = 0,
 	schematic = ethereal.waterlily,

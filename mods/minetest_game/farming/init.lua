@@ -71,7 +71,7 @@ farming.register_plant("farming:cotton", {
 	groups = {flammable = 4},
 })
 
-minetest.register_decoration({
+--[[minetest.register_decoration({
 	name = "farming:cotton_wild",
 	deco_type = "simple",
 	place_on = {"default:dry_dirt_with_dry_grass"},
@@ -84,11 +84,34 @@ minetest.register_decoration({
 		octaves = 3,
 		persist = 0.7
 	},
-	biomes = {"savanna"},
+	biomes = {"plains","savanna"},
 	y_max = 31000,
 	y_min = 1,
 	decoration = "farming:cotton_wild",
-})
+})]]
+
+for i,crop in ipairs({
+	"wheat",
+	"cotton",
+}) do
+	minetest.register_decoration(asuna.features.crops[crop].inject_decoration({
+		name = "farming:" .. crop,
+		deco_type = "simple",
+		sidelen = 8,
+		noise_params = {
+			offset = -0.4125,
+			scale = 0.3575,
+			spread = {x = 14, y = 14, z = 14},
+			seed = 21 + i,
+			octaves = 2,
+			persist = 0.62,
+			lacunarity = 0.675,
+		},
+		y_max = 31000,
+		y_min = 1,
+		decoration = "farming:" .. crop .. "_8",
+	}))
+end
 
 minetest.register_craftitem("farming:string", {
 	description = S("String"),

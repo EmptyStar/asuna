@@ -2,20 +2,6 @@
   Biome definitions
 ]]
 
--- Caverealms biome references
-local caverealms_biomes = {
-  none = 0,
-  moss = 1,
-  fungal = 2,
-  algae = 3,
-  glacier = 4,
-  deep_glacier = 5,
-  fire = 6,
-  salt = 7,
-  glow_obsidian = 8,
-  coal = 9,
-}
-
 asuna.biomes = {
   mountain = {
     heat = 50,
@@ -33,13 +19,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "bare",
-    caverealm = caverealms_biomes.none,
+    cave = "none",
   },
 
   grassland = {
     heat = 50,
-    humidity = 50,
-    y_min = 2,
+    humidity = 51,
+    y_min = 4,
     y_max = 92,
     y_blend = 4,
     nodes = {
@@ -53,14 +39,14 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
   },
 
   underground = {
     heat = 50,
     humidity = 50,
     y_min = -31000,
-    y_max = -257,
+    y_max = -31000,
     nodes = {
       "default:stone", 1,
       "default:stone", 1,
@@ -72,13 +58,14 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "bare",
-    caverealm = caverealms_biomes.none, -- is overridden in Caverealms biome selection
+     -- is overridden in Caverealms biome selection
+    cave = "none", -- will probably not exist in mapgen
   },
 
   plains = {
     heat = 56,
     humidity = 32,
-    y_min = 2,
+    y_min = 4,
     y_max = 92,
     y_blend = 4,
     nodes = {
@@ -88,17 +75,18 @@ asuna.biomes = {
     flowers = {"yellow","white"},
     mushrooms = {},
     animals = {"chicken","horse","pig"},
-    crops = {"corn","millet"},
+    crops = {"corn","millet","wheat","cotton"},
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "dry",
+    dungeon = "travertine",
   },
 
   prairie = {
     heat = 42,
     humidity = 47,
-    y_min = 2,
+    y_min = 4,
     y_max = 32,
     y_blend = 4,
     nodes = {
@@ -112,13 +100,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "dorwinion",
   },
 
   dorwinion = {
     heat = 49,
     humidity = 42,
-    y_min = 2,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "dorwinion:dorwinion_grass", 1,
@@ -136,37 +124,38 @@ asuna.biomes = {
       alt = "dorwinion:dorwinion_brick",
       stair = "stairs:stair_dorwinion_brick",
     },
-    caverealm = caverealms_biomes.moss,
+    cave = "dorwinion",
   },
 
   quicksand = {
-    heat = 67,
-    humidity = 85,
-    y_min = 1,
-    y_max = 2,
+    heat = 72,
+    humidity = 92,
+    y_min = 0,
+    y_max = 0,
     nodes = {
-      "ethereal:quicksand2", 3,
-      "default:gravel", 1,
+      "ethereal:quicksand2", 2,
+      "ethereal:quicksand2", 2,
     },
     flowers = {},
     mushrooms = {},
     animals = {},
     crops = {},
-    shore = "ethereal:quicksand2",
+    shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.fungal,
+    cave = "fungal",
     dungeon = "mudstone",
+    y_blend = 1,
   },
 
   alpine = {
     heat = 25,
     humidity = 36,
-    y_min = 2,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "naturalbiomes:alpine_litter", 1,
-      "naturalbiomes:alpine_rock", 16,
+      "naturalbiomes:alpine_rock", 32,
     },
     flowers = {"black","yellow","cyan","white"},
     mushrooms = {"brown"},
@@ -175,15 +164,15 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "cold",
-    caverealm = caverealms_biomes.moss,
+    cave = "moss",
     dungeon = "granite_white",
   },
 
   desert = {
     heat = 52,
     humidity = 11,
-    y_min = 2,
-    y_max = 42,
+    y_min = 4,
+    y_max = 31000,
     y_blend = 6,
     nodes = {
       "default:desert_sand", 1,
@@ -198,17 +187,17 @@ asuna.biomes = {
     seabed = "default:sand",
     ocean = "temperate",
     dungeon = {
-      node = "default:sandstone",
-      alt = "default:sandstone_brick",
-      stair = "stairs:stair_sandstone_brick",
+      node = "default:sandstonebrick",
+      alt = "default:sandstonebrick",
+      stair = "stairs:stair_sandstonebrick",
     },
-    caverealm = caverealms_biomes.coal,
+    cave = "coal",
   },
 
   fiery = {
-    heat = 90,
-    humidity = 2,
-    y_min = 2,
+    heat = 86,
+    humidity = 3,
+    y_min = 4,
     y_max = 46,
     y_blend = 2,
     nodes = {
@@ -222,39 +211,43 @@ asuna.biomes = {
     shore = "default:sandstone",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.fire,
+    cave = "fire",
     dungeon = "basalt",
   },
 
-  terracotta = {
-    heat = 82,
-    humidity = 10,
-    y_min = 2,
+  everness_forsaken_desert = {
+    heat = 85,
+    humidity = 12,
+    y_min = 4,
     y_max = 31000,
     nodes = {
-      "terracotta:terracotta_1", 1,
-      "terracotta:terracotta_1", 16,
-      "default:desert_stone",
+      "everness:forsaken_desert_sand", 1,
+      "everness:forsaken_desert_sand", 1,
+      "everness:forsaken_desert_stone",
     },
     flowers = {},
     mushrooms = {},
     animals = {},
     crops = {},
-    shore = "default:sand",
-    seabed = "default:sand",
-    ocean = "temperate",
-    caverealm = caverealms_biomes.coal,
-    dungeon = "slate",
+    shore = "everness:dry_ocean_dirt",
+    seabed = "everness:dry_ocean_dirt",
+    ocean = "forsaken_desert",
+    cave = "forsaken_desert",
+    dungeon = {
+      node = "everness:forsaken_desert_brick",
+      alt = "everness:forsaken_desert_brick_red",
+      stair = "stairs:stair_forsaken_desert_brick",
+    },
   },
 
   outback = {
-    heat = 89,
-    humidity = 22,
-    y_min = 2,
+    heat = 87,
+    humidity = 29,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "naturalbiomes:outback_litter", 1,
-      "naturalbiomes:outback_ground", 16,
+      "naturalbiomes:outback_ground", 32,
       "default:desert_stone",
     },
     flowers = {"yellow","red","white"},
@@ -264,18 +257,18 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.coal,
+    cave = "forsaken_desert",
     dungeon = "gabbro",
   },
 
   sandstone = {
     heat = 74,
-    humidity = 9,
-    y_min = 2,
+    humidity = 7,
+    y_min = 4,
     y_max = 31000,
     nodes = {
-      "default:sandstone", 1,
-      "default:sandstone", 16,
+      "default:sand", 1,
+      "default:sandstone", 32,
       "default:desert_stone",
     },
     flowers = {},
@@ -285,18 +278,18 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.coal,
+    cave = "coal",
     dungeon = {
-      node = "default:sandstone",
-      alt = "default:sandstone_brick",
-      stair = "stairs:stair_sandstone_brick",
+      node = "default:sandstonebrick",
+      alt = "default:sandstonebrick",
+      stair = "stairs:stair_sandstonebrick",
     },
   },
 
   savanna = {
     heat = 57,
     humidity = 29,
-    y_min = 2,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "naturalbiomes:savannalitter", 1,
@@ -305,17 +298,18 @@ asuna.biomes = {
     flowers = {"orange","yellow"},
     mushrooms = {},
     animals = {"horse","cat","chicken"},
-    crops = {"aloe","yucca","jute","millet"},
+    crops = {"aloe","yucca","jute","millet","cotton"},
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "dry",
+    dungeon = "travertine",
   },
 
   mediterranean = {
-    heat = 85,
-    humidity = 26,
-    y_min = 2,
+    heat = 89,
+    humidity = 32,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "naturalbiomes:mediterran_litter", 1,
@@ -324,18 +318,18 @@ asuna.biomes = {
     flowers = {"green","white","purple","black"},
     mushrooms = {},
     animals = {"bird","cat","chicken"},
-    crops = {"aloe","chilie","yucca","jute","pepper","millet"},
+    crops = {"aloe","chilie","yucca","jute","pepper","millet","cotton"},
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "dry",
     dungeon = "marble",
   },
 
   mushroom = {
-    heat = 64,
-    humidity = 82,
-    y_min = 2,
+    heat = 70,
+    humidity = 100,
+    y_min = 4,
     y_max = 24,
     y_blend = 4,
     nodes = {
@@ -349,13 +343,13 @@ asuna.biomes = {
     shore = "default:clay",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.fungal,
+    cave = "fungal",
     dungeon = "sugilite",
   },
 
   swamp = {
-    heat = 65,
-    humidity = 80,
+    heat = 73,
+    humidity = 74,
     y_min = 1,
     y_max = 31000,
     nodes = {
@@ -369,7 +363,7 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.fungal,
+    cave = "fungal",
     dungeon = {
       node = "default:mossycobble",
       alt = "default:mossycobble",
@@ -378,10 +372,11 @@ asuna.biomes = {
   },
 
   marsh = {
-    heat = 73,
-    humidity = 100,
+    heat = 71,
+    humidity = 99,
     y_min = 1,
-    y_max = 20,
+    y_max = 24,
+    y_blend = 4,
     nodes = {
       "default:dirt_with_grass", 1,
       "default:dirt", 3,
@@ -393,7 +388,7 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.algae,
+    cave = "fungal",
     dungeon = {
       node = "default:mossycobble",
       alt = "default:mossycobble",
@@ -401,14 +396,14 @@ asuna.biomes = {
     },
   },
 
-  bambooforest = {
-    heat = 88,
-    humidity = 79,
-    y_min = 6,
+  --[[everness_bamboo_forest = {
+    heat = 50,
+    humidity = 98,
+    y_min = 4,
     y_max = 31000,
     nodes = {
-      "bambooforest:dirt_with_bamboo", 1,
-      "default:dirt", 3,
+      "everness:dirt_with_grass_1", 1,
+      "everness:dirt_1", 3,
     },
     flowers = {"purple","orange"},
     mushrooms = {"brown","odd"},
@@ -417,14 +412,38 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "tropical",
-    caverealm = caverealms_biomes.moss,
-    dungeon = "serpentine",
+    
+    dungeon = {
+      node = "everness:bamboo_wood",
+      alt = "everness:bamboo_mosaic_wood",
+      stair = "stairs:stair_bamboo_wood",
+    },
+  },]]
+
+  bambooforest = {
+    heat = 48,
+    humidity = 99,
+    y_min = 4,
+    y_max = 31000,
+    nodes = {
+      "bambooforest:dirt_with_bamboo", 1,
+      "default:dirt", 3,
+    },
+    flowers = {"purple","orange"},
+    mushrooms = {"brown","odd"},
+    animals = {"bird","cat","chicken","frog","pig","rat"},
+    crops = {"cassava","pepper","mint","ginger"},
+    shore = "default:sand",
+    seabed = "default:sand",
+    ocean = "temperate",
+    cave = "bamboo",
+    dungeon = "granite_gray",
   },
 
   japaneseforest = {
-    heat = 32,
-    humidity = 72,
-    y_min = 3,
+    heat = 36,
+    humidity = 74,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "japaneseforest:japanese_dirt_with_grass", 1,
@@ -437,15 +456,15 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
     dungeon = "howlite",
   },
 
   palmbeach = {
-    heat = 100,
-    humidity = 62,
+    heat = 95,
+    humidity = 55,
     y_min = 1,
-    y_max = 3,
+    y_max = 4,
     nodes = {
       "naturalbiomes:palmbeach_sand", 1,
       "default:sandstone", 3,
@@ -457,12 +476,12 @@ asuna.biomes = {
     shore = "naturalbiomes:palmbeach_sand",
     seabed = "default:sand",
     ocean = "tropical",
-    caverealm = caverealms_biomes.moss,
+    cave = "moss",
     dungeon = "travertine",
   },
 
   nightshade = {
-    heat = 27,
+    heat = 26,
     humidity = 68,
     y_min = 4,
     y_max = 31000,
@@ -470,21 +489,21 @@ asuna.biomes = {
       "nightshade:nightshade_dirt_with_grass", 1,
       "default:dirt", 3,
     },
-    flowers = {},
+    flowers = {"black"},
     mushrooms = {"odd","red"},
     animals = {"bat"},
     crops = {"potatoes"},
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "coral_forest",
     dungeon = "soapstone",
   },
 
   grassytwo = {
-    heat = 38,
+    heat = 37,
     humidity = 41,
-    y_min = 2,
+    y_min = 4,
     y_max = 92,
     y_blend = 4,
     nodes = {
@@ -498,13 +517,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "moss",
   },
 
   mesa = {
     heat = 36,
-    humidity = 19,
-    y_min = 2,
+    humidity = 17,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "default:dirt_with_dry_grass", 1,
@@ -518,18 +537,18 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.salt,
+    cave = "dry",
     dungeon = {
-      node = "default:sandstone",
-      alt = "default:sandstone_brick",
-      stair = "stairs:stair_sandstone_brick",
+      node = "default:sandstonebrick",
+      alt = "default:sandstonebrick",
+      stair = "stairs:stair_sandstonebrick",
     },
   },
 
   jumble = {
-    heat = 57,
-    humidity = 85,
-    y_min = 2,
+    heat = 56,
+    humidity = 92,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "default:dirt_with_grass", 1,
@@ -542,7 +561,7 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.fungal,
+    cave = "mushroom",
     dungeon = {
       node = "default:mossycobble",
       alt = "default:mossycobble",
@@ -553,7 +572,7 @@ asuna.biomes = {
   deciduous_forest = {
     heat = 36,
     humidity = 52,
-    y_min = 2,
+    y_min = 4,
     y_max = 192,
     nodes = {
       "default:dirt_with_grass", 1,
@@ -566,13 +585,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
   },
 
   sakura = {
-    heat = 37,
-    humidity = 74,
-    y_min = 2,
+    heat = 39,
+    humidity = 75,
+    y_min = 4,
     y_max = 40,
     y_blend = 6,
     nodes = {
@@ -586,14 +605,14 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
     dungeon = "howlite",
   },
 
   junglee = {
-    heat = 90,
-    humidity = 76,
-    y_min = 6,
+    heat = 85,
+    humidity = 69,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "default:dirt_with_rainforest_litter", 1,
@@ -606,13 +625,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "tropical",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
     dungeon = "serpentine",
   },
 
   livingjungle = {
-    heat = 88,
-    humidity = 81,
+    heat = 91,
+    humidity = 94,
     y_min = 1,
     y_max = 31000,
     nodes = {
@@ -626,14 +645,14 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "tropical",
-    caverealm = caverealms_biomes.moss,
+    cave = "bamboo",
     dungeon = "serpentine",
   },
 
   grove = {
-    heat = 91,
-    humidity = 72,
-    y_min = 2,
+    heat = 85,
+    humidity = 68,
+    y_min = 4,
     y_max = 40,
     y_blend = 2,
     nodes = {
@@ -647,15 +666,15 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "tropical",
-    caverealm = caverealms_biomes.moss,
+    cave = "moss",
     dungeon = "mudstone",
   },
 
   alderswamp = {
-    heat = 58,
-    humidity = 80,
+    heat = 56,
+    humidity = 78,
     y_min = 1,
-    y_max = 56,
+    y_max = 31000,
     y_blend = 4,
     nodes = {
       "naturalbiomes:alderswamp_litter", 1,
@@ -668,7 +687,7 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "temperate",
-    caverealm = caverealms_biomes.algae,
+    cave = "fungal",
     dungeon = {
       node = "default:mossycobble",
       alt = "default:mossycobble",
@@ -677,29 +696,29 @@ asuna.biomes = {
   },
 
   badland = {
-    heat = 24,
-    humidity = 67,
-    y_min = 2,
+    heat = 19,
+    humidity = 65,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "badland:badland_grass", 1,
       "default:dirt", 3,
     },
-    flowers = {"red","yellow","black"},
+    flowers = {},
     mushrooms = {"brown"},
-    animals = {"chicken","fox","owl","pig","rat","turkey"},
-    crops = {"carrot","beetroot","potatoes","corn","kale"},
+    animals = {"chicken","fox","owl","pig","rat","turkey","bat"},
+    crops = {"carrot","beetroot","potatoes","corn","kale","wheat"},
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "cold",
-    caverealm = caverealms_biomes.salt,
+    cave = "cursed_lands",
     dungeon = "slate",
   },
 
   coniferous_forest = {
-    heat = 10,
-    humidity = 54,
-    y_min = 2,
+    heat = 12,
+    humidity = 50,
+    y_min = 4,
     y_max = 48,
     nodes = {
       "default:dirt_with_coniferous_litter", 1,
@@ -712,13 +731,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "cold",
-    caverealm = caverealms_biomes.salt,
+    cave = "moss",
     dungeon = "granite_white",
   },
 
   taiga = {
-    heat = 10,
-    humidity = 54,
+    heat = 12,
+    humidity = 50,
     y_min = 49,
     y_max = 31000,
     nodes = {
@@ -732,13 +751,13 @@ asuna.biomes = {
     shore = "default:sand",
     seabed = "default:sand",
     ocean = "cold",
-    caverealm = caverealms_biomes.salt,
+    cave = "moss",
     dungeon = "granite_white"
   },
 
   glacier = {
-    heat = 0,
-    humidity = 54,
+    heat = 2,
+    humidity = 51,
     y_min = 1,
     y_max = 31000,
     nodes = {
@@ -751,39 +770,39 @@ asuna.biomes = {
     mushrooms = {},
     animals = {},
     crops = {},
-    shore = "default:ice",
+    shore = "default:cave_ice",
     seabed = "default:sand",
     ocean = "frozen",
-    caverealm = caverealms_biomes.glacier,
+    cave = "frosted_icesheet",
     dungeon = "howlite",
   },
 
   frost_land = {
-    heat = 2,
-    humidity = 85,
-    y_min = 2,
+    heat = 19,
+    humidity = 87,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "frost_land:frost_land_grass", 1,
       "default:dirt", 3,
-      "default:ice",
+      "default:cave_ice",
       "default:snow",
     },
     flowers = {},
     mushrooms = {},
     animals = {"fox","owl","turkey","wolf"},
     crops = {},
-    shore = "default:ice",
+    shore = "default:cave_ice",
     seabed = "default:sand",
     ocean = "frozen",
-    caverealm = caverealms_biomes.glacier,
+    cave = "frosted_icesheet",
     dungeon = "granite_blue",
   },
 
   tundra = {
-    heat = 10,
-    humidity = 17,
-    y_min = 2,
+    heat = 11,
+    humidity = 16,
+    y_min = 4,
     y_max = 40,
     y_blend = 2,
     nodes = {
@@ -797,13 +816,13 @@ asuna.biomes = {
     shore = "default:gravel",
     seabed = "default:sand",
     ocean = "bare",
-    caverealm = caverealms_biomes.salt,
+    cave = "frosted_icesheet",
     dungeon = "granite_gray",
   },
 
   tundra_highland = {
-    heat = 10,
-    humidity = 17,
+    heat = 12,
+    humidity = 16,
     y_min = 41,
     y_max = 192,
     nodes = {
@@ -819,56 +838,159 @@ asuna.biomes = {
     shore = "default:gravel",
     seabed = "default:sand",
     ocean = "bare",
-    caverealm = caverealms_biomes.glacier,
+    cave = "frosted_icesheet",
     dungeon = "granite_black",
   },
 
-  silver_sands = {
-    heat = 0,
-    humidity = 7,
-    y_min = 2,
-    y_max = 38,
+  everness_forsaken_tundra = {
+    heat = 13,
+    humidity = 10,
+    y_min = 4,
+    y_max = 31000,
     nodes = {
-      "default:silver_sand", 2,
-      "default:gravel", 1,
-      "default:silver_sandstone",
+      "everness:forsaken_tundra_dirt", 1,
+      "everness:forsaken_tundra_dirt", 1,
+      "everness:forsaken_tundra_stone",
     },
     flowers = {},
     mushrooms = {},
     animals = {},
     crops = {},
-    shore = "default:silver_sand",
-    seabed = "default:gravel",
-    ocean = "bare",
-    caverealm = caverealms_biomes.salt,
+    shore = "everness:forsaken_tundra_beach_sand",
+    seabed = "everness:forsaken_tundra_beach_sand",
+    ocean = "forsaken_tundra",
+    cave = "forsaken_tundra",
     dungeon = {
-      node = "default:silver_sandstone",
-      alt = "default:silver_sandstone_brick",
-      stair = "stairs:stair_silver_sandstone_brick",
+      node = "everness:forsaken_tundra_cobble",
+      alt = "everness:forsaken_tundra_brick",
+      stair = "stairs:stair_forsaken_tundra_cobble",
     },
   },
 
   frost = {
-    heat = 0,
-    humidity = 87,
-    y_min = 2,
+    heat = 3,
+    humidity = 97,
+    y_min = 4,
     y_max = 31000,
     nodes = {
       "ethereal:crystal_dirt", 1,
       "default:dirt", 3,
-      "default:ice",
+      "default:cave_ice",
       "default:snow",
     },
     flowers = {},
     mushrooms = {},
     animals = {"fox","owl","turkey","wolf"},
     crops = {"medicinal_plant"},
-    shore = "default:ice",
+    shore = "default:cave_ice",
     seabed = "default:sand",
     ocean = "frozen",
-    caverealm = caverealms_biomes.glacier,
+    cave = "crystal_forest",
     dungeon = "granite_blue",
   },
+
+  everness_frosted_icesheet = {
+    heat = 1,
+    humidity = 59,
+    y_min = 4,
+    y_max = 31000,
+    nodes = {
+      "everness:frosted_snowblock", 1,
+      "everness:frosted_snowblock", 3,
+      "everness:frosted_cave_ice",
+    },
+    flowers = {},
+    mushrooms = {},
+    animals = {},
+    crops = {},
+    shore = "default:cave_ice",
+    seabed = "default:cave_ice",
+    ocean = "frosted_icesheet",
+    cave = "frosted_icesheet",
+    dungeon = {
+      node = "everness:icecobble",
+      alt = "everness:snowcobble",
+      stair = "stairs:stair_ice",
+    },
+  },
+
+  everness_cursed_lands = {
+    heat = 59,
+    humidity = 80,
+    y_min = 1,
+    y_max = 31000,
+    nodes = {
+      "everness:dirt_with_cursed_grass", 1,
+      "everness:cursed_dirt", 3,
+      "everness:cursed_stone_carved",
+    },
+    flowers = {"black","green"},
+    mushrooms = {"red"},
+    animals = {"bat"},
+    crops = {},
+    shore = "everness:cursed_stone",
+    seabed = "everness:cursed_stone",
+    deep_seabed = "everness:cursed_lands_deep_ocean_sand",
+    ocean = "cursed_lands",
+    cave = "cursed_lands",
+    dungeon = {
+      node = "everness:cursed_brick",
+      alt = "everness:cursed_brick_with_growth",
+      stair = "stairs:stair_cursed_brick",
+    },
+  },
+
+  everness_crystal_forest = {
+    heat = 22,
+    humidity = 98,
+    y_min = 4,
+    y_max = 31000,
+    nodes = {
+      "everness:dirt_with_crystal_grass", 1,
+      "everness:crystal_dirt", 3,
+      "everness:crystal_stone",
+    },
+    flowers = {},
+    mushrooms = {},
+    animals = {},
+    crops = {},
+    shore = "everness:crystal_sand",
+    seabed = "everness:crystal_sand",
+    deep_seabed = "everness:crystal_forest_deep_ocean_sand",
+    ocean = "crystal_forest",
+    cave = "crystal_forest",
+    dungeon = {
+      node = "everness:crystal_cobble",
+      alt = "everness:crystal_stone_brick",
+      stair = "everness:stair_crystal_cobble",
+    },
+  },
+
+  everness_coral_forest = {
+    heat = 24,
+    humidity = 74,
+    y_min = 4,
+    y_max = 31000,
+    nodes = {
+      "everness:dirt_with_coral_grass", 1,
+      "everness:coral_dirt", 3,
+      "everness:coral_desert_stone",
+    },
+    flowers = {},
+    mushrooms = {},
+    animals = {},
+    crops = {},
+    shore = "everness:coral_white_sand",
+    seabed = "everness:coral_white_sand",
+    deep_seabed = "everness:coral_forest_deep_ocean_sand",
+    ocean = "coral_forest",
+    cave = "coral_forest",
+    dungeon = {
+      node = "everness:coral_desert_stone_block",
+      alt = "everness:coral_desert_stone_brick",
+      stair = "stairs:stair_coral_desert_stone_block",
+    },
+  }
 }
 
 --[[
@@ -883,16 +1005,12 @@ asuna.biome_groups = {
   ocean = {},
 }
 
-for biome,def in pairs(asuna.biomes) do
-  table.insert(asuna.biome_groups.base,biome)
-  table.insert(asuna.biome_groups.all,biome)
-end
-
 -- Generate dungeon definitions, shore biomes, and below ground biomes from base biomes
 local supplementary_biomes = {}
 for biome,def in pairs(asuna.biomes) do
   -- Add to base biome group
   table.insert(asuna.biome_groups.base,biome)
+  table.insert(asuna.biome_groups.all,biome)
 
   -- If no dungeon overrides are defined
   if not def.dungeon then
@@ -909,8 +1027,13 @@ for biome,def in pairs(asuna.biomes) do
     }
   end
 
+  -- If no deep seabed is defined
+  if not def.deep_seabed then
+    def.deep_seabed = def.seabed
+  end
+
   -- Generate shore biome if the biome should have a proper shore
-  if def.y_min == 2 or def.y_min == 1 then
+  if def.y_min <= 4 and def.y_min >= 1 then
     local shore_name = biome .. "_shore"
     table.insert(asuna.biome_groups.shore,shore_name)
     supplementary_biomes[shore_name] = {
@@ -921,7 +1044,7 @@ for biome,def in pairs(asuna.biomes) do
       y_blend = 1,
       nodes = {
         def.shore, 1,
-        def.shore, 2,
+        def.nodes[5] or "default:stone", def.nodes[4] - 1,
         def.nodes[5] or "default:stone",
       },
       flowers = {},
@@ -930,9 +1053,10 @@ for biome,def in pairs(asuna.biomes) do
       crops = {},
       shore = def.shore,
       seabed = def.seabed,
+      deep_seabed = def.deep_seabed,
       ocean = def.ocean,
       dungeon = def.dungeon,
-      caverealm = def.caverealm,
+      cave = def.cave,
     }
   end
 
@@ -950,7 +1074,7 @@ for biome,def in pairs(asuna.biomes) do
     supplementary_biomes[below_name] = {
       heat = def.heat,
       humidity = def.humidity,
-      y_min = -256,
+      y_min = -31000,
       y_max = -1,
       nodes = {
         "default:stone", 0,
@@ -963,9 +1087,10 @@ for biome,def in pairs(asuna.biomes) do
       crops = {},
       shore = def.shore,
       seabed = def.seabed,
+      deep_seabed = def.deep_seabed,
       ocean = def.ocean,
       dungeon = def.dungeon,
-      caverealm = def.caverealm,
+      cave = def.cave,
     }
   end
 end
@@ -988,7 +1113,8 @@ asuna.features = {
   shore = {},
   seabed = {},
   ocean = {},
-  --caverealm = {},
+  cave = {},
+  --
 }
 
 for biome,def in pairs(asuna.biomes) do
@@ -1077,46 +1203,14 @@ for name,group in pairs(asuna.biome_groups) do
   end
 end
 
---[[
-  Custom biomes
-]]
-
--- Custom biomes
-minetest.register_decoration({
-  deco_type = "simple",
-  decoration = "default:gravel",
-  place_on = {"default:silver_sand"},
-  biomes = {"silver_sands"},
-  y_max = 40,
-  y_min = 1,
-  fill_ratio = 0.008,
-  place_offset_y = -1,
-  flags = "force_placement",
-  noise_params = {
-    offset = -0.001,
-    scale = 0.45,
-    spread = {x = 100, y = 100, z = 100},
-    seed = 354,
-    octaves = 3,
-    persistence = 1.7,
-    lacunarity = 2.0,
-    flags = "eased"
-  },
-})
-
--- Override biome registration function to add biome ID's to Caverealms biome
--- map and to prevent duplicate biome registrations
+-- Override biome registration function to prevent duplicate biome registrations
 local mtrb = minetest.register_biome
 minetest.register_biome = function(def)
   if minetest.registered_biomes[def.name] then
     return minetest.get_biome_id(def.name)
+  else
+    return mtrb(def)
   end
-
-  local i = mtrb(def)
-  if i then
-    asuna.caverealms.biome_map[minetest.get_biome_id(def.name)] = asuna.biomes[def.name].caverealm
-  end
-  return i
 end
 
 -- Register all biomes beginning with base biomes

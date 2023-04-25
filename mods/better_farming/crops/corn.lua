@@ -1,37 +1,31 @@
 -- add to registered_plants
-farming.register_plant("better_farming:corn",{
-	description = "Corn Seed",
-	harvest_description = "Corn",
-	inventory_image = "better_farming_corn_seed.png",
-	minlight = better_farming.minlight,
-	maxlight = better_farming.maxlight,
-	steps = 8,
-	groups = { flammable = 2, grassland = 1 },
-	fertility = {"grassland"},
-})
+better_farming.register_plant("Corn",8,{ "grassland" })
 
 -- needed
 minetest.override_item("better_farming:corn", {
 	on_use = minetest.item_eat(1),
 })
 
-minetest.register_decoration(asuna.features.crops.corn.inject_decoration({
-	name = "better_farming:corn_8",
-	deco_type = "simple",
-	sidelen = 16,
-	noise_params = {
-		offset = -0.1,
-		scale = 0.1,
-		spread = {x = 50, y = 50, z = 50},
-		seed = 4487,
-		octaves = 3,
-		persist = 0.7
-	},
-	y_max = 31000,
-	y_min = 1,
-	decoration = "better_farming:corn_8",
-	param2 = 3,
-}))
+-- corn is tall!
+minetest.override_item("better_farming:corn_4", {
+	visual_scale = 1.25,
+})
+
+minetest.override_item("better_farming:corn_5", {
+	visual_scale = 1.5,
+})
+
+minetest.override_item("better_farming:corn_6", {
+	visual_scale = 1.75,
+})
+
+minetest.override_item("better_farming:corn_7", {
+	visual_scale = 2,
+})
+
+minetest.override_item("better_farming:corn_8", {
+	visual_scale = 2.25,
+})
 
 minetest.register_craftitem("better_farming:popcorn", {
 	description = "Popcorn",

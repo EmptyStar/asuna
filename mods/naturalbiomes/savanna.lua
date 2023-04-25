@@ -17,6 +17,73 @@ minetest.register_node("naturalbiomes:savannalitter", {
 
 minetest.register_biome(asuna.biomes.savanna.generate_definition())
 
+--
+-- Everness
+--
+
+minetest.register_decoration({
+	name = 'everness:baobab_savanna_baobab_tree_3',
+	deco_type = 'schematic',
+	place_on = {
+		'default:dry_dirt_with_dry_grass',
+		'naturalbiomes:savannalitter',
+	},
+	spawn_by = {
+		'default:dry_dirt_with_dry_grass',
+		'naturalbiomes:savannalitter',
+	},
+	num_spawn_by = 8,
+	sidelen = 16,
+	fill_ratio = 0.0001,
+	biomes = {
+			'savanna',
+	},
+	y_max = 31000,
+	y_min = 6,
+	schematic = minetest.get_modpath('everness') .. '/schematics/everness_baobab_tree.mts',
+	flags = 'place_center_x, place_center_z',
+	rotation = 'random',
+})
+
+local did_baobab = minetest.get_decoration_id('everness:baobab_savanna_baobab_tree_3')
+minetest.set_gen_notify('decoration',{ did_baobab })
+did_baobab = 'decoration#' .. did_baobab
+
+minetest.register_on_generated(function(minp, maxp, blockseed)
+	if maxp.y > 4 then
+			--
+			-- Baobab Tree - fix light
+			--
+			local gennotify = minetest.get_mapgen_object('gennotify')
+			for _, pos in ipairs(gennotify[did_baobab] or {}) do
+					minetest.fix_light(vector.offset(pos, -1, -1, -1), vector.offset(pos, 24, 39, 24))
+			end
+	end
+end)
+
+minetest.register_decoration({
+	name = 'everness:baobab_savanna_baobab_log',
+	deco_type = 'schematic',
+	place_on = {
+		'default:dry_dirt_with_dry_grass',
+		'naturalbiomes:savannalitter',
+	},
+	sidelen = 80,
+	place_offset_y = 1,
+	fill_ratio = 0.0001,
+	biomes = { 'savanna' },
+	y_max = 31000,
+	y_min = 4,
+	schematic = minetest.get_modpath('everness') .. '/schematics/everness_baobab_log.mts',
+	flags = 'place_center_x',
+	rotation = 'random',
+	spawn_by = {
+		'default:dry_dirt_with_dry_grass',
+		'naturalbiomes:savannalitter',
+	},
+	num_spawn_by = 8,
+})
+
 -- Tree generation
 --
 
@@ -186,12 +253,32 @@ default.register_fence_rail(
 )
 
 minetest.register_decoration({
+	deco_type = "simple",
+	place_on = {"naturalbiomes:savannalitter"},
+	sidelen = 2,
+	noise_params = {
+		offset = -0.25,
+		scale = -1.125,
+		spread = {x = 100, y = 100, z = 100},
+		seed = 7777,
+		octaves = 3,
+		persist = 1.0
+	},
+	biomes = {"savanna"},
+	y_max = 31000,
+	y_min = 1,
+	decoration = "default:dry_dirt_with_dry_grass",
+	place_offset_y = -1,
+	flags = "force_placement"
+})
+
+minetest.register_decoration({
     name = "naturalbiomes:acacia_tree",
     deco_type = "schematic",
     place_on = {"naturalbiomes:savannalitter"},
     place_offset_y = 0,
     sidelen = 16,
-    fill_ratio = 0.00105,
+    fill_ratio = 0.00025,
     biomes = {"savanna"},
     y_max = 31000,
     y_min = 2,
@@ -404,14 +491,7 @@ minetest.register_node("naturalbiomes:savanna_grass3", {
 		place_on = {"naturalbiomes:savannalitter"},
 		place_offset_y = 1,
 		sidelen = 16,
-		noise_params = {
-			offset = 0.0012,
-			scale = 0.0007,
-			spread = {x = 250, y = 250, z = 250},
-			seed = 2,
-			octaves = 3,
-			persist = 0.66
-		},
+		fill_ratio = 0.0005,
 		biomes = {"savanna"},
 		y_max = 31000,
 		y_min = 1,
@@ -424,7 +504,9 @@ minetest.register_node("naturalbiomes:savanna_grass3", {
 
 	minetest.register_decoration({
 		deco_type = "simple",
-		place_on = {"naturalbiomes:savannalitter"},
+		place_on = {
+			"naturalbiomes:savannalitter",
+		},
 		sidelen = 16,
 		fill_ratio = 0.15,
 		y_max = 30000,
@@ -433,7 +515,37 @@ minetest.register_node("naturalbiomes:savanna_grass3", {
 			"default:dry_grass_2",
 			"default:dry_grass_3",
 			"default:dry_grass_4",
-		  "default:dry_grass_5"
+		  "default:dry_grass_5",
 		},
-		biomes = "naturalbiomes:savanna"
+		biomes = "savanna"
 	})
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {
+			"default:dry_dirt_with_dry_grass",
+		},
+		sidelen = 16,
+		fill_ratio = 0.75,
+		y_max = 30000,
+		y_min = 1,
+		decoration = {
+			"default:dry_grass_4",
+		  "default:dry_grass_5",
+		},
+		biomes = "savanna"
+	})
+
+	minetest.register_decoration({
+    deco_type = "schematic",
+    place_on = {"default:dry_dirt_with_dry_grass"},
+    place_offset_y = 0,
+    sidelen = 16,
+    fill_ratio = 0.0005,
+    biomes = {"savanna"},
+    y_max = 31000,
+    y_min = 2,
+    schematic = minetest.get_modpath("default").."/schematics/acacia_tree.mts",
+	flags = "place_center_x, place_center_z",
+	rotation = "random",
+})

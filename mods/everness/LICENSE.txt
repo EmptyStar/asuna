@@ -1,0 +1,1490 @@
+                  GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 2.1, February 1999
+
+ Copyright (C) 2023 SaKeL <juraj.vajda@gmail.com>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+[This is the first released version of the Lesser GPL.  It also counts
+ as the successor of the GNU Library Public License, version 2, hence
+ the version number 2.1.]
+
+                            Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+Licenses are intended to guarantee your freedom to share and change
+free software--to make sure the software is free for all its users.
+
+  This license, the Lesser General Public License, applies to some
+specially designated software packages--typically libraries--of the
+Free Software Foundation and other authors who decide to use it.  You
+can use it too, but we suggest you first think carefully about whether
+this license or the ordinary General Public License is the better
+strategy to use in any particular case, based on the explanations below.
+
+  When we speak of free software, we are referring to freedom of use,
+not price.  Our General Public Licenses are designed to make sure that
+you have the freedom to distribute copies of free software (and charge
+for this service if you wish); that you receive source code or can get
+it if you want it; that you can change the software and use pieces of
+it in new free programs; and that you are informed that you can do
+these things.
+
+  To protect your rights, we need to make restrictions that forbid
+distributors to deny you these rights or to ask you to surrender these
+rights.  These restrictions translate to certain responsibilities for
+you if you distribute copies of the library or if you modify it.
+
+  For example, if you distribute copies of the library, whether gratis
+or for a fee, you must give the recipients all the rights that we gave
+you.  You must make sure that they, too, receive or can get the source
+code.  If you link other code with the library, you must provide
+complete object files to the recipients, so that they can relink them
+with the library after making changes to the library and recompiling
+it.  And you must show them these terms so they know their rights.
+
+  We protect your rights with a two-step method: (1) we copyright the
+library, and (2) we offer you this license, which gives you legal
+permission to copy, distribute and/or modify the library.
+
+  To protect each distributor, we want to make it very clear that
+there is no warranty for the free library.  Also, if the library is
+modified by someone else and passed on, the recipients should know
+that what they have is not the original version, so that the original
+author's reputation will not be affected by problems that might be
+introduced by others.
+
+  Finally, software patents pose a constant threat to the existence of
+any free program.  We wish to make sure that a company cannot
+effectively restrict the users of a free program by obtaining a
+restrictive license from a patent holder.  Therefore, we insist that
+any patent license obtained for a version of the library must be
+consistent with the full freedom of use specified in this license.
+
+  Most GNU software, including some libraries, is covered by the
+ordinary GNU General Public License.  This license, the GNU Lesser
+General Public License, applies to certain designated libraries, and
+is quite different from the ordinary General Public License.  We use
+this license for certain libraries in order to permit linking those
+libraries into non-free programs.
+
+  When a program is linked with a library, whether statically or using
+a shared library, the combination of the two is legally speaking a
+combined work, a derivative of the original library.  The ordinary
+General Public License therefore permits such linking only if the
+entire combination fits its criteria of freedom.  The Lesser General
+Public License permits more lax criteria for linking other code with
+the library.
+
+  We call this license the "Lesser" General Public License because it
+does Less to protect the user's freedom than the ordinary General
+Public License.  It also provides other free software developers Less
+of an advantage over competing non-free programs.  These disadvantages
+are the reason we use the ordinary General Public License for many
+libraries.  However, the Lesser license provides advantages in certain
+special circumstances.
+
+  For example, on rare occasions, there may be a special need to
+encourage the widest possible use of a certain library, so that it becomes
+a de-facto standard.  To achieve this, non-free programs must be
+allowed to use the library.  A more frequent case is that a free
+library does the same job as widely used non-free libraries.  In this
+case, there is little to gain by limiting the free library to free
+software only, so we use the Lesser General Public License.
+
+  In other cases, permission to use a particular library in non-free
+programs enables a greater number of people to use a large body of
+free software.  For example, permission to use the GNU C Library in
+non-free programs enables many more people to use the whole GNU
+operating system, as well as its variant, the GNU/Linux operating
+system.
+
+  Although the Lesser General Public License is Less protective of the
+users' freedom, it does ensure that the user of a program that is
+linked with the Library has the freedom and the wherewithal to run
+that program using a modified version of the Library.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.  Pay close attention to the difference between a
+"work based on the library" and a "work that uses the library".  The
+former contains code derived from the library, whereas the latter must
+be combined with the library in order to run.
+
+                  GNU LESSER GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License Agreement applies to any software library or other
+program which contains a notice placed by the copyright holder or
+other authorized party saying it may be distributed under the terms of
+this Lesser General Public License (also called "this License").
+Each licensee is addressed as "you".
+
+  A "library" means a collection of software functions and/or data
+prepared so as to be conveniently linked with application programs
+(which use some of those functions and data) to form executables.
+
+  The "Library", below, refers to any such software library or work
+which has been distributed under these terms.  A "work based on the
+Library" means either the Library or any derivative work under
+copyright law: that is to say, a work containing the Library or a
+portion of it, either verbatim or with modifications and/or translated
+straightforwardly into another language.  (Hereinafter, translation is
+included without limitation in the term "modification".)
+
+  "Source code" for a work means the preferred form of the work for
+making modifications to it.  For a library, complete source code means
+all the source code for all modules it contains, plus any associated
+interface definition files, plus the scripts used to control compilation
+and installation of the library.
+
+  Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running a program using the Library is not restricted, and output from
+such a program is covered only if its contents constitute a work based
+on the Library (independent of the use of the Library in a tool for
+writing it).  Whether that is true depends on what the Library does
+and what the program that uses the Library does.
+
+  1. You may copy and distribute verbatim copies of the Library's
+complete source code as you receive it, in any medium, provided that
+you conspicuously and appropriately publish on each copy an
+appropriate copyright notice and disclaimer of warranty; keep intact
+all the notices that refer to this License and to the absence of any
+warranty; and distribute a copy of this License along with the
+Library.
+
+  You may charge a fee for the physical act of transferring a copy,
+and you may at your option offer warranty protection in exchange for a
+fee.
+
+  2. You may modify your copy or copies of the Library or any portion
+of it, thus forming a work based on the Library, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) The modified work must itself be a software library.
+
+    b) You must cause the files modified to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    c) You must cause the whole of the work to be licensed at no
+    charge to all third parties under the terms of this License.
+
+    d) If a facility in the modified Library refers to a function or a
+    table of data to be supplied by an application program that uses
+    the facility, other than as an argument passed when the facility
+    is invoked, then you must make a good faith effort to ensure that,
+    in the event an application does not supply such function or
+    table, the facility still operates, and performs whatever part of
+    its purpose remains meaningful.
+
+    (For example, a function in a library to compute square roots has
+    a purpose that is entirely well-defined independent of the
+    application.  Therefore, Subsection 2d requires that any
+    application-supplied function or table used by this function must
+    be optional: if the application does not supply it, the square
+    root function must still compute square roots.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Library,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Library, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote
+it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Library.
+
+In addition, mere aggregation of another work not based on the Library
+with the Library (or with a work based on the Library) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may opt to apply the terms of the ordinary GNU General Public
+License instead of this License to a given copy of the Library.  To do
+this, you must alter all the notices that refer to this License, so
+that they refer to the ordinary GNU General Public License, version 2,
+instead of to this License.  (If a newer version than version 2 of the
+ordinary GNU General Public License has appeared, then you can specify
+that version instead if you wish.)  Do not make any other change in
+these notices.
+
+  Once this change is made in a given copy, it is irreversible for
+that copy, so the ordinary GNU General Public License applies to all
+subsequent copies and derivative works made from that copy.
+
+  This option is useful when you wish to copy part of the code of
+the Library into a program that is not a library.
+
+  4. You may copy and distribute the Library (or a portion or
+derivative of it, under Section 2) in object code or executable form
+under the terms of Sections 1 and 2 above provided that you accompany
+it with the complete corresponding machine-readable source code, which
+must be distributed under the terms of Sections 1 and 2 above on a
+medium customarily used for software interchange.
+
+  If distribution of object code is made by offering access to copy
+from a designated place, then offering equivalent access to copy the
+source code from the same place satisfies the requirement to
+distribute the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  5. A program that contains no derivative of any portion of the
+Library, but is designed to work with the Library by being compiled or
+linked with it, is called a "work that uses the Library".  Such a
+work, in isolation, is not a derivative work of the Library, and
+therefore falls outside the scope of this License.
+
+  However, linking a "work that uses the Library" with the Library
+creates an executable that is a derivative of the Library (because it
+contains portions of the Library), rather than a "work that uses the
+library".  The executable is therefore covered by this License.
+Section 6 states terms for distribution of such executables.
+
+  When a "work that uses the Library" uses material from a header file
+that is part of the Library, the object code for the work may be a
+derivative work of the Library even though the source code is not.
+Whether this is true is especially significant if the work can be
+linked without the Library, or if the work is itself a library.  The
+threshold for this to be true is not precisely defined by law.
+
+  If such an object file uses only numerical parameters, data
+structure layouts and accessors, and small macros and small inline
+functions (ten lines or less in length), then the use of the object
+file is unrestricted, regardless of whether it is legally a derivative
+work.  (Executables containing this object code plus portions of the
+Library will still fall under Section 6.)
+
+  Otherwise, if the work is a derivative of the Library, you may
+distribute the object code for the work under the terms of Section 6.
+Any executables containing that work also fall under Section 6,
+whether or not they are linked directly with the Library itself.
+
+  6. As an exception to the Sections above, you may also combine or
+link a "work that uses the Library" with the Library to produce a
+work containing portions of the Library, and distribute that work
+under terms of your choice, provided that the terms permit
+modification of the work for the customer's own use and reverse
+engineering for debugging such modifications.
+
+  You must give prominent notice with each copy of the work that the
+Library is used in it and that the Library and its use are covered by
+this License.  You must supply a copy of this License.  If the work
+during execution displays copyright notices, you must include the
+copyright notice for the Library among them, as well as a reference
+directing the user to the copy of this License.  Also, you must do one
+of these things:
+
+    a) Accompany the work with the complete corresponding
+    machine-readable source code for the Library including whatever
+    changes were used in the work (which must be distributed under
+    Sections 1 and 2 above); and, if the work is an executable linked
+    with the Library, with the complete machine-readable "work that
+    uses the Library", as object code and/or source code, so that the
+    user can modify the Library and then relink to produce a modified
+    executable containing the modified Library.  (It is understood
+    that the user who changes the contents of definitions files in the
+    Library will not necessarily be able to recompile the application
+    to use the modified definitions.)
+
+    b) Use a suitable shared library mechanism for linking with the
+    Library.  A suitable mechanism is one that (1) uses at run time a
+    copy of the library already present on the user's computer system,
+    rather than copying library functions into the executable, and (2)
+    will operate properly with a modified version of the library, if
+    the user installs one, as long as the modified version is
+    interface-compatible with the version that the work was made with.
+
+    c) Accompany the work with a written offer, valid for at
+    least three years, to give the same user the materials
+    specified in Subsection 6a, above, for a charge no more
+    than the cost of performing this distribution.
+
+    d) If distribution of the work is made by offering access to copy
+    from a designated place, offer equivalent access to copy the above
+    specified materials from the same place.
+
+    e) Verify that the user has already received a copy of these
+    materials or that you have already sent this user a copy.
+
+  For an executable, the required form of the "work that uses the
+Library" must include any data and utility programs needed for
+reproducing the executable from it.  However, as a special exception,
+the materials to be distributed need not include anything that is
+normally distributed (in either source or binary form) with the major
+components (compiler, kernel, and so on) of the operating system on
+which the executable runs, unless that component itself accompanies
+the executable.
+
+  It may happen that this requirement contradicts the license
+restrictions of other proprietary libraries that do not normally
+accompany the operating system.  Such a contradiction means you cannot
+use both them and the Library together in an executable that you
+distribute.
+
+  7. You may place library facilities that are a work based on the
+Library side-by-side in a single library together with other library
+facilities not covered by this License, and distribute such a combined
+library, provided that the separate distribution of the work based on
+the Library and of the other library facilities is otherwise
+permitted, and provided that you do these two things:
+
+    a) Accompany the combined library with a copy of the same work
+    based on the Library, uncombined with any other library
+    facilities.  This must be distributed under the terms of the
+    Sections above.
+
+    b) Give prominent notice with the combined library of the fact
+    that part of it is a work based on the Library, and explaining
+    where to find the accompanying uncombined form of the same work.
+
+  8. You may not copy, modify, sublicense, link with, or distribute
+the Library except as expressly provided under this License.  Any
+attempt otherwise to copy, modify, sublicense, link with, or
+distribute the Library is void, and will automatically terminate your
+rights under this License.  However, parties who have received copies,
+or rights, from you under this License will not have their licenses
+terminated so long as such parties remain in full compliance.
+
+  9. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Library or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Library (or any work based on the
+Library), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Library or works based on it.
+
+  10. Each time you redistribute the Library (or any work based on the
+Library), the recipient automatically receives a license from the
+original licensor to copy, distribute, link with or modify the Library
+subject to these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties with
+this License.
+
+  11. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Library at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Library by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Library.
+
+If any portion of this section is held invalid or unenforceable under any
+particular circumstance, the balance of the section is intended to apply,
+and the section as a whole is intended to apply in other circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  12. If the distribution and/or use of the Library is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Library under this License may add
+an explicit geographical distribution limitation excluding those countries,
+so that distribution is permitted only in or among countries not thus
+excluded.  In such case, this License incorporates the limitation as if
+written in the body of this License.
+
+  13. The Free Software Foundation may publish revised and/or new
+versions of the Lesser General Public License from time to time.
+Such new versions will be similar in spirit to the present version,
+but may differ in detail to address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Library
+specifies a version number of this License which applies to it and
+"any later version", you have the option of following the terms and
+conditions either of that version or of any later version published by
+the Free Software Foundation.  If the Library does not specify a
+license version number, you may choose any version ever published by
+the Free Software Foundation.
+
+  14. If you wish to incorporate parts of the Library into other free
+programs whose distribution conditions are incompatible with these,
+write to the author to ask for permission.  For software which is
+copyrighted by the Free Software Foundation, write to the Free
+Software Foundation; we sometimes make exceptions for this.  Our
+decision will be guided by the two goals of preserving the free status
+of all derivatives of our free software and of promoting the sharing
+and reuse of software generally.
+
+                            NO WARRANTY
+
+  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE LIBRARY "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+
+### Code
+
+GNU Lesser General Public License v2.1 or later
+
+### Textures
+
+**CC-BY-SA-4.0, by SaKeL**
+
+- everness_agave_leaf_1.png
+- everness_agave_leaf_2.png
+- everness_agave_leaf_3.png
+- everness_amaranita_lantern_fur.png
+- everness_amaranita_lantern_light.png
+- everness_amaranita_lantern_roots.png
+- everness_ancient_emerald_ice.png
+- everness_bamboo_block_side.png
+- everness_bamboo_block_top.png
+- everness_bamboo_item.png
+- everness_bamboo_large_1.png
+- everness_bamboo_large_2.png
+- everness_bamboo_large_3.png
+- everness_bamboo_large_bottom.png
+- everness_bamboo_large_top.png
+- everness_bamboo_mosaic.png
+- everness_bamboo_small_1.png
+- everness_bamboo_small_2.png
+- everness_bamboo_small_top.png
+- everness_bamboo_sprout.png
+- everness_baobab_tree_fruit_roasted.png
+- everness_baobab_tree_fruit.png
+- everness_baobab_tree_leaves.png
+- everness_baobab_tree_sapling.png
+- everness_baobab_tree_side.png
+- everness_baobab_tree_top.png
+- everness_baobab_wood.png
+- everness_bloodspore_plant_small.png
+- everness_bloodspore_plant.png
+- everness_blooming_cooksonia.png
+- everness_blue_crying_obsidian.png
+- everness_blue_vine_lantern_item.png
+- everness_blue_vine_lantern_leaves.png
+- everness_blue_vine_lantern_roots.png
+- everness_blue_vine_lantern.png
+- everness_blue_weeping_obsidian.png
+- everness_bone_top.png
+- everness_bone.png
+- everness_bulb_vine_1.png
+- everness_bulb_vine_2.png
+- everness_bulb_vine_end.png
+- everness_cactus_blue_side.png
+- everness_cactus_blue_top.png
+- everness_cactus_side.png
+- everness_cactus_top.png
+- everness_candle_flame_animated.png
+- everness_cave_barrel_cactus_item.png
+- everness_cave_barrel_cactus_mesh.png
+- everness_cave_flower_item_particles.png
+- everness_cave_flower_item.png
+- everness_cave_flower_mesh_particles.png
+- everness_cave_flower_mesh.png
+- everness_coral_bones.png
+- everness_coral_burdock_1.png
+- everness_coral_burdock_2.png
+- everness_coral_bush.png
+- everness_coral_corals.png
+- everness_coral_desert_cobble.png
+- everness_coral_desert_mossy_cobble.png
+- everness_coral_desert_stone.png
+- everness_coral_dirt.png
+- everness_coral_grass_1.png
+- everness_coral_grass_2.png
+- everness_coral_grass_3.png
+- everness_coral_grass_4.png
+- everness_coral_grass_5.png
+- everness_coral_grass_globulagus.png
+- everness_coral_grass_orange.png
+- everness_coral_grass_side.png
+- everness_coral_grass_tall.png
+- everness_coral_grass.png
+- everness_coral_jellyfish.png
+- everness_coral_leaves.png
+- everness_coral_mushrooms_bioluminescent.png
+- everness_coral_plant_bioluminescent.png
+- everness_coral_sand.png
+- everness_coral_shrub.png
+- everness_coral_stone_with_moss_side.png
+- everness_coral_stone_with_moss_top.png
+- everness_coral_tree_sapling.png
+- everness_coral_tree.png
+- everness_coral_white_sand.png
+- everness_creeping_moss_spores.png
+- everness_crystal_block_orange_top.png
+- everness_crystal_block_orange.png
+- everness_crystal_block_purple_top.png
+- everness_crystal_block_purple.png
+- everness_crystal_bush_leaves.png
+- everness_crystal_bush_sapling.png
+- everness_crystal_bush_stem.png
+- everness_crystal_cave_dirt_side.png
+- everness_crystal_cave_dirt_top.png
+- everness_crystal_cave_dirt.png
+- everness_crystal_cave_moss.png
+- everness_crystal_coral_dark_block.png
+- everness_crystal_coral_light_block.png
+- everness_crystal_cyan.png
+- everness_crystal_dirt.png
+- everness_crystal_grass_1.png
+- everness_crystal_grass_2.png
+- everness_crystal_grass_3.png
+- everness_crystal_grass_side.png
+- everness_crystal_grass.png
+- everness_crystal_leaves.png
+- everness_crystal_lily_flower_small.png
+- everness_crystal_lily_leaf_small.png
+- everness_crystal_mushrooms.png
+- everness_crystal_orange.png
+- everness_crystal_purple.png
+- everness_crystal_sand.png
+- everness_crystal_tree_top.png
+- everness_crystal_tree.png
+- everness_cursed_brick.png
+- everness_cursed_bush_leaves.png
+- everness_cursed_bush_sapling.png
+- everness_cursed_bush_stem.png
+- everness_cursed_dirt.png
+- everness_cursed_dream_stone.png
+- everness_cursed_dry_pine_leaves.png
+- everness_cursed_grass_side.png
+- everness_cursed_grass.png
+- everness_cursed_lands_moon_tonemap.png
+- everness_cursed_lands_moon.png
+- everness_cursed_lands_sun_tonemap.png
+- everness_cursed_lands_sun.png
+- everness_cursed_lands_sunrisebg.png
+- everness_cursed_mud.png
+- everness_cursed_pumpkin_bottom.png
+- everness_cursed_pumpkin_front.png
+- everness_cursed_pumpkin_side.png
+- everness_cursed_pumpkin_top.png
+- everness_cursed_sand.png
+- everness_cursed_stone.png
+- everness_dense_emerald_ice.png
+- everness_dense_vine_1.png
+- everness_dense_vine_2.png
+- everness_dense_vine_end.png
+- everness_dirt_1.png
+- everness_door_bamboo_item.png
+- everness_door_bamboo.png
+- everness_door_bone_pyrite_item.png
+- everness_door_bone_pyrite.png
+- everness_door_trapdoor_bamboo_side.png
+- everness_door_trapdoor_bamboo.png
+- everness_door_willow_item.png
+- everness_door_willow.png
+- everness_dry_bamboo_block_side.png
+- everness_dry_bamboo_block_top.png
+- everness_dry_branches.png
+- everness_dry_tree_top.png
+- everness_dry_tree.png
+- everness_dry_wood.png
+- everness_egg_plant_bottom.png
+- everness_egg_plant_item.png
+- everness_egg_plant_side.png
+- everness_egg_plant_top.png
+- everness_emerald_ice.png
+- everness_eye_vine_1.png
+- everness_eye_vine_2.png
+- everness_eye_vine_end_bottom.png
+- everness_eye_vine_end_side.png
+- everness_eye_vine_end_top.png
+- everness_fence_bamboo_wood.png
+- everness_fence_dry_wood.png
+- everness_fence_rail_bamboo_wood.png
+- everness_fence_rail_dry_wood.png
+- everness_floating_crystal_animated.png
+- everness_flowered_vine_1.png
+- everness_flowered_vine_2.png
+- everness_flowered_vine_end.png
+- everness_forsaken_desert_brick_red.png
+- everness_forsaken_desert_brick.png
+- everness_forsaken_desert_chiseled_stone_bottom.png
+- everness_forsaken_desert_chiseled_stone_side.png
+- everness_forsaken_desert_chiseled_stone_top.png
+- everness_forsaken_desert_cobble_red.png
+- everness_forsaken_desert_cobble.png
+- everness_forsaken_desert_dry_ocean_dirt.png
+- everness_forsaken_desert_engraved_stone.png
+- everness_forsaken_desert_plant_1.png
+- everness_forsaken_desert_plant_2.png
+- everness_forsaken_desert_plant_3.png
+- everness_forsaken_desert_sand.png
+- everness_forsaken_desert_stone.png
+- everness_forsaken_fire_item.png
+- everness_forsaken_fire_mesh.png
+- everness_forsaken_tundra_beach_sand_with_shells.png
+- everness_forsaken_tundra_beach_sand.png
+- everness_forsaken_tundra_brick.png
+- everness_forsaken_tundra_cobblestone.png
+- everness_forsaken_tundra_dirt.png
+- everness_forsaken_tundra_grass_bckp.png
+- everness_forsaken_tundra_grass_side_bckp.png
+- everness_forsaken_tundra_grass_side.png
+- everness_forsaken_tundra_grass.png
+- everness_forsaken_tundra_rocks_side.png
+- everness_forsaken_tundra_rocks_top.png
+- everness_forsaken_tundra_stone.png
+- everness_forsythia_item.png
+- everness_forsythia_mesh.png
+- everness_frosted_coral.png
+- everness_frosted_ice_translucent.png
+- everness_frosted_ice.png
+- everness_frosted_icicle.png
+- everness_frosted_snow.png
+- everness_glowing_pillar_item.png
+- everness_glowing_pillar_leaves.png
+- everness_glowing_pillar_luminophor.png
+- everness_glowing_pillar_roots.png
+- everness_golden_vine_1.png
+- everness_golden_vine_2.png
+- everness_golden_vine_end.png
+- everness_hollow_tree_side.png
+- everness_hollow_tree_top.png
+- everness_icecobble.png
+- everness_illumi_root.png
+- everness_ivis_moss.png
+- everness_ivis_vine_end.png
+- everness_ivis_vine.png
+- everness_lootchest_marker_side.png
+- everness_lootchest_marker_top.png
+- everness_lumabus_bulb_purple.png
+- everness_lumabus_leaves.png
+- everness_lumabus_vine_1.png
+- everness_lumabus_vine_2.png
+- everness_lumecorn_leaf.png
+- everness_lumecorn_light.png
+- everness_lumecorn_root.png
+- everness_magmacobble_animated.png
+- everness_magmacobble.png
+- everness_marsh_grass.png
+- everness_mese_tree_side_animated.png
+- everness_mineral_pyrite.png
+- everness_mold_stone_with_moss_side.png
+- everness_mold_stone_with_moss_top.png
+- everness_mold_stone.png
+- everness_moss_block.png
+- everness_mud.png
+- everness_ngrass_1.png
+- everness_ngrass_2.png
+- everness_particle.png
+- everness_pick_illuminating.png
+- everness_pyrite_block_forged.png
+- everness_pyrite_block_polished.png
+- everness_pyrite_block_slab_brick.png
+- everness_pyrite_block_spiral.png
+- everness_pyrite_block.png
+- everness_pyrite_glass.png
+- everness_pyrite_ingot.png
+- everness_pyrite_lantern.png
+- everness_pyrite_lump.png
+- everness_pyrite_pillar_bottom.png
+- everness_pyrite_pillar_middle.png
+- everness_pyrite_pillar_small.png
+- everness_pyrite_pillar_top.png
+- everness_pyriteblock_brick.png
+- everness_quartz_block_bottom.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_chiseled_top.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_chiseled.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_lines_top.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_lines.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_side.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_block_top.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz_ore.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_quartz.png -- Derived from texture Pixel Perfection by XSSheep (CC-BY-SA-4.0)
+- everness_red_castor_1.png
+- everness_red_castor_2.png
+- everness_red_castor_3.png
+- everness_red_castor_4.png
+- everness_reeds_vine_1.png
+- everness_reeds_vine_2.png
+- everness_reeds_vine_end.png
+- everness_scull_with_candle_inventory.png
+- everness_sequoia_tree_leaves.png
+- everness_sequoia_tree_side.png
+- everness_sequoia_tree_top.png
+- everness_sequoia_wood.png
+- everness_smoke_cloud_particle_animated.png
+- everness_snowcobble.png
+- everness_soul_sandstone_veined_side.png
+- everness_soul_sandstone_veined_top.png
+- everness_soul_sandstone.png
+- everness_spine_kelp.png
+- everness_starfish.png
+- everness_sulfur_stone.png
+- everness_tenanea_flowers_vine_1.png
+- everness_tenanea_flowers_vine_2.png
+- everness_tenanea_flowers_vine_end.png
+- everness_termite_block.png
+- everness_tinted_glass_base.png
+- everness_twisted_crystal_grass.png
+- everness_twisted_vine_1.png
+- everness_twisted_vine_2.png
+- everness_twisted_vine_end.png
+- everness_venus_trap_item.png
+- everness_venus_trap_mesh.png
+- everness_vine_cave_end.png
+- everness_vine_cave_with_mese_leaves.png
+- everness_vine_cave.png
+- everness_vine_shears.png
+- everness_volcanic_rock_with_magma_animated.png
+- everness_volcanic_rock.png
+- everness_volcanic_sulfur_stone.png
+- everness_weeping_obsidian.png
+- everness_whispering_gourd_vine_1.png
+- everness_whispering_gourd_vine_2.png
+- everness_whispering_gourd_vine_end.png
+- everness_willow_leaves.png
+- everness_willow_sapling.png
+- everness_willow_tree_side.png
+- everness_willow_tree_top.png
+- everness_willow_vine_end.png
+- everness_willow_vine.png
+- everness_willow_wood.png -- Derived from texture by BlockMen (CC BY-SA 3.0)
+- everness_xpanes_edge_pyrite.png
+- everness_coral_tree_bioluminescent_sapling.png
+- everness_crystal_tree_large_sapling.png
+- everness_crystal_tree_sapling.png
+- everness_cursed_dream_tree_sapling.png
+- everness_dry_tree_sapling.png
+- everness_sequoia_tree_sapling.png
+- everness_willow_tree_sapling.png
+- everness_amaranita_lantern_item.png
+- everness_lumecorn_item.png
+- everness_shovel_silk.png
+- everness_coral_white_sandstone.png
+- everness_coral_white_sandstone_pillar.png
+- everness_coral_white_sandstone_brick.png
+- everness_coral_sandstone.png
+- everness_coral_sandstone_chiseled.png
+- everness_coral_sandstone_carved_1.png
+- everness_coral_sandstone_brick.png
+- everness_coral_desert_stone_block.png
+- everness_coral_desert_stone_brick.png
+- everness_farming_soil_overlay.png -- Derived from texture by PilzAdam (CC BY 3.0)
+- everness_farming_soil_wet_overlay.png -- Derived from texture by PilzAdam (CC BY 3.0)
+- everness_farming_soil_wet_side_overlay.png -- Derived from texture by PilzAdam (CC BY 3.0)
+- everness_crystal_forest_moon.png
+- everness_crystal_forest_moon_tonemap.png
+- everness_crystal_sandstone_brick.png
+- everness_crystal_sandstone.png
+- everness_crystal_sandstone_chiseled.png
+- everness_cursed_brick_mixed.png
+- everness_cursed_brick_carved.png
+- everness_cursed_brick_with_growth.png
+- everness_cursed_brick.png
+- everness_cursed_sandstone_block.png
+- everness_cursed_sandstone_brick.png
+- everness_forsaken_desert_sun.png
+- everness_forsaken_desert_sun_tonemap.png
+- everness_coral_forest_sun_tonemap.png
+- everness_coral_forest_sun.png
+- everness_forsaken_tundra_sun.png
+- everness_forsaken_tundra_sun_tonemap.png
+- everness_bamboo_forest_sun_tonemap.png
+- everness_bamboo_forest_sun.png
+- everness_bamboo_forest_sunrisebg.png
+- everness_baobab_savanna_sun.png
+- everness_crystal_forest_sun_tonemap.png
+- everness_crystal_forest_sun.png
+- everness_frosted_icesheet_sun_tonemap.png
+- everness_frosted_icesheet_sun.png
+- everness_glass.png
+- everness_glass_detail.png
+- everness_tinted_glass_detail.png
+- everness_chest_front.png
+- everness_chest_inside.png
+- everness_chest_side.png
+- everness_chest_top.png
+- everness_chest_ui_bg.png -- Derived from texture by XSSheep (CC BY 4.0)
+- everness_chest_ui_bg_hb_slot.png -- Derived from texture by XSSheep (CC BY 4.0)
+- everness_chest_ui_bg_slot.png -- Derived from texture by XSSheep (CC BY 4.0)
+- everness_stone.png
+- everness_coral_skeleton.png
+- everness_mcl_doors_door_bamboo_lower.png
+- everness_mcl_doors_door_bamboo_side_upper.png
+- everness_mcl_doors_door_bamboo_upper.png
+- everness_mcl_doors_door_bone_pyrite_lower.png
+- everness_mcl_doors_door_bone_pyrite_side_upper.png
+- everness_mcl_doors_door_bone_pyrite_upper.png
+- everness_mcl_doors_door_crystal_wood_lower.png
+- everness_mcl_doors_door_crystal_wood_side_lower.png
+- everness_mcl_doors_door_crystal_wood_side_upper.png
+- everness_mcl_doors_door_crystal_wood_upper.png
+- everness_mcl_doors_door_willow_lower.png
+- everness_mcl_doors_door_willow_side_lower.png
+- everness_mcl_doors_door_willow_side_upper.png
+- everness_mcl_doors_door_willow_upper.png
+- everness_mcl_doors_trapdoor_bamboo_side.png
+- everness_mcl_doors_trapdoor_crystal_wood_side.png
+- everness_coral_forest_deep_ocean_lantern_animated.png
+- everness_coral_forest_deep_ocean_lantern_bottom.png
+- everness_coral_forest_deep_ocean_lantern_top.png
+- everness_coral_bones_block.png
+- everness_coral_bones_brick.png
+- everness_flowers.png
+- everness_flowers_side_x.png
+- everness_flowers_side_z.png
+- everness_dry_grass_1.png -- thanks to Khaz
+- everness_dry_grass_2.png -- thanks to Khaz
+- everness_dry_grass_3.png -- thanks to Khaz
+- everness_dry_grass_4.png -- thanks to Khaz
+- everness_dry_grass_top.png
+- everness_dry_grass_side.png
+- everness_grass_top.png
+- everness_grass_side.png
+- everness_grass_extras_1.png
+- everness_grass_extras_2.png
+- everness_dirt.png
+- everness_dry_dirt.png
+- everness_crystal_stone_brick.png
+- everness_crystal_stone.png
+- everness_crystal_cobble.png
+- everness_cursed_stone_carved.png
+- everness_crystal_block_cyan_top.png
+- everness_crystal_block_cyan.png
+- everness_mese_leaves.png
+- everness_mese_tree_fruit_item.png
+- everness_mese_tree_fruit_side.png
+- everness_mese_tree_fruit_top.png
+- everness_mese_tree_sapling.png
+- everness_mese_tree_top.png
+- everness_mese_wood.png
+
+**CC-BY-SA-4.0, Pixel Perfection by XSSheep**, https://minecraft.curseforge.com/projects/pixel-perfection-freshly-updated
+
+- everness_cobweb.png
+- everness_fire_animated.png
+- everness_flame_particle.png
+- everness_rising_soul_particle.png
+
+### Sounds
+
+**CC0-1.0, by ProdMultimediasHQI**, https://freesound.org/people/ProdMultimediasHQI/sounds/512501/
+
+- everness_frosted_snow_footstep.1.ogg
+- everness_frosted_snow_footstep.2.ogg
+- everness_frosted_snow_footstep.3.ogg
+- everness_frosted_snow_footstep.4.ogg
+- everness_frosted_snow_footstep.5.ogg
+
+**CC0-1.0, by patchytherat**, https://freesound.org
+
+- everness_crystal_chime.1.ogg
+- everness_crystal_chime.2.ogg
+- everness_crystal_chime.3.ogg
+- everness_crystal_chime.4.ogg
+- everness_crystal_chime.5.ogg
+- everness_crystal_chime.6.ogg
+
+**CC0-1.0, by afleetingspeck**, https://freesound.org
+
+- everness_bamboo_hit.1.ogg
+- everness_bamboo_hit.2.ogg
+- everness_bamboo_hit.3.ogg
+- everness_bamboo_hit.4.ogg
+- everness_bamboo_hit.5.ogg
+
+**CC0-1.0, by se2001**, https://freesound.org
+
+- everness_bamboo_dug.1.ogg
+
+**CC-BY-4.0, by se2001**, https://www.playonloop.com
+
+- everness_ambience_graveyard_1.ogg
+- everness_ambience_graveyard_7.ogg
+- everness_ambience_graveyard_8.ogg
+- everness_ambience_graveyard_9.ogg
+- everness_ambience_graveyard_10.ogg
+- everness_ambience_night_crickets_1.ogg
+- everness_ambience_night_crickets_2.ogg
+- everness_ambience_night_crickets_3.ogg
+- everness_ambience_night_crickets_4.ogg
+- everness_ambience_night_crickets_5.ogg
+- everness_ambience_snow_storm_1.ogg
+- everness_ambience_snow_storm_2.ogg
+- everness_ambience_snow_storm_3.ogg
+- everness_ambience_snow_storm_4.ogg
+- everness_ambience_swamp_1.ogg
+- everness_ambience_swamp_2.ogg
+- everness_ambience_swamp_3.ogg
+- everness_ambience_swamp_4.ogg
+
+**CC0-1.0, by mistersherlock**, https://freesound.org
+
+- everness_ambience_graveyard_2.ogg
+- everness_ambience_graveyard_3.ogg
+- everness_ambience_graveyard_4.ogg
+- everness_ambience_graveyard_5.ogg
+- everness_ambience_graveyard_6.ogg
+
+**CC-BY-3.0, by TinTinOko**, https://freesound.org
+
+- everness_ambience_monster_sigh_cave.ogg
+
+**CC-BY-4.0, by 150134**, https://freesound.org
+
+- everness_ambience_rocks_falling_cave.ogg
+
+**CC-BY-4.0, by tosha73**, https://freesound.org
+
+- everness_ambience_water_drips_cave_1.ogg
+
+**CC0-1.0, by SaltedMutton72**, https://freesound.org
+
+- everness_ambience_wind_cave_1.ogg
+
+**CC0-1.0, by shelbyshark**, https://freesound.org
+
+- everness_ambience_wind_cave_2.ogg
+- everness_ambience_wind_cave_3.ogg
+- everness_ambience_wind_cave_4.ogg
+- everness_ambience_wind_cave_5.ogg
+
+**CC-BY-4.0, by LittleRobotSoundFactory**, https://freesound.org
+
+- everness_ambience_cave_1.ogg
+- everness_ambience_cave_2.ogg
+- everness_ambience_cave_6.ogg
+- everness_ambience_cave_7.ogg
+- everness_ambience_cave_8.ogg
+- everness_ambience_cave_9.ogg
+
+**CC0-1.0, by szegvari**, https://freesound.org
+
+- everness_ambience_cave_3.ogg
+
+**CC0-1.0, by Bertsz**, https://freesound.org
+
+- everness_ambience_cave_4.ogg
+- everness_ambience_cave_5.ogg
+
+**CC-BY-4.0, by erlipresidente**, https://freesound.org
+
+- everness_ambience_water_drips_cave_2.ogg
+
+**CC0-1.0, by qubodup**, https://freesound.org
+
+- everness_ambience_creepy_cave_1.ogg
+
+**CC0-1.0, by HorrorAudio**, https://freesound.org
+
+- everness_ambience_ghost_1.ogg
+
+**CC-BY-4.0, by klankbeeld**, https://freesound.org
+
+- everness_ambience_ghost_2.ogg
+- everness_ambience_ghost_3.ogg
+- everness_ambience_ghost_4.ogg
+- everness_ambience_ghost_6.ogg
+
+**CC0-1.0, by Legnalegna55**, https://freesound.org
+
+- everness_ambience_ghost_5.ogg
+
+**CC-BY-4.0, by Benboncan**, https://freesound.org
+
+- everness_ambience_owl_1.ogg
+
+**CC0-1.0, by Foleyhaven**, https://freesound.org
+
+- everness_mud_footstep.1.ogg
+- everness_mud_footstep.2.ogg
+- everness_mud_footstep.3.ogg
+- everness_mud_footstep.4.ogg
+- everness_mud_footstep.5.ogg
+
+**CC-BY-4.0, by Peacewaves**, https://freesound.org
+
+- everness_ambience_sulfur_1.ogg
+- everness_ambience_sulfur_2.ogg
+- everness_ambience_sulfur_3.ogg
+- everness_ambience_sulfur_4.ogg
+
+**CC0-1.0, by e__**, https://freesound.org
+
+- everness_ambience_hot_stone_1.ogg
+- everness_ambience_hot_stone_2.ogg
+
+**CC-BY-4.0, by GregorQuendel**, https://freesound.org
+
+- everness_ambience_ice_cracking_1
+- everness_ambience_ice_cracking_2
+- everness_ambience_ice_cracking_3
+
+**CC0-1.0, by onikage22**, https://freesound.org
+
+- everness_item_drop_pickup.1.ogg
+- everness_item_drop_pickup.2.ogg
+- everness_item_drop_pickup.3.ogg
+- everness_item_drop_pickup.4.ogg
+
+**CC-BY-3.0, by murraysortz**, https://freesound.org
+
+- everness_underwater_bubbles.1.ogg
+- everness_underwater_bubbles.2.ogg
+- everness_underwater_bubbles.3.ogg
+
+**CC0-1.0, by Yuval**, https://freesound.org
+
+- everness_grass_footstep.1.ogg
+- everness_grass_footstep.2.ogg
+- everness_grass_footstep.3.ogg
+
+**CC0-1.0, by kyles**, https://freesound.org
+
+- everness_dirt_hit.1.ogg
+- everness_dirt_hit.2.ogg
+- everness_dirt_hit.3.ogg
+
+**CC0-1.0, by Nox_Sound**, https://freesound.org
+
+- everness_grass_hit.1.ogg
+- everness_grass_hit.3.ogg
+- everness_grass_hit.2.ogg
+
+**CC0-1.0, by Nox_Sound**, https://freesound.org/people/Nox_Sound/sounds/613849/
+
+- everness_snow_footstep.1.ogg
+- everness_snow_footstep.2.ogg
+- everness_snow_footstep.3.ogg
+- everness_snow_footstep.4.ogg
+
+**CC0-1.0, by Fission9**, https://freesound.org
+
+- everness_dirt_footstep.1.ogg
+- everness_dirt_footstep.2.ogg
+- everness_dirt_footstep.3.ogg
+- everness_dirt_footstep.4.ogg
+- everness_wood_footstep.1.ogg
+- everness_wood_footstep.2.ogg
+- everness_wood_footstep.3.ogg
+- everness_wood_footstep.4.ogg
+- everness_wood_footstep.5.ogg
+- everness_wood_footstep.6.ogg
+
+**CC-BY-4.0, by InspectorJ**, https://freesound.org
+
+- everness_ice_footstep.1.ogg
+- everness_ice_footstep.2.ogg
+- everness_ice_footstep.3.ogg
+- everness_ice_footstep.4.ogg
+
+**CC-BY-4.0, by EminYILDIRIM**, https://freesound.org
+
+- everness_ice_hit.1.ogg
+- everness_ice_hit.2.ogg
+- everness_ice_hit.3.ogg
+- everness_ice_hit.4.ogg
+
+**CC-BY-4.0, by SFXAFRIK**, https://freesound.org/people/SFXAFRIK/sounds/584855/
+
+- everness_door_glass_close.ogg
+- everness_door_glass_open.ogg
+
+**CC-BY-4.0, by SFXAFRIK**, https://freesound.org/people/SFXAFRIK/sounds/584850/
+
+- everness_chest_open.ogg
+- everness_chest_close.ogg
+
+**CC0-1.0, by Nox_Sound**, https://freesound.org
+
+- everness_stone_dug.1.ogg
+- everness_stone_dug.2.ogg
+- everness_stone_dug.3.ogg
+- everness_stone_footstep.1.ogg
+- everness_stone_footstep.2.ogg
+- everness_stone_footstep.3.ogg
+- everness_stone_footstep.4.ogg
+- everness_stone_footstep.5.ogg
+
+**CC0-1.0, by lolamadeus**, https://freesound.org
+
+- everness_stone_hit.1.ogg
+- everness_stone_hit.2.ogg
+- everness_stone_hit.3.ogg
+
+**CC-BY-4.0, by F.M.Audio**, https://freesound.org
+
+- everness_stone_place.1.ogg
+- everness_stone_place.2.ogg
+- everness_stone_place.3.ogg
+- everness_stone_place.4.ogg
+
+**CC-BY-4.0, by elektroproleter**, https://freesound.org
+
+- everness_leaves_footstep.1.ogg
+- everness_leaves_footstep.2.ogg
+- everness_leaves_footstep.3.ogg
+- everness_leaves_footstep.4.ogg
+
+**CC-BY-4.0, by Abacagi**, https://freesound.org
+
+- everness_leaves_hit.1.ogg
+- everness_leaves_hit.2.ogg
+
+**CC-BY-4.0, by JanKoehl**, https://freesound.org
+
+- everness_leaves_dug.1.ogg
+- everness_leaves_dug.2.ogg
+
+**CC0-1.0, by vgraham1**, https://freesound.org
+
+- everness_leaves_place.1.ogg
+- everness_leaves_place.2.ogg
+
+**CC0-1.0, by worthahep88**, https://freesound.org
+
+- everness_plant_hit.1.ogg
+- everness_plant_hit.2.ogg
+- everness_plant_hit.3.ogg
+
+**CC0-1.0, by igroglaz**, https://freesound.org
+
+- everness_wood_hit.1.ogg
+- everness_wood_hit.2.ogg
+- everness_wood_hit.3.ogg
+- everness_wood_hit.4.ogg
+- everness_wood_hit.5.ogg
+- everness_wood_hit.6.ogg
+
+**CC-BY-4.0, by RICHERlandTV**, https://freesound.org
+
+- everness_wood_place.1.ogg
+- everness_wood_place.2.ogg
+- everness_wood_place.3.ogg
+
+**CC0-1.0, by pan14**, https://freesound.org
+
+- everness_sand_footstep.1.ogg
+- everness_sand_footstep.2.ogg
+- everness_sand_footstep.3.ogg
+
+**CC-BY-3.0, by Coral_Island_Studios**, https://freesound.org
+
+- everness_sand_place.1.ogg
+- everness_sand_place.2.ogg
+- everness_sand_place.3.ogg
+- everness_sand_place.4.ogg
+- everness_sand_place.5.ogg
+
+**CC0-1.0, by schneidi67**, https://freesound.org
+
+- everness_sand_dug.1.ogg
+- everness_sand_dug.2.ogg
+- everness_sand_dug.3.ogg
+
+**CC0-1.0, by Lukeo135**, https://freesound.org
+
+- everness_sand_hit.1.ogg
+- everness_sand_hit.2.ogg
+- everness_sand_hit.3.ogg
+
+**CC0-1.0, by GiocoSound**, https://freesound.org
+
+- everness_metal_footstep.1.ogg
+- everness_metal_footstep.2.ogg
+- everness_metal_footstep.3.ogg
+- everness_metal_footstep.4.ogg
+- everness_metal_footstep.5.ogg
+
+**CC-BY-4.0, by DasDeer**, https://freesound.org
+
+- everness_metal_hit.1.ogg
+- everness_metal_hit.2.ogg
+- everness_metal_hit.3.ogg
+
+**CC-BY-4.0, by MoveAwayPodcast**, https://freesound.org
+
+- everness_metal_place.1.ogg
+- everness_metal_place.2.ogg
+- everness_metal_place.3.ogg
+
+**CC0-1.0, by craigsmith**, https://freesound.org
+
+- everness_metal_dug.1.ogg
+- everness_metal_dug.2.ogg
+- everness_metal_dug.3.ogg
+
+**CC0-1.0, by courtneyeck**, https://freesound.org
+
+- everness_glass_footstep.1.ogg
+- everness_glass_footstep.2.ogg
+- everness_glass_footstep.3.ogg
+
+**CC0-1.0, by Robson220pl**, https://freesound.org
+
+- everness_glass_place.1.ogg
+- everness_glass_place.2.ogg
+- everness_glass_place.3.ogg
+
+**CC-BY-4.0, by elfgrunge**, https://freesound.org
+
+- everness_glass_dug.1.ogg
+- everness_glass_dug.2.ogg
+
+**CC-BY-3.0, by Mito551**, https://freesound.org
+
+- everness_thin_glass_footstep.ogg
+
+**CC-BY-3.0, by cmusounddesign**, http://www.freesound.org/people/cmusounddesign/sounds/71947/
+
+- everness_break_thin_glass.1.ogg
+
+**CC-BY-3.0, by Tomlija**, http://www.freesound.org/people/Tomlija/sounds/97669/
+
+- everness_break_thin_glass.2.ogg
+
+**CC-BY-3.0, by lsprice**, http://www.freesound.org/people/lsprice/sounds/88808/
+
+- everness_break_thin_glass.3.ogg
+
+**CC-BY-3.0, by alexo400**, https://freesound.org/people/alexo400/sounds/543385/
+
+- everness_snow_place.1.ogg
+- everness_snow_place.2.ogg
+- everness_snow_place.3.ogg
+
+**CC-BY-3.0, by soundscalpel.com**
+https://freesound.org/people/soundscalpel.com/sounds/110619/
+https://freesound.org/people/soundscalpel.com/sounds/110609/
+https://freesound.org/people/soundscalpel.com/sounds/110620/
+
+- everness_snow_hit.1.ogg
+- everness_snow_hit.2.ogg
+- everness_snow_hit.3.ogg
+
+**CC-BY-3.0, by soundscalpel.com**
+https://freesound.org/people/cabled_mess/sounds/384423/
+https://freesound.org/people/cabled_mess/sounds/384422/
+https://freesound.org/people/cabled_mess/sounds/384421/
+
+- everness_frosted_snow_place.1.ogg
+- everness_frosted_snow_place.2.ogg
+- everness_frosted_snow_place.3.ogg
+
+**CC-BY-3.0, by AtevonHes**, https://freesound.org/people/AtevonHes/sounds/454783/
+
+- everness_frosted_snow_hit.1.ogg
+- everness_frosted_snow_hit.2.ogg
+- everness_frosted_snow_hit.3.ogg
+- everness_frosted_snow_hit.4.ogg
+
+**CC-BY-4.0, by HerbertBoland**, https://freesound.org/people/AtevonHes/sounds/454783/
+
+- everness_tool_breaks.1.ogg
+- everness_tool_breaks.2.ogg
+- everness_tool_breaks.3.ogg
+
+**CC0-1.0, by Rudmer_Rotteveel**
+
+https://freesound.org/people/Rudmer_Rotteveel/sounds/590949/
+https://freesound.org/people/Rudmer_Rotteveel/sounds/590948/
+https://freesound.org/people/Rudmer_Rotteveel/sounds/590950/
+
+- everness_creaky_door_open.1.ogg
+- everness_creaky_door_open.2.ogg
+- everness_creaky_door_close.ogg
+
+### Models
+
+**CC-BY-SA-4.0, by SaKeL**
+
+- everness_barrel_cactus.obj
+- everness_cave_flower_with_particles.obj
+- everness_cave_flower.obj
+- everness_forsaken_fire.obj
+- everness_forsythia_mesh.obj
+- everness_glowing_pillar.obj
+- everness_lumabus.obj
+- everness_lumecorn.obj
+- everness_skull_with_candle.obj
+- everness_venus_trap.obj
+
+**CC-BY-SA-3.0, by sofar**
+
+- everness_chest_open
+
+### Assets
+
+**CC-BY-SA-4.0, by SaKeL**
+
+- everness_barrel_cactus.blend
+- everness_cave_flower_with_particles.blend
+- everness_cave_flower.blend
+- everness_forsaken_fire.blend
+- everness_glowing_pillar.blend
+- everness_lumabus.blend
+- everness_lumecorn.blend
+- everness_mesh_bush.blend
+- everness_skull_with_candle.blend
+- everness_venus_trap.blend
+
+### Schematics
+
+**CC-BY-SA-4.0, by SaKeL**
+
+- everness_baobab_tree.lua
+- everness_baobab_tree.mts
+- everness_cemetery.lua
+- everness_cemetery.mts
+- everness_coral_bones_tree.lua
+- everness_coral_bones_tree.mts
+- everness_coral_forest_deep_ocean_coral_cyan.lua
+- everness_coral_forest_deep_ocean_coral_cyan.mts
+- everness_coral_forest_deep_ocean_coral_green.lua
+- everness_coral_forest_deep_ocean_coral_green.mts
+- everness_coral_forest_deep_ocean_coral_pink.lua
+- everness_coral_forest_deep_ocean_coral_pink.mts
+- everness_coral_forest_deep_ocean_coral_red.lua
+- everness_coral_forest_deep_ocean_coral_red.mts
+- everness_coral_forest_deep_ocean_coral_reef_cyan.lua
+- everness_coral_forest_deep_ocean_coral_reef_cyan.mts
+- everness_coral_forest_deep_ocean_coral_reef_green.lua
+- everness_coral_forest_deep_ocean_coral_reef_green.mts
+- everness_coral_forest_deep_ocean_coral_reef_pink.lua
+- everness_coral_forest_deep_ocean_coral_reef_pink.mts
+- everness_coral_forest_deep_ocean_coral_reef_red.lua
+- everness_coral_forest_deep_ocean_coral_reef_red.mts
+- everness_coral_forest_deep_ocean_house.lua
+- everness_coral_forest_deep_ocean_house.mts
+- everness_coral_tree_bioluminescent_from_sapling.lua
+- everness_coral_tree_bioluminescent_from_sapling.mts
+- everness_coral_tree_bioluminescent.lua
+- everness_coral_tree_bioluminescent.mts
+- everness_coral_tree_from_sapling.lua
+- everness_coral_tree_from_sapling.mts
+- everness_coral_tree.lua
+- everness_coral_tree.mts
+- everness_coral_volcano_x_clay.lua
+- everness_coral_volcano_x_clay.mts
+- everness_coral_volcano.lua
+- everness_coral_volcano.mts
+- everness_crystal_bush.lua
+- everness_crystal_bush.mts
+- everness_crystal_forest_deep_ocean_coral_1.lua
+- everness_crystal_forest_deep_ocean_coral_1.mts
+- everness_crystal_forest_deep_ocean_coral_2.lua
+- everness_crystal_forest_deep_ocean_coral_2.mts
+- everness_crystal_forest_deep_ocean_coral_3.lua
+- everness_crystal_forest_deep_ocean_coral_3.mts
+- everness_crystal_forest_deep_ocean_ruins.lua
+- everness_crystal_forest_deep_ocean_ruins.mts
+- everness_crystal_forest_ruins_1.lua
+- everness_crystal_forest_ruins_1.mts
+- everness_crystal_forest_ruins_2.lua
+- everness_crystal_forest_ruins_2.mts
+- everness_crystal_orange_cluster.lua
+- everness_crystal_orange_cluster.mts
+- everness_crystal_purple_cluster.lua
+- everness_crystal_purple_cluster.mts
+- everness_crystal_tree_large.lua
+- everness_crystal_tree_large.mts
+- everness_crystal_tree.lua
+- everness_crystal_tree.mts
+- everness_cursed_bush.mts
+- everness_cursed_dream_tree_from_sapling.lua
+- everness_cursed_dream_tree_from_sapling.mts
+- everness_cursed_dream_tree.lua
+- everness_cursed_dream_tree.mts
+- everness_cursed_lands_deep_ocean_skull.lua
+- everness_cursed_lands_deep_ocean_skull.mts
+- everness_dry_tree_from_sapling.lua
+- everness_dry_tree_from_sapling.mts
+- everness_dry_tree.lua
+- everness_dry_tree.mts
+- everness_forsaken_desert_temple_2.lua
+- everness_forsaken_desert_temple_2.mts
+- everness_forsaken_desert_temple.lua
+- everness_forsaken_desert_temple.mts
+- everness_forsaken_lands_deep_ocean_coral_alcyonacea.lua
+- everness_forsaken_lands_deep_ocean_coral_alcyonacea.mts
+- everness_forsaken_lands_deep_ocean_coral_octocurse.lua
+- everness_forsaken_lands_deep_ocean_coral_octocurse.mts
+- everness_forsaken_lands_deep_ocean_coral_ostracod.lua
+- everness_forsaken_lands_deep_ocean_coral_ostracod.mts
+- everness_forsaken_tundra_rocks.lua
+- everness_forsaken_tundra_rocks.mts
+- everness_forsythia_on_moss.lua
+- everness_forsythia_on_moss.mts
+- everness_frosted_icesheet_igloo.lua
+- everness_frosted_icesheet_igloo.mts
+- everness_frosted_icicle_large_ceiling.lua
+- everness_frosted_icicle_large_ceiling.mts
+- everness_frosted_icicle_large_floor.lua
+- everness_frosted_icicle_large_floor.mts
+- everness_frosted_lands_fossils.lua
+- everness_frosted_lands_fossils.mts
+- everness_frosted_lands_stalagmite.lua
+- everness_frosted_lands_stalagmite.mts
+- everness_frosted_lands_volcanic_rock.lua
+- everness_frosted_lands_volcanic_rock.mts
+- everness_giant_sequoia_tree_from_sapling.lua
+- everness_giant_sequoia_tree_from_sapling.mts
+- everness_giant_sequoia_tree.lua
+- everness_giant_sequoia_tree.mts
+- everness_haunted_house.lua
+- everness_haunted_house.mts
+- everness_hollow_tree_large.lua
+- everness_hollow_tree_large.mts
+- everness_hollow_tree.lua
+- everness_hollow_tree.mts
+- everness_japanese_shrine.lua
+- everness_japanese_shrine.mts
+- everness_jungle_temple.lua
+- everness_jungle_temple.mts
+- everness_large_bamboo.lua
+- everness_large_bamboo.mts
+- everness_marsh_grass.lua
+- everness_marsh_grass.mts
+- everness_quartz_temple.lua
+- everness_quartz_temple.mts
+- everness_ruins_1.lua
+- everness_ruins_1.mts
+- everness_small_bamboo.lua
+- everness_small_bamboo.mts
+- everness_sulfur_volcano.lua
+- everness_sulfur_volcano.mts
+- everness_termite_nest.lua
+- everness_termite_nest.mts
+- everness_willow_tree_from_sapling.lua
+- everness_willow_tree_from_sapling.mts
+- everness_willow_tree.lua
+- everness_willow_tree.mts
+- everness_mese_tree.lua
+- everness_mese_tree.mts

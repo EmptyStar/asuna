@@ -289,7 +289,7 @@ minetest.register_node("naturalbiomes:alderswamp_reed", {
 			scale = 0.1,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 4602,
-			octaves = 8,
+			octaves = 3,
 			persist = 1,
 		},
 		y_max = 30000,
@@ -382,7 +382,7 @@ minetest.register_node("naturalbiomes:alderswamp_reed3", {
 		num_spawn_by = 8,
 	})
 
-	minetest.register_decoration({
+	--[[minetest.register_decoration({
 		name = "naturalbiomes:alder_swamppit",
 		deco_type = "schematic",
 		place_on = {"naturalbiomes:alderswamp_litter"},
@@ -404,7 +404,7 @@ minetest.register_node("naturalbiomes:alderswamp_reed3", {
     flags = "force_placement",
 		rotation = "random",
 		spawn_by = "naturalbiomes:alderswamp_litter",
-	})
+	})]]
 
 	minetest.register_decoration({
 		name = "naturalbiomes:waterlily",

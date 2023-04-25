@@ -1,4 +1,4 @@
-minetest.register_biome(asuna.biomes.terracotta.generate_definition())
+--minetest.register_biome(asuna.biomes.terracotta.generate_definition())
 
 minetest.register_decoration({
     name = "terracotta:terracotta_1",

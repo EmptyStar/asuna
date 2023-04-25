@@ -2,3 +2,6 @@ default
 asuna_core
 stairs
 mobs?
+abdecor
+flowers?
+herbs?
