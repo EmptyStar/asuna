@@ -1,3 +1,17 @@
+local modpath = minetest.get_modpath("nightshade")
+
+
+local function grow_new_nightshade_tree(pos)
+	if not default.can_grow(pos) then
+		-- try a bit later again
+			minetest.get_node_timer(pos):start(math.random(300, 1500))
+		return
+	end
+	minetest.remove_node(pos)
+	minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/nightshade_tree_1.mts", "0", nil, false)
+end
+
+
 minetest.register_node("nightshade:nightshade_dirt_with_grass", {
 	description = "NightShade Dirt With Grass",
 	tiles = {"nightshade_nightshade_grass.png", "default_dirt.png",
@@ -204,16 +218,4 @@ if minetest.get_modpath("bonemeal") ~= nil then
 bonemeal:add_sapling({
 	{"nightshade:nightshade_sapling", grow_new_nightshade_tree, "soil"},
 })
-end
-
-
-
-local function grow_new_nightshade_tree(pos)
-	if not default.can_grow(pos) then
-		-- try a bit later again
-			minetest.get_node_timer(pos):start(math.random(300, 1500))
-		return
-	end
-	minetest.remove_node(pos)
-	minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/nightshade_tree_1.mts", "0", nil, false)
 end

@@ -1,38 +1,3 @@
--------------Sapling
-minetest.register_node("japaneseforest:japanese_sapling", {
-	description = "Japanese Sapling",
-	drawtype = "plantlike",
-	tiles = {"japanese_sapling.png"},
-	inventory_image = "japanese_sapling.png",
-	on_use = minetest.item_eat(2),
-	wield_image = "japanese_sapling.png",
-	paramtype = "light",
-	sunlight_propagates = true,
-	walkable = false,
-	on_timer = grow_new_japanese_tree,
-	selection_box = {
-		type = "fixed",
-		fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 7 / 16, 4 / 16}
-	},
-	groups = {snappy = 2, dig_immediate = 3, flammable = 2,
-		attached_node = 1, sapling = 1, food_bread = 1},
-	sounds = default.node_sound_leaves_defaults(),
-
-	on_construct = function(pos)
-		minetest.get_node_timer(pos):start(math.random(300, 1500))
-	end,
-
-	on_place = function(itemstack, placer, pointed_thing)
-		itemstack = default.sapling_on_place(itemstack, placer, pointed_thing,
-			"japaneseforest:japanese_sapling",
-			{x = -2, y = 1, z = -2},
-			{x = 2, y = 15, z = 2},
-			4)
-
-		return itemstack
-	end,
-})
-
 local function grow_new_japanese_tree(pos)
 	if not default.can_grow(pos) then
 		-- try a bit later again
@@ -92,3 +57,38 @@ function grow_new_japanese_tree_3(pos)
 end
     end
 end
+
+-------------Sapling
+minetest.register_node("japaneseforest:japanese_sapling", {
+	description = "Japanese Sapling",
+	drawtype = "plantlike",
+	tiles = {"japanese_sapling.png"},
+	inventory_image = "japanese_sapling.png",
+	on_use = minetest.item_eat(2),
+	wield_image = "japanese_sapling.png",
+	paramtype = "light",
+	sunlight_propagates = true,
+	walkable = false,
+	on_timer = grow_new_japanese_tree,
+	selection_box = {
+		type = "fixed",
+		fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 7 / 16, 4 / 16}
+	},
+	groups = {snappy = 2, dig_immediate = 3, flammable = 2,
+		attached_node = 1, sapling = 1, food_bread = 1},
+	sounds = default.node_sound_leaves_defaults(),
+
+	on_construct = function(pos)
+		minetest.get_node_timer(pos):start(math.random(300, 1500))
+	end,
+
+	on_place = function(itemstack, placer, pointed_thing)
+		itemstack = default.sapling_on_place(itemstack, placer, pointed_thing,
+			"japaneseforest:japanese_sapling",
+			{x = -2, y = 1, z = -2},
+			{x = 2, y = 15, z = 2},
+			4)
+
+		return itemstack
+	end,
+})
