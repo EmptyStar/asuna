@@ -1,3 +1,17 @@
+local modpath = minetest.get_modpath("frost_land")
+
+
+local function grow_new_frost_land_tree(pos)
+	if not default.can_grow(pos) then
+		-- try a bit later again
+			minetest.get_node_timer(pos):start(math.random(300, 1500))
+		return
+	end
+	minetest.remove_node(pos)
+	minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/frost_tree_1.mts", "0", nil, false)
+end
+
+
 minetest.register_node("frost_land:frost_land_leaves_1", {
 	description = "frost_land Blue Leaves",
 	drawtype = "allfaces_optional",
@@ -111,16 +125,4 @@ if minetest.get_modpath("bonemeal") ~= nil then
 bonemeal:add_sapling({
 	{"frost_land:frost_land_sapling", grow_new_frost_land_tree, "soil"},
 })
-end
-
-
-
-local function grow_new_frost_land_tree(pos)
-	if not default.can_grow(pos) then
-		-- try a bit later again
-			minetest.get_node_timer(pos):start(math.random(300, 1500))
-		return
-	end
-	minetest.remove_node(pos)
-	minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/frost_tree_1.mts", "0", nil, false)
 end
