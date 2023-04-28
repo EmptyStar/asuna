@@ -1,3 +1,5 @@
+local modpath = minetest.get_modpath("badland")
+
 minetest.register_node("badland:badland_grass", {
 	description = "Badland Grass",
 	tiles = {"badland_grass.png", "default_dirt.png",

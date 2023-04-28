@@ -1,3 +1,5 @@
+local modpath = minetest.get_modpath("frost_land")
+
 minetest.register_node("frost_land:frost_land_leaves_1", {
 	description = "Frigid Frost Land Leaves",
 	drawtype = "allfaces_optional",
@@ -148,13 +150,13 @@ local trees = {
 	{
 		name = "Frigid",
 		grow_function = function(pos)
-			minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/frost_tree_1.mts", "random", nil, false)
+			minetest.place_schematic({x = pos.x-3, y = pos.y, z = pos.z-3}, modpath.."/schematics/frost_tree_1.mts", "random", nil, false)
 		end,
 	},
 	{
 		name = "Icy",
 		grow_function = function(pos)
-			minetest.place_schematic({x = pos.x-2, y = pos.y, z = pos.z-2}, modpath.."/schematics/tree_4.mts", "random", nil, false)
+			minetest.place_schematic({x = pos.x-4, y = pos.y, z = pos.z-4}, modpath.."/schematics/tree_4.mts", "random", nil, false)
 		end,
 	},
 }
@@ -176,7 +178,7 @@ for index,def in ipairs(trees) do
 		drop = {
 			max_items = 1,
 			items = {
-				{items = {node}, rarity = 20},
+				{items = {sapling}, rarity = 20},
 				{items = {leaves}}
 			}
 		},
@@ -213,7 +215,7 @@ for index,def in ipairs(trees) do
 		sounds = default.node_sound_leaves_defaults(),
 
 		on_construct = function(pos)
-			minetest.get_node_timer(pos):start(math.random(3, 15))
+			minetest.get_node_timer(pos):start(math.random(300, 1500))
 		end,
 
 		on_place = function(itemstack, placer, pointed_thing)
