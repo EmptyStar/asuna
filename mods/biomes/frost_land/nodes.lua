@@ -1,45 +1,5 @@
 local modpath = minetest.get_modpath("frost_land")
 
-minetest.register_node("frost_land:frost_land_leaves_1", {
-	description = "Frigid Frost Land Leaves",
-	drawtype = "allfaces_optional",
-	waving = 1,
-	tiles = {"frost_leaves_1.png"},
-	paramtype = "light",
-	is_ground_content = false,
-	groups = {snappy = 3, leafdecay = 3, flammable = 2, leaves = 1},
-	drop = {
-		max_items = 1,
-		items = {
-			{items = {""}, rarity = 20},
-			{items = {"frost_land:frost_land_leaves_1"}}
-		}
-	},
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = default.after_place_leaves,
-})
-
-minetest.register_node("frost_land:frost_land_leaves_2", {
-	description = "Icy Frost Land Leaves",
-	drawtype = "allfaces_optional",
-	waving = 1,
-	tiles = {"frost_leaves_2.png"},
-	paramtype = "light",
-	is_ground_content = false,
-	groups = {snappy = 3, leafdecay = 3, flammable = 2, leaves = 1},
-	drop = {
-		max_items = 1,
-		items = {
-			{items = {""}, rarity = 20},
-			{items = {"frost_land:frost_land_leaves_2"}}
-		}
-	},
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = default.after_place_leaves,
-})
-
 minetest.register_node("frost_land:frost_land_grass", {
 	description = "Frost Land Grass",
 	tiles = {"frost_land_grass.png", "default_dirt.png",
@@ -168,7 +128,7 @@ for index,def in ipairs(trees) do
 
 	-- Register leaves
 	minetest.register_node("frost_land:frost_land_leaves_" .. index, {
-		description = def.name .. " Leaves",
+		description = def.name .. " Frost Land Leaves",
 		drawtype = "allfaces_optional",
 		waving = 1,
 		tiles = {"frost_leaves_" .. index .. ".png"},
@@ -189,7 +149,7 @@ for index,def in ipairs(trees) do
 
 	-- Register sapling
 	minetest.register_node(sapling, {
-		description = def.name .. " Sapling",
+		description = def.name .. " Frost Land Sapling",
 		drawtype = "plantlike",
 		tiles = {image},
 		inventory_image = image,

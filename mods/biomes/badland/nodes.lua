@@ -13,7 +13,7 @@ minetest.register_node("badland:badland_grass", {
 })
 
 minetest.register_node("badland:badland_leaves", {
-	description = "Spooky Leaves",
+	description = "Spooky Badland Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves.png"},
@@ -23,7 +23,7 @@ minetest.register_node("badland:badland_leaves", {
 	drop = {
 		max_items = 1,
 		items = {
-			{items = {"badland:badland_sapling"}, rarity = 20},
+			{items = {"badland:badland_sapling_1"}, rarity = 20},
 			{items = {"badland:badland_leaves"}}
 		}
 	},
@@ -33,7 +33,7 @@ minetest.register_node("badland:badland_leaves", {
 })
 
 minetest.register_node("badland:badland_leaves_2", {
-	description = "Haunted Leaves",
+	description = "Haunted Badland Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves_2.png"},
@@ -43,7 +43,7 @@ minetest.register_node("badland:badland_leaves_2", {
 	drop = {
 		max_items = 1,
 		items = {
-			{items = {"badland:badland_sapling"}, rarity = 20},
+			{items = {"badland:badland_sapling_2"}, rarity = 20},
 			{items = {"badland:badland_leaves_2"}}
 		}
 	},
@@ -53,7 +53,7 @@ minetest.register_node("badland:badland_leaves_2", {
 })
 
 minetest.register_node("badland:badland_leaves_3", {
-	description = "Dusky Leaves",
+	description = "Dusky Badland Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves_3.png"},
@@ -63,7 +63,6 @@ minetest.register_node("badland:badland_leaves_3", {
 	drop = {
 		max_items = 1,
 		items = {
-			{items = {"badland:badland_sapling"}, rarity = 20},
 			{items = {"badland:badland_leaves_3"}}
 		}
 	},
@@ -265,7 +264,7 @@ minetest.register_node("badland:pumpkin_block", {
 
 -- PUMPKIN LANTERN -- from recipe
 minetest.register_node("badland:pumpkin_lantern", {
-	description = "Pumpkin Lantern",
+	description = "Jack o' Lantern",
 	tiles = {"badland_pumpkin_fruit_top.png", "badland_pumpkin_fruit_top.png", "badland_pumpkin_fruit_side.png", "badland_pumpkin_fruit_side.png", "badland_pumpkin_fruit_side.png", "badland_pumpkin_fruit_side_on.png"},
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -285,13 +284,13 @@ local trees = {
 	{
 		name = "Spooky",
 		grow_function = function(pos)
-			minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/badland_tree_1.mts", "0", nil, false)
+			minetest.place_schematic({x = pos.x-2, y = pos.y, z = pos.z-2}, modpath.."/schematics/badland_tree_1.mts", "0", nil, false)
 		end,
 	},
 	{
 		name = "Haunted",
 		grow_function = function(pos)
-			minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/badland_tree_3.mts", "0", nil, false)
+			minetest.place_schematic({x = pos.x-3, y = pos.y, z = pos.z-2}, modpath.."/schematics/badland_tree_3.mts", "0", nil, false)
 		end,
 	},
 }
@@ -305,7 +304,7 @@ for index,def in ipairs(trees) do
 
 	-- Register sapling
 	minetest.register_node(sapling, {
-		description = "Badland Sapling",
+		description = def.name .. " Badland Sapling",
 		drawtype = "plantlike",
 		tiles = {image},
 		inventory_image = image,

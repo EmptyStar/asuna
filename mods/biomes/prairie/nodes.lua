@@ -38,7 +38,7 @@ for index,def in ipairs(trees) do
 
 	-- Register leaves
 	minetest.register_node("prairie:prairie_leaves_" .. index, {
-		description = def.name .. " Leaves",
+		description = def.name .. " Prairie Leaves",
 		drawtype = "allfaces_optional",
 		waving = 1,
 		tiles = {"prairie_leaves_" .. index .. ".png"},
@@ -59,7 +59,7 @@ for index,def in ipairs(trees) do
 
 	-- Register sapling
 	minetest.register_node(sapling, {
-		description = def.name .. " Sapling",
+		description = def.name .. " Prairie Sapling",
 		drawtype = "plantlike",
 		tiles = {image},
 		inventory_image = image,
