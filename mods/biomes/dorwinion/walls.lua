@@ -18,7 +18,6 @@ minetest.register_craft({
 	recipe = {
 		{"dorwinion:dorwinion_brick", "dorwinion:dorwinion_brick", "dorwinion:dorwinion_brick"},
 		{"dorwinion:dorwinion_brick", "dorwinion:dorwinion_brick", "dorwinion:dorwinion_brick"},
-		{"", "", ""},
 	}
 })
 
@@ -27,7 +26,6 @@ minetest.register_craft({
 	recipe = {
 		{"dorwinion:dorwinion_carved", "dorwinion:dorwinion_carved", "dorwinion:dorwinion_carved"},
 		{"dorwinion:dorwinion_carved", "dorwinion:dorwinion_carved", "dorwinion:dorwinion_carved"},
-		{"", "", ""},
 	}
 })
 
@@ -36,7 +34,6 @@ minetest.register_craft({
 	recipe = {
 		{"dorwinion:dorwinion_brick_with_moss", "dorwinion:dorwinion_brick_with_moss", "dorwinion:dorwinion_brick_with_moss"},
 		{"dorwinion:dorwinion_brick_with_moss", "dorwinion:dorwinion_brick_with_moss", "dorwinion:dorwinion_brick_with_moss"},
-		{"", "", ""},
 	}
 })
 

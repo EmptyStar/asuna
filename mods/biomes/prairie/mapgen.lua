@@ -6,7 +6,7 @@ minetest.register_decoration({
 	deco_type = "simple",
 	place_on = {"prairie:prairie_dirt_with_grass"},
 	sidelen = 16,
-	fill_ratio = 0.14,
+	fill_ratio = 0.16,
 	biomes = {"prairie"},
 	decoration = {
 		"default:grass_1", "default:grass_2",
@@ -117,7 +117,7 @@ minetest.register_decoration({
     biomes = {"prairie"},
     y_max = 31000,
     y_min = -20,
-    schematic = minetest.get_modpath("prairie").."/schematics/aspen_tree.mts",
+    schematic = minetest.get_modpath("prairie").."/schematics/prairie_tree_2.mts",
 	flags = "place_center_x, place_center_z",
 	rotation = "random",
 })

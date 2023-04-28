@@ -6,12 +6,10 @@ minetest.register_craft({
 	}
 })
 
-
 minetest.register_craft({
-	output = "frost_land:frost_land_sapling",
+	output = "frost_land:frost_land_trapdoor 2",
 	recipe = {
-		{"default:stick", "frost_land:frost_land_leaves_1"},
-		{"frost_land:frost_land_leaves_1", "frost_land:frost_land_leaves_2"},
+		{"nightshade:nightshade_wood", "nightshade:nightshade_wood", "nightshade:nightshade_wood"},
+		{"nightshade:nightshade_wood", "nightshade:nightshade_wood", "nightshade:nightshade_wood"},
 	}
 })
-

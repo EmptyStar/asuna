@@ -11,7 +11,7 @@ minetest.register_node("badland:badland_grass", {
 })
 
 minetest.register_node("badland:badland_leaves", {
-	description = "Badland Leaves",
+	description = "Spooky Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves.png"},
@@ -27,11 +27,11 @@ minetest.register_node("badland:badland_leaves", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("badland:badland_leaves_2", {
-	description = "Badland Leaves",
+	description = "Haunted Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves_2.png"},
@@ -47,11 +47,11 @@ minetest.register_node("badland:badland_leaves_2", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("badland:badland_leaves_3", {
-	description = "Badland Leaves",
+	description = "Dusky Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"badland_leaves_3.png"},
@@ -67,11 +67,11 @@ minetest.register_node("badland:badland_leaves_3", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("badland:badland_tree", {
-	description = "Badlands Tree",
+	description = "Badland Tree",
 	tiles = {"badland_tree_top.png", "badland_tree_top.png",
 		"badland_tree.png"},
 	paramtype2 = "facedir",
@@ -84,7 +84,7 @@ minetest.register_node("badland:badland_tree", {
 
 
 minetest.register_node("badland:badland_wood", {
-	description = "Badlands Tree",
+	description = "Badland Tree",
 	tiles = {"badland_wood.png"},
 	paramtype2 = "facedir",
 	is_ground_content = false,
@@ -94,8 +94,19 @@ minetest.register_node("badland:badland_wood", {
 	on_place = minetest.rotate_node
 })
 
+stairs.register_stair_and_slab(
+	"badland_wood",
+	"badland:badland_wood",
+	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	{"badland_wood.png"},
+	"Badland Wood Stair",
+	"Badland Wood Slab",
+	default.node_sound_wood_defaults(),
+	true
+)
+
 doors.register_trapdoor("badland:badland_trapdoor", {
-	description = "Badlands Trapdoor",
+	description = "Badland Trapdoor",
 	inventory_image = "badland_trapdoor.png",
 	wield_image = "badland_trapdoor.png",
 	tile_front = "badland_trapdoor.png",
@@ -108,7 +119,7 @@ doors.register_trapdoor("badland:badland_trapdoor", {
 
 doors.register("badland_door", {
 		tiles = {{ name = "doors_badland_door.png", backface_culling = true }},
-		description = "Badlands Door",
+		description = "Badland Door",
 		inventory_image = "doors_item_badland.png",
 		groups = {node = 1, choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
 		gain_open = 0.06,
@@ -122,14 +133,14 @@ doors.register("badland_door", {
 
 
 doors.register_fencegate("badland:gate_badland", {
-	description = "Badlands Wood Fence Gate",
+	description = "Badland Wood Fence Gate",
 	texture = "badland_wood_fence.png",
 	material = "badland:badland_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 	default.register_fence("badland:fence_badland_wood", {
-		description = "Badlands Wood Fence",
+		description = "Badland Wood Fence",
 		texture = "badland_wood_fence.png",
 		inventory_image = "default_fence_overlay.png^badland_wood_fence.png^" ..
 					"default_fence_overlay.png^[makealpha:255,126,126",
@@ -141,7 +152,7 @@ doors.register_fencegate("badland:gate_badland", {
 	})
 
 	default.register_fence_rail("badland:fence_rail_badland_wood", {
-		description = "Badlands Wood Fence Rail",
+		description = "Badland Wood Fence Rail",
 		texture = "badland_wood_fence.png",
 		inventory_image = "default_fence_rail_overlay.png^badland_wood_fence.png^" ..
 					"default_fence_rail_overlay.png^[makealpha:255,126,126",
@@ -264,16 +275,51 @@ minetest.register_node("badland:pumpkin_lantern", {
 	on_construct = pumpkin_on_construct
 })
 
-	minetest.register_node("badland:badland_sapling", {
+--[[
+	Trees
+]]
+
+local trees = {
+	{
+		name = "Spooky",
+		grow_function = function(pos)
+			minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/badland_tree_1.mts", "0", nil, false)
+		end,
+	},
+	{
+		name = "Haunted",
+		grow_function = function(pos)
+			minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/badland_tree_3.mts", "0", nil, false)
+		end,
+	},
+}
+
+local mod_bonemeal = minetest.get_modpath("bonemeal")
+
+for index,def in ipairs(trees) do
+	local sapling = "badland:badland_sapling_" .. index
+	local image = "badland_sapling_" .. index .. ".png"
+	local leaves = "badland:badland_leaves_" .. index
+
+	-- Register sapling
+	minetest.register_node(sapling, {
 		description = "Badland Sapling",
 		drawtype = "plantlike",
-		tiles = {"badland_sapling.png"},
-		inventory_image = "badland_sapling.png",
-		wield_image = "badland_sapling.png",
+		tiles = {image},
+		inventory_image = image,
+		wield_image = image,
 		paramtype = "light",
 		sunlight_propagates = true,
 		walkable = false,
-		on_timer = grow_new_badland_tree,
+		on_timer = function(pos)
+			if not default.can_grow(pos) then
+				-- try a bit later again
+				minetest.get_node_timer(pos):start(math.random(240, 600))
+			else
+				minetest.remove_node(pos)
+				def.grow_function(pos)
+			end
+		end,
 		selection_box = {
 			type = "fixed",
 			fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 2 / 16, 4 / 16}
@@ -288,7 +334,7 @@ minetest.register_node("badland:pumpkin_lantern", {
 
 		on_place = function(itemstack, placer, pointed_thing)
 			itemstack = default.sapling_on_place(itemstack, placer, pointed_thing,
-				"badland:badland_sapling",
+				sapling,
 				-- minp, maxp to be checked, relative to sapling pos
 				{x = -1, y = 0, z = -1},
 				{x = 1, y = 1, z = 1},
@@ -299,20 +345,19 @@ minetest.register_node("badland:pumpkin_lantern", {
 		end,
 	})
 
-if minetest.get_modpath("bonemeal") ~= nil then
-bonemeal:add_sapling({
-	{"badland:badland_sapling", grow_new_badland_tree, "soil"},
-})
-end
+	-- Register sapling crafting recipe
+	minetest.register_craft({
+		output = sapling,
+		recipe = {
+			{"", leaves, ""},
+			{leaves, "default:stick", leaves}
+		},
+	})
 
-
-
-local function grow_new_badland_tree(pos)
-	if not default.can_grow(pos) then
-		-- try a bit later again
-			minetest.get_node_timer(pos):start(math.random(300, 1500))
-		return
+	-- Add bonemeal integration if supported
+	if mod_bonemeal then
+		bonemeal:add_sapling({
+			{sapling, def.grow_function, "soil"},
+		})
 	end
-	minetest.remove_node(pos)
-	minetest.place_schematic({x = pos.x-1, y = pos.y, z = pos.z-1}, modpath.."/schematics/badland_tree_1.mts", "0", nil, false)
 end

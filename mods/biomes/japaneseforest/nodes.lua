@@ -1,63 +1,3 @@
-minetest.register_node("japaneseforest:japanese_leaves_1", {
-	description = "Japanese Leaves Pink",
-	drawtype = "allfaces_optional",
-	waving = 1,
-	tiles = {"japanese_leaves_1.png"},
-	paramtype = "light",
-	is_ground_content = false,
-	groups = {snappy = 3, leafdecay = 3, flammable = 2, leaves = 1},
-	drop = {
-		max_items = 1,
-		items = {
-			{items = {"japaneseforest:japanese_sapling"}, rarity = 20},
-			{items = {"japaneseforest:japanese_leaves_1"}}
-		}
-	},
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = after_place_leaves,
-})
-
-minetest.register_node("japaneseforest:japanese_leaves_2", {
-	description = "Japanese Leaves Green",
-	drawtype = "allfaces_optional",
-	waving = 1,
-	tiles = {"japanese_leaves_2.png"},
-	paramtype = "light",
-	is_ground_content = false,
-	groups = {snappy = 3, leafdecay = 3, flammable = 2, leaves = 1},
-	drop = {
-		max_items = 1,
-		items = {
-			{items = {"japaneseforest:japanese_sapling"}, rarity = 20},
-			{items = {"japaneseforest:japanese_leaves_2"}}
-		}
-	},
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = after_place_leaves,
-})
-
-minetest.register_node("japaneseforest:japanese_leaves_3", {
-	description = "Japanese Leaves Blue",
-	drawtype = "allfaces_optional",
-	waving = 1,
-	tiles = {"japanese_leaves_3.png"},
-	paramtype = "light",
-	is_ground_content = false,
-	groups = {snappy = 3, leafdecay = 3, flammable = 2, leaves = 1},
-	drop = {
-		max_items = 1,
-		items = {
-			{items = {"japaneseforest:japanese_sapling"}, rarity = 20},
-			{items = {"japaneseforest:japanese_leaves_3"}}
-		}
-	},
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = after_place_leaves,
-})
-
 minetest.register_node("japaneseforest:japanese_tree", {
 	description = "Japanese Tree",
 	tiles = {"japanese_tree_top.png", "japanese_tree_top.png",
@@ -149,6 +89,17 @@ xpanes.register_pane("japanese_small_wall", {
 	}
 })
 
+stairs.register_stair_and_slab(
+	"japanese_wood",
+	"japaneseforest:japanese_wood",
+	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	{"japanese_wood.png"},
+	"Japanese Wood Stair",
+	"Japanese Wood Slab",
+	default.node_sound_wood_defaults(),
+	true
+)
+
 doors.register_fencegate("japaneseforest:gate_japanese", {
 	description = "Japanese Wood Fence Gate",
 	texture = "japanese_wood_fence.png",
@@ -156,29 +107,29 @@ doors.register_fencegate("japaneseforest:gate_japanese", {
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
-	default.register_fence("japaneseforest:fence_japanese_wood", {
-		description = "Japanese Wood Fence",
-		texture = "japanese_wood_fence.png",
-		inventory_image = "japaneseforest_fence_overlay.png^japanese_wood_fence.png^" ..
-					"japaneseforest_fence_overlay.png^[makealpha:255,126,126",
-		wield_image = "japaneseforest_fence_overlay.png^japanese_wood_fence.png^" ..
-					"japaneseforest_fence_overlay.png^[makealpha:255,126,126",
-		material = "japaneseforest:japanese_wood",
-		groups = {choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
-		sounds = default.node_sound_wood_defaults()
-	})
+default.register_fence("japaneseforest:fence_japanese_wood", {
+	description = "Japanese Wood Fence",
+	texture = "japanese_wood_fence.png",
+	inventory_image = "japaneseforest_fence_overlay.png^japanese_wood_fence.png^" ..
+				"japaneseforest_fence_overlay.png^[makealpha:255,126,126",
+	wield_image = "japaneseforest_fence_overlay.png^japanese_wood_fence.png^" ..
+				"japaneseforest_fence_overlay.png^[makealpha:255,126,126",
+	material = "japaneseforest:japanese_wood",
+	groups = {choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
+	sounds = default.node_sound_wood_defaults()
+})
 
-	default.register_fence_rail("japaneseforest:fence_rail_japanese_wood", {
-		description = "Japanese Wood Fence Rail",
-		texture = "japanese_wood_fence.png",
-		inventory_image = "japaneseforest_fence_rail_overlay.png^japanese_wood_fence.png^" ..
-					"japaneseforest_fence_rail_overlay.png^[makealpha:255,126,126",
-		wield_image = "japaneseforest_fence_rail_overlay.png^japanese_wood_fence.png^" ..
-					"japaneseforest_fence_rail_overlay.png^[makealpha:255,126,126",
-		material = "japaneseforest:japanese_wood",
-		groups = {choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
-		sounds = default.node_sound_wood_defaults()
-	})
+default.register_fence_rail("japaneseforest:fence_rail_japanese_wood", {
+	description = "Japanese Wood Fence Rail",
+	texture = "japanese_wood_fence.png",
+	inventory_image = "japaneseforest_fence_rail_overlay.png^japanese_wood_fence.png^" ..
+				"japaneseforest_fence_rail_overlay.png^[makealpha:255,126,126",
+	wield_image = "japaneseforest_fence_rail_overlay.png^japanese_wood_fence.png^" ..
+				"japaneseforest_fence_rail_overlay.png^[makealpha:255,126,126",
+	material = "japaneseforest:japanese_wood",
+	groups = {choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
+	sounds = default.node_sound_wood_defaults()
+})
 
 minetest.register_node("japaneseforest:racine", {
 	description = "Racine",
@@ -205,7 +156,7 @@ flammable = 1, food_bread = 1},
 })
 
 minetest.register_node("japaneseforest:mud", {
-	description = "Japanese Mub",
+	description = "Japanese Mud",
 	paramtype2 = "facedir",
 	place_param2 = 0,
 	tiles = {"mud.png"},
@@ -215,7 +166,7 @@ minetest.register_node("japaneseforest:mud", {
 })
 
 minetest.register_node("japaneseforest:mud_block", {
-	description = "Japanese Mub Block",
+	description = "Japanese Mud Block",
 	paramtype2 = "facedir",
 	place_param2 = 0,
 	tiles = {"mud_block.png"},
@@ -225,7 +176,7 @@ minetest.register_node("japaneseforest:mud_block", {
 })
 
 minetest.register_node("japaneseforest:mud_brick", {
-	description = "Japanese Mub Brick",
+	description = "Japanese Mud Brick",
 	paramtype2 = "facedir",
 	place_param2 = 0,
 	tiles = {"mud_brick.png"},

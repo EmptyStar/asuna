@@ -1,5 +1,5 @@
 minetest.register_node("nightshade:nightshade_dirt_with_grass", {
-	description = "NightShade Dirt With Grass",
+	description = "Nightshade Dirt With Grass",
 	tiles = {"nightshade_nightshade_grass.png", "default_dirt.png",
 		{name = "default_dirt.png^nightshade_nightshade_grass_side.png",
 			tileable_vertical = false}},
@@ -11,7 +11,7 @@ minetest.register_node("nightshade:nightshade_dirt_with_grass", {
 })
 
 minetest.register_node("nightshade:nightshade_leaves_1", {
-	description = "NightShade Leaves",
+	description = "Nightshade Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"nightshade_tree_leaves.png"},
@@ -27,11 +27,11 @@ minetest.register_node("nightshade:nightshade_leaves_1", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("nightshade:nightshade_glowin_leaves_1", {
-	description = "NightShade Glowing Leaves",
+	description = "Nightshade Glowing Leaves",
 	drawtype = "allfaces_optional",
 	waving = 1,
 	tiles = {"nightshade_tree_glowing_leaves.png"},
@@ -48,13 +48,13 @@ minetest.register_node("nightshade:nightshade_glowin_leaves_1", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 
 })
 
 
 minetest.register_node("nightshade:nightshade_tree", {
-	description = "NightShade Tree",
+	description = "Nightshade Tree",
 	tiles = {"nightshade_tree_top.png", "nightshade_tree_top.png",
 		"nightshade_tree.png"},
 	paramtype2 = "facedir",
@@ -66,7 +66,7 @@ minetest.register_node("nightshade:nightshade_tree", {
 })
 
 minetest.register_node("nightshade:nightshade_wood", {
-	description = "NightShade Wood",
+	description = "Nightshade Wood",
 	paramtype2 = "facedir",
 	place_param2 = 0,
 	tiles = {"nightshade_wood.png"},
@@ -76,7 +76,7 @@ minetest.register_node("nightshade:nightshade_wood", {
 })
 
 minetest.register_node("nightshade:nightshade_lamp", {
-	description = "NightShade Lamp",
+	description = "Nightshade Lamp",
 	drawtype = "glasslike",
 	tiles = {"nightshade_lamp.png"},
 	paramtype = "light",
@@ -88,7 +88,7 @@ minetest.register_node("nightshade:nightshade_lamp", {
 })
 
 minetest.register_node("nightshade:nightshade_grass", {
-	description = "NightShade Grass",
+	description = "Nightshade Grass",
 	drawtype = "plantlike",
 	waving = 1,
 	visual_scale = 1.5,
@@ -107,8 +107,19 @@ minetest.register_node("nightshade:nightshade_grass", {
 	},
 })
 
+stairs.register_stair_and_slab(
+	"nightshade_wood",
+	"nightshade:nightshade_wood",
+	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	{"nightshade_wood.png"},
+	"Nightshade Wood Stair",
+	"Nightshade Wood Slab",
+	default.node_sound_wood_defaults(),
+	true
+)
+
 doors.register_trapdoor("nightshade:nightshade_trapdoor", {
-	description = "nightshade Trapdoor",
+	description = "Nightshade Trapdoor",
 	inventory_image = "nightshade_trapdoor.png",
 	wield_image = "nightshade_trapdoor.png",
 	tile_front = "nightshade_trapdoor.png",
@@ -121,7 +132,7 @@ doors.register_trapdoor("nightshade:nightshade_trapdoor", {
 
 doors.register("nightshade_door", {
 		tiles = {{ name = "doors_nightshade_door.png", backface_culling = true }},
-		description = "nightshade Door",
+		description = "Nightshade Door",
 		inventory_image = "doors_item_nightshade.png",
 		groups = {node = 1, choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
 		gain_open = 0.06,
@@ -135,14 +146,14 @@ doors.register("nightshade_door", {
 
 
 doors.register_fencegate("nightshade:gate_nightshade", {
-	description = "NightShade Wood Fence Gate",
+	description = "Nightshade Wood Fence Gate",
 	texture = "nightshade_wood_fence.png",
 	material = "nightshade:nightshade_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 	default.register_fence("nightshade:fence_nightshade_wood", {
-		description = "NightShade Wood Fence",
+		description = "Nightshade Wood Fence",
 		texture = "nightshade_wood_fence.png",
 		inventory_image = "default_fence_overlay.png^nightshade_wood_fence.png^" ..
 					"default_fence_overlay.png^[makealpha:255,126,126",
@@ -154,7 +165,7 @@ doors.register_fencegate("nightshade:gate_nightshade", {
 	})
 
 	default.register_fence_rail("nightshade:fence_rail_nightshade_wood", {
-		description = "NightShade Wood Fence Rail",
+		description = "Nightshade Wood Fence Rail",
 		texture = "nightshade_wood_fence.png",
 		inventory_image = "default_fence_rail_overlay.png^nightshade_wood_fence.png^" ..
 					"default_fence_rail_overlay.png^[makealpha:255,126,126",

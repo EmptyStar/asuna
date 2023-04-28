@@ -4,3 +4,4 @@ doors
 japaneseforest
 moreblocks?
 bonemeal?
+stairs
