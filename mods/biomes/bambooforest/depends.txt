@@ -8,3 +8,4 @@ walls?
 doors
 farming
 bonemeal?
+too_many_stones?

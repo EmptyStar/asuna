@@ -22,42 +22,7 @@ minetest.register_node("bambooforest:bamboo", {
 })
 ---------Biome
 minetest.register_biome(asuna.biomes.bambooforest.generate_definition())
--------------Sapling
-minetest.register_node("bambooforest:bamboo_sapling", {
-	description = "Bamboo Sapling",
-	drawtype = "plantlike",
-	tiles = {"bambooforest_bamboo_sapling.png"},
-	inventory_image = "bambooforest_bamboo_sapling.png",
-	wield_image = "bambooforest_bamboo_sapling.png",
-	paramtype = "light",
-	sunlight_propagates = true,
-	walkable = false,
-	on_timer = grow_sapling,
-	selection_box = {
-		type = "fixed",
-		fixed = {-4 / 16, -0.5, -4 / 16, 4 / 16, 7 / 16, 4 / 16}
-	},
-	groups = {snappy = 2, dig_immediate = 3, flammable = 2,
-		attached_node = 1, sapling = 1},
-	sounds = default.node_sound_leaves_defaults(),
 
-	on_construct = function(pos)
-		minetest.get_node_timer(pos):start(math.random(300, 1500))
-	end,
-
-	on_place = function(itemstack, placer, pointed_thing)
-		itemstack = default.sapling_on_place(itemstack, placer, pointed_thing,
-			"bambooforest:bamboo_sapling",
-			-- minp, maxp to be checked, relative to sapling pos
-			-- minp_relative.y = 1 because sapling pos has been checked
-			{x = -2, y = 1, z = -2},
-			{x = 2, y = 15, z = 2},
-			-- maximum interval of interior volume check
-			4)
-
-		return itemstack
-	end,
-})
 ------------Shematics
 minetest.register_decoration({
     name = "bambooforest:bamboo_tree_1",
@@ -399,35 +364,44 @@ doors.register("bamboo_door", {
 		}
 })
 
-minetest.register_node("bambooforest:granite", {
-	description = "Granite",
-	paramtype2 = "facedir",
-	place_param2 = 0,
-	tiles = {"granite.png"},
-	is_ground_content = false,
-	groups = {cracky = 3, stone = 2, level = 1},
-	sounds = default.node_sound_stone_defaults(),
-})
+local mod_tms = minetest.get_modpath("too_many_stones")
 
-minetest.register_node("bambooforest:granite_block", {
-	description = "Granite Block",
-	paramtype2 = "facedir",
-	place_param2 = 0,
-	tiles = {"granite_block.png"},
-	is_ground_content = false,
-	groups = {cracky = 2, stone = 2, level = 1},
-	sounds = default.node_sound_stone_defaults(),
-})
+if mod_tms then
+	minetest.register_alias_force("bambooforest:granite","too_many_stones:granite_gray")
+	minetest.register_alias_force("bambooforest:granite_block","too_many_stones:granite_gray_block")
+	minetest.register_alias_force("bambooforest:granite_brick","too_many_stones:granite_gray_brick")
+	minetest.register_alias_force("walls:granite_brick","too_many_stones:granite_gray_wall")
+else
+	minetest.register_node("bambooforest:granite", {
+		description = "Granite",
+		paramtype2 = "facedir",
+		place_param2 = 0,
+		tiles = {"granite.png"},
+		is_ground_content = false,
+		groups = {cracky = 3, stone = 2, level = 1},
+		sounds = default.node_sound_stone_defaults(),
+	})
 
-minetest.register_node("bambooforest:granite_brick", {
-	description = "Granite Brick",
-	paramtype2 = "facedir",
-	place_param2 = 0,
-	tiles = {"granite_brick.png"},
-	is_ground_content = false,
-	groups = {cracky = 3, stone = 2, level = 2},
-	sounds = default.node_sound_stone_defaults(),
-})
+	minetest.register_node("bambooforest:granite_block", {
+		description = "Granite Block",
+		paramtype2 = "facedir",
+		place_param2 = 0,
+		tiles = {"granite_block.png"},
+		is_ground_content = false,
+		groups = {cracky = 2, stone = 2, level = 1},
+		sounds = default.node_sound_stone_defaults(),
+	})
+
+	minetest.register_node("bambooforest:granite_brick", {
+		description = "Granite Brick",
+		paramtype2 = "facedir",
+		place_param2 = 0,
+		tiles = {"granite_brick.png"},
+		is_ground_content = false,
+		groups = {cracky = 3, stone = 2, level = 2},
+		sounds = default.node_sound_stone_defaults(),
+	})
+end
 
 -------------Item
 minetest.register_craftitem("bambooforest:bamboo_cooked", {
@@ -459,30 +433,32 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craft({
-	output = "bambooforest:granite 4",
-	recipe = {
-		{"default:sand", "default:silver_sand"},
-		{"default:gravel", "default:stone"},
-	}
-})
+if not mod_tms then
+	minetest.register_craft({
+		output = "bambooforest:granite 4",
+		recipe = {
+			{"default:sand", "default:silver_sand"},
+			{"default:gravel", "default:stone"},
+		}
+	})
 
-minetest.register_craft({
-	output = "bambooforest:granite_block 9",
-	recipe = {
-		{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
-		{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
-		{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
-	}
-})
+	minetest.register_craft({
+		output = "bambooforest:granite_block 9",
+		recipe = {
+			{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
+			{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
+			{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
+		}
+	})
 
-minetest.register_craft({
-	output = "bambooforest:granite_brick 4",
-	recipe = {
-		{"bambooforest:granite_block", "bambooforest:granite_block"},
-		{"bambooforest:granite_block", "bambooforest:granite_block"},
-	}
-})
+	minetest.register_craft({
+		output = "bambooforest:granite_brick 4",
+		recipe = {
+			{"bambooforest:granite_block", "bambooforest:granite_block"},
+			{"bambooforest:granite_block", "bambooforest:granite_block"},
+		}
+	})
+end
 
 minetest.register_craft({
 	output = "bambooforest:bamboo_glass",
@@ -601,7 +577,7 @@ minetest.register_craft({
 	})]]
 
 -----------------Moreblock
-if minetest.get_modpath("moreblocks") then
+if not mod_tms and minetest.get_modpath("moreblocks") then
 
 	stairsplus:register_all("bamboo_wood", "wood", "bambooforest:bamboo_wood", {
 		description = "Bamboo Wood",
@@ -648,25 +624,23 @@ if minetest.get_modpath("moreblocks") then
 end
 
 if minetest.get_modpath("walls") then
+	walls.register(":walls:bamboo_block", "Bamboo Block Wall", "bamboo_block.png",
+			"bambooforest:bamboo_block", default.node_sound_wood_defaults())
 
+	if not mod_tms then
+		walls.register(":walls:granite_brick", "Granite Brick Wall", "granite_brick.png",
+				"bambooforest:granite_brick", default.node_sound_stone_defaults())
 
-walls.register(":walls:bamboo_block", "Bamboo Block Wall", "bamboo_block.png",
-		"bambooforest:bamboo_block", default.node_sound_wood_defaults())
-
-walls.register(":walls:granite_brick", "Granite Brick Wall", "granite_brick.png",
-		"bambooforest:granite_brick", default.node_sound_stone_defaults())
+		minetest.register_craft({
+			output = "walls:granite_brick 6",
+			recipe = {
+				{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
+				{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
+				{"", "", ""},
+			}
+		})
+	end
 end
-
-minetest.register_craft({
-	output = "walls:granite_brick 6",
-	recipe = {
-		{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
-		{"bambooforest:granite", "bambooforest:granite", "bambooforest:granite"},
-		{"", "", ""},
-	}
-})
-
-
 
 -------Melon 
 farming.register_plant("bambooforest:melon", {
