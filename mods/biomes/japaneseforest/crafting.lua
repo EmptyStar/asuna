@@ -46,14 +46,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "japaneseforest:japanese_sapling",
-	recipe = {
-		{"japaneseforest:racine"},
-
-	}
-})
-
-minetest.register_craft({
 	output = "japaneseforest:japanese_trapdoor 2",
 	recipe = {
 		{"bambooforest:fiber_bamboo", "japaneseforest:japanese_wood", "bambooforest:fiber_bamboo"},

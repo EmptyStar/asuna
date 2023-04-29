@@ -105,13 +105,12 @@ minetest.register_node("dorwinion:dorwinion_leaves", {
 	drop = {
 		max_items = 1,
 		items = {
-			{items = {""}, rarity = 20},
 			{items = {"dorwinion:dorwinion_leaves"}}
 		}
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("dorwinion:dorwinion_glow_leaves", {
@@ -132,7 +131,7 @@ minetest.register_node("dorwinion:dorwinion_glow_leaves", {
 	},
 	sounds = default.node_sound_leaves_defaults(),
 
-	after_place_node = after_place_leaves,
+	after_place_node = default.after_place_leaves,
 })
 
 minetest.register_node("dorwinion:dorwinion_grass", {

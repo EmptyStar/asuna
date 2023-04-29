@@ -7,18 +7,11 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "badland:badland_sapling",
-	recipe = {
-		{"default:stick", "badland:badland_leaves"},
-		{"badland:badland_leaves", "badland:badland_leaves"},
-	}
-})
-
-minetest.register_craft({
 	output = "badland:scarecrow",
 	recipe = {
-		{"badland:pumpkin_block", "wool:blue"},
-		{"default:stick", "default:stick"},
+		{"", "badland:pumpkin_block", ""},
+		{"farming:straw", "wool:blue", "farming:straw"},
+		{"", "default:stick", ""},
 	}
 })
 
@@ -30,3 +23,10 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "badland:pumpkin_lantern",
+	recipe = {
+		{"", "default:torch", ""},
+		{"", "badland:pumpkin_block", ""},
+	}
+})
