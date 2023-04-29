@@ -22,7 +22,8 @@ minetest.register_node("bambooforest:bamboo", {
 })
 ---------Biome
 minetest.register_biome(asuna.biomes.bambooforest.generate_definition())
-
+---------Sapling
+minetest.register_alias_force("bambooforest:bamboo_sapling","air")
 ------------Shematics
 minetest.register_decoration({
     name = "bambooforest:bamboo_tree_1",
@@ -475,14 +476,6 @@ minetest.register_craft({
 		{"bambooforest:bamboo_wood", "bambooforest:bamboo", "bambooforest:bamboo_wood"},
 		{"bambooforest:bamboo", "bambooforest:bamboo_wood", "bambooforest:bamboo"},
 		{"bambooforest:bamboo_wood", "bambooforest:bamboo", "bambooforest:bamboo_wood"},
-	}
-})
-
-minetest.register_craft({
-	output = "bambooforest:bamboo_sapling",
-	recipe = {
-		{"bambooforest:bamboo", "default:dirt"},
-		{"default:dirt", "bambooforest:bamboo"},
 	}
 })
 
