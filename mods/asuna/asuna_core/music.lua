@@ -4,8 +4,18 @@
 
 music.register_track({
   name = "reparateur",
-  length = 200,
+  length = 200 + 30,
   gain = 1.1,
+  day = true,
+  night = true,
+  ymin = -8,
+  ymax = 31000,
+})
+
+music.register_track({
+  name = "blood",
+  length = 89 + 30,
+  gain = 1,
   day = true,
   night = true,
   ymin = -8,
@@ -19,15 +29,16 @@ music.register_track({
 for track,length in pairs({
   castlesinthesky = 107,
   firefly = 152,
-  blood = 89,
   bathedinthelight = 166,
   roquefortprolog = 85,
   meditatingbeat = 132,
   pond = 142,
+  onefineday = 51,
+  antarctica = 65,
 }) do
   music.register_track({
     name = track,
-    length = length,
+    length = length + 30,
     gain = 1,
     day = true,
     night = false,
@@ -51,7 +62,7 @@ for track,length in pairs({
 }) do
   music.register_track({
     name = track,
-    length = length,
+    length = length + 30,
     gain = 1,
     day = false,
     night = true,
@@ -70,10 +81,11 @@ for track,length in pairs({
   screensaver = 113,
   cobalt = 176,
   infinitepeace = 73,
+  thevisitors = 160,
 }) do
   music.register_track({
     name = track,
-    length = length,
+    length = length + 30,
     gain = 1,
     day = true,
     night = true,

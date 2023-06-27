@@ -3,11 +3,11 @@ local players = {}
 local tracks = {}
 
 --Settingtypes
-local time_interval = tonumber(minetest.settings:get("music_time_interval")) or 120
+local time_interval = tonumber(minetest.settings:get("music_time_interval")) or 90
 local cleanup_interval = tonumber(minetest.settings:get("music_cleanup_interval")) or 5
 local global_gain = tonumber(minetest.settings:get("music_global_gain")) or 0.1
 local add_random_delay = minetest.settings:get_bool("music_add_random_delay", true)
-local maximum_random_delay = tonumber(minetest.settings:get("music_maximum_random_delay")) or 60
+local maximum_random_delay = tonumber(minetest.settings:get("music_maximum_random_delay")) or 45
 local display_playback_messages = minetest.settings:get_bool("music_display_playback_messages", true)
 local random_delay = 0
 
@@ -66,6 +66,11 @@ local function save_player_settings(name)
 end
 
 local function play_track(name)
+
+    -- Do not play music for dead players
+    if players[name].is_dead then
+        return
+    end
 
     local player = minetest.get_player_by_name(name)
     local player_pos = player:get_pos()
@@ -170,7 +175,7 @@ end)
 
 minetest.register_on_joinplayer(function(player)
     local name = player:get_player_name()
-    players[name] = {playing = false, playback_started = nil, track_handle = nil, track_def = nil, previous = nil, settings = {gain = 0.5}}
+    players[name] = {playing = false, playback_started = nil, track_handle = nil, track_def = nil, previous = nil, settings = {gain = 0.5}, is_dead = player:get_hp() <= 0}
     load_player_settings(name)
 end
 )
@@ -226,7 +231,7 @@ minetest.register_globalstep(function(dtime)
     if next(tracks) == nil then return end
 
     --Play music for every player
-    for k,_ in pairs(players) do
+    for k,v in pairs(players) do
         play_track(k)
     end
 
@@ -264,3 +269,16 @@ function music.register_track(def)
 
     table.insert(tracks, track_def)
 end
+
+-- Don't play music for dead players
+minetest.register_on_dieplayer(function(player)
+    local name = player:get_player_name()
+    stop_track(name)
+    players[name].is_dead = true
+end)
+
+-- Enable music for respawned players
+minetest.register_on_dieplayer(function(player)
+    local name = player:get_player_name()
+    players[name].is_dead = false
+end)
