@@ -26,6 +26,16 @@ minetest.register_craft({
 		{"too_many_stones:amazonite", "too_many_stones:amazonite", "too_many_stones:amazonite"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:amazonite_shards",
+	recipe = {
+		{"too_many_stones:amazonite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Amber
 minetest.register_craft({
 	output = "too_many_stones:amber",
@@ -52,6 +62,16 @@ minetest.register_craft({
 		{"too_many_stones:amber", "too_many_stones:amber", "too_many_stones:amber"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:amber_shards",
+	recipe = {
+		{"too_many_stones:amber_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Amethyst
 
 minetest.register_craft({
@@ -80,6 +100,16 @@ minetest.register_craft({
 		{"too_many_stones:amethyst", "too_many_stones:amethyst", "too_many_stones:amethyst"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:amethyst_shards",
+	recipe = {
+		{"too_many_stones:amethyst_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Andesite
 minetest.register_craft({
 	output = "too_many_stones:andesite_brick 4",
@@ -191,6 +221,16 @@ minetest.register_craft({
 		{"too_many_stones:celestine", "too_many_stones:celestine", "too_many_stones:celestine"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:celestine_shards",
+	recipe = {
+		{"too_many_stones:celestine_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Chrysoprase
 minetest.register_craft({
 	output = "too_many_stones:chrysoprase_brick 4",
@@ -234,6 +274,16 @@ minetest.register_craft({
 		{"too_many_stones:citrine", "too_many_stones:citrine", "too_many_stones:citrine"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:citrine_shards",
+	recipe = {
+		{"too_many_stones:citrine_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Covellite
 minetest.register_craft({
 	output = "too_many_stones:covellite_brick 4",
@@ -277,6 +327,16 @@ minetest.register_craft({
 		{"too_many_stones:crocoite", "too_many_stones:crocoite", "too_many_stones:crocoite"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:crocoite_shards",
+	recipe = {
+		{"too_many_stones:crocoite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Erythrite
 minetest.register_craft({
 	output = "too_many_stones:erythrite_brick 4",
@@ -320,6 +380,16 @@ minetest.register_craft({
 		{"too_many_stones:eudialite", "too_many_stones:eudialite", "too_many_stones:eudialite"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:eudialite_shards",
+	recipe = {
+		{"too_many_stones:eudialite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Fluorite
 minetest.register_craft({
 	output = "too_many_stones:fluorite_brick 4",
@@ -533,6 +603,16 @@ minetest.register_craft({
 		{"too_many_stones:heliodor", "too_many_stones:heliodor", "too_many_stones:heliodor"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:heliodor_shards",
+	recipe = {
+		{"too_many_stones:heliodor_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Howlite
 minetest.register_craft({
 	output = "too_many_stones:howlite_brick 4",
@@ -610,6 +690,16 @@ minetest.register_craft({
 		{"too_many_stones:kyanite", "too_many_stones:kyanite", "too_many_stones:kyanite"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:kyanite_shards",
+	recipe = {
+		{"too_many_stones:kyanite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Lapis Lazuli
 minetest.register_craft({
 	output = "too_many_stones:lapis_lazuli_brick 4",
@@ -704,6 +794,16 @@ minetest.register_craft({
 		{"too_many_stones:morion_quartz", "too_many_stones:morion_quartz", "too_many_stones:morion_quartz"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:morion_quartz_shards",
+	recipe = {
+		{"too_many_stones:morion_quartz_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Mudstone
 minetest.register_craft({
 	output = "too_many_stones:mudstone_brick 4",
@@ -745,6 +845,15 @@ minetest.register_craft({
 		{"too_many_stones:prasiolite", "too_many_stones:prasiolite", "too_many_stones:prasiolite"},
 		{"too_many_stones:prasiolite", "too_many_stones:prasiolite", "too_many_stones:prasiolite"},
 		{"too_many_stones:prasiolite", "too_many_stones:prasiolite", "too_many_stones:prasiolite"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:prasiolite_shards",
+	recipe = {
+		{"too_many_stones:prasiolite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
 	}
 })
 
@@ -808,6 +917,16 @@ minetest.register_craft({
 		{"too_many_stones:quartz", "too_many_stones:quartz", "too_many_stones:quartz"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:quartz_shards",
+	recipe = {
+		{"too_many_stones:quartz_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Rose_Quartz
 minetest.register_craft({
 	output = "too_many_stones:rose_quartz",
@@ -834,6 +953,16 @@ minetest.register_craft({
 		{"too_many_stones:rose_quartz", "too_many_stones:rose_quartz", "too_many_stones:rose_quartz"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:rose_quartz_shards",
+	recipe = {
+		{"too_many_stones:rose_quartz_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Scoria
 minetest.register_craft({
 	output = "too_many_stones:scoria_brick 4",
@@ -919,6 +1048,16 @@ minetest.register_craft({
 		{"too_many_stones:smokey_quartz", "too_many_stones:smokey_quartz", "too_many_stones:smokey_quartz"},
 	}
 })
+
+minetest.register_craft({
+	output = "too_many_stones:smokey_quartz_shards",
+	recipe = {
+		{"too_many_stones:smokey_quartz_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
+	}
+})
+
 -- Soapstone
 minetest.register_craft({
 	output = "too_many_stones:soapstone_brick 4",
@@ -1037,6 +1176,15 @@ minetest.register_craft({
 		{"too_many_stones:vivianite", "too_many_stones:vivianite", "too_many_stones:vivianite"},
 		{"too_many_stones:vivianite", "too_many_stones:vivianite", "too_many_stones:vivianite"},
 		{"too_many_stones:vivianite", "too_many_stones:vivianite", "too_many_stones:vivianite"},
+	}
+})
+
+minetest.register_craft({
+	output = "too_many_stones:vivianite_shards",
+	recipe = {
+		{"too_many_stones:vivianite_crystal", "", ""},
+		{"", "", ""},
+		{"", "", ""},
 	}
 })
 

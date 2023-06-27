@@ -47,7 +47,7 @@ minetest.register_node("too_many_stones:amazonite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:amazonite_shards",
+	--drop = "too_many_stones:amazonite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -103,7 +103,7 @@ minetest.register_node("too_many_stones:amber_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:amber_shards",
+	--drop = "too_many_stones:amber_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -159,7 +159,7 @@ minetest.register_node("too_many_stones:amethyst_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:amethyst_shards",
+	--drop = "too_many_stones:amethyst_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -215,7 +215,7 @@ minetest.register_node("too_many_stones:celestine_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:celestine_shards",
+	--drop = "too_many_stones:celestine_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -271,7 +271,7 @@ minetest.register_node("too_many_stones:citrine_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:citrine_shards",
+	--drop = "too_many_stones:citrine_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -326,7 +326,7 @@ minetest.register_node("too_many_stones:crocoite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:crocoite_shards",
+	--drop = "too_many_stones:crocoite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -381,7 +381,7 @@ minetest.register_node("too_many_stones:eudialite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:eudialite_shards",
+	--drop = "too_many_stones:eudialite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -436,7 +436,7 @@ minetest.register_node("too_many_stones:heliodor_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:heliodor_shards",
+	--drop = "too_many_stones:heliodor_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -492,7 +492,7 @@ minetest.register_node("too_many_stones:kyanite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:kyanite_shards",
+	--drop = "too_many_stones:kyanite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -548,7 +548,7 @@ minetest.register_node("too_many_stones:prasiolite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:prasiolite_shards",
+	--drop = "too_many_stones:prasiolite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -604,7 +604,7 @@ minetest.register_node("too_many_stones:morion_quartz_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:morion_quartz_shards",
+	--drop = "too_many_stones:morion_quartz_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -660,7 +660,7 @@ minetest.register_node("too_many_stones:quartz_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:quartz_shards",
+	--drop = "too_many_stones:quartz_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -716,7 +716,7 @@ minetest.register_node("too_many_stones:rose_quartz_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:rose_quartz_shards",
+	--drop = "too_many_stones:rose_quartz_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -772,7 +772,7 @@ minetest.register_node("too_many_stones:smokey_quartz_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:smokey_quartz_shards",
+	--drop = "too_many_stones:smokey_quartz_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
@@ -828,7 +828,7 @@ minetest.register_node("too_many_stones:vivianite_crystal", {
         fixed = {-5/16, -8/16, -5/16, 5/16, 4/16, 5/16},
     },
     groups = {cracky = 3, attached_node = 1},
-	drop = "too_many_stones:vivianite_shards",
+	--drop = "too_many_stones:vivianite_shards",
 	sounds = default.node_sound_glass_defaults(),
 })
 
