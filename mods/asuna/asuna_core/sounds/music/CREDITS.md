@@ -24,3 +24,7 @@ All of the music in this mod is listed/credited below by author, license, and so
 - **Rafael Krux** -- [CC0](https://creativecommons.org/publicdomain/zero/1.0/), <https://www.freepd.com/>
   - Walking Stars (walkingstars.ogg)*
   - Pond (pond.ogg)*
+- **Jason Shaw** -- [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), <https://audionautix.com/>
+  - Antarctica (antarctica.ogg)*
+  - One Fine Day (onefineday.ogg)*
+  - The Visitors (thevisitors.ogg)*
