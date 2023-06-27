@@ -12,12 +12,12 @@ Features
 
 Asuna provides a wealth of biomes, flora, fauna, and a few other extras. Primary features are highlighted below with the mods they are primarily derived from:
 
-- 50+ biomes to explore ([Biomes](https://content.minetest.net/packages/Atlante/biomes/), [Ethereal](https://content.minetest.net/packages/TenPlus1/ethereal/), [Wilhelmines Natural Biomes](https://content.minetest.net/packages/Liil/naturalbiomes/), [Wilhelmines Living Jungle](https://content.minetest.net/packages/Liil/livingjungle/), [Wilhelmines Marinara](https://content.minetest.net/packages/Liil/marinara/), [Caverealms Lite](https://content.minetest.net/packages/Shara/caverealms/))
+- 60+ biomes to explore ([Everness](https://content.minetest.net/packages/SaKeL/everness/), [Biomes](https://content.minetest.net/packages/Atlante/biomes/), [Ethereal](https://content.minetest.net/packages/TenPlus1/ethereal/), [Wilhelmines Natural Biomes](https://content.minetest.net/packages/Liil/naturalbiomes/), [Wilhelmines Living Jungle](https://content.minetest.net/packages/Liil/livingjungle/), [Wilhelmines Marinara](https://content.minetest.net/packages/Liil/marinara/), [Caverealms Lite](https://content.minetest.net/packages/Shara/caverealms/))
 - 100+ flowers, plants, and mushrooms to discover ([Beautiful Flowers](https://content.minetest.net/packages/1faco/beautiflowers/), [Herbs](https://content.minetest.net/packages/Clyde/herbs/), [Plantlife](https://content.minetest.net/packages/mt-mods/plantlife_modpack/), [Baked Clay](https://content.minetest.net/packages/TenPlus1/bakedclay/), [Minetest Game](https://content.minetest.net/packages/Minetest/minetest_game/), and more from the biome mods)
 - 30+ farming crops to grow and harvest ([Better Farming](https://content.minetest.net/packages/Atlante/better_farming/), [Minetest Game](https://content.minetest.net/packages/Minetest/minetest_game/))
 - 16 different animals to be found in their natural habitats ([Animalia](https://content.minetest.net/packages/ElCeejo/animalia/))
-- Many new decorative stones to unearth ([Too Many Stones](https://content.minetest.net/packages/JoeEnderman/too_many_stones/), [Baked Clay](https://content.minetest.net/packages/TenPlus1/bakedclay/))
-- 16 atmospheric background music tracks (curated specifically for Asuna in [asuna_music](https://github.com/EmptyStar/asuna/tree/main/mods/asuna/asuna_music) and played via [Music Modpack](https://content.minetest.net/packages/mt-mods/music_modpack/))
+- 80+ decorative stones to unearth ([Too Many Stones](https://content.minetest.net/packages/JoeEnderman/too_many_stones/), [Baked Clay](https://content.minetest.net/packages/TenPlus1/bakedclay/), plus more from biome mods)
+- 23 atmospheric background music tracks (curated specifically for Asuna in [asuna_music](https://github.com/EmptyStar/asuna/tree/main/mods/asuna/asuna_music) and played via [Music Modpack](https://content.minetest.net/packages/mt-mods/music_modpack/))
 
 Gameplay
 --------
