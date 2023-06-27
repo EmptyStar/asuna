@@ -109,6 +109,9 @@ local surface_spread = {
   "badland:badland_grass",
   "frost_land:frost_land_grass",
   "prairie:prairie_dirt_with_grass",
+  "everness:dirt_with_crystal_grass",
+  "everness:dirt_with_cursed_grass",
+  "everness:dirt_with_coral_grass",
 }
 
 -- Replace some surface stone with grass; also causes some biome ingress into caves
@@ -121,11 +124,14 @@ for _,node in ipairs(surface_spread) do
       "default:dirt",
       "default:silver_sand",
       "default:gravel",
+      "everness:coral_desert_stone_with_coal",
+      "everness:cursed_stone_carved_with_coal",
+      "everness:crystal_stone_with_coal",
     },
     spawn_by = node,
     num_spawn_by = 1,
     sidelen = 4,
-    y_min = 0,
+    y_min = 3,
     y_max = 31000,
     place_offset_y = -1,
     fill_ratio = 10,
@@ -138,6 +144,7 @@ end
 local ocean_floor_replace = {
   "group:stone",
   "default:stone_with_coal",
+  "everness:quartz_ore",
   "default:dirt",
   "default:dry_dirt",
   "default:gravel",
@@ -164,6 +171,12 @@ local ocean_floor_replace = {
   "badland:badland_grass",
   "frost_land:frost_land_grass",
   "prairie:prairie_dirt_with_grass",
+  "everness:dirt_with_crystal_grass",
+  "everness:dirt_with_cursed_grass",
+  "everness:coral_desert_stone_with_coal",
+  "everness:cursed_stone_carved_with_coal",
+  "everness:crystal_stone_with_coal",
+
 }
 
 -- Ocean floor generation function
@@ -202,7 +215,7 @@ local function register_ocean_floor(name)
     },
   })
 
-  -- Register deep ocean floor terrain
+  -- Register ocean floor terrain
   minetest.register_decoration({
     deco_type = "schematic",
     place_on = ocean_floor_replace,
@@ -210,7 +223,7 @@ local function register_ocean_floor(name)
     fill_ratio = 10, -- fill all
     biomes = {name,shore,above},
     y_max = -1,
-    y_min = -36,
+    y_min = -10,
     decoration = "default:stone",
     spawn_by = "default:water_source",
     num_spawn_by = 1,
@@ -231,6 +244,35 @@ local function register_ocean_floor(name)
     },
   })
 
+    -- Register deep ocean floor terrain
+    minetest.register_decoration({
+      deco_type = "schematic",
+      place_on = ocean_floor_replace,
+      sidelen = 80,
+      fill_ratio = 10, -- fill all
+      biomes = {name,shore,above},
+      y_max = -11,
+      y_min = -36,
+      decoration = "default:stone",
+      spawn_by = "default:water_source",
+      num_spawn_by = 1,
+      place_offset_y = -3,
+      flags = "all_floors,force_placement",
+      schematic = {
+        size = {
+          x = 1,
+          y = 4,
+          z = 1,
+        },
+        data = {
+          { name = "default:stone" , param1 = 255 , param2 = 0 },
+          { name = biome.deep_seabed , param1 = 255 , param2 = 0 },
+          { name = biome.deep_seabed , param1 = 255 , param2 = 0 },
+          { name = biome.deep_seabed , param1 = 255 , param2 = 0 },
+        },
+      },
+    })
+
   -- Replace underwater surface nodes below sea level
   minetest.register_decoration({
     deco_type = "schematic",
@@ -241,8 +283,8 @@ local function register_ocean_floor(name)
     },
     num_spawn_by = 1,
     sidelen = 4,
-    y_min = -36,
     y_max = 0,
+    y_min = -10,
     place_offset_y = -3,
     fill_ratio = 10,
     biomes = {name,shore,above},

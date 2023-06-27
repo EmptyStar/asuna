@@ -164,21 +164,21 @@ local flower_colors = {
 }
 
 -- Register flower decorations per biome
-local function cf(flowers,mushrooms)
+local function cf(biome)
 	local decor = {
 		flowers = {},
 		mushrooms = {},
 	}
 
 	-- Generate list of flowers
-	for _,flower in ipairs(flowers or {}) do
+	for _,flower in ipairs(biome.flowers or {}) do
 		for _,flower in ipairs(flower_colors[flower]) do
 			table.insert(decor.flowers,flower)
 		end
 	end
 
 	-- Generate list of mushrooms
-	for _,mushroom in ipairs(mushrooms or {}) do
+	for _,mushroom in ipairs(biome.mushrooms or {}) do
 		for _,mushroom in ipairs(flower_colors[mushroom .. "_mushroom"]) do
 			table.insert(decor.mushrooms,mushroom)
 		end
@@ -187,78 +187,154 @@ local function cf(flowers,mushrooms)
 	return decor
 end
 
-local biome_decor = {
-	grassland = cf({"blue","cyan","white","red","purple","orange","pink","yellow"}),
-	grassytwo = cf({"blue","cyan","white","red","purple","orange","pink","yellow"}),
-	dorwinion = cf({"red","white"},{"brown"}),
-	savanna = cf({"orange","yellow"}),
-	mediterranean = cf({"green","white","purple","black"}),
-	alpine = cf({"black","yellow","cyan","white"},{"brown"}),
-	outback = cf({"yellow","red","white"}),
-	coniferous_forest = cf({"white","green","cyan"}),
-	deciduous_forest = cf({"yellow"},{"brown"}),
-	sakura = cf({"pink","white","orange"}),
-	japaneseforest = cf({"orange","pink","red","purple"}),
-	jumble = cf({"yellow","black","green"},{"brown","red"}),
-	swamp = cf({"yellow","green","orange","black"},{"brown","red"}),
-	marsh = cf({"yellow","green","orange","black"},{"brown","red"}),
-	alderswamp = cf({"yellow","green"},{"brown","red","odd"}),
-	mesa = cf({"yellow","orange","white"}),
-	grove = cf({"blue","orange","black","green"}),
-	livingjungle = cf({"purple","green","black"}),
-	plains = cf({"yellow","white"}),
-	nightshade = cf({"black"},{"odd","red"}),
-	badland = cf({},{"brown"}),
-}
+-- Desert stone strata copied from Minetest Game
+minetest.register_ore({
+	ore_type        = "stratum",
+	ore             = "default:desert_sandstone",
+	wherein         = {"default:desert_stone"},
+	clust_scarcity  = 1,
+	y_max           = 46,
+	y_min           = 10,
+	noise_params    = {
+		offset = 28,
+		scale = 16,
+		spread = {x = 128, y = 128, z = 128},
+		seed = 90122,
+		octaves = 1,
+	},
+	stratum_thickness = 4,
+	biomes = {"desert"},
+})
+
+minetest.register_ore({
+	ore_type        = "stratum",
+	ore             = "default:desert_sandstone",
+	wherein         = {"default:desert_stone"},
+	clust_scarcity  = 1,
+	y_max           = 42,
+	y_min           = 6,
+	noise_params    = {
+		offset = 24,
+		scale = 16,
+		spread = {x = 128, y = 128, z = 128},
+		seed = 90122,
+		octaves = 1,
+	},
+	stratum_thickness = 2,
+	biomes = {"desert"},
+})
+
+minetest.register_ore({
+	ore_type        = "stratum",
+	ore             = "default:sandstone",
+	wherein         = {"default:desert_stone"},
+	clust_scarcity  = 1,
+	y_max           = 39,
+	y_min           = 3,
+	noise_params    = {
+		offset = 21,
+		scale = 16,
+		spread = {x = 128, y = 128, z = 128},
+		seed = 90122,
+		octaves = 1,
+	},
+	stratum_thickness = 2,
+	biomes = {"desert"},
+})
+
+-- Ground water placement for alderswamp biome to replace a largely non-functional schematic
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = {"naturalbiomes:alderswamp_litter"},
+	spawn_by = {"naturalbiomes:alderswamp_litter"},
+	num_spawn_by = 8,
+	sidelen = 16,
+	fill_ratio = 0.00085,
+	y_max = 31000,
+	y_min = 1,
+	place_offset_y = -1,
+	decoration = "default:water_source",
+	biomes = {"alderswamp"},
+	flags = "force_placement",
+})
 
 -- Do actual decoration registration after other mods are finished
 minetest.register_on_mods_loaded(function()
 	-- Register shore grass
+  local sandy_biomes = {}
+	local desert_biomes = {
+		desert = true,
+		sandstone = true,
+		desert_shore = true,
+		sandstone_shore = true,
+		desert_below = true,
+		sandstone_below = true,
+	}
+	for biome,def in pairs(asuna.biomes) do
+		if def.shore == "default:sand" and
+			(def.ocean == "temperate" or def.ocean == "tropical" or def.ocean == "cold") and
+			not desert_biomes[biome]
+		then
+			table.insert(sandy_biomes,biome)
+		end
+	end
+
 	minetest.register_decoration(asuna.biome_groups.shore.inject_decoration({
 		deco_type = "simple",
 		place_on = "default:sand",
 		decoration = {"default:marram_grass_1","default:marram_grass_2","default:marram_grass_3"},
-		y_min = 1,
+		y_min = 2,
 		y_max = 2,
 		sidelen = 16,
-		fill_ratio = 0.024,
+		noise_params = {
+			offset = 0.004,
+			scale = 0.0195,
+			spread = {x = 11, y = 11, z = 11},
+			seed = 69420,
+			octaves = 1,
+		},
+		biomes = sandy_biomes,
+	}))
+
+	minetest.register_decoration(asuna.biome_groups.shore.inject_decoration({
+		deco_type = "simple",
+		place_on = "default:sand",
+		decoration = {"default:marram_grass_1","default:marram_grass_2","default:marram_grass_3"},
+		y_min = 3,
+		y_max = 4,
+		sidelen = 16,
+		noise_params = {
+			offset = 0.075,
+			scale = 0.175,
+			spread = {x = 10, y = 10, z = 10},
+			seed = 42069,
+			octaves = 1,
+		},
+		biomes = sandy_biomes,
 	}))
 
 	-- Register flowers and mushrooms
-	for biome,decor in pairs(biome_decor) do
-		-- Valid top nodes
-		local top_nodes = {
-			"default:dirt",
-			"default:dirt_with_grass",
-			"default:dry_dirt_with_dry_grass",
-			"default:dirt_with_dry_grass",
-			"default:dirt_with_rainforest_litter",
-			"default:dirt_with_coniferous_litter",
-			"naturalbiomes:savannalitter",
-			"naturalbiomes:alpine_litter",
-			"naturalbiomes:mediterran_litter",
-			"naturalbiomes:alderswamp_litter",
-			"naturalbiomes:outback_litter",
-			"ethereal:grove_dirt",
-			"ethereal:bamboo_dirt",
-			"livingjungle:jungleground",
-			"ethereal:mushroom_dirt",
-			"nightshade:nightshade_dirt_with_grass",
-			"japaneseforest:japanese_dirt_with_grass",
-			"bambooforest:dirt_with_bamboo",
-			"dorwinion:dorwinion_grass",
-			"badland:badland_grass",
-		}
+	for name,biome in pairs(asuna.biomes) do
+		-- Get node groups for biome
+		local decor = cf(biome)
 
 		-- Register flowers
-		if #decor.flowers > 0 then
+		if #biome.flowers > 0 then
 			minetest.register_decoration({
-				name = "asuna_core:flowers_" .. biome,
+				name = "asuna_core:flowers_" .. name,
 				deco_type = "simple",
 				sidelen = 80,
-				place_on = top_nodes,
-				fill_ratio = 0.011,
-				biomes = {biome},
+				place_on = biome.nodes[1],
+				noise_params = {
+					offset = 0.006786,
+					scale = 0.004175,
+					spread = {x = 8, y = 8, z = 8},
+					seed = 1999,
+					octaves = 2,
+					persist = 0.44,
+					lacunarity = 0.75,
+				},
+				biomes = {name},
 				y_max = 31000,
 				y_min = 1,
 				decoration = decor.flowers,
@@ -266,14 +342,22 @@ minetest.register_on_mods_loaded(function()
 		end
 
 		-- Register mushrooms
-		if #decor.mushrooms > 0 then
+		if #biome.mushrooms > 0 then
 			minetest.register_decoration({
-				name = "asuna_core:mushrooms_" .. biome,
+				name = "asuna_core:mushrooms_" .. name,
 				deco_type = "simple",
-				sidelen = 80,
-				place_on = top_nodes,
-				fill_ratio = 0.004,
-				biomes = {biome},
+				sidelen = 8,
+				place_on = biome.nodes[1],
+				noise_params = {
+					offset = -0.0069,
+					scale = 0.027525,
+					spread = {x = 8, y = 8, z = 8},
+					seed = 60659,
+					octaves = 2,
+					persist = 0.7625,
+					lacunarity = 0.6,
+				},
+				biomes = {name},
 				y_max = 31000,
 				y_min = 1,
 				decoration = decor.mushrooms,
@@ -301,10 +385,10 @@ minetest.register_on_mods_loaded(function()
 		place_on = "prairie:prairie_dirt_with_grass",
 		sidelen = 80,
 		fill_ratio = 0.265,
-		biomes = "prairie",
+		biomes = {"prairie"},
 		y_max = 31000,
 		y_min = 1,
-		decoration = cf({"blue","cyan","white","orange","yellow"}).flowers,
+		decoration = cf({ flowers = {"blue","cyan","white","orange","yellow"} }).flowers,
 	})
 
 	-- Special mushroom decor for the Mushroom biome
@@ -314,10 +398,77 @@ minetest.register_on_mods_loaded(function()
 		place_on = "ethereal:mushroom_dirt",
 		sidelen = 80,
 		fill_ratio = 0.075,
-		biomes = "mushroom",
+		biomes = {"mushroom"},
 		y_max = 31000,
 		y_min = 1,
-		decoration = cf({"odd_mushroom","brown_mushroom"}).flowers,
+		decoration = cf({ mushrooms = {"odd","brown"} }).mushrooms,
+	})
+
+	--[[
+		Cursed Lands additions
+	]]
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {
+			"everness:dirt_with_cursed_grass",
+		},
+		sidelen = 16,
+		fill_ratio = 0.2,
+		biomes = {"everness_cursed_lands"},
+		y_max = 31000,
+		y_min = 1,
+		decoration = {
+			"default:grass_1",
+			"default:fern_1",
+		},
+	})
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {
+			"everness:dirt_with_cursed_grass",
+		},
+		sidelen = 16,
+		fill_ratio = 0.0075,
+		biomes = {"everness_cursed_lands"},
+		y_max = 31000,
+		y_min = 1,
+		decoration = {
+			"default:junglegrass",
+		},
+	})
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {
+			"everness:dirt_with_cursed_grass",
+		},
+		sidelen = 16,
+		fill_ratio = 0.0225,
+		biomes = {"everness_cursed_lands"},
+		y_max = 31000,
+		y_min = 1,
+		decoration = {
+			"default:dry_shrub",
+		},
+	})
+
+	minetest.register_decoration({
+		deco_type = "simple",
+		place_on = {
+			"everness:dirt_with_cursed_grass",
+		},
+		sidelen = 16,
+		fill_ratio = 0.00075,
+		biomes = {"everness_cursed_lands"},
+		y_max = 31000,
+		y_min = 1,
+		decoration = {
+			"everness:dry_tree",
+		},
+		height = 2,
+		height_max = 4,
 	})
 
 	--[[
@@ -364,7 +515,6 @@ minetest.register_on_mods_loaded(function()
 	]]
 
 	if minetest.get_modpath("fireflies") then
-
 		minetest.register_decoration({
 			name = "fireflies:firefly_low",
 			deco_type = "simple",
@@ -406,11 +556,40 @@ minetest.register_on_mods_loaded(function()
 			place_offset_y = 2,
 			decoration = "fireflies:hidden_firefly",
 		})
+	
+		minetest.register_decoration({
+			name = "fireflies:firefly_low_bamboo_cave",
+			deco_type = "simple",
+			place_on = "everness:moss_block",
+			place_offset_y = 2,
+			sidelen = 16,
+			fill_ratio = 0.0065,
+			biomes = asuna.features.cave.bamboo,
+			y_max = 0,
+			y_min = -31000,
+			place_offset_y = 1,
+			decoration = "fireflies:hidden_firefly",
+		})
+
+		minetest.register_decoration({
+			name = "fireflies:firefly_low_dorwinion_cave",
+			deco_type = "simple",
+			place_on = "dorwinion:dorwinion_grass",
+			place_offset_y = 2,
+			sidelen = 16,
+			fill_ratio = 0.0065,
+			biomes = asuna.features.cave.dorwinion,
+			y_max = 0,
+			y_min = -31000,
+			place_offset_y = 1,
+			decoration = "fireflies:hidden_firefly",
+		})
 	end
 
 	--[[
 		Large jungle trees
 	]]
+
 	local chunksize = tonumber(minetest.get_mapgen_setting("chunksize"))
 	if chunksize >= 5 then
 		minetest.register_decoration({

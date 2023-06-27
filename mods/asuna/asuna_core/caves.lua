@@ -1,5 +1,5 @@
 minetest.set_mapgen_setting("mgv7_cave_width",0.0415,true)
-minetest.set_mapgen_setting("mgv7_cavern_limit",-22,true)
+minetest.set_mapgen_setting("mgv7_cavern_limit",-28,true)
 minetest.set_mapgen_setting("mgv7_cavern_taper",16,true)
 minetest.set_mapgen_setting("mgv7_cavern_threshold",0.5,true)
 minetest.set_mapgen_setting("mgv7_large_cave_depth",0,true)

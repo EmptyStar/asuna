@@ -4,7 +4,7 @@ minetest.register_node("dorwinion:dorwinion_brick", {
 	place_param2 = 0,
 	tiles = {"dorwinion_brick.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -21,7 +21,7 @@ minetest.register_node("dorwinion:dorwinion_brick_with_flowers", {
 	place_param2 = 0,
 	tiles = {"dorwinion_brick_with_flowers.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craft({
@@ -38,7 +38,7 @@ minetest.register_node("dorwinion:dorwinion_brick_with_moss", {
 	place_param2 = 0,
 	tiles = {"dorwinion_brick_with_moss.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craft({
@@ -55,7 +55,7 @@ minetest.register_node("dorwinion:dorwinion_carved", {
 	place_param2 = 0,
 	tiles = {"dorwinion_carved.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craft({
@@ -72,7 +72,7 @@ minetest.register_node("dorwinion:dorwinion_brick_cracked", {
 	place_param2 = 0,
 	tiles = {"dorwinion_brick_cracked.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craft({
@@ -89,7 +89,7 @@ minetest.register_node("dorwinion:dorwinion", {
 	place_param2 = 0,
 	tiles = {"dorwinion.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 

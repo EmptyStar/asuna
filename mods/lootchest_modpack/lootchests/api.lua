@@ -23,6 +23,13 @@ lootchests.add_to_loot_table = function(key, add)
     end
 end
 
+local water_nodes = {
+    "default:water_source",
+    "default:river_water_source",
+    "default:lava_source",
+    "ethereal:quicksand2",
+}
+
 lootchests.register_lootchest = function(def)
 
     if not def.name or not def.description then
@@ -103,6 +110,30 @@ lootchests.register_lootchest = function(def)
         end,
     })
 
+    -- Function for checking underwater
+    local check_water
+    if not def.underwater then
+        check_water = function(pos)
+            for _,waterpos in ipairs({
+                { x = pos.x - 1, y = pos.y, z = pos.z - 1 },
+                { x = pos.x + 1, y = pos.y, z = pos.z - 1 },
+                { x = pos.x - 1, y = pos.y, z = pos.z + 1 },
+                { x = pos.x + 1, y = pos.y, z = pos.z + 1 },
+            }) do
+                for _,water_node in ipairs(water_nodes) do
+                    if minetest.get_node(waterpos).name == water_node then
+                        return true -- found nearby water, trigger check
+                    end
+                end
+            end
+            return false -- did not find nearby water, do not trigger check
+        end
+    else
+        check_water = function()
+            return false -- check never triggers
+        end
+    end
+
     if not debug and lootchests.spawn_chests then
         minetest.register_lbm({
             label = "Upgrade " .. def.description,
@@ -110,7 +141,12 @@ lootchests.register_lootchest = function(def)
             nodenames = def.name .. "_marker",
             run_at_every_load = true,
             action = function(pos, node)
-                minetest.set_node(pos, {name = def.name, param2 = 0})
+                if check_water(pos) then
+                    minetest.set_node(pos, {name = "default:water_source", param2 = 0})
+                    return -- loot chest is underwater and should not be, do not place here
+                else
+                    minetest.set_node(pos, {name = def.name, param2 = 0})
+                end
                 local rand = PcgRandom(pos.x * pos.y * pos.z)
                 local inv = minetest.get_inventory({type = "node", pos = pos})
                 for i = 1, slots do

@@ -1,9 +1,56 @@
 local path = minetest.get_modpath("better_farming")
+local seed = 67789
 
 -- Global
 better_farming = {
 	minlight = 13,
 	maxlight = default.LIGHT_MAX,
+	register_plant = function(name,steps,fertility)
+		-- Get lowercase name
+		local lower = name:lower():gsub(" ","_")
+
+		-- Generate fertility groups
+		local groups = { flammable = 2 }
+		for _,soil in ipairs(fertility) do
+			groups[soil] = 1
+		end
+
+		-- Add to registered_plants
+		farming.register_plant("better_farming:" .. lower,{
+			description = name .. " Seed",
+			harvest_description = name,
+			inventory_image = "better_farming_" .. lower .. "_seed.png",
+			minlight = better_farming.minlight,
+			maxlight = better_farming.maxlight,
+			steps = steps,
+			groups = groups,
+			fertility = fertility,
+		})
+
+		-- Register crop biome decoration
+		local node = "better_farming:" .. lower .. "_" .. steps
+		minetest.register_decoration(asuna.features.crops[lower].inject_decoration({
+			name = node,
+			deco_type = "simple",
+			sidelen = 8,
+			noise_params = {
+				offset = -0.4125,
+				scale = 0.3575,
+				spread = {x = 14, y = 14, z = 14},
+				seed = seed,
+				octaves = 2,
+				persist = 0.62,
+				lacunarity = 0.675,
+			},
+			y_max = 31000,
+			y_min = 1,
+			decoration = node,
+			param2 = 3,
+		}))
+
+		-- Increment seed
+		seed = seed + 43
+	end
 }
 
 

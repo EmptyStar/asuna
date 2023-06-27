@@ -161,7 +161,7 @@ minetest.register_node("japaneseforest:mud", {
 	place_param2 = 0,
 	tiles = {"mud.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -171,7 +171,7 @@ minetest.register_node("japaneseforest:mud_block", {
 	place_param2 = 0,
 	tiles = {"mud_block.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -181,7 +181,7 @@ minetest.register_node("japaneseforest:mud_brick", {
 	place_param2 = 0,
 	tiles = {"mud_brick.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -215,7 +215,7 @@ minetest.register_node("japaneseforest:dark_brick", {
 	place_param2 = 0,
 	tiles = {"japaneseforest_path_top.png"},
 	is_ground_content = false,
-	groups = {cracky = 2, flammable = 2, stone = 1, level = 1},
+	groups = {cracky = 2, stone = 1, level = 1},
 	sounds = default.node_sound_stone_defaults(),
 })
 

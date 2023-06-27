@@ -144,7 +144,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		spawn_by = "default:water_source",
 		num_spawn_by = 3,
 		sidelen = 80,
-		fill_ratio = 0.4,
+		fill_ratio = 0.25,
 		biomes = warm_shores,
 		y_max = 1,
 		y_min = 1,
@@ -166,9 +166,11 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		local open_water = {0,0,0,0}
 
 		-- Semi-pseudo-random number for how many nodes from shore to place seaweed
-		local scan_limit = (pos ^ 2 + 2 * pos + 1) % 4 + 2
+		local pcgr = PcgRandom(pos)
+		local scan_limit
 
 		-- Scan -x for the furthest available open water
+		scan_limit = pcgr:next(1,4) + 1
 		for xscan = 1, scan_limit do
 			local ipos = pos - xscan
 			if vdata[ipos] == cids.water then
@@ -179,6 +181,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		end
 
 		-- Scan +x for the furthest available open water
+		scan_limit = pcgr:next(1,4) + 1
 		for xscan = 1, scan_limit do
 			local ipos = pos + xscan
 			if vdata[ipos] == cids.water then
@@ -189,6 +192,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		end
 
 		-- Scan -z for the furthest available open water
+		scan_limit = pcgr:next(1,4) + 1
 		for zscan = 1, scan_limit do
 			local ipos = pos - zscan * zstride
 			if vdata[ipos] == cids.water then
@@ -199,6 +203,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		end
 
 		-- Scan +z for the furthest available open water
+		scan_limit = pcgr:next(1,4) + 1
 		for zscan = 1, scan_limit do
 			local ipos = pos + zscan * zstride
 			if vdata[ipos] == cids.water then
@@ -212,7 +217,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		for i = 1, 4 do
 			local owpos = open_water[i]
 			if owpos ~= 0 then -- valid open water
-				vdata[owpos] = seaweed_selector[(owpos ^ 2 + pos % 5) % 3 + 1]
+				vdata[owpos] = seaweed_selector[pcgr:next(1,3)]
 			end
 		end
 	end,
@@ -222,7 +227,7 @@ abdecor.register_advanced_decoration("plantlife_seaweed",{
 		deco_type = "simple",
 		place_on = "default:sand",
 		sidelen = 80,
-		fill_ratio = 0.0025,
+		fill_ratio = 0.00275,
 		biomes = warm_shores,
 		y_max = 1,
 		y_min = 1,

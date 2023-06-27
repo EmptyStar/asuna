@@ -532,16 +532,16 @@ minetest.register_decoration({
 		sidelen = 80,
 noise_params = {
 			offset = -0.04,
-			scale = 0.2,
+			scale = 0.25,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 87112,
-			octaves = 7,
-			persist = 0.9
+			octaves = 4,
+			persist = 0.5
 		},
     biomes = asuna.biome_groups.all,
     flags = "place_center_x,place_center_z,force_placement",
     y_max = -3,
-    y_min = -10,
+    y_min = -36,
     place_offset_y=0,
     schematic = mpath.."/schematics/marinara_seagrass.mts",
 	rotation = "random",
@@ -553,16 +553,16 @@ minetest.register_decoration({
 		sidelen = 80,
 noise_params = {
 			offset = -0.04,
-			scale = 0.2,
+			scale = 0.25,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 87113,
-			octaves = 7,
-			persist = 0.9
+			octaves = 4,
+			persist = 0.5
 		},
     biomes = asuna.biome_groups.all,
     flags = "place_center_x,place_center_z,force_placement",
     y_max = -4,
-    y_min = -10,
+    y_min = -36,
     place_offset_y=0,
     schematic = mpath.."/schematics/marinara_seagrass_long.mts",
 	rotation = "random",
@@ -574,11 +574,11 @@ minetest.register_decoration({
 		sidelen = 80,
 noise_params = {
 			offset = -0.04,
-			scale = 0.2,
+			scale = 0.25,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 87114,
-			octaves = 7,
-			persist = 0.9
+			octaves = 4,
+			persist = 0.5
 		},
     biomes = oceans_and_shore,
     flags = "place_center_x,place_center_z,force_placement",
@@ -595,11 +595,11 @@ minetest.register_decoration({
 		sidelen = 80,
 noise_params = {
 			offset = -0.04,
-			scale = 0.2,
+			scale = 0.25,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 87115,
-			octaves = 7,
-			persist = 0.9
+			octaves = 4,
+			persist = 0.5
 		},
     biomes = asuna.biome_groups.all,
     flags = "place_center_x,place_center_z,force_placement",

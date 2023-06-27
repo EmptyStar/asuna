@@ -1,0 +1,373 @@
+[Biomes]
+
+[*Coral Forest]
+
+# Enable/ Disable Coral Forest Biome
+# Disabling this biome might result in missing recipes.
+everness_coral_forest (Coral Forest) bool true
+
+# Upper limit for biome.
+everness_coral_forest_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_coral_forest_y_min (y min) int 6
+
+[*Coral Forest Dunes]
+
+# Enable/ Disable Coral Forest Dunes Biome
+# Disabling this biome might result in missing recipes.
+everness_coral_forest_dunes (Coral Forest Dunes) bool false
+
+# Upper limit for biome.
+everness_coral_forest_dunes_y_max (y max) int 5
+
+# Lower limit for biome.
+everness_coral_forest_dunes_y_min (y min) int 4
+
+[*Coral Forest Ocean]
+
+# Enable/ Disable Coral Forest Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_coral_forest_ocean (Coral Forest Ocean) bool true
+
+# Upper limit for biome.
+everness_coral_forest_ocean_y_max (y max) int 3
+
+# Lower limit for biome.
+everness_coral_forest_ocean_y_min (y min) int -10
+
+[*Coral Forest Deep Ocean]
+
+# Enable/ Disable Coral Forest Deep Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_coral_forest_deep_ocean (Coral Forest Deep Ocean) bool true
+
+# Upper limit for biome.
+everness_coral_forest_deep_ocean_y_max (y max) int -11
+
+# Lower limit for biome.
+everness_coral_forest_deep_ocean_y_min (y min) int -255
+
+[*Coral Forest Under]
+
+# Enable/ Disable Coral Forest Under Biome
+# Disabling this biome might result in missing recipes.
+everness_coral_forest_under (Coral Forest Under) bool true
+
+# Upper limit for biome.
+everness_coral_forest_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_coral_forest_under_y_min (y min) int -31000
+
+[*Frosted Icesheet]
+
+# Enable/ Disable Frosted Icesheet Biome
+# Disabling this biome might result in missing recipes.
+everness_frosted_icesheet (Frosted Icesheet) bool true
+
+# Upper limit for biome.
+everness_frosted_icesheet_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_frosted_icesheet_y_min (y min) int -8
+
+[*Frosted Icesheet Ocean]
+
+# Enable/ Disable Frosted Icesheet Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_frosted_icesheet_ocean (Frosted Icesheet Ocean) bool true
+
+# Upper limit for biome.
+everness_frosted_icesheet_ocean_y_max (y max) int -9
+
+# Lower limit for biome.
+everness_frosted_icesheet_ocean_y_min (y min) int -255
+
+[*Frosted Icesheet Under]
+
+# Enable/ Disable Frosted Icesheet Under Biome
+# Disabling this biome might result in missing recipes.
+everness_frosted_icesheet_under (Frosted Icesheet Under) bool true
+
+# Upper limit for biome.
+everness_frosted_icesheet_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_frosted_icesheet_under_y_min (y min) int -31000
+
+[*Cursed Lands]
+
+# Enable/ Disable Cursed Lands Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands (Cursed Lands) bool true
+
+# Upper limit for biome.
+everness_cursed_lands_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_cursed_lands_y_min (y min) int 6
+
+[*Cursed Lands Dunes]
+
+# Enable/ Disable Cursed Lands Dunes Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands_dunes (Cursed Lands Dunes) bool false
+
+# Upper limit for biome.
+everness_cursed_lands_dunes_y_max (y max) int 5
+
+# Lower limit for biome.
+everness_cursed_lands_dunes_y_min (y min) int 1
+
+[*Cursed Lands Swamp]
+
+# Enable/ Disable Cursed Lands Swamp Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands_swamp (Cursed Lands Swamp) bool true
+
+# Upper limit for biome.
+everness_cursed_lands_swamp_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_cursed_lands_swamp_y_min (y min) int -1
+
+[*Cursed Lands Ocean]
+
+# Enable/ Disable Cursed Lands Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands_ocean (Cursed Lands Ocean) bool true
+
+# Upper limit for biome.
+everness_cursed_lands_ocean_y_max (y max) int -2
+
+# Lower limit for biome.
+everness_cursed_lands_ocean_y_min (y min) int -10
+
+[*Cursed Lands Deep Ocean]
+
+# Enable/ Disable Cursed Lands Deep Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands_deep_ocean (Cursed Lands Deep Ocean) bool true
+
+# Upper limit for biome.
+everness_cursed_lands_deep_ocean_y_max (y max) int -11
+
+# Lower limit for biome.
+everness_cursed_lands_deep_ocean_y_min (y min) int -255
+
+[*Cursed Lands Under]
+
+# Enable/ Disable Cursed Lands Under Biome
+# Disabling this biome might result in missing recipes.
+everness_cursed_lands_under (Cursed Lands Under) bool true
+
+# Upper limit for biome.
+everness_cursed_lands_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_cursed_lands_under_y_min (y min) int -31000
+
+[*Crystal Forest]
+
+# Enable/ Disable Crystal Forest Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest (Crystal Forest) bool true
+
+# Upper limit for biome.
+everness_crystal_forest_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_crystal_forest_y_min (y min) int 6
+
+[*Crystal Forest Dunes]
+
+# Enable/ Disable Crystal Forest Dunes Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest_dunes (Crystal Forest Dunes) bool false
+
+# Upper limit for biome.
+everness_crystal_forest_dunes_y_max (y max) int 5
+
+# Lower limit for biome.
+everness_crystal_forest_dunes_y_min (y min) int 1
+
+[*Crystal Forest Shore]
+
+# Enable/ Disable Crystal Forest Shore Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest_shore (Crystal Forest Shore) bool true
+
+# Upper limit for biome.
+everness_crystal_forest_shore_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_crystal_forest_shore_y_min (y min) int -1
+
+[*Crystal Forest Ocean]
+
+# Enable/ Disable Crystal Forest Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest_ocean (Crystal Forest Ocean) bool true
+
+# Upper limit for biome.
+everness_crystal_forest_ocean_y_max (y max) int -2
+
+# Lower limit for biome.
+everness_crystal_forest_ocean_y_min (y min) int -10
+
+[*Crystal Forest Deep Ocean]
+
+# Enable/ Disable Crystal Forest Deep Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest_deep_ocean (Crystal Forest Deep Ocean) bool true
+
+# Upper limit for biome.
+everness_crystal_forest_deep_ocean_y_max (y max) int -11
+
+# Lower limit for biome.
+everness_crystal_forest_deep_ocean_y_min (y min) int -255
+
+[*Crystal Forest Under]
+
+# Enable/ Disable Crystal Forest Under Biome
+# Disabling this biome might result in missing recipes.
+everness_crystal_forest_under (Crystal Forest Under) bool true
+
+# Upper limit for biome.
+everness_crystal_forest_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_crystal_forest_under_y_min (y min) int -31000
+
+[*Bamboo Forest]
+
+# Enable/ Disable Bamboo Forest Biome
+# Disabling this biome might result in missing recipes.
+everness_bamboo_forest (Bamboo Forest) bool false
+
+# Upper limit for biome.
+everness_bamboo_forest_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_bamboo_forest_y_min (y min) int 1
+
+[*Bamboo Forest Under]
+
+# Enable/ Disable Bamboo Forest Under Biome
+# Disabling this biome might result in missing recipes.
+everness_bamboo_forest_under (Bamboo Forest Under) bool true
+
+# Upper limit for biome.
+everness_bamboo_forest_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_bamboo_forest_under_y_min (y min) int -31000
+
+[*Forsaken Desert]
+
+# Enable/ Disable Forsaken Desert Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_desert (Forsaken Desert) bool true
+
+# Upper limit for biome.
+everness_forsaken_desert_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_forsaken_desert_y_min (y min) int 4
+
+[*Forsaken Desert Ocean]
+
+# Enable/ Disable Forsaken Desert Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_desert_ocean (Forsaken Desert Ocean) bool true
+
+# Upper limit for biome.
+everness_forsaken_desert_ocean_y_max (y max) int 3
+
+# Lower limit for biome.
+everness_forsaken_desert_ocean_y_min (y min) int -8
+
+[*Forsaken Desert Under]
+
+# Enable/ Disable Forsaken Desert Under Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_desert_under (Forsaken Desert Under) bool true
+
+# Upper limit for biome.
+everness_forsaken_desert_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_forsaken_desert_under_y_min (y min) int -31000
+
+[*Baobab Savanna]
+
+# Enable/ Disable Baobab Savanna Biome
+# Disabling this biome might result in missing recipes.
+everness_baobab_savanna (Baobab Savanna) bool false
+
+# Upper limit for biome.
+everness_baobab_savanna_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_baobab_savanna_y_min (y min) int 1
+
+[*Forsaken Tundra]
+
+# Enable/ Disable Forsaken Tundra Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_tundra (Forsaken Tundra) bool true
+
+# Upper limit for biome.
+everness_forsaken_tundra_y_max (y max) int 31000
+
+# Lower limit for biome.
+everness_forsaken_tundra_y_min (y min) int 2
+
+[*Forsaken Tundra Beach]
+
+# Enable/ Disable Forsaken Tundra Beach Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_tundra_beach (Forsaken Tundra Beach) bool true
+
+# Upper limit for biome.
+everness_forsaken_tundra_beach_y_max (y max) int 1
+
+# Lower limit for biome.
+everness_forsaken_tundra_beach_y_min (y min) int -3
+
+[*Forsaken Tundra Ocean]
+
+# Enable/ Disable Forsaken Tundra Ocean Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_tundra_ocean (Forsaken Tundra Ocean) bool true
+
+# Upper limit for biome.
+everness_forsaken_tundra_ocean_y_max (y max) int -4
+
+# Lower limit for biome.
+everness_forsaken_tundra_ocean_y_min (y min) int -255
+
+[*Forsaken Tundra Under]
+
+# Enable/ Disable Forsaken Tundra Under Biome
+# Disabling this biome might result in missing recipes.
+everness_forsaken_tundra_under (Forsaken Tundra Under) bool true
+
+# Upper limit for biome.
+everness_forsaken_tundra_under_y_max (y max) int 0
+
+# Lower limit for biome.
+everness_forsaken_tundra_under_y_min (y min) int -31000
+
+[Features]
+
+# Enable/ Disable Item pick up with sneak key
+# [Shift + E + Q] single drop item
+everness_feature_sneak_pickup (Sneak Pickup) bool false
+
+# Enable/ Disable Skybox
+# This shows custom sun/moon/sky colors/stars/clouds...
+# based on the biome, so each new biome has
+# unique feeling and experience.
+everness_feature_skybox (Skybox) bool false

@@ -76,8 +76,9 @@ minetest.register_abm({
         chance = 1,
         action = function(pos, node)
 		
-		local outer, middle, inner, crystal, fill, size_min, size_max = unpack(geode_types[math.random(1, #geode_types)])
-		local size = math.random(size_min, size_max)
+		local pcgr = PcgRandom(minetest.hash_node_position(pos))
+		local outer, middle, inner, crystal, fill, size_min, size_max = unpack(geode_types[pcgr:next(1, #geode_types)])
+		local size = pcgr:next(size_min, size_max)
 
 		for x = -size, size do
 		for y = -size, size do
@@ -104,7 +105,7 @@ minetest.register_abm({
 		for x = -size +4, size -4 do
 		for y = -size +4, size -4 do
 		for z = -size +4, size -4 do
-		if math.random(0, 10) == 0 and vector.distance(vector.new(x, y, z), vector.new()) >= size - 4 and vector.distance(vector.new(x, y, z), vector.new()) < size - 3 then
+		if pcgr:next(0, 10) == 0 and vector.distance(vector.new(x, y, z), vector.new()) >= size - 4 and vector.distance(vector.new(x, y, z), vector.new()) < size - 3 then
 
 			if minetest.get_node(pos + vector.new(x, y + 1, z)).name == inner then
 			minetest.set_node(pos + vector.new(x, y, z), {name = crystal, param2 = 0})

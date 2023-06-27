@@ -363,7 +363,7 @@ minetest.register_decoration({
 		"bambooforest:dirt_with_bamboo",
 	},
 	sidelen = 80,
-	fill_ratio = 0.00108,
+	fill_ratio = 0.00075,
 	biomes = {
 		"junglee",
 		"bambooforest",
