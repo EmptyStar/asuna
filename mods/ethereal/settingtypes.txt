@@ -1,4 +1,4 @@
-ethereal.leaftype (0 for 2D plantlike leaves or 1 for 3D) int 0
+ethereal.leaftype (0 for 2D plantlike leaves or 1 for 3D) int 1
 ethereal.leafwalk (Walkable leaves) bool false
 
 ethereal.cavedirt (Caves cut through dirt) bool true

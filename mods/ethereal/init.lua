@@ -32,7 +32,7 @@ end
 
 -- DO NOT change settings below, use the settings.conf file instead
 
-setting("number", "leaftype", 0)
+setting("number", "leaftype", 1)
 setting("bool", "leafwalk", false)
 setting("bool", "cavedirt", true)
 setting("bool", "torchdrop", true)
