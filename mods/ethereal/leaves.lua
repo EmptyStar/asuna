@@ -2,14 +2,9 @@
 local S = ethereal.intllib
 
 
--- set leaftype (value inside init.lua)
-local leaftype = "plantlike"
-local leafscale = 1.4
-
-if ethereal.leaftype ~= 0 then
-	leaftype = "allfaces_optional"
-	leafscale = 1.0
-end
+-- set leaftype (ignores value inside init.lua)
+leaftype = "allfaces_optional"
+leafscale = 1.0
 
 -- default apple tree leaves
 minetest.override_item("default:leaves", {
