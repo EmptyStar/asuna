@@ -57,9 +57,67 @@ add_schem("default:snowblock", 0.0005, {"glacier"}, 3, 50,
 	ethereal.igloo, ethereal.glacier, nil, "default:snowblock", 8, "random")
 
 -- sakura tree
-add_schem({"ethereal:bamboo_dirt"}, 0.002, {"sakura"}, 7, 100,
+--[[add_schem({"ethereal:bamboo_dirt"}, 0.002, {"sakura"}, 7, 100,
 	ethereal.sakura_tree, ethereal.sakura, nil,
-	"ethereal:bamboo_dirt", 6)
+	"ethereal:bamboo_dirt", 6)]]
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "ethereal:bamboo_dirt",
+	sidelen = 80,
+	fill_ratio = 0.00275,
+	biomes = {"sakura"},
+	y_min = 5,
+	y_max = 48,
+	schematic = path.."cherry_tree_1.mts",
+	flags = "place_center_x,place_center_z",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = "ethereal:bamboo_dirt",
+	sidelen = 80,
+	fill_ratio = 0.000285,
+	biomes = {"sakura"},
+	y_min = 5,
+	y_max = 48,
+	schematic = path.."cherry_tree_2.mts",
+	flags = "place_center_x,place_center_z",
+	replacements = {
+		["cherry:cherry_tree"] = "ethereal:sakura_trunk",
+		["cherry:cherry_leaves"] = "ethereal:sakura_leaves",
+	},
+	rotation = "random",
+})
+
+minetest.register_abm({
+	label = "Sakura petals",
+	nodenames = {"ethereal:sakura_leaves"},
+	interval = 6,
+	chance = 25,
+	catch_up = false,
+	action = function(pos)
+		minetest.add_particlespawner({
+			amount = 1,
+			time = 1,
+			minpos = {x = pos.x, y = pos.y, z = pos.z},
+			maxpos = {x = pos.x, y = pos.y, z = pos.z},
+			minvel = {x = -0.75, y = -0.4, z = -0.75},
+			maxvel = {x = 0.75, y = -0.2, z = 0.75},
+			minacc = {x = -0.2, y = -0.4, z = -0.2},
+			maxacc = {x = 0.2, y = -0.1, z = 0.2},
+			minexptime = 8,
+			maxexptime = 10,
+			minsize = 1.5,
+			maxsize = 1.75,
+			texture = "cherry_leaves_particul.png",
+			collisiondetection = true,
+			collision_removal = true,
+			vertical = false,
+		})
+	end,
+})
 
 -- redwood tree
 add_schem({"default:dirt_with_dry_grass"}, 0.000625, {"mesa"}, 6, 31000,
@@ -105,7 +163,7 @@ add_schem("ethereal:mushroom_dirt", 0.02, {"mushroom"}, 1, 100,
 	ethereal.mushroomone, ethereal.mushroom, nil,
 	"ethereal:mushroom_dirt", 8)
 
-add_schem("default:dirt_with_grass", 0.000075, {"jumble"}, 1, 100,
+add_schem("default:dirt_with_grass", 0.00025, {"jumble"}, 1, 100,
 	ethereal.mushroomone, ethereal.mushroom)
 
 -- small lava crater
@@ -146,8 +204,50 @@ add_schem({"default:dirt_with_snow"}, 0.0025, {"taiga"}, 40, 140,
 	dpath .. "pine_tree.mts", ethereal.alpine)
 
 -- default apple tree
-add_schem({"default:dirt_with_grass"}, 0.025, {"jumble", "deciduous_forest"}, 1, 100,
+add_schem({"default:dirt_with_grass"}, 0.025, {"jumble"}, 1, 100,
 	dpath .. "apple_tree.mts", ethereal.grassy)
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = {"default:dirt_with_grass"},
+	place_offset_y = 0,
+	sidelen = 16,
+	fill_ratio = 0.0175,
+	biomes = {"deciduous_forest"},
+	y_max = 31000,
+	y_min = 1,
+	schematic = path.."meadow_tree_1.mts",
+	flags = "place_center_x, place_center_z",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = {"default:dirt_with_grass"},
+	place_offset_y = 0,
+	sidelen = 16,
+	fill_ratio = 0.0025,
+	biomes = {"deciduous_forest"},
+	y_max = 31000,
+	y_min = 1,
+	schematic = path.."meadow_tree_2.mts",
+	flags = "place_center_x, place_center_z",
+	rotation = "random",
+})
+
+minetest.register_decoration({
+	deco_type = "schematic",
+	place_on = {"default:dirt_with_grass"},
+	place_offset_y = 0,
+	sidelen = 16,
+	fill_ratio = 0.00275,
+	biomes = {"deciduous_forest"},
+	y_max = 31000,
+	y_min = 1,
+	schematic = dpath.."apple_tree.mts",
+	flags = "place_center_x, place_center_z",
+	rotation = "random",
+})
 
 -- big old tree
 add_schem({"default:dirt_with_grass"}, 0.001, {"jumble"}, 1, 100,
