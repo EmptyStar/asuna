@@ -723,7 +723,7 @@ abdecor.register_advanced_decoration('everness_mese_tree_underground',{
     target = {
         place_on = 'everness:moss_block',
         sidelen = 80,
-        fill_ratio = 0.0001,
+        fill_ratio = 0.000025,
         y_max = -300,
         y_min = -31000,
         biomes = asuna.features.cave.bamboo,
