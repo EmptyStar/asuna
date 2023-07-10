@@ -10,9 +10,9 @@ local pest_spawn_chance = tonumber(minetest.settings:get("animalia_pest_chance")
 
 local predator_spawn_chance = tonumber(minetest.settings:get("animalia_predator_chance")) or 30000
 
--- Get Biomes --
+-- Get Biomes -- already happens via Asuna/biomes.lua
 
-local chicken_biomes = {}
+--[[local chicken_biomes = {}
 
 local frog_biomes = {}
 
@@ -24,7 +24,7 @@ local function insert_all(tbl, tbl2)
 	end
 end
 
---[[minetest.register_on_mods_loaded(function()
+minetest.register_on_mods_loaded(function()
 	insert_all(chicken_biomes, animalia.registered_biome_groups["grassland"].biomes)
 	insert_all(chicken_biomes, animalia.registered_biome_groups["tropical"].biomes)
 	insert_all(pig_biomes, animalia.registered_biome_groups["temperate"].biomes)
@@ -215,16 +215,18 @@ creatura.register_abm_spawn("animalia:frog", {
 	max_height = 8,
 	min_group = 2,
 	max_group = 4,
+	biomes = asuna.features.animals.frog,
 	neighbors = {"group:water"},
 	nodes = {"group:soil"}
 })
 
 creatura.register_abm_spawn("animalia:tropical_fish", {
 	chance = ambient_spawn_chance,
-	min_height = -128,
+	min_height = -35,
 	max_height = 1,
 	min_group = 6,
 	max_group = 12,
+	biomes = asuna.features.animals.tropical_fish,
 	nodes = {"group:water"},
 	neighbors = {"group:coral"}
 })

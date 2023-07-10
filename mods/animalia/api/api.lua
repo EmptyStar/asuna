@@ -585,7 +585,7 @@ function animalia.register_biome_group(name, def)
 	animalia.registered_biome_groups[name].biomes = {}
 end
 
---[[local function assign_biome_group(name)
+local function assign_biome_group(name)
 	local def = minetest.registered_biomes[name]
 	local turf = def.node_top
 	local heat = def.heat_point or 0
@@ -696,4 +696,4 @@ animalia.register_biome_group("common", {
 	min_humidity = 20,
 	max_humidity = 80,
 	min_height = 1
-})]]
+})
