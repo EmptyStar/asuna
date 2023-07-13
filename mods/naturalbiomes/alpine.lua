@@ -66,7 +66,7 @@ minetest.register_node("naturalbiomes:alppine1_wood", {
 
 minetest.register_craft({
 	output = "naturalbiomes:alppine1_wood 4",
-	recipe = {{"naturalbiomes:allpine1_trunk"}}
+	recipe = {{"naturalbiomes:alppine1_trunk"}}
 })
 
 minetest.register_node("naturalbiomes:alppine1_leaves", {
@@ -136,7 +136,7 @@ minetest.register_node("naturalbiomes:alppine1_sapling", {
 
     stairs.register_stair_and_slab(
       "naturalbiomes_alpine_pine1_wood",
-      "naturalbiomes:allpine1_wood",
+      "naturalbiomes:alppine1_wood",
       {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
       {"naturalbiomes_alpine_pine1_wood.png"},
       ("Pine Stair"),
